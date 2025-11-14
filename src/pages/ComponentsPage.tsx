@@ -12,12 +12,20 @@ import { FilterChip, FilterChipGroup } from '@/components/ui/FilterChip';
 import { Pagination } from '@/components/ui/Pagination';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { ThemeComparisonCard } from '@/components/ui/ThemePreview';
-import { AlertCircle, CheckCircle2, Info, Copy, Check, Search, Mail, Bell, Calendar, User, MapPin } from 'lucide-react';
+import { AlertCircle, CheckCircle2, Info, Copy, Check, Search, Mail, Bell, Calendar, User, MapPin, Users, CreditCard, Dumbbell } from 'lucide-react';
 import { MetaItem } from '@/components/ui/MetaItem';
 import { SidePanel } from '@/components/ui/SidePanel';
 import { BusinessCard, BusinessCardData } from '@/components/admin/BusinessCard';
 import { FilterBar } from '@/components/admin/FilterBar';
 import { BulkActionsBar } from '@/components/admin/BulkActionsBar';
+import { BusinessMeta } from '@/components/business/BusinessMeta';
+import { TrainerGrid } from '@/components/business/TrainerGrid';
+import { PricingPlanGrid } from '@/components/business/PricingPlanGrid';
+import { TodayClassesCard } from '@/components/business/TodayClassesCard';
+import { BusinessInfoCard } from '@/components/business/BusinessInfoCard';
+import { BusinessHoursCard } from '@/components/business/BusinessHoursCard';
+import { EquipmentFeaturesCard } from '@/components/business/EquipmentFeaturesCard';
+import { LastUpdatedStamp } from '@/components/business/LastUpdatedStamp';
 
 export function ComponentsPage() {
   const [inputValue, setInputValue] = useState('');
@@ -75,6 +83,10 @@ export function ComponentsPage() {
             <a href="#business-card" className="text-primary hover:underline">Business Card</a>
             <a href="#filter-bar" className="text-primary hover:underline">Filter Bar</a>
             <a href="#bulk-actions" className="text-primary hover:underline">Bulk Actions</a>
+            <a href="#gym-business-meta" className="text-primary hover:underline">Gym Business Meta</a>
+            <a href="#gym-trainers" className="text-primary hover:underline">Gym Trainers</a>
+            <a href="#gym-pricing" className="text-primary hover:underline">Gym Pricing</a>
+            <a href="#gym-sidebar" className="text-primary hover:underline">Gym Sidebar Cards</a>
           </div>
         </CardContent>
       </Card>
@@ -966,6 +978,137 @@ export function ComponentsPage() {
           Components extracted from the admin dashboard HTML mockup
         </p>
       </div>
+
+      {/* Gym Business Meta */}
+      <section id="gym-business-meta">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold flex items-center gap-2"><Users className="h-5 w-5 text-destructive" />Gym Business Meta</h2>
+        </div>
+        <Card>
+          <CardHeader>
+            <CardDescription>
+              Rating, distance, hours, and capacity metadata for a gym listing.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <BusinessMeta
+              rating={4.9}
+              reviewCount={89}
+              distance="1.2 miles away"
+              openStatus="Open until 9:00 PM"
+              spotsLeft="15 spots left today"
+            />
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Gym Trainers */}
+      <section id="gym-trainers">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold flex items-center gap-2"><Users className="h-5 w-5 text-destructive" />Gym Trainers</h2>
+        </div>
+        <Card>
+          <CardHeader>
+            <CardDescription>
+              Trainer grid component used on the gym detail page.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <TrainerGrid
+              trainers={[
+                {
+                  initials: 'JS',
+                  name: 'Jake Sullivan',
+                  role: 'Head Coach & Owner',
+                  certifications: 'CF-L3, USAW, Precision Nutrition',
+                  experience: '8 years CrossFit coaching, former Navy SEAL',
+                },
+                {
+                  initials: 'MR',
+                  name: 'Maria Rodriguez',
+                  role: 'Senior Coach',
+                  certifications: 'CF-L2, RKC, Mobility Specialist',
+                  experience: '6 years coaching, former competitive gymnast',
+                },
+              ]}
+            />
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Gym Pricing */}
+      <section id="gym-pricing">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold flex items-center gap-2"><CreditCard className="h-5 w-5 text-destructive" />Gym Pricing Plans</h2>
+        </div>
+        <Card>
+          <CardHeader>
+            <CardDescription>
+              Pricing plan cards and grid used for membership options.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <PricingPlanGrid
+              plans={[
+                {
+                  name: 'Drop-In',
+                  price: '$35',
+                  period: 'class',
+                  features: ['Single class access', 'All equipment included', 'Beginner friendly', 'No commitment'],
+                  ctaLabel: 'Try a Class',
+                },
+                {
+                  name: 'Unlimited',
+                  price: '$185',
+                  period: 'month',
+                  features: ['Unlimited classes', 'Open gym access', 'Nutrition coaching', 'Member events', 'Progress tracking'],
+                  ctaLabel: 'Start Today',
+                  variant: 'featured',
+                },
+              ]}
+            />
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Gym Sidebar Cards */}
+      <section id="gym-sidebar">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold flex items-center gap-2"><Dumbbell className="h-5 w-5 text-destructive" />Gym Sidebar Cards</h2>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          <TodayClassesCard
+            classes={[
+              { time: '6:00 AM', name: 'Morning Strength', spots: '3 spots' },
+              { time: '7:15 AM', name: 'CrossFit WOD', spots: 'Full' },
+            ]}
+          />
+          <BusinessInfoCard
+            addressLines={[
+              '2847 Industrial Blvd',
+              'Springfield, IL 62702',
+            ]}
+            phone="(217) 555-8765"
+            website="https://ironwillcrossfit.com"
+            capacity="Max 12 athletes per class"
+          />
+          <BusinessHoursCard
+            hours={[
+              { day: 'Monday', time: '5:30 AM - 9:00 PM' },
+              { day: 'Tuesday', time: '5:30 AM - 9:00 PM', isOpen: true },
+            ]}
+          />
+          <div>
+            <EquipmentFeaturesCard
+              features={[
+                { icon: <Dumbbell className="h-4 w-4" />, label: 'Olympic Lifting' },
+                { icon: <Users className="h-4 w-4" />, label: 'Cardio Machines' },
+              ]}
+            />
+            <LastUpdatedStamp text="Last updated by owner on March 18, 2024" />
+          </div>
+        </div>
+      </section>
 
       {/* Meta Item */}
       <section id="meta-item">
