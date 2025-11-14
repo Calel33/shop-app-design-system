@@ -13,6 +13,7 @@ import { RestaurantsPage } from '@/pages/RestaurantsPage';
 import { ComponentsPage } from '@/pages/ComponentsPage';
 import { ThemeShowcasePage } from '@/pages/ThemeShowcasePage';
 import { AdminDashboardPage } from '@/pages/AdminDashboardPage';
+import { GymListingPage } from '@/pages/GymListingPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -42,6 +43,8 @@ function App() {
         return <ThemeShowcasePage />;
       case 'admin-dashboard':
         return <AdminDashboardPage />;
+      case 'gym-listing':
+        return <GymListingPage />;
       default:
         return <HomePage />;
     }
