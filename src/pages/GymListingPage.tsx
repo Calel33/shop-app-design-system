@@ -160,10 +160,16 @@ export function GymListingPage() {
   );
 }
 
+
 function CalendarDaysIcon() {
-  return <MapPin className="h-4 w-4" />;
+  return <CalendarDays className="h-4 w-4" />;
 }
 
-function CreditCardIcon() {
-  return <Users className="h-5 w-5 text-destructive" />;
 }
+
+
+
+function CreditCardIcon() {
+  return <CreditCard className="h-5 w-5 text-destructive" />;
+}
+
