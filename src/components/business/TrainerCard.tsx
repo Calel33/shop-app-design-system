@@ -28,8 +28,9 @@ export function TrainerCard({
       {...props}
     >
       <Avatar
-        initials={initials}
+        fallback={initials}
         size="lg"
+        alt={name}
         className="rounded-xl bg-gradient-to-tr from-destructive to-accent text-accent-foreground"
       />
       <div className="space-y-1">
