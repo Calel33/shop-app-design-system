@@ -1,0 +1,1030 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Will CrossFit - Local Business Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        .nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav a:hover {
+            color: #2563eb;
+        }
+
+        .breadcrumb {
+            padding: 24px 0 16px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 48px;
+            padding-bottom: 48px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .image-gallery {
+            position: relative;
+            height: 400px;
+            background: #e2e8f0;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-nav {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .gallery-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .gallery-dot.active {
+            background: white;
+        }
+
+        .business-header {
+            padding: 32px;
+        }
+
+        .business-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .title-left h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .business-category {
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .verification-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #059669, #10b981);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .business-meta {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stars {
+            color: #f59e0b;
+        }
+
+        .business-description {
+            color: #475569;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .fitness-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .highlight-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .highlight-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            font-size: 20px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .highlight-text {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #ff6b6b;
+            border: 2px solid #ff6b6b;
+        }
+
+        .btn-secondary:hover {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        /* Trainer Section */
+        .trainers-section {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-top: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .trainers-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .trainer-card {
+            display: flex;
+            gap: 16px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .trainer-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .trainer-info h4 {
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .trainer-title {
+            color: #ff6b6b;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .trainer-certs {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        .trainer-experience {
+            font-size: 14px;
+            color: #475569;
+        }
+
+        /* Membership Section */
+        .membership-section {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-top: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .pricing-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: #ff6b6b;
+            background: linear-gradient(135deg, #fff5f5, #fef2f2);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff6b6b;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .pricing-title {
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .pricing-price {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ff6b6b;
+            margin-bottom: 16px;
+        }
+
+        .pricing-period {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .pricing-features li {
+            padding: 4px 0;
+            color: #475569;
+            font-size: 14px;
+        }
+
+        .pricing-features li i {
+            color: #059669;
+            margin-right: 8px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .class-schedule {
+            margin-bottom: 16px;
+        }
+
+        .class-day {
+            margin-bottom: 16px;
+        }
+
+        .day-header {
+            font-weight: 600;
+            color: #0f172a;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 8px;
+        }
+
+        .class-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+
+        .class-time {
+            font-weight: 600;
+            color: #ff6b6b;
+            font-size: 14px;
+        }
+
+        .class-name {
+            flex: 1;
+            margin: 0 12px;
+            font-size: 14px;
+            color: #0f172a;
+        }
+
+        .class-spots {
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .info-icon {
+            color: #ff6b6b;
+            width: 20px;
+            margin-top: 2px;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            color: #64748b;
+        }
+
+        .info-value a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        .hours-grid {
+            display: grid;
+            gap: 8px;
+        }
+
+        .hour-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 0;
+        }
+
+        .day {
+            font-weight: 500;
+            color: #0f172a;
+        }
+
+        .time {
+            color: #64748b;
+        }
+
+        .time.open {
+            color: #059669;
+            font-weight: 600;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .equipment-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px;
+            background: #f8fafc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .equipment-icon {
+            color: #ff6b6b;
+            font-size: 16px;
+        }
+
+        .level-indicators {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .level-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .level-beginner {
+            background: #dcfce7;
+            color: #059669;
+        }
+
+        .level-intermediate {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        .level-advanced {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+
+        .last-updated {
+            background: #f1f5f9;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .main-content {
+                grid-template-columns: 1fr 350px;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .fitness-highlights {
+                grid-template-columns: 1fr;
+            }
+            
+            .trainers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            .business-header {
+                padding: 24px;
+            }
+            
+            .business-title {
+                flex-direction: column;
+                gap: 16px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">LocalConnect</div>
+                <nav class="nav">
+                    <a href="#">Directory</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Add Business</a>
+                    <a href="#">Sign In</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="#">Home</a> / <a href="#">Fitness &amp; Health</a> / <a href="#">Gyms &amp; Studios</a> / Iron Will CrossFit
+        </div>
+
+        <div class="main-content">
+            <main>
+                <div class="hero-section">
+                    <div class="image-gallery">
+                        <img src="https://storage.googleapis.com/forge-sites/40b5b61aac7d36db64250e2ca407caaa0c117e8fbc6590e42f99ec58f11d140d.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=164061697651-compute%40developer.gserviceaccount.com%2F20251114%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20251114T221129Z&amp;X-Goog-Expires=86400&amp;X-Goog-SignedHeaders=host&amp;response-access-control-allow-origin=https%3A%2F%2Fforge.moonchild.ai&amp;X-Goog-Signature=41f09053b399513ffb91191d97b04e0087c6f5900fbfbeeb76bdb5b6ac88e8a3a0533ff74cdb8a0f75ff586df1acb4cbb297059788ba7f8546c4b903caf7425af14508e0e922b074b9ccc0c924c7e46b5e30a77a17ff288fd27928c1f905a00a55b0b8504bc5fda6b4db2121b4efc3639bbd6ecf220463ffc0a7d347524a960f7a00226141e086cd048f32e5dfc004804f075ee162199f22198a62676f2c1b3bcdc4180f5a6a903a38c5f98c55ab92295fc61d62ce8653cf5090268837ac87686a11c05c387bd8e09b8d3e1e00c7f141fb4a59dfd63d71bba48441e42b9efc8ed9fbf608614d3b0ea61e9cf9bbfd0f1e47949cff43988e1393e126095f2bcf03" alt="Modern CrossFit gym with Olympic lifting platforms, rowing machines, pull-up rigs, and athletes training in a spacious, well-lit facility with industrial design elements" class="main-image">
+                        <div class="gallery-nav">
+                            <div class="gallery-dot active"></div>
+                            <div class="gallery-dot"></div>
+                            <div class="gallery-dot"></div>
+                            <div class="gallery-dot"></div>
+                            <div class="gallery-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="business-header">
+                        <div class="business-title">
+                            <div class="title-left">
+                                <h1>Iron Will CrossFit</h1>
+                                <div class="business-category">CrossFit Gym • Functional Fitness • Personal Training</div>
+                            </div>
+                            <div class="verification-badge">
+                                <i class="fas fa-shield-check"></i>
+                                Certified Affiliate
+                            </div>
+                        </div>
+
+                        <div class="business-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.9 (89 reviews)</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>1.2 miles away</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span class="open">Open until 9:00 PM</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>15 spots left today</span>
+                            </div>
+                        </div>
+
+                        <div class="business-description">
+                            Transform your fitness journey at Iron Will CrossFit, where elite coaching meets community spirit. Our certified trainers guide you through constantly varied, high-intensity functional movements that deliver real-world strength and conditioning. Whether you're a complete beginner or seasoned athlete, our scalable workouts and supportive community will help you achieve your fitness goals faster than you ever thought possible.
+                        </div>
+
+                        <div class="fitness-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <div class="highlight-title">Elite Equipment</div>
+                                <div class="highlight-text">Rogue fitness gear, Olympic platforms, endless ropes</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-title">Small Classes</div>
+                                <div class="highlight-text">Max 12 athletes per class for personalized attention</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="highlight-title">Certified Coaches</div>
+                                <div class="highlight-text">Level 2+ CrossFit trainers with 5+ years experience</div>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus"></i>
+                                Book Free Trial
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-phone"></i>
+                                Call Now
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-directions"></i>
+                                Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainers-section">
+                    <h2 class="section-title">
+                        <i class="fas fa-user-tie"></i>
+                        Meet Our Coaches
+                    </h2>
+                    <div class="trainers-grid">
+                        <div class="trainer-card">
+                            <div class="trainer-avatar">JS</div>
+                            <div class="trainer-info">
+                                <h4>Jake Sullivan</h4>
+                                <div class="trainer-title">Head Coach &amp; Owner</div>
+                                <div class="trainer-certs">CF-L3, USAW, Precision Nutrition</div>
+                                <div class="trainer-experience">8 years CrossFit coaching, former Navy SEAL</div>
+                            </div>
+                        </div>
+                        <div class="trainer-card">
+                            <div class="trainer-avatar">MR</div>
+                            <div class="trainer-info">
+                                <h4>Maria Rodriguez</h4>
+                                <div class="trainer-title">Senior Coach</div>
+                                <div class="trainer-certs">CF-L2, RKC, Mobility Specialist</div>
+                                <div class="trainer-experience">6 years coaching, former competitive gymnast</div>
+                            </div>
+                        </div>
+                        <div class="trainer-card">
+                            <div class="trainer-avatar">TC</div>
+                            <div class="trainer-info">
+                                <h4>Tyler Chen</h4>
+                                <div class="trainer-title">Assistant Coach</div>
+                                <div class="trainer-certs">CF-L2, FMS, Sports Nutrition</div>
+                                <div class="trainer-experience">4 years coaching, powerlifting background</div>
+                            </div>
+                        </div>
+                        <div class="trainer-card">
+                            <div class="trainer-avatar">AL</div>
+                            <div class="trainer-info">
+                                <h4>Alex Liu</h4>
+                                <div class="trainer-title">Coach &amp; PT</div>
+                                <div class="trainer-certs">CF-L2, DPT, Corrective Exercise</div>
+                                <div class="trainer-experience">5 years coaching, Doctor of Physical Therapy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membership-section">
+                    <h2 class="section-title">
+                        <i class="fas fa-credit-card"></i>
+                        Membership Options
+                    </h2>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div class="pricing-title">Drop-In</div>
+                            <div class="pricing-price">$35<span class="pricing-period">/class</span></div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Single class access</li>
+                                <li><i class="fas fa-check"></i> All equipment included</li>
+                                <li><i class="fas fa-check"></i> Beginner friendly</li>
+                                <li><i class="fas fa-check"></i> No commitment</li>
+                            </ul>
+                            <a href="#" class="btn btn-secondary">Try a Class</a>
+                        </div>
+                        <div class="pricing-card featured">
+                            <div class="pricing-badge">Most Popular</div>
+                            <div class="pricing-title">Unlimited</div>
+                            <div class="pricing-price">$185<span class="pricing-period">/month</span></div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Unlimited classes</li>
+                                <li><i class="fas fa-check"></i> Open gym access</li>
+                                <li><i class="fas fa-check"></i> Nutrition coaching</li>
+                                <li><i class="fas fa-check"></i> Member events</li>
+                                <li><i class="fas fa-check"></i> Progress tracking</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Start Today</a>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-title">8 Classes</div>
+                            <div class="pricing-price">$220<span class="pricing-period">/month</span></div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> 8 classes per month</li>
+                                <li><i class="fas fa-check"></i> Roll over 2 classes</li>
+                                <li><i class="fas fa-check"></i> Open gym 2x/week</li>
+                                <li><i class="fas fa-check"></i> Flexibility focused</li>
+                            </ul>
+                            <a href="#" class="btn btn-secondary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <div class="info-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        Today's Classes
+                    </h3>
+                    <div class="class-schedule">
+                        <div class="class-item">
+                            <div class="class-time">6:00 AM</div>
+                            <div class="class-name">Morning Strength</div>
+                            <div class="class-spots">3 spots</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">7:15 AM</div>
+                            <div class="class-name">CrossFit WOD</div>
+                            <div class="class-spots">Full</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">9:30 AM</div>
+                            <div class="class-name">Beginner Friendly</div>
+                            <div class="class-spots">7 spots</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">12:00 PM</div>
+                            <div class="class-name">Lunch WOD</div>
+                            <div class="class-spots">5 spots</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">5:30 PM</div>
+                            <div class="class-name">CrossFit WOD</div>
+                            <div class="class-spots">2 spots</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">6:45 PM</div>
+                            <div class="class-name">Competition Team</div>
+                            <div class="class-spots">Invite only</div>
+                        </div>
+                    </div>
+                    <div class="level-indicators">
+                        <div class="level-badge level-beginner">Beginner</div>
+                        <div class="level-badge level-intermediate">Intermediate</div>
+                        <div class="level-badge level-advanced">Advanced</div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-info-circle"></i>
+                        Gym Information
+                    </h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <div class="info-content">
+                            <div class="info-label">Address</div>
+                            <div class="info-value">
+                                2847 Industrial Blvd<br>
+                                Springfield, IL 62702
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone info-icon"></i>
+                        <div class="info-content">
+                            <div class="info-label">Phone</div>
+                            <div class="info-value">
+                                <a href="tel:+12175558765">(217) 555-8765</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe info-icon"></i>
+                        <div class="info-content">
+                            <div class="info-label">Website</div>
+                            <div class="info-value">
+                                <a href="#" target="_blank">ironwillcrossfit.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users info-icon"></i>
+                        <div class="info-content">
+                            <div class="info-label">Class Capacity</div>
+                            <div class="info-value">Max 12 athletes per class</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-clock"></i>
+                        Hours
+                    </h3>
+                    <div class="hours-grid">
+                        <div class="hour-row">
+                            <span class="day">Monday</span>
+                            <span class="time">5:30 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Tuesday</span>
+                            <span class="time open">5:30 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Wednesday</span>
+                            <span class="time">5:30 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Thursday</span>
+                            <span class="time">5:30 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Friday</span>
+                            <span class="time">5:30 AM - 8:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Saturday</span>
+                            <span class="time">8:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Sunday</span>
+                            <span class="time">9:00 AM - 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-dumbbell"></i>
+                        Equipment &amp; Features
+                    </h3>
+                    <div class="equipment-grid">
+                        <div class="equipment-item">
+                            <i class="fas fa-weight-hanging equipment-icon"></i>
+                            <span>Olympic Lifting</span>
+                        </div>
+                        <div class="equipment-item">
+                            <i class="fas fa-running equipment-icon"></i>
+                            <span>Cardio Machines</span>
+                        </div>
+                        <div class="equipment-item">
+                            <i class="fas fa-grip-vertical equipment-icon"></i>
+                            <span>Pull-up Rigs</span>
+                        </div>
+                        <div class="equipment-item">
+                            <i class="fas fa-circle equipment-icon"></i>
+                            <span>Kettlebells</span>
+                        </div>
+                        <div class="equipment-item">
+                            <i class="fas fa-square equipment-icon"></i>
+                            <span>Plyometric Boxes</span>
+                        </div>
+                        <div class="equipment-item">
+                            <i class="fas fa-grip-lines equipment-icon"></i>
+                            <span>Battle Ropes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="last-updated">
+                    <i class="fas fa-sync"></i>
+                    Last updated by owner on March 18, 2024
+                </div>
+            </aside>
+        </div>
+    </div>
+
+</body></html>

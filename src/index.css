@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary: 243 67% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary Colors */
+    --secondary: 173 80% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent Colors */
+    --accent: 32 95% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    /* Base Colors */
+    --background: 90 33% 97%;
+    --foreground: 0 0% 0%;
+
+    /* Card Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    /* Popover Colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Muted Colors */
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 20%;
+
+    /* Destructive Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & Input Colors */
+    --border: 0 0% 0%;
+    --input: 0 0% 45%;
+    --ring: 243 67% 82%;
+
+    /* Chart Colors */
+    --chart-1: 243 67% 59%;
+    --chart-2: 173 80% 40%;
+    --chart-3: 32 95% 50%;
+    --chart-4: 330 81% 60%;
+    --chart-5: 142 76% 45%;
+
+    /* Sidebar Colors */
+    --sidebar: 90 33% 97%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 243 67% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 32 95% 50%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 0%;
+    --sidebar-ring: 243 67% 82%;
+  }
+
+  .dark {
+    /* Primary Colors */
+    --primary: 243 75% 74%;
+    --primary-foreground: 0 0% 0%;
+
+    /* Secondary Colors */
+    --secondary: 173 80% 50%;
+    --secondary-foreground: 0 0% 0%;
+
+    /* Accent Colors */
+    --accent: 43 96% 65%;
+    --accent-foreground: 0 0% 0%;
+
+    /* Base Colors */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    /* Card Colors */
+    --card: 210 24% 13%;
+    --card-foreground: 0 0% 100%;
+
+    /* Popover Colors */
+    --popover: 210 24% 13%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Muted Colors */
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 80%;
+
+    /* Destructive Colors */
+    --destructive: 0 91% 71%;
+    --destructive-foreground: 0 0% 0%;
+
+    /* Border & Input Colors */
+    --border: 0 0% 33%;
+    --input: 0 0% 100%;
+    --ring: 243 75% 74%;
+
+    /* Chart Colors */
+    --chart-1: 243 75% 74%;
+    --chart-2: 173 80% 50%;
+    --chart-3: 43 96% 65%;
+    --chart-4: 330 81% 70%;
+    --chart-5: 142 76% 58%;
+
+    /* Sidebar Colors */
+    --sidebar: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 243 75% 74%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 43 96% 65%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 100%;
+    --sidebar-ring: 243 75% 74%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Smooth theme transitions */
+@layer utilities {
+  html {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  * {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+
+  /* Disable transitions for elements that shouldn't animate */
+  *:where([data-no-transition], [data-no-transition] *) {
+    transition: none !important;
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
