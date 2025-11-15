@@ -23,7 +23,7 @@ import {
   gymTrainers,
   gymWebsite,
 } from '@/data/gymMock';
-import { Dumbbell, MapPin, Phone, Route, ShieldCheck, Users } from 'lucide-react';
+import { CalendarDays, CreditCard, Dumbbell, MapPin, Medal, Phone, Route, ShieldCheck, Users } from 'lucide-react';
 
 export function GymListingPage() {
   return (
@@ -60,6 +60,7 @@ export function GymListingPage() {
                 ))}
               </div>
             </div>
+
             <CardContent className="space-y-4 pt-6">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2">
@@ -84,9 +85,7 @@ export function GymListingPage() {
                 className="flex-wrap gap-4"
               />
 
-              <p className="text-body text-muted-foreground">
-                {gymDetails.description}
-              </p>
+              <p className="text-body text-muted-foreground">{gymDetails.description}</p>
 
               <div className="grid gap-4 md:grid-cols-3">
                 {gymHighlights.map((highlight) => (
@@ -159,16 +158,25 @@ export function GymListingPage() {
   );
 }
 
+function getIconComponent(icon: string) {
+  switch (icon) {
+    case 'dumbbell':
+      return <Dumbbell className="h-5 w-5" />;
+    case 'users':
+      return <Users className="h-5 w-5" />;
+    case 'medal':
+      return <Medal className="h-5 w-5" />;
+    default:
+      return <Dumbbell className="h-5 w-5" />;
+  }
+}
 
 function CalendarDaysIcon() {
   return <CalendarDays className="h-4 w-4" />;
 }
 
-}
-
-
-
 function CreditCardIcon() {
   return <CreditCard className="h-5 w-5 text-destructive" />;
 }
+
 
