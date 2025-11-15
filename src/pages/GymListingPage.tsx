@@ -93,7 +93,7 @@ export function GymListingPage() {
                 {gymHighlights.map((highlight) => (
                   <FitnessHighlightCard
                     key={highlight.title}
-                    icon={<Dumbbell className="h-5 w-5" />}
+                    icon={getIconComponent(highlight.icon)}
                     title={highlight.title}
                     description={highlight.description}
                   />
