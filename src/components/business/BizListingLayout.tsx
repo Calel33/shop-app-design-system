@@ -2,6 +2,9 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { BizListingForm } from '@/components/business/BizListingForm';
+import { StatusCard } from '@/components/ui/StatusCard';
+import { BizListingPreviewCard } from '@/components/business/BizListingPreviewCard';
+import { Clock3 } from 'lucide-react';
 
 interface BizListingLayoutProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -50,8 +53,25 @@ export function BizListingLayout({ className, ...props }: BizListingLayoutProps)
           </div>
         </div>
 
-        <div className="w-full lg:w-[45%] bg-muted/40">
-          {/* Preview column wired in next diff */}
+        <div className="w-full lg:w-[45%] border-t lg:border-t-0 lg:border-l border-border bg-muted/40">
+          <div className="flex h-full flex-col gap-4 p-6 overflow-y-auto">
+            <div>
+              <h2 className="text-h4 font-semibold">Live Preview</h2>
+              <p className="text-small text-muted-foreground">
+                This is how customers will see your listing in the directory.
+              </p>
+            </div>
+
+            <StatusCard
+              variant="warning"
+              title="Pending Approval"
+              icon={<Clock3 className="h-4 w-4" aria-hidden="true" />}
+            >
+              Your changes are being reviewed by our team. You&apos;ll be notified once they&apos;re live.
+            </StatusCard>
+
+            <BizListingPreviewCard />
+          </div>
         </div>
       </div>
     </div>
