@@ -26,6 +26,9 @@ import { BusinessInfoCard } from '@/components/business/BusinessInfoCard';
 import { BusinessHoursCard } from '@/components/business/BusinessHoursCard';
 import { EquipmentFeaturesCard } from '@/components/business/EquipmentFeaturesCard';
 import { LastUpdatedStamp } from '@/components/business/LastUpdatedStamp';
+import { Tabs, TabList, Tab } from '@/components/ui/Tabs';
+import { PhotoUpload } from '@/components/ui/PhotoUpload';
+import { StatusCard } from '@/components/ui/StatusCard';
 
 export function ComponentsPage() {
   const [inputValue, setInputValue] = useState('');
@@ -87,6 +90,9 @@ export function ComponentsPage() {
             <a href="#gym-trainers" className="text-primary hover:underline">Gym Trainers</a>
             <a href="#gym-pricing" className="text-primary hover:underline">Gym Pricing</a>
             <a href="#gym-sidebar" className="text-primary hover:underline">Gym Sidebar Cards</a>
+            <a href="#bizlisting-tabs" className="text-primary hover:underline">BizListing Tabs</a>
+            <a href="#bizlisting-photo-upload" className="text-primary hover:underline">BizListing Photo Upload</a>
+            <a href="#bizlisting-status-card" className="text-primary hover:underline">BizListing Status Card</a>
           </div>
         </CardContent>
       </Card>
@@ -542,6 +548,36 @@ export function ComponentsPage() {
         </div>
       </section>
 
+      {/* BizListing Status Card */}
+      <section id="bizlisting-status-card">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold">BizListing Status Card</h2>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => copyCode('<StatusCard variant="warning" title="Pending Approval">...</StatusCard>', 'bizlisting-status-card')}
+          >
+            {copiedSection === 'bizlisting-status-card' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+          </Button>
+        </div>
+        <Card>
+          <CardHeader>
+            <CardDescription>
+              Status card used in the BizListing preview column for review states like &quot;Pending Approval&quot;.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4 pt-6">
+            <StatusCard
+              variant="warning"
+              title="Pending Approval"
+              icon={<AlertCircle className="h-4 w-4" />}
+            >
+              Your changes are being reviewed by the directory team. You&apos;ll be notified once they&apos;re live.
+            </StatusCard>
+          </CardContent>
+        </Card>
+      </section>
+
       {/* Cards */}
       <section>
         <h2 className="text-h2 font-bold mb-4">Cards</h2>
@@ -567,6 +603,30 @@ export function ComponentsPage() {
         </div>
       </section>
 
+      {/* BizListing Tabs */}
+      <section id="bizlisting-tabs">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold">BizListing Tabs</h2>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => copyCode('<Tabs value={tab} onValueChange={setTab}>...</Tabs>', 'bizlisting-tabs')}
+          >
+            {copiedSection === 'bizlisting-tabs' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+          </Button>
+        </div>
+        <Card>
+          <CardHeader>
+            <CardDescription>
+              Tab navigation used for the BizListing edit form sections: Basic Info, Hours, Photos, Contact Details.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4 pt-6">
+            <BizListingTabsDemo />
+          </CardContent>
+        </Card>
+      </section>
+
       {/* Skeletons */}
       <section>
         <h2 className="text-h2 font-bold mb-4">Loading States</h2>
@@ -575,6 +635,30 @@ export function ComponentsPage() {
             <Skeleton className="h-12 w-full" />
             <Skeleton className="h-12 w-3/4" />
             <Skeleton className="h-12 w-1/2" />
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* BizListing Photo Upload */}
+      <section id="bizlisting-photo-upload">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold">BizListing Photo Upload</h2>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => copyCode('<PhotoUpload />', 'bizlisting-photo-upload')}
+          >
+            {copiedSection === 'bizlisting-photo-upload' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+          </Button>
+        </div>
+        <Card>
+          <CardHeader>
+            <CardDescription>
+              Drag-and-drop photo upload surface used in the BizListing form for business photos.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4 pt-6">
+            <PhotoUpload />
           </CardContent>
         </Card>
       </section>
@@ -1334,6 +1418,29 @@ export function ComponentsPage() {
           </Button>
         </div>
       </SidePanel>
+    </div>
+  );
+}
+
+function BizListingTabsDemo() {
+  const [tab, setTab] = useState<'basic' | 'hours' | 'photos' | 'contact'>('basic');
+
+  return (
+    <div className="rounded-lg border border-border overflow-hidden">
+      <Tabs value={tab} onValueChange={(value) => setTab(value as typeof tab)}>
+        <TabList>
+          <Tab value="basic">Basic Info</Tab>
+          <Tab value="hours">Hours</Tab>
+          <Tab value="photos">Photos</Tab>
+          <Tab value="contact">Contact Details</Tab>
+        </TabList>
+      </Tabs>
+      <div className="p-4 bg-muted/40 text-small text-muted-foreground">
+        {tab === 'basic' && 'Fields for business name, category, description, address, and tags.'}
+        {tab === 'hours' && 'Hours scheduler grid with day rows and time inputs.'}
+        {tab === 'photos' && 'Photo upload area for business images.'}
+        {tab === 'contact' && 'Contact fields like phone, website, email, and contact person.'}
+      </div>
     </div>
   );
 }
