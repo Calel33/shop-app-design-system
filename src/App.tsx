@@ -14,6 +14,7 @@ import { ComponentsPage } from '@/pages/ComponentsPage';
 import { ThemeShowcasePage } from '@/pages/ThemeShowcasePage';
 import { AdminDashboardPage } from '@/pages/AdminDashboardPage';
 import { GymListingPage } from '@/pages/GymListingPage';
+import { BizListingPage } from '@/pages/BizListingPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -29,6 +30,8 @@ function App() {
         return <MapViewPage />;
       case 'restaurants':
         return <RestaurantsPage />;
+      case 'biz-listing':
+        return <BizListingPage />;
       case 'owner-dashboard':
         return <OwnerDashboardPage />;
       case 'create-listing':

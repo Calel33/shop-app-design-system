@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 
 type StatusVariant = 'info' | 'warning' | 'success';
 
-interface StatusCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface StatusCardProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
   variant?: StatusVariant;
   title: React.ReactNode;
   children?: React.ReactNode;
