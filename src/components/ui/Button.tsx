@@ -2,7 +2,16 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'destructive' | 'outline' | 'ghost' | 'success' | 'warning' | 'danger';
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'destructive'
+    | 'outline'
+    | 'ghost'
+    | 'success'
+    | 'warning'
+    | 'danger'
+    | 'muted';
   size?: 'sm' | 'md' | 'lg';
   iconOnly?: boolean;
   children: React.ReactNode;
@@ -27,6 +36,7 @@ export function Button({
     success: 'bg-green-100 text-green-700 hover:bg-green-200 dark:bg-green-900/30 dark:text-green-400 dark:hover:bg-green-900/50',
     warning: 'bg-amber-100 text-amber-700 hover:bg-amber-200 dark:bg-amber-900/30 dark:text-amber-400 dark:hover:bg-amber-900/50',
     danger: 'bg-red-100 text-red-700 hover:bg-red-200 dark:bg-red-900/30 dark:text-red-400 dark:hover:bg-red-900/50',
+    muted: 'bg-muted text-muted-foreground hover:bg-muted/80',
   };
 
   const sizes = iconOnly ? {
