@@ -1,0 +1,872 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama Rosa's Italian Kitchen - Local Business Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #0f172a;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 16px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #dc2626;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #dc2626;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 32px;
+            margin-top: 32px;
+        }
+
+        .business-content {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .hero-section {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://storage.googleapis.com/forge-sites/4d0d548975abb5280ed075816ec00e0adddf06426be8d59d476912c4b90b5c9e.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=164061697651-compute%40developer.gserviceaccount.com%2F20251116%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20251116T043234Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&response-access-control-allow-origin=https%3A%2F%2Fforge.moonchild.ai&X-Goog-Signature=90b034b0bebdc05a4f929c801354245d8eeda4137381c27574e0b41b7caa9c38a3a6f59ce9d3d0f84ff79bdd836acea11fe65f1e32f141963e16acda7f8831472cc85f6264fa65fbdeb24db4435f64ee43dd35808216124143e7f5b4de26c12f76abc4be2f7e93f6b784afdc8866e8e9f5523dcf987cbc0863952d1271801e2d5c969eb3145a6ea59613b43e3ee40fe4659293c7f2efe17645433d7bdd813ec9feb6b141861ae8382ad8f38c57f5e844def13a007ff9faa435d6e1d2c7667c83774ec8db7919718b14b3bf3a6d0bffe6f16ed6dbb2602f81c95173981f6b8f75ea20de778fa7200ea8bed9dae12efb66091f3de75c7546925a868bf9c109830f');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 32px;
+        }
+
+        .hero-content {
+            color: white;
+        }
+
+        .restaurant-name {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .restaurant-tagline {
+            font-size: 18px;
+            font-weight: 500;
+            opacity: 0.95;
+        }
+
+        .verification-badge {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            background: rgba(34, 197, 94, 0.95);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .business-info {
+            padding: 32px;
+        }
+
+        .quick-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+            padding: 24px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-icon {
+            width: 48px;
+            height: 48px;
+            background: #dc2626;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .info-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-weight: 500;
+            color: #0f172a;
+        }
+
+        .menu-section {
+            margin-top: 32px;
+        }
+
+        .section-header {
+            padding: 0 32px 24px;
+            border-bottom: 2px solid #fee2e2;
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: #dc2626;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-subtitle {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        .menu-nav {
+            display: flex;
+            gap: 0;
+            margin-bottom: 32px;
+            padding: 0 32px;
+        }
+
+        .menu-tab {
+            padding: 12px 24px;
+            background: transparent;
+            border: none;
+            color: #64748b;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .menu-tab.active {
+            color: #dc2626;
+            border-bottom-color: #dc2626;
+        }
+
+        .menu-content {
+            padding: 0 32px 32px;
+        }
+
+        .menu-category {
+            margin-bottom: 48px;
+        }
+
+        .category-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            color: #dc2626;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-description {
+            color: #64748b;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .menu-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .menu-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 16px;
+            padding: 20px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .item-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .item-name {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #0f172a;
+        }
+
+        .family-favorite {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .item-description {
+            color: #64748b;
+            line-height: 1.5;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .item-price {
+            font-size: 18px;
+            font-weight: 600;
+            color: #dc2626;
+            align-self: flex-start;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .kids-section {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border: 2px solid #f59e0b;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .kids-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 16px;
+        }
+
+        .family-deals {
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border: 2px solid #10b981;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .deals-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #065f46;
+            margin-bottom: 16px;
+        }
+
+        .deal-item {
+            background: white;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .deal-name {
+            font-weight: 500;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .deal-description {
+            font-size: 14px;
+            color: #64748b;
+            font-weight: 400;
+        }
+
+        .deal-price {
+            color: #10b981;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .sidebar-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .card-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #64748b;
+            font-weight: 400;
+        }
+
+        .contact-icon {
+            width: 20px;
+            text-align: center;
+            color: #dc2626;
+        }
+
+        .hours-grid {
+            display: grid;
+            gap: 8px;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-weight: 400;
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .day {
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .time {
+            color: #64748b;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background: #dc2626;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #b91c1c;
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            color: #374151;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        .celebration-packages {
+            background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+            border: 2px solid #ec4899;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .celebration-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #be185d;
+            margin-bottom: 16px;
+        }
+
+        .package-list {
+            list-style: none;
+        }
+
+        .package-item {
+            padding: 8px 0;
+            color: #64748b;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .package-icon {
+            color: #ec4899;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">LocalConnect</div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Add Business</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <main class="business-content">
+                <div class="hero-section">
+                    <div class="verification-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Verified Business
+                    </div>
+                    <div class="hero-content">
+                        <h1 class="restaurant-name">Mama Rosa's Italian Kitchen</h1>
+                        <p class="restaurant-tagline">Authentic Family Italian Recipes Since 1952</p>
+                    </div>
+                </div>
+
+                <div class="business-info">
+                    <div class="quick-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="info-title">Rating</div>
+                            <div class="info-value">4.8/5 (324 reviews)</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="info-title">Family Owned</div>
+                            <div class="info-value">3rd Generation</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="info-title">Cuisine</div>
+                            <div class="info-value">Authentic Italian</div>
+                        </div>
+                    </div>
+
+                    <p style="color: #64748b; margin-bottom: 32px; font-weight: 400; line-height: 1.6;">
+                        Welcome to Mama Rosa's, where every dish tells the story of our Italian heritage. Using recipes passed down through three generations, we create authentic Italian cuisine with the freshest ingredients and lots of love. Our warm, family-friendly atmosphere makes every guest feel like part of the famiglia.
+                    </p>
+                </div>
+
+                <div class="menu-section">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-pizza-slice"></i>
+                            Our Menu
+                        </h2>
+                        <p class="section-subtitle">Made fresh daily with authentic Italian recipes</p>
+                    </div>
+
+                    <div class="menu-nav">
+                        <button class="menu-tab active">Antipasti</button>
+                        <button class="menu-tab">Pasta</button>
+                        <button class="menu-tab">Pizza</button>
+                        <button class="menu-tab">Dolci</button>
+                        <button class="menu-tab">Kids Menu</button>
+                    </div>
+
+                    <div class="menu-content">
+                        <div class="kids-section">
+                            <h3 class="kids-title">
+                                <i class="fas fa-child"></i>
+                                Little Bambinos Menu (Ages 12 &amp; Under)
+                            </h3>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Spaghetti &amp; Meatballs</span>
+                                        </div>
+                                        <div class="item-description">Kid-sized portion of our famous meatballs with spaghetti and marinara sauce</div>
+                                    </div>
+                                    <div class="item-price">$8.95</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Cheese Pizza</span>
+                                        </div>
+                                        <div class="item-description">Personal 8" pizza with mozzarella cheese and tomato sauce</div>
+                                    </div>
+                                    <div class="item-price">$7.95</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Chicken Fingers</span>
+                                        </div>
+                                        <div class="item-description">Breaded chicken tenders served with fries and honey mustard</div>
+                                    </div>
+                                    <div class="item-price">$9.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="family-deals">
+                            <h3 class="deals-title">
+                                <i class="fas fa-heart"></i>
+                                Family Meal Deals
+                            </h3>
+                            <div class="deal-item">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div class="deal-name">Family Pasta Night</div>
+                                        <div class="deal-description">Choice of 2 pasta dishes, family salad, garlic bread (serves 4-6)</div>
+                                    </div>
+                                    <div class="deal-price">$45.99</div>
+                                </div>
+                            </div>
+                            <div class="deal-item">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div class="deal-name">Pizza Family Pack</div>
+                                        <div class="deal-description">2 large pizzas, family salad, 2-liter soda (serves 4-6)</div>
+                                    </div>
+                                    <div class="deal-price">$52.99</div>
+                                </div>
+                            </div>
+                            <div class="deal-item">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div class="deal-name">Sunday Dinner Special</div>
+                                        <div class="deal-description">Lasagna, chicken parmigiana, family salad, bread, dessert (serves 6)</div>
+                                    </div>
+                                    <div class="deal-price">$68.99</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-category">
+                            <h3 class="category-title">
+                                <i class="fas fa-leaf"></i>
+                                Antipasti
+                            </h3>
+                            <p class="category-description">Start your meal with our traditional Italian appetizers</p>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Antipasto della Casa</span>
+                                            <span class="family-favorite">Family Favorite</span>
+                                        </div>
+                                        <div class="item-description">Imported meats, cheeses, roasted peppers, olives, and marinated vegetables</div>
+                                    </div>
+                                    <div class="item-price">$16.95</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Bruschetta Trio</span>
+                                        </div>
+                                        <div class="item-description">Traditional tomato basil, ricotta honey, and roasted pepper toppings</div>
+                                    </div>
+                                    <div class="item-price">$12.95</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Calamari Fritti</span>
+                                        </div>
+                                        <div class="item-description">Fresh squid rings lightly breaded and fried, served with marinara sauce</div>
+                                    </div>
+                                    <div class="item-price">$14.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-category">
+                            <h3 class="category-title">
+                                <i class="fas fa-wheat-awn"></i>
+                                Pasta
+                            </h3>
+                            <p class="category-description">House-made pasta with our signature sauces</p>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Spaghetti alla Carbonara</span>
+                                            <span class="family-favorite">Family Favorite</span>
+                                        </div>
+                                        <div class="item-description">Fresh spaghetti with pancetta, eggs, Romano cheese, and cracked black pepper</div>
+                                    </div>
+                                    <div class="item-price">$18.95</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Lasagna della Nonna</span>
+                                        </div>
+                                        <div class="item-description">Layers of pasta, meat sauce, ricotta, mozzarella, and parmesan - Grandma's recipe</div>
+                                    </div>
+                                    <div class="item-price">$21.95</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <div class="item-header">
+                                            <span class="item-name">Fettuccine Alfredo</span>
+                                        </div>
+                                        <div class="item-description">Fresh fettuccine with our rich, creamy parmesan sauce. Add chicken +$5</div>
+                                    </div>
+                                    <div class="item-price">$17.95</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="celebration-packages">
+                            <h3 class="celebration-title">
+                                <i class="fas fa-birthday-cake"></i>
+                                Celebration Packages
+                            </h3>
+                            <ul class="package-list">
+                                <li class="package-item">
+                                    <i class="fas fa-gift package-icon"></i>
+                                    Birthday parties with reserved seating and complimentary cake
+                                </li>
+                                <li class="package-item">
+                                    <i class="fas fa-heart package-icon"></i>
+                                    Anniversary dinners with romantic table setup
+                                </li>
+                                <li class="package-item">
+                                    <i class="fas fa-graduation-cap package-icon"></i>
+                                    Graduation celebrations with group menu options
+                                </li>
+                                <li class="package-item">
+                                    <i class="fas fa-users package-icon"></i>
+                                    Private dining room available for groups of 20+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-phone"></i>
+                        Contact Information
+                    </h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>1234 Little Italy Street, Boston, MA 02109</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe contact-icon"></i>
+                            <span>www.mamarosas.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@mamarosas.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-clock"></i>
+                        Hours of Operation
+                    </h3>
+                    <div class="hours-grid">
+                        <div class="hours-row">
+                            <span class="day">Monday</span>
+                            <span class="time">4:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="day">Tuesday</span>
+                            <span class="time">4:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="day">Wednesday</span>
+                            <span class="time">4:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="day">Thursday</span>
+                            <span class="time">4:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="day">Friday</span>
+                            <span class="time">4:00 PM - 11:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="day">Saturday</span>
+                            <span class="time">12:00 PM - 11:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="day">Sunday</span>
+                            <span class="time">12:00 PM - 9:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-utensils"></i>
+                        Quick Actions
+                    </h3>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Call for Reservations
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-shopping-bag"></i>
+                            Order Takeout
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-car"></i>
+                            Delivery Options
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-directions"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-info-circle"></i>
+                        Good to Know
+                    </h3>
+                    <div style="color: #64748b; font-size: 14px; line-height: 1.6; font-weight: 400;">
+                        <p style="margin-bottom: 12px;"><strong>Parking:</strong> Free valet parking available</p>
+                        <p style="margin-bottom: 12px;"><strong>Reservations:</strong> Recommended for dinner</p>
+                        <p style="margin-bottom: 12px;"><strong>Large Groups:</strong> Private dining room seats 30</p>
+                        <p style="margin-bottom: 12px;"><strong>Payment:</strong> Cash, all major credit cards</p>
+                        <p><strong>Special Diets:</strong> Gluten-free pasta available</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+</body></html>
