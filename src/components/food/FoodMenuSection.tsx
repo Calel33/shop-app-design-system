@@ -1,6 +1,5 @@
 import React from 'react';
 import { Tabs, TabList, Tab } from '@/components/ui/Tabs';
-import { cn } from '@/lib/utils';
 
 export interface FoodMenuItem {
   id: string;
