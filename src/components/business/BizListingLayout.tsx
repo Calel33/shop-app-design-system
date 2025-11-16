@@ -6,9 +6,19 @@ import { StatusCard } from '@/components/ui/StatusCard';
 import { BizListingPreviewCard } from '@/components/business/BizListingPreviewCard';
 import { Clock3 } from 'lucide-react';
 
-interface BizListingLayoutProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface BizListingLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
+  lastUpdated?: Date;
+  version?: number;
+}
 
-export function BizListingLayout({ className, ...props }: BizListingLayoutProps) {
+export function BizListingLayout({ className, lastUpdated, version, ...props }: BizListingLayoutProps) {
+  const displayDate = (lastUpdated ?? new Date()).toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+  const displayVersion = version ?? 1;
+
   return (
     <div
       className={cn(
@@ -40,7 +50,9 @@ export function BizListingLayout({ className, ...props }: BizListingLayoutProps)
 
           <div className="flex items-center justify-between border-t border-border px-6 py-3 text-small text-muted-foreground">
             <div className="flex items-center gap-2">
-              <span>Last updated: Dec 15, 2024 • Version 3</span>
+              <span>
+                Last updated: {displayDate} • Version {displayVersion}
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <Button variant="muted" size="sm">
