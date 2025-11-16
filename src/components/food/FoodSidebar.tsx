@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 
@@ -29,7 +28,7 @@ interface FoodSidebarProps {
 export function FoodSidebar({ contact, hours, actions, notes }: FoodSidebarProps) {
   return (
     <aside className="flex flex-col gap-4">
-      <Card className="space-y-3">
+      <Card className="space-y-3 p-4 md:p-5">
         <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground">
           <span className="text-base">☎</span>
           <span>Contact information</span>
@@ -42,7 +41,7 @@ export function FoodSidebar({ contact, hours, actions, notes }: FoodSidebarProps
         </div>
       </Card>
 
-      <Card className="space-y-3">
+      <Card className="space-y-3 p-4 md:p-5">
         <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground">
           <span className="text-base">⏰</span>
           <span>Hours of operation</span>
@@ -57,7 +56,7 @@ export function FoodSidebar({ contact, hours, actions, notes }: FoodSidebarProps
         </div>
       </Card>
 
-      <Card className="space-y-3">
+      <Card className="space-y-3 p-4 md:p-5">
         <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground">
           <span className="text-base">🍽</span>
           <span>Quick actions</span>
@@ -71,7 +70,7 @@ export function FoodSidebar({ contact, hours, actions, notes }: FoodSidebarProps
         </div>
       </Card>
 
-      <Card className="space-y-3">
+      <Card className="space-y-3 p-4 md:p-5">
         <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground">
           <span className="text-base">ℹ</span>
           <span>Good to know</span>

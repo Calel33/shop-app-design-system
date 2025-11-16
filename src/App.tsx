@@ -10,6 +10,7 @@ import { CreateListingPage } from '@/pages/CreateListingPage';
 import { AdminQueuePage } from '@/pages/AdminQueuePage';
 import { AdminCategoriesPage } from '@/pages/AdminCategoriesPage';
 import { RestaurantsPage } from '@/pages/RestaurantsPage';
+import { FoodListingPage } from '@/pages/FoodListingPage';
 import { ComponentsPage } from '@/pages/ComponentsPage';
 import { ThemeShowcasePage } from '@/pages/ThemeShowcasePage';
 import { AdminDashboardPage } from '@/pages/AdminDashboardPage';
@@ -30,6 +31,8 @@ function App() {
         return <MapViewPage />;
       case 'restaurants':
         return <RestaurantsPage />;
+      case 'food-listing':
+        return <FoodListingPage />;
       case 'biz-listing':
         return <BizListingPage />;
       case 'owner-dashboard':

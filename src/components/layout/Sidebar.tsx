@@ -26,6 +26,7 @@ const navigation = [
   { id: 'search', label: 'Search', icon: Search, section: 'Public' },
   { id: 'map', label: 'Map View', icon: Map, section: 'Public' },
   { id: 'restaurants', label: 'Restaurants', icon: UtensilsCrossed, section: 'HTML Mockup' },
+  { id: 'food-listing', label: "Food Listing (Full)", icon: UtensilsCrossed, section: 'HTML Mockup' },
   { id: 'gym-listing', label: 'Gym Listing', icon: Dumbbell, section: 'HTML Mockup' },
   { id: 'biz-listing', label: 'Biz Listing', icon: Store, section: 'HTML Mockup' },
   { id: 'admin-dashboard', label: 'Admin Dashboard', icon: Users, section: 'HTML Mockup' },

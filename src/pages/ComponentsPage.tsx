@@ -29,6 +29,10 @@ import { LastUpdatedStamp } from '@/components/business/LastUpdatedStamp';
 import { Tabs, TabList, Tab } from '@/components/ui/Tabs';
 import { PhotoUpload } from '@/components/ui/PhotoUpload';
 import { StatusCard } from '@/components/ui/StatusCard';
+import { InfoStat } from '@/components/ui/InfoStat';
+import { FoodHero } from '@/components/food/FoodHero';
+import { FoodMenuSection } from '@/components/food/FoodMenuSection';
+import { FoodSidebar } from '@/components/food/FoodSidebar';
 
 export function ComponentsPage() {
   const [inputValue, setInputValue] = useState('');
@@ -37,6 +41,7 @@ export function ComponentsPage() {
   const [copiedSection, setCopiedSection] = useState<string | null>(null);
   const [sidePanelOpen, setSidePanelOpen] = useState(false);
   const [selectedBusinesses, setSelectedBusinesses] = useState<Set<string>>(new Set());
+  const [foodTab, setFoodTab] = useState('antipasti');
 
   const copyCode = (code: string, section: string) => {
     navigator.clipboard.writeText(code);
@@ -93,9 +98,91 @@ export function ComponentsPage() {
             <a href="#bizlisting-tabs" className="text-primary hover:underline">BizListing Tabs</a>
             <a href="#bizlisting-photo-upload" className="text-primary hover:underline">BizListing Photo Upload</a>
             <a href="#bizlisting-status-card" className="text-primary hover:underline">BizListing Status Card</a>
+            <a href="#food-hero" className="text-primary hover:underline">Food Listing Hero</a>
+            <a href="#food-menu" className="text-primary hover:underline">Food Listing Menu</a>
           </div>
         </CardContent>
       </Card>
+
+      {/* Food Listing Hero */}
+      <section id="food-hero">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold">Food Listing Hero</h2>
+        </div>
+        <Card>
+          <CardContent className="pt-6 space-y-6">
+            <FoodHero
+              name="Mama Rosa's Italian Kitchen"
+              tagline="Authentic family Italian recipes since 1952."
+              imageUrl="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1200&auto=format&fit=crop&q=80"
+            />
+            <div className="grid gap-4 md:grid-cols-3">
+              <InfoStat icon="★" label="Rating" value="4.8/5 · 324 reviews" />
+              <InfoStat icon="👨‍👩‍👧‍👦" label="Family Owned" value="3rd generation" />
+              <InfoStat icon="🍝" label="Cuisine" value="Authentic Italian" />
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Food Listing Menu + Sidebar */}
+      <section id="food-menu">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-h2 font-bold">Food Listing Layout</h2>
+        </div>
+        <Card>
+          <CardContent className="pt-6">
+            <div className="grid gap-6 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]">
+              <div className="space-y-4">
+                <FoodMenuSection
+                  title="Our menu"
+                  subtitle="Made fresh daily with authentic Italian recipes."
+                  tabs={[
+                    { id: 'antipasti', label: 'Antipasti' },
+                    { id: 'pasta', label: 'Pasta' },
+                    { id: 'kids', label: 'Kids Menu' },
+                  ]}
+                  activeTab={foodTab}
+                  onTabChange={setFoodTab}
+                  categories={[
+                    {
+                      id: 'antipasti',
+                      title: 'Antipasti',
+                      description: 'Traditional Italian appetizers to share.',
+                      items: [
+                        {
+                          id: 'antipasto-casa',
+                          name: 'Antipasto della Casa',
+                          description: 'Imported meats, cheeses, roasted peppers, and olives.',
+                          price: '$16.95',
+                          isFamilyFavorite: true,
+                        },
+                      ],
+                    },
+                  ]}
+                />
+              </div>
+              <FoodSidebar
+                contact={{
+                  phone: '(555) 123-4567',
+                  address: '1234 Little Italy Street, Boston, MA 02109',
+                  website: 'www.mamarosas.com',
+                  email: 'info@mamarosas.com',
+                }}
+                hours={[
+                  { day: 'Friday', time: '4:00 PM – 11:00 PM' },
+                  { day: 'Saturday', time: '12:00 PM – 11:00 PM' },
+                ]}
+                actions={[
+                  { id: 'call', label: 'Call for reservations' },
+                  { id: 'takeout', label: 'Order takeout' },
+                ]}
+                notes={['Gluten-free pasta available upon request.']}
+              />
+            </div>
+          </CardContent>
+        </Card>
+      </section>
 
       {/* Theme Toggle */}
       <section id="theme-toggle">
