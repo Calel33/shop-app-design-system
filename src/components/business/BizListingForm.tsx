@@ -11,10 +11,15 @@ type BizListingTab = 'basic' | 'hours' | 'photos' | 'contact';
 
 export function BizListingForm({ className, ...props }: BizListingFormProps) {
   const [activeTab, setActiveTab] = useState<BizListingTab>('basic');
+  const handleTabChange = (value: string) => {
+    if (value === 'basic' || value === 'hours' || value === 'photos' || value === 'contact') {
+      setActiveTab(value);
+    }
+  };
 
   return (
     <Card className={cn('h-full flex flex-col rounded-none border-0 border-r border-border', className)} {...props}>
-      <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as BizListingTab)}>
+      <Tabs value={activeTab} onValueChange={handleTabChange}>
         <TabList>
           <Tab value="basic">Basic Info</Tab>
           <Tab value="hours">Hours</Tab>
