@@ -3,6 +3,7 @@ import { relative } from 'path';
 import { Project } from 'ts-morph';
 import type { RawComponentMeta } from '../types/ComponentMeta';
 import type { ComponentRoot } from '../config';
+import { extractJsDocMetadata } from '../normalizer/extractJsDocMetadata';
 
 /**
  * Scans component directories for exported React components
@@ -72,16 +73,22 @@ export class ComponentScanner {
           if (this.isLikelyReactComponent(declaration, exportName)) {
             const relativeFilePath = relative(projectRoot, filePath);
 
-            components.push({
+            const raw: RawComponentMeta = {
               name: exportName,
               exportName,
               filePath: relativeFilePath.replace(/\\/g, '/'), // Normalize to forward slashes
               rootId,
-              category: undefined, // Will be set in normalization diff
+              category: undefined,
               tags: [],
               status: 'stable', // Default status
               variants: undefined,
-            });
+            };
+
+            // Extract JSDoc metadata
+            const jsDocMeta = extractJsDocMetadata(sourceFile, exportName);
+            const withMetadata = { ...raw, ...jsDocMeta };
+
+            components.push(withMetadata);
           }
         });
       });

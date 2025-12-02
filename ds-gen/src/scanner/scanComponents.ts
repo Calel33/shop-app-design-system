@@ -1,18 +1,19 @@
 import { writeFileSync } from 'fs';
 import { loadConfig } from '../config';
 import { ComponentScanner } from './ComponentScanner';
-import type { RawComponentMeta } from '../types/ComponentMeta';
+import { ComponentNormalizer } from '../normalizer/ComponentNormalizer';
+import type { ComponentMeta } from '../types/ComponentMeta';
 
 /**
  * Main entry point for component scanning
- * Scans all component roots and writes raw index to config/components.index.json
+ * Scans all component roots, normalizes metadata, and writes normalized index
  */
 export async function scanComponents(
   projectRoot: string = process.cwd(),
   options?: {
     rootId?: string; // Optional: scan only a specific root
   }
-): Promise<RawComponentMeta[]> {
+): Promise<ComponentMeta[]> {
   const config = loadConfig(projectRoot);
   const scanner = new ComponentScanner();
 
@@ -30,14 +31,30 @@ export async function scanComponents(
 
   console.log(`Scanning component roots: ${roots.map((r) => r.id).join(', ')}`);
 
-  // Scan all roots
-  const components = await scanner.scanRoots(roots, projectRoot);
+  // Scan all roots (produces raw metadata)
+  const rawComponents = await scanner.scanRoots(roots, projectRoot);
 
-  console.log(`Found ${components.length} components`);
+  console.log(`Found ${rawComponents.length} components`);
 
-  // Write raw index
-  writeFileSync(config.indexes.components, JSON.stringify(components, null, 2));
-  console.log(`Wrote ${components.length} components to ${config.indexes.components}`);
+  // Default categorization rules
+  const categorizationRules = {
+    categoryByDir: {
+      'src/components/ui': 'primitive',
+      'src/components/business': 'domain-business',
+      'src/components/layout': 'layout',
+      'more-components/ui2': 'extended',
+    },
+  };
 
-  return components;
+  // Normalize components
+  const normalizer = new ComponentNormalizer(categorizationRules);
+  const normalizedComponents = normalizer.normalize(rawComponents);
+
+  console.log(`Normalized ${normalizedComponents.length} components`);
+
+  // Write normalized index
+  writeFileSync(config.indexes.components, JSON.stringify(normalizedComponents, null, 2));
+  console.log(`Wrote ${normalizedComponents.length} components to ${config.indexes.components}`);
+
+  return normalizedComponents;
 }
