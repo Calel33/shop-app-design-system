@@ -1,0 +1,34 @@
+{
+  "paths": {
+    "componentRoots": [
+      {
+        "id": "core-ui",
+        "path": "./src/components/ui"
+      },
+      {
+        "id": "biz-ui",
+        "path": "./src/components/business"
+      },
+      {
+        "id": "layout",
+        "path": "./src/components/layout"
+      },
+      {
+        "id": "ui2",
+        "path": "./more-components/ui2"
+      }
+    ],
+    "fontsRoot": "./assets/fonts",
+    "themesRoot": "./config/themes"
+  },
+  "indexes": {
+    "components": "./config/components.index.json",
+    "fonts": "./config/fonts.index.json",
+    "themes": "./config/themes.index.json"
+  },
+  "defaults": {
+    "fontSans": "anek-latin",
+    "fontHeading": "anek-latin",
+    "themes": ["light", "dark"]
+  }
+}
