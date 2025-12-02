@@ -22,6 +22,10 @@ export { ThemeManager } from './themes/ThemeManager';
 export { ThemeNormalizer } from './themes/ThemeNormalizer';
 export { generateThemeCss, generateThemeTokensTs } from './themes/themeCssGenerator';
 
+// Generators
+export { generateDesignSystem } from './generators/generateDesignSystem';
+export { DesignSystemGenerator } from './generators/DesignSystemGenerator';
+
 // Config
 export { loadConfig } from './config';
 
@@ -30,3 +34,4 @@ export type { DesignSystemConfig, ComponentRoot } from './config';
 export type { RawComponentMeta, ComponentMeta } from './types/ComponentMeta';
 export type { FontMeta, FontFileMeta } from './types/FontMeta';
 export type { Theme, ThemeTokens } from './types/Theme';
+export type { GenerateOptions } from './types/GenerateOptions';
