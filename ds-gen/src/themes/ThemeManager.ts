@@ -1,8 +1,8 @@
 import { readFileSync, readdirSync, existsSync, statSync } from 'fs';
 import { resolve, extname } from 'path';
 import { paramCase } from 'param-case';
-import { Theme } from '../types/Theme';
-import { ThemeNormalizer } from './ThemeNormalizer';
+import { Theme } from '../types/Theme.js';
+import { ThemeNormalizer } from './ThemeNormalizer.js';
 
 /**
  * ThemeManager scans and normalizes theme files

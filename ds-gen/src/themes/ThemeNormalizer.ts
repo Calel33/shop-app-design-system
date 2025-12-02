@@ -1,4 +1,4 @@
-import { ThemeTokens } from '../types/Theme';
+import { ThemeTokens } from '../types/Theme.js';
 
 /**
  * ThemeNormalizer handles multi-format theme ingestion and normalization

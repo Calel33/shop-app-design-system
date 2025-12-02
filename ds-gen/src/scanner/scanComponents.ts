@@ -1,8 +1,9 @@
 import { writeFileSync } from 'fs';
-import { loadConfig } from '../config';
-import { ComponentScanner } from './ComponentScanner';
-import { ComponentNormalizer } from '../normalizer/ComponentNormalizer';
-import type { ComponentMeta } from '../types/ComponentMeta';
+import { resolve, dirname } from 'path';
+import { loadConfig } from '../config.js';
+import { ComponentScanner } from './ComponentScanner.js';
+import { ComponentNormalizer } from '../normalizer/ComponentNormalizer.js';
+import type { ComponentMeta } from '../types/ComponentMeta.js';
 
 /**
  * Main entry point for component scanning
@@ -14,7 +15,19 @@ export async function scanComponents(
     rootId?: string; // Optional: scan only a specific root
   }
 ): Promise<ComponentMeta[]> {
-  const config = loadConfig(projectRoot);
+  // Determine actual project root (handle both config path and project root as input)
+  let configPath: string;
+  let actualProjectRoot: string;
+  
+  if (projectRoot.endsWith('.json')) {
+    configPath = resolve(projectRoot);
+    actualProjectRoot = dirname(dirname(configPath));
+  } else {
+    actualProjectRoot = projectRoot;
+    configPath = resolve(actualProjectRoot, 'config', 'design-system.config.json');
+  }
+
+  const config = loadConfig(configPath);
   const scanner = new ComponentScanner();
 
   // Filter roots if specific root requested
@@ -32,7 +45,7 @@ export async function scanComponents(
   console.log(`Scanning component roots: ${roots.map((r) => r.id).join(', ')}`);
 
   // Scan all roots (produces raw metadata)
-  const rawComponents = await scanner.scanRoots(roots, projectRoot);
+  const rawComponents = await scanner.scanRoots(roots, actualProjectRoot);
 
   console.log(`Found ${rawComponents.length} components`);
 

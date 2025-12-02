@@ -1,8 +1,8 @@
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname } from 'path';
-import { loadConfig } from '../config';
-import { FontManager } from './FontManager';
-import { generateFontFaceCss, generateTailwindFontExtension } from './fontCssGenerator';
+import { loadConfig } from '../config.js';
+import { FontManager } from './FontManager.js';
+import { generateFontFaceCss, generateTailwindFontExtension } from './fontCssGenerator.js';
 
 /**
  * Build fonts index and generate CSS/Tailwind outputs

@@ -1,9 +1,9 @@
-import { globSync } from 'fast-glob';
+import fg from 'fast-glob';
 import { relative } from 'path';
 import { Project } from 'ts-morph';
-import type { RawComponentMeta } from '../types/ComponentMeta';
-import type { ComponentRoot } from '../config';
-import { extractJsDocMetadata } from '../normalizer/extractJsDocMetadata';
+import type { RawComponentMeta } from '../types/ComponentMeta.js';
+import type { ComponentRoot } from '../config.js';
+import { extractJsDocMetadata } from '../normalizer/extractJsDocMetadata.js';
 
 /**
  * Scans component directories for exported React components
@@ -40,8 +40,9 @@ export class ComponentScanner {
   private async scanRoot(root: ComponentRoot, projectRoot: string): Promise<RawComponentMeta[]> {
     const components: RawComponentMeta[] = [];
 
-    // Glob for all .tsx files
-    const files = globSync(`${root.path}/**/*.tsx`, {
+    // Glob for all .tsx files (normalize path to forward slashes for cross-platform compatibility)
+    const normalizedPath = root.path.replace(/\\/g, '/');
+    const files = fg.globSync(`${normalizedPath}/**/*.tsx`, {
       ignore: ['**/node_modules/**', '**/*.test.tsx', '**/*.spec.tsx'],
     });
 

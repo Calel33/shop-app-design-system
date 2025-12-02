@@ -1,4 +1,4 @@
-import { Theme } from '../types/Theme';
+import { Theme } from '../types/Theme.js';
 
 /**
  * Generate CSS for themes with CSS variable blocks

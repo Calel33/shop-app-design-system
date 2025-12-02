@@ -1,5 +1,5 @@
 import { paramCase } from 'param-case';
-import type { RawComponentMeta, ComponentMeta } from '../types/ComponentMeta';
+import type { RawComponentMeta, ComponentMeta } from '../types/ComponentMeta.js';
 
 /**
  * Categorization rules from config

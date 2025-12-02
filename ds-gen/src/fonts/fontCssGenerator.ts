@@ -1,4 +1,4 @@
-import type { FontMeta } from '../types/FontMeta';
+import type { FontMeta } from '../types/FontMeta.js';
 
 /**
  * Generate @font-face CSS rules from FontMeta array

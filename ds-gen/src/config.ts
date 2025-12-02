@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import { resolve } from 'path';
+import { resolve, dirname } from 'path';
 
 export interface ComponentRoot {
   id: string;
@@ -27,24 +27,37 @@ export interface DesignSystemConfig {
 /**
  * Load design system config from config/design-system.config.json
  * Resolves all relative paths to absolute paths
+ * @param projectRoot - Project root directory or path to config file
  */
 export function loadConfig(projectRoot: string = process.cwd()): DesignSystemConfig {
-  const configPath = resolve(projectRoot, 'config', 'design-system.config.json');
+  let configPath: string;
+  let baseDir: string;
+
+  // If projectRoot ends with .json, treat it as the config file path
+  if (projectRoot.endsWith('.json')) {
+    configPath = resolve(projectRoot);
+    baseDir = dirname(dirname(configPath));
+  } else {
+    // Otherwise treat it as the project root
+    configPath = resolve(projectRoot, 'config', 'design-system.config.json');
+    baseDir = projectRoot;
+  }
+
   const configData = JSON.parse(readFileSync(configPath, 'utf-8')) as DesignSystemConfig;
 
   return {
     paths: {
       componentRoots: configData.paths.componentRoots.map((root) => ({
         id: root.id,
-        path: resolve(projectRoot, root.path),
+        path: resolve(baseDir, root.path),
       })),
-      fontsRoot: resolve(projectRoot, configData.paths.fontsRoot),
-      themesRoot: resolve(projectRoot, configData.paths.themesRoot),
+      fontsRoot: resolve(baseDir, configData.paths.fontsRoot),
+      themesRoot: resolve(baseDir, configData.paths.themesRoot),
     },
     indexes: {
-      components: resolve(projectRoot, configData.indexes.components),
-      fonts: resolve(projectRoot, configData.indexes.fonts),
-      themes: resolve(projectRoot, configData.indexes.themes),
+      components: resolve(baseDir, configData.indexes.components),
+      fonts: resolve(baseDir, configData.indexes.fonts),
+      themes: resolve(baseDir, configData.indexes.themes),
     },
     defaults: configData.defaults,
   };
