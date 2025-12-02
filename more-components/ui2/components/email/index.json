@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/email/index.json",
+  "meta": {
+    "namespace": "email",
+    "description": "",
+    "location": "design-system/components/ui2/components/email",
+    "componentCount": 12
+  },
+  "components": {
+    "AttachmentZone": {
+      "file": "components/email/AttachmentZone.tsx"
+    },
+    "AutoSaveIndicator": {
+      "file": "components/email/AutoSaveIndicator.tsx"
+    },
+    "ComposeForm": {
+      "file": "components/email/ComposeForm.tsx"
+    },
+    "ComposeHeader": {
+      "file": "components/email/ComposeHeader.tsx"
+    },
+    "ComposeSidebar": {
+      "file": "components/email/ComposeSidebar.tsx"
+    },
+    "ContactQuickAdd": {
+      "file": "components/email/ContactQuickAdd.tsx"
+    },
+    "EmailCompose": {
+      "file": "components/email/EmailCompose.tsx"
+    },
+    "FormatToolbar": {
+      "file": "components/email/FormatToolbar.tsx"
+    },
+    "index": {
+      "file": "components/email/index.ts"
+    },
+    "RecipientInput": {
+      "file": "components/email/RecipientInput.tsx"
+    },
+    "TemplateSelector": {
+      "file": "components/email/TemplateSelector.tsx"
+    },
+    "types": {
+      "file": "components/email/types.ts"
+    }
+  }
+}

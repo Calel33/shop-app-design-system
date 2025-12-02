@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/medical.hooks/index.json",
+  "meta": {
+    "namespace": "medical.hooks",
+    "description": "",
+    "location": "design-system/components/ui2/components/medical/hooks",
+    "componentCount": 1
+  },
+  "components": {
+    "useScrollAnimation": {
+      "file": "components/medical/hooks/useScrollAnimation.ts"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/business/index.json",
+  "meta": {
+    "namespace": "business",
+    "description": "",
+    "location": "design-system/components/ui2/components/business",
+    "componentCount": 8
+  },
+  "components": {
+    "BusinessHero": {
+      "file": "components/business/BusinessHero.tsx"
+    },
+    "BusinessListing": {
+      "file": "components/business/BusinessListing.tsx"
+    },
+    "HeaderNav": {
+      "file": "components/business/HeaderNav.tsx"
+    },
+    "index": {
+      "file": "components/business/index.ts"
+    },
+    "LoyaltyBanner": {
+      "file": "components/business/LoyaltyBanner.tsx"
+    },
+    "MenuCategoryList": {
+      "file": "components/business/MenuCategoryList.tsx"
+    },
+    "MenuTabs": {
+      "file": "components/business/MenuTabs.tsx"
+    },
+    "NutritionLegend": {
+      "file": "components/business/NutritionLegend.tsx"
+    }
+  }
+}

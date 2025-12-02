@@ -1,0 +1,6 @@
+export { CarDetailGallery } from './CarDetailGallery'
+export { VehicleGallery } from './VehicleGallery'
+export { VehicleSpecs } from './VehicleSpecs'
+export { PriceBreakdown } from './PriceBreakdown'
+export { ContactDealer } from './ContactDealer'
+export type * from '../types/automotive.types'

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/automotive/index.json",
+  "meta": {
+    "namespace": "automotive",
+    "description": "",
+    "location": "design-system/components/ui2/components/automotive",
+    "componentCount": 6
+  },
+  "components": {
+    "CarDetailGallery": {
+      "file": "components/automotive/CarDetailGallery.tsx"
+    },
+    "ContactDealer": {
+      "file": "components/automotive/ContactDealer.tsx"
+    },
+    "index": {
+      "file": "components/automotive/index.ts"
+    },
+    "PriceBreakdown": {
+      "file": "components/automotive/PriceBreakdown.tsx"
+    },
+    "VehicleGallery": {
+      "file": "components/automotive/VehicleGallery.tsx"
+    },
+    "VehicleSpecs": {
+      "file": "components/automotive/VehicleSpecs.tsx"
+    }
+  }
+}

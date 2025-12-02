@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/directory.types/index.json",
+  "meta": {
+    "namespace": "directory.types",
+    "description": "",
+    "location": "design-system/components/ui2/components/directory/types",
+    "componentCount": 1
+  },
+  "components": {
+    "directory.types": {
+      "file": "components/directory/types/directory.types.ts"
+    }
+  }
+}

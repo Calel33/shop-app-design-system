@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/product/index.json",
+  "meta": {
+    "namespace": "product",
+    "description": "",
+    "location": "design-system/components/ui2/components/product",
+    "componentCount": 5
+  },
+  "components": {
+    "CertificationGrid": {
+      "file": "components/product/CertificationGrid.tsx"
+    },
+    "DiagramWithNodes": {
+      "file": "components/product/DiagramWithNodes.tsx"
+    },
+    "index": {
+      "file": "components/product/index.ts"
+    },
+    "ProductFeatureTabs": {
+      "file": "components/product/ProductFeatureTabs.tsx"
+    },
+    "SpecList": {
+      "file": "components/product/SpecList.tsx"
+    }
+  }
+}

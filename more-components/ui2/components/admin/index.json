@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/admin/index.json",
+  "meta": {
+    "namespace": "admin",
+    "description": "",
+    "location": "design-system/components/ui2/components/admin",
+    "componentCount": 25
+  },
+  "components": {
+    "ActivityFeed": {
+      "file": "components/admin/ActivityFeed.tsx"
+    },
+    "AdminDashboard": {
+      "file": "components/admin/AdminDashboard.tsx"
+    },
+    "AdminHeader": {
+      "file": "components/admin/AdminHeader.tsx"
+    },
+    "AdminListingFilters": {
+      "file": "components/admin/AdminListingFilters.tsx"
+    },
+    "AdminListingHeader": {
+      "file": "components/admin/AdminListingHeader.tsx"
+    },
+    "AdminListingLayout": {
+      "file": "components/admin/AdminListingLayout.tsx"
+    },
+    "AdminListingSidebar": {
+      "file": "components/admin/AdminListingSidebar.tsx"
+    },
+    "AdminSidebar": {
+      "file": "components/admin/AdminSidebar.tsx"
+    },
+    "BulkToolbar": {
+      "file": "components/admin/BulkToolbar.tsx"
+    },
+    "BusinessApprovalCard": {
+      "file": "components/admin/BusinessApprovalCard.tsx"
+    },
+    "BusinessApprovalItem": {
+      "file": "components/admin/BusinessApprovalItem.tsx"
+    },
+    "BusinessApprovalQueue": {
+      "file": "components/admin/BusinessApprovalQueue.tsx"
+    },
+    "BusinessCardGrid": {
+      "file": "components/admin/BusinessCardGrid.tsx"
+    },
+    "BusinessDashboard": {
+      "file": "components/admin/BusinessDashboard.tsx"
+    },
+    "BusinessDetailPanel": {
+      "file": "components/admin/BusinessDetailPanel.tsx"
+    },
+    "BusinessDirectory": {
+      "file": "components/admin/BusinessDirectory.tsx"
+    },
+    "BusinessFilters": {
+      "file": "components/admin/BusinessFilters.tsx"
+    },
+    "BusinessListItem": {
+      "file": "components/admin/BusinessListItem.tsx"
+    },
+    "index": {
+      "file": "components/admin/index.ts"
+    },
+    "MetricCard": {
+      "file": "components/admin/MetricCard.tsx"
+    },
+    "PaginationControls": {
+      "file": "components/admin/PaginationControls.tsx"
+    },
+    "QuickStats": {
+      "file": "components/admin/QuickStats.tsx"
+    },
+    "Sidebar": {
+      "file": "components/admin/Sidebar.tsx"
+    },
+    "SystemStatus": {
+      "file": "components/admin/SystemStatus.tsx"
+    },
+    "TopBar": {
+      "file": "components/admin/TopBar.tsx"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/business-listing/index.json",
+  "meta": {
+    "namespace": "business-listing",
+    "description": "",
+    "location": "design-system/components/ui2/components/business-listing",
+    "componentCount": 14
+  },
+  "components": {
+    "Breadcrumb": {
+      "file": "components/business-listing/Breadcrumb.tsx"
+    },
+    "BusinessDetails": {
+      "file": "components/business-listing/BusinessDetails.tsx"
+    },
+    "BusinessHeader": {
+      "file": "components/business-listing/BusinessHeader.tsx"
+    },
+    "BusinessHero": {
+      "file": "components/business-listing/BusinessHero.tsx"
+    },
+    "BusinessListingLayout": {
+      "file": "components/business-listing/BusinessListingLayout.tsx"
+    },
+    "BusinessSidebar": {
+      "file": "components/business-listing/BusinessSidebar.tsx"
+    },
+    "ContactInfo": {
+      "file": "components/business-listing/ContactInfo.tsx"
+    },
+    "CredentialsDisplay": {
+      "file": "components/business-listing/CredentialsDisplay.tsx"
+    },
+    "HoursDisplay": {
+      "file": "components/business-listing/HoursDisplay.tsx"
+    },
+    "ImageGallery": {
+      "file": "components/business-listing/ImageGallery.tsx"
+    },
+    "index": {
+      "file": "components/business-listing/index.ts"
+    },
+    "InfoCard": {
+      "file": "components/business-listing/InfoCard.tsx"
+    },
+    "LastUpdatedBadge": {
+      "file": "components/business-listing/LastUpdatedBadge.tsx"
+    },
+    "ReviewsPlaceholder": {
+      "file": "components/business-listing/ReviewsPlaceholder.tsx"
+    }
+  }
+}

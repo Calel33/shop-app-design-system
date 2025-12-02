@@ -1,0 +1,68 @@
+/**
+ * Meteor animation styles for Testimonials components
+ * Provides smooth shooting star effects with customizable delays
+ */
+
+@keyframes meteor {
+  0% { 
+    transform: rotate(215deg) translateX(0); 
+    opacity: 1; 
+  }
+  70% { 
+    opacity: 1; 
+  }
+  100% { 
+    transform: rotate(215deg) translateX(-500px); 
+    opacity: 0; 
+  }
+}
+
+.meteor {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  border-radius: 9999px;
+  background-color: rgba(209, 213, 219, 0.8);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transform: rotate(215deg);
+  animation: meteor 5s linear infinite;
+  pointer-events: none;
+}
+
+.meteor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(209, 213, 219, 0.8), transparent);
+}
+
+.meteor-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Dark mode meteor adjustments */
+.dark .meteor {
+  background-color: rgba(156, 163, 175, 0.9);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.dark .meteor::before {
+  background: linear-gradient(to right, rgba(156, 163, 175, 0.9), transparent);
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+  .meteor {
+    animation-duration: 4s;
+  }
+  
+  .meteor::before {
+    width: 30px;
+  }
+}

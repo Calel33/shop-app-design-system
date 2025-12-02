@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/faq/index.json",
+  "meta": {
+    "namespace": "faq",
+    "description": "",
+    "location": "design-system/components/ui2/components/faq",
+    "componentCount": 8
+  },
+  "components": {
+    "FAQCard": {
+      "file": "components/faq/FAQCard.tsx"
+    },
+    "FAQCategoryBadge": {
+      "file": "components/faq/FAQCategoryBadge.tsx"
+    },
+    "FAQCornerIcons": {
+      "file": "components/faq/FAQCornerIcons.tsx"
+    },
+    "FAQCTASection": {
+      "file": "components/faq/FAQCTASection.tsx"
+    },
+    "FAQGrid": {
+      "file": "components/faq/FAQGrid.tsx"
+    },
+    "FAQHero": {
+      "file": "components/faq/FAQHero.tsx"
+    },
+    "FAQSection": {
+      "file": "components/faq/FAQSection.tsx"
+    },
+    "index": {
+      "file": "components/faq/index.ts"
+    }
+  }
+}

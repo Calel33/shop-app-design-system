@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/unboxing/index.json",
+  "meta": {
+    "namespace": "unboxing",
+    "description": "",
+    "location": "design-system/components/ui2/components/unboxing",
+    "componentCount": 7
+  },
+  "components": {
+    "index": {
+      "file": "components/unboxing/index.ts"
+    },
+    "types": {
+      "file": "components/unboxing/types.ts"
+    },
+    "UnboxingFeatureColumn": {
+      "file": "components/unboxing/UnboxingFeatureColumn.tsx"
+    },
+    "UnboxingFooter": {
+      "file": "components/unboxing/UnboxingFooter.tsx"
+    },
+    "UnboxingHeader": {
+      "file": "components/unboxing/UnboxingHeader.tsx"
+    },
+    "UnboxingLayout": {
+      "file": "components/unboxing/UnboxingLayout.tsx"
+    },
+    "UnboxingProductCard": {
+      "file": "components/unboxing/UnboxingProductCard.tsx"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/feature-grid/index.json",
+  "meta": {
+    "namespace": "feature-grid",
+    "description": "",
+    "location": "design-system/components/ui2/components/feature-grid",
+    "componentCount": 6
+  },
+  "components": {
+    "FeatureCard": {
+      "file": "components/feature-grid/FeatureCard.tsx"
+    },
+    "FeatureGrid": {
+      "file": "components/feature-grid/FeatureGrid.tsx"
+    },
+    "FeaturesGridLayout": {
+      "file": "components/feature-grid/FeaturesGridLayout.tsx"
+    },
+    "index": {
+      "file": "components/feature-grid/index.ts"
+    },
+    "types": {
+      "file": "components/feature-grid/types.ts"
+    },
+    "USAGE_EXAMPLE": {
+      "file": "components/feature-grid/USAGE_EXAMPLE.tsx"
+    }
+  }
+}

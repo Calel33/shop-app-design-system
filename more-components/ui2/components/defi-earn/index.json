@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/defi-earn/index.json",
+  "meta": {
+    "namespace": "defi-earn",
+    "description": "",
+    "location": "design-system/components/ui2/components/defi-earn",
+    "componentCount": 14
+  },
+  "components": {
+    "data": {
+      "file": "components/defi-earn/data.ts"
+    },
+    "DeFiFooter": {
+      "file": "components/defi-earn/DeFiFooter.tsx"
+    },
+    "DeFiHeader": {
+      "file": "components/defi-earn/DeFiHeader.tsx"
+    },
+    "DeFiLayout": {
+      "file": "components/defi-earn/DeFiLayout.tsx"
+    },
+    "DepositsSidebar": {
+      "file": "components/defi-earn/DepositsSidebar.tsx"
+    },
+    "HeroBanner": {
+      "file": "components/defi-earn/HeroBanner.tsx"
+    },
+    "index": {
+      "file": "components/defi-earn/index.ts"
+    },
+    "PortfolioCard": {
+      "file": "components/defi-earn/PortfolioCard.tsx"
+    },
+    "StrategyBadge": {
+      "file": "components/defi-earn/StrategyBadge.tsx"
+    },
+    "TokenIcon": {
+      "file": "components/defi-earn/TokenIcon.tsx"
+    },
+    "types": {
+      "file": "components/defi-earn/types.ts"
+    },
+    "UtilizationBar": {
+      "file": "components/defi-earn/UtilizationBar.tsx"
+    },
+    "VaultRow": {
+      "file": "components/defi-earn/VaultRow.tsx"
+    },
+    "VaultsTable": {
+      "file": "components/defi-earn/VaultsTable.tsx"
+    }
+  }
+}

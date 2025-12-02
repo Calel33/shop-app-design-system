@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/medical/index.json",
+  "meta": {
+    "namespace": "medical",
+    "description": "",
+    "location": "design-system/components/ui2/components/medical",
+    "componentCount": 12
+  },
+  "components": {
+    "BentoCard": {
+      "file": "components/medical/BentoCard.tsx"
+    },
+    "BentoGrid": {
+      "file": "components/medical/BentoGrid.tsx"
+    },
+    "CTASection": {
+      "file": "components/medical/CTASection.tsx"
+    },
+    "HeroSection": {
+      "file": "components/medical/HeroSection.tsx"
+    },
+    "index": {
+      "file": "components/medical/index.ts"
+    },
+    "LAYOUT_EXAMPLES": {
+      "file": "components/medical/LAYOUT_EXAMPLES.tsx"
+    },
+    "MedicalInsuranceLanding": {
+      "file": "components/medical/MedicalInsuranceLanding.tsx"
+    },
+    "MedicalLanding": {
+      "file": "components/medical/MedicalLanding.tsx"
+    },
+    "MedicalLayout": {
+      "file": "components/medical/MedicalLayout.tsx"
+    },
+    "Navigation": {
+      "file": "components/medical/Navigation.tsx"
+    },
+    "types": {
+      "file": "components/medical/types.ts"
+    },
+    "USAGE_EXAMPLE": {
+      "file": "components/medical/USAGE_EXAMPLE.tsx"
+    }
+  }
+}

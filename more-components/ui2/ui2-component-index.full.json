@@ -1,0 +1,1987 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/component-index.json",
+  "meta": {
+    "name": "UI2 Component Index",
+    "version": "1.0.0",
+    "description": "Index of UI2 composable sections, primitives, hooks, and types under design-system/components/ui2",
+    "lastUpdated": "2025-11-16",
+    "rootDirectory": "design-system/components/ui2"
+  },
+  "namespaces": {
+    "root": {
+      "description": "",
+      "location": "design-system/components/ui2/",
+      "components": {
+        "index": {
+          "file": "index.ts"
+        }
+      }
+    },
+    "admin": {
+      "description": "",
+      "location": "design-system/components/ui2/components/admin",
+      "components": {
+        "ActivityFeed": {
+          "file": "components/admin/ActivityFeed.tsx"
+        },
+        "AdminDashboard": {
+          "file": "components/admin/AdminDashboard.tsx"
+        },
+        "AdminHeader": {
+          "file": "components/admin/AdminHeader.tsx"
+        },
+        "AdminListingFilters": {
+          "file": "components/admin/AdminListingFilters.tsx"
+        },
+        "AdminListingHeader": {
+          "file": "components/admin/AdminListingHeader.tsx"
+        },
+        "AdminListingLayout": {
+          "file": "components/admin/AdminListingLayout.tsx"
+        },
+        "AdminListingSidebar": {
+          "file": "components/admin/AdminListingSidebar.tsx"
+        },
+        "AdminSidebar": {
+          "file": "components/admin/AdminSidebar.tsx"
+        },
+        "BulkToolbar": {
+          "file": "components/admin/BulkToolbar.tsx"
+        },
+        "BusinessApprovalCard": {
+          "file": "components/admin/BusinessApprovalCard.tsx"
+        },
+        "BusinessApprovalItem": {
+          "file": "components/admin/BusinessApprovalItem.tsx"
+        },
+        "BusinessApprovalQueue": {
+          "file": "components/admin/BusinessApprovalQueue.tsx"
+        },
+        "BusinessCardGrid": {
+          "file": "components/admin/BusinessCardGrid.tsx"
+        },
+        "BusinessDashboard": {
+          "file": "components/admin/BusinessDashboard.tsx"
+        },
+        "BusinessDetailPanel": {
+          "file": "components/admin/BusinessDetailPanel.tsx"
+        },
+        "BusinessDirectory": {
+          "file": "components/admin/BusinessDirectory.tsx"
+        },
+        "BusinessFilters": {
+          "file": "components/admin/BusinessFilters.tsx"
+        },
+        "BusinessListItem": {
+          "file": "components/admin/BusinessListItem.tsx"
+        },
+        "index": {
+          "file": "components/admin/index.ts"
+        },
+        "MetricCard": {
+          "file": "components/admin/MetricCard.tsx"
+        },
+        "PaginationControls": {
+          "file": "components/admin/PaginationControls.tsx"
+        },
+        "QuickStats": {
+          "file": "components/admin/QuickStats.tsx"
+        },
+        "Sidebar": {
+          "file": "components/admin/Sidebar.tsx"
+        },
+        "SystemStatus": {
+          "file": "components/admin/SystemStatus.tsx"
+        },
+        "TopBar": {
+          "file": "components/admin/TopBar.tsx"
+        }
+      }
+    },
+    "alimony": {
+      "description": "",
+      "location": "design-system/components/ui2/components/alimony",
+      "components": {
+        "AlimonyLanding": {
+          "file": "components/alimony/AlimonyLanding.tsx"
+        },
+        "index": {
+          "file": "components/alimony/index.ts"
+        }
+      }
+    },
+    "analytics": {
+      "description": "",
+      "location": "design-system/components/ui2/components/analytics",
+      "components": {
+        "AnalyticsDashboard": {
+          "file": "components/analytics/AnalyticsDashboard.tsx"
+        },
+        "AnalyticsHero": {
+          "file": "components/analytics/AnalyticsHero.tsx"
+        },
+        "ChurnMetricCard": {
+          "file": "components/analytics/ChurnMetricCard.tsx"
+        },
+        "DashboardNav": {
+          "file": "components/analytics/DashboardNav.tsx"
+        },
+        "index": {
+          "file": "components/analytics/index.ts"
+        },
+        "KPISnapshotCard": {
+          "file": "components/analytics/KPISnapshotCard.tsx"
+        },
+        "MetricCard": {
+          "file": "components/analytics/MetricCard.tsx"
+        },
+        "ObjectivesCard": {
+          "file": "components/analytics/ObjectivesCard.tsx"
+        }
+      }
+    },
+    "auth": {
+      "description": "",
+      "location": "design-system/components/ui2/components/auth",
+      "components": {
+        "AnimatedBackground": {
+          "file": "components/auth/AnimatedBackground.tsx"
+        },
+        "AnimatedGradientButton": {
+          "file": "components/auth/AnimatedGradientButton.tsx"
+        },
+        "CustomCheckbox": {
+          "file": "components/auth/CustomCheckbox.tsx"
+        },
+        "DividerWithText": {
+          "file": "components/auth/DividerWithText.tsx"
+        },
+        "FormField": {
+          "file": "components/auth/FormField.tsx"
+        },
+        "GlasmorphicSignIn": {
+          "file": "components/auth/GlasmorphicSignIn.tsx"
+        },
+        "GlassmorphicCard": {
+          "file": "components/auth/GlassmorphicCard.tsx"
+        },
+        "index": {
+          "file": "components/auth/index.ts"
+        },
+        "LAYOUT_EXAMPLES": {
+          "file": "components/auth/LAYOUT_EXAMPLES.tsx"
+        },
+        "NebulaLoginForm": {
+          "file": "components/auth/NebulaLoginForm.tsx"
+        },
+        "QuantumLoginForm": {
+          "file": "components/auth/QuantumLoginForm.tsx"
+        },
+        "SocialLoginButton": {
+          "file": "components/auth/SocialLoginButton.tsx"
+        },
+        "types": {
+          "file": "components/auth/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/auth/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "automotive": {
+      "description": "",
+      "location": "design-system/components/ui2/components/automotive",
+      "components": {
+        "CarDetailGallery": {
+          "file": "components/automotive/CarDetailGallery.tsx"
+        },
+        "ContactDealer": {
+          "file": "components/automotive/ContactDealer.tsx"
+        },
+        "index": {
+          "file": "components/automotive/index.ts"
+        },
+        "PriceBreakdown": {
+          "file": "components/automotive/PriceBreakdown.tsx"
+        },
+        "VehicleGallery": {
+          "file": "components/automotive/VehicleGallery.tsx"
+        },
+        "VehicleSpecs": {
+          "file": "components/automotive/VehicleSpecs.tsx"
+        }
+      }
+    },
+    "background": {
+      "description": "",
+      "location": "design-system/components/ui2/components/background",
+      "components": {
+        "AnimatedButton": {
+          "file": "components/background/AnimatedButton.tsx"
+        },
+        "AnimatedGridBackground": {
+          "file": "components/background/AnimatedGridBackground.tsx"
+        },
+        "CursorGlow": {
+          "file": "components/background/CursorGlow.tsx"
+        },
+        "index": {
+          "file": "components/background/index.ts"
+        }
+      }
+    },
+    "business": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business",
+      "components": {
+        "BusinessHero": {
+          "file": "components/business/BusinessHero.tsx"
+        },
+        "BusinessListing": {
+          "file": "components/business/BusinessListing.tsx"
+        },
+        "HeaderNav": {
+          "file": "components/business/HeaderNav.tsx"
+        },
+        "index": {
+          "file": "components/business/index.ts"
+        },
+        "LoyaltyBanner": {
+          "file": "components/business/LoyaltyBanner.tsx"
+        },
+        "MenuCategoryList": {
+          "file": "components/business/MenuCategoryList.tsx"
+        },
+        "MenuTabs": {
+          "file": "components/business/MenuTabs.tsx"
+        },
+        "NutritionLegend": {
+          "file": "components/business/NutritionLegend.tsx"
+        }
+      }
+    },
+    "business.Sidebar": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business/Sidebar",
+      "components": {
+        "ContactInfo": {
+          "file": "components/business/Sidebar/ContactInfo.tsx"
+        },
+        "Features": {
+          "file": "components/business/Sidebar/Features.tsx"
+        },
+        "HealthSafety": {
+          "file": "components/business/Sidebar/HealthSafety.tsx"
+        },
+        "Hours": {
+          "file": "components/business/Sidebar/Hours.tsx"
+        },
+        "QuickActions": {
+          "file": "components/business/Sidebar/QuickActions.tsx"
+        }
+      }
+    },
+    "business-dashboard": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business-dashboard",
+      "components": {
+        "BusinessCardPreview": {
+          "file": "components/business-dashboard/BusinessCardPreview.tsx"
+        },
+        "BusinessDashboardLayout": {
+          "file": "components/business-dashboard/BusinessDashboardLayout.tsx"
+        },
+        "DashboardHeader": {
+          "file": "components/business-dashboard/DashboardHeader.tsx"
+        },
+        "DashboardSidebar": {
+          "file": "components/business-dashboard/DashboardSidebar.tsx"
+        },
+        "DragDropUpload": {
+          "file": "components/business-dashboard/DragDropUpload.tsx"
+        },
+        "EditPanel": {
+          "file": "components/business-dashboard/EditPanel.tsx"
+        },
+        "FormTabs": {
+          "file": "components/business-dashboard/FormTabs.tsx"
+        },
+        "index": {
+          "file": "components/business-dashboard/index.ts"
+        },
+        "PreviewPanel": {
+          "file": "components/business-dashboard/PreviewPanel.tsx"
+        },
+        "SplitViewContainer": {
+          "file": "components/business-dashboard/SplitViewContainer.tsx"
+        },
+        "StatusCard": {
+          "file": "components/business-dashboard/StatusCard.tsx"
+        }
+      }
+    },
+    "business-dashboard.forms": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business-dashboard/forms",
+      "components": {
+        "BasicInfoForm": {
+          "file": "components/business-dashboard/forms/BasicInfoForm.tsx"
+        },
+        "ContactForm": {
+          "file": "components/business-dashboard/forms/ContactForm.tsx"
+        },
+        "HoursForm": {
+          "file": "components/business-dashboard/forms/HoursForm.tsx"
+        },
+        "PhotosForm": {
+          "file": "components/business-dashboard/forms/PhotosForm.tsx"
+        }
+      }
+    },
+    "business-listing": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business-listing",
+      "components": {
+        "Breadcrumb": {
+          "file": "components/business-listing/Breadcrumb.tsx"
+        },
+        "BusinessDetails": {
+          "file": "components/business-listing/BusinessDetails.tsx"
+        },
+        "BusinessHeader": {
+          "file": "components/business-listing/BusinessHeader.tsx"
+        },
+        "BusinessHero": {
+          "file": "components/business-listing/BusinessHero.tsx"
+        },
+        "BusinessListingLayout": {
+          "file": "components/business-listing/BusinessListingLayout.tsx"
+        },
+        "BusinessSidebar": {
+          "file": "components/business-listing/BusinessSidebar.tsx"
+        },
+        "ContactInfo": {
+          "file": "components/business-listing/ContactInfo.tsx"
+        },
+        "CredentialsDisplay": {
+          "file": "components/business-listing/CredentialsDisplay.tsx"
+        },
+        "HoursDisplay": {
+          "file": "components/business-listing/HoursDisplay.tsx"
+        },
+        "ImageGallery": {
+          "file": "components/business-listing/ImageGallery.tsx"
+        },
+        "index": {
+          "file": "components/business-listing/index.ts"
+        },
+        "InfoCard": {
+          "file": "components/business-listing/InfoCard.tsx"
+        },
+        "LastUpdatedBadge": {
+          "file": "components/business-listing/LastUpdatedBadge.tsx"
+        },
+        "ReviewsPlaceholder": {
+          "file": "components/business-listing/ReviewsPlaceholder.tsx"
+        }
+      }
+    },
+    "candle": {
+      "description": "",
+      "location": "design-system/components/ui2/components/candle",
+      "components": {
+        "CandleLandingClean": {
+          "file": "components/candle/CandleLandingClean.tsx"
+        },
+        "index": {
+          "file": "components/candle/index.ts"
+        },
+        "UpbeatCandleLanding": {
+          "file": "components/candle/UpbeatCandleLanding.tsx"
+        }
+      }
+    },
+    "chat": {
+      "description": "",
+      "location": "design-system/components/ui2/components/chat",
+      "components": {
+        "ChatHeader": {
+          "file": "components/chat/ChatHeader.tsx"
+        },
+        "ChatInput": {
+          "file": "components/chat/ChatInput.tsx"
+        },
+        "ChatMessage": {
+          "file": "components/chat/ChatMessage.tsx"
+        },
+        "ChatMessages": {
+          "file": "components/chat/ChatMessages.tsx"
+        },
+        "GlassChatCard": {
+          "file": "components/chat/GlassChatCard.tsx"
+        },
+        "index": {
+          "file": "components/chat/index.ts"
+        }
+      }
+    },
+    "childcare": {
+      "description": "",
+      "location": "design-system/components/ui2/components/childcare",
+      "components": {
+        "BubbleFooter": {
+          "file": "components/childcare/BubbleFooter.tsx"
+        },
+        "BubbleHeader": {
+          "file": "components/childcare/BubbleHeader.tsx"
+        },
+        "BubbleHero": {
+          "file": "components/childcare/BubbleHero.tsx"
+        },
+        "BubbleLanding": {
+          "file": "components/childcare/BubbleLanding.tsx"
+        },
+        "FeatureHighlights": {
+          "file": "components/childcare/FeatureHighlights.tsx"
+        },
+        "index": {
+          "file": "components/childcare/index.ts"
+        },
+        "LAYOUT_EXAMPLES": {
+          "file": "components/childcare/LAYOUT_EXAMPLES.tsx"
+        },
+        "ProgramsSection": {
+          "file": "components/childcare/ProgramsSection.tsx"
+        },
+        "PromiseSection": {
+          "file": "components/childcare/PromiseSection.tsx"
+        },
+        "TestimonialsSection": {
+          "file": "components/childcare/TestimonialsSection.tsx"
+        },
+        "types": {
+          "file": "components/childcare/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/childcare/USAGE_EXAMPLE.tsx"
+        },
+        "VisitCTA": {
+          "file": "components/childcare/VisitCTA.tsx"
+        }
+      }
+    },
+    "creative-studio": {
+      "description": "",
+      "location": "design-system/components/ui2/components/creative-studio",
+      "components": {
+        "CreativeStudioFooter": {
+          "file": "components/creative-studio/CreativeStudioFooter.tsx"
+        },
+        "CreativeStudioHero": {
+          "file": "components/creative-studio/CreativeStudioHero.tsx"
+        },
+        "CreativeStudioLanding.backup": {
+          "file": "components/creative-studio/CreativeStudioLanding.backup.tsx"
+        },
+        "CreativeStudioLanding": {
+          "file": "components/creative-studio/CreativeStudioLanding.tsx"
+        },
+        "index": {
+          "file": "components/creative-studio/index.ts"
+        },
+        "PricingTiers": {
+          "file": "components/creative-studio/PricingTiers.tsx"
+        },
+        "ProcessSteps": {
+          "file": "components/creative-studio/ProcessSteps.tsx"
+        },
+        "ProjectCard": {
+          "file": "components/creative-studio/ProjectCard.tsx"
+        },
+        "SplineBackground": {
+          "file": "components/creative-studio/SplineBackground.tsx"
+        },
+        "TeamCollage": {
+          "file": "components/creative-studio/TeamCollage.tsx"
+        },
+        "TestimonialsCarousel": {
+          "file": "components/creative-studio/TestimonialsCarousel.tsx"
+        },
+        "types": {
+          "file": "components/creative-studio/types.ts"
+        }
+      }
+    },
+    "dashboard": {
+      "description": "",
+      "location": "design-system/components/ui2/components/dashboard",
+      "components": {
+        "ActiveJobs": {
+          "file": "components/dashboard/ActiveJobs.tsx"
+        },
+        "ActivityTable": {
+          "file": "components/dashboard/ActivityTable.tsx"
+        },
+        "BIDashboard": {
+          "file": "components/dashboard/BIDashboard.tsx"
+        },
+        "BIHeader": {
+          "file": "components/dashboard/BIHeader.tsx"
+        },
+        "BISidebar": {
+          "file": "components/dashboard/BISidebar.tsx"
+        },
+        "GPUDashboard": {
+          "file": "components/dashboard/GPUDashboard.tsx"
+        },
+        "index": {
+          "file": "components/dashboard/index.ts"
+        },
+        "KPICard": {
+          "file": "components/dashboard/KPICard.tsx"
+        },
+        "PerformanceMetrics": {
+          "file": "components/dashboard/PerformanceMetrics.tsx"
+        },
+        "ResourceAllocation": {
+          "file": "components/dashboard/ResourceAllocation.tsx"
+        },
+        "ResourceOverviewCard": {
+          "file": "components/dashboard/ResourceOverviewCard.tsx"
+        },
+        "RevenueChart": {
+          "file": "components/dashboard/RevenueChart.tsx"
+        },
+        "SystemStatus": {
+          "file": "components/dashboard/SystemStatus.tsx"
+        },
+        "types": {
+          "file": "components/dashboard/types.ts"
+        },
+        "UsageChart": {
+          "file": "components/dashboard/UsageChart.tsx"
+        }
+      }
+    },
+    "dashboard-sidebar": {
+      "description": "",
+      "location": "design-system/components/ui2/components/dashboard-sidebar",
+      "components": {
+        "ArtistsTable": {
+          "file": "components/dashboard-sidebar/ArtistsTable.tsx"
+        },
+        "DashboardHeader": {
+          "file": "components/dashboard-sidebar/DashboardHeader.tsx"
+        },
+        "DashboardLayout": {
+          "file": "components/dashboard-sidebar/DashboardLayout.tsx"
+        },
+        "GenreChart": {
+          "file": "components/dashboard-sidebar/GenreChart.tsx"
+        },
+        "index": {
+          "file": "components/dashboard-sidebar/index.ts"
+        },
+        "RevenueChart": {
+          "file": "components/dashboard-sidebar/RevenueChart.tsx"
+        },
+        "Sidebar": {
+          "file": "components/dashboard-sidebar/Sidebar.tsx"
+        },
+        "SpectrumChart": {
+          "file": "components/dashboard-sidebar/SpectrumChart.tsx"
+        },
+        "StatsCard": {
+          "file": "components/dashboard-sidebar/StatsCard.tsx"
+        },
+        "types": {
+          "file": "components/dashboard-sidebar/types.ts"
+        },
+        "UsageChart": {
+          "file": "components/dashboard-sidebar/UsageChart.tsx"
+        }
+      }
+    },
+    "defi-earn": {
+      "description": "",
+      "location": "design-system/components/ui2/components/defi-earn",
+      "components": {
+        "data": {
+          "file": "components/defi-earn/data.ts"
+        },
+        "DeFiFooter": {
+          "file": "components/defi-earn/DeFiFooter.tsx"
+        },
+        "DeFiHeader": {
+          "file": "components/defi-earn/DeFiHeader.tsx"
+        },
+        "DeFiLayout": {
+          "file": "components/defi-earn/DeFiLayout.tsx"
+        },
+        "DepositsSidebar": {
+          "file": "components/defi-earn/DepositsSidebar.tsx"
+        },
+        "HeroBanner": {
+          "file": "components/defi-earn/HeroBanner.tsx"
+        },
+        "index": {
+          "file": "components/defi-earn/index.ts"
+        },
+        "PortfolioCard": {
+          "file": "components/defi-earn/PortfolioCard.tsx"
+        },
+        "StrategyBadge": {
+          "file": "components/defi-earn/StrategyBadge.tsx"
+        },
+        "TokenIcon": {
+          "file": "components/defi-earn/TokenIcon.tsx"
+        },
+        "types": {
+          "file": "components/defi-earn/types.ts"
+        },
+        "UtilizationBar": {
+          "file": "components/defi-earn/UtilizationBar.tsx"
+        },
+        "VaultRow": {
+          "file": "components/defi-earn/VaultRow.tsx"
+        },
+        "VaultsTable": {
+          "file": "components/defi-earn/VaultsTable.tsx"
+        }
+      }
+    },
+    "defi-earn.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/defi-earn/hooks",
+      "components": {
+        "useVaultsFilters": {
+          "file": "components/defi-earn/hooks/useVaultsFilters.ts"
+        },
+        "useWallet": {
+          "file": "components/defi-earn/hooks/useWallet.ts"
+        }
+      }
+    },
+    "digital-health": {
+      "description": "",
+      "location": "design-system/components/ui2/components/digital-health",
+      "components": {
+        "AppPreviewCard": {
+          "file": "components/digital-health/AppPreviewCard.tsx"
+        },
+        "BrandCard": {
+          "file": "components/digital-health/BrandCard.tsx"
+        },
+        "ChatTeaserCard": {
+          "file": "components/digital-health/ChatTeaserCard.tsx"
+        },
+        "ConsultationCard": {
+          "file": "components/digital-health/ConsultationCard.tsx"
+        },
+        "CountdownBadge": {
+          "file": "components/digital-health/CountdownBadge.tsx"
+        },
+        "DoctorCard": {
+          "file": "components/digital-health/DoctorCard.tsx"
+        },
+        "GlucoseChartCard": {
+          "file": "components/digital-health/GlucoseChartCard.tsx"
+        },
+        "HealthDashboardGrid": {
+          "file": "components/digital-health/HealthDashboardGrid.tsx"
+        },
+        "index": {
+          "file": "components/digital-health/index.ts"
+        },
+        "MessageBubble": {
+          "file": "components/digital-health/MessageBubble.tsx"
+        },
+        "MobileAppCard": {
+          "file": "components/digital-health/MobileAppCard.tsx"
+        },
+        "StyleGuideCard": {
+          "file": "components/digital-health/StyleGuideCard.tsx"
+        },
+        "types": {
+          "file": "components/digital-health/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/digital-health/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "directory": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory",
+      "components": {
+        "index": {
+          "file": "components/directory/index.ts"
+        },
+        "mockData": {
+          "file": "components/directory/mockData.ts"
+        }
+      }
+    },
+    "directory.business": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/business",
+      "components": {
+        "BusinessCard": {
+          "file": "components/directory/business/BusinessCard.tsx"
+        },
+        "NewBusinessCard": {
+          "file": "components/directory/business/NewBusinessCard.tsx"
+        },
+        "NewBusinessesShowcase": {
+          "file": "components/directory/business/NewBusinessesShowcase.tsx"
+        },
+        "TrendingSection": {
+          "file": "components/directory/business/TrendingSection.tsx"
+        },
+        "VerifiedBusinessCard": {
+          "file": "components/directory/business/VerifiedBusinessCard.tsx"
+        },
+        "VerifiedCarousel": {
+          "file": "components/directory/business/VerifiedCarousel.tsx"
+        }
+      }
+    },
+    "directory.categories": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/categories",
+      "components": {
+        "CategoryGrid": {
+          "file": "components/directory/categories/CategoryGrid.tsx"
+        },
+        "CategoryTile": {
+          "file": "components/directory/categories/CategoryTile.tsx"
+        }
+      }
+    },
+    "directory.hero": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/hero",
+      "components": {
+        "HeroSearchSection": {
+          "file": "components/directory/hero/HeroSearchSection.tsx"
+        },
+        "SearchBar": {
+          "file": "components/directory/hero/SearchBar.tsx"
+        },
+        "StatsDisplay": {
+          "file": "components/directory/hero/StatsDisplay.tsx"
+        }
+      }
+    },
+    "directory.layout": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/layout",
+      "components": {
+        "DirectoryHeader": {
+          "file": "components/directory/layout/DirectoryHeader.tsx"
+        },
+        "ListingHomepageLayout": {
+          "file": "components/directory/layout/ListingHomepageLayout.tsx"
+        },
+        "QuickFiltersBar": {
+          "file": "components/directory/layout/QuickFiltersBar.tsx"
+        }
+      }
+    },
+    "directory.shared": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/shared",
+      "components": {
+        "LocationBanner": {
+          "file": "components/directory/shared/LocationBanner.tsx"
+        }
+      }
+    },
+    "directory.types": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/types",
+      "components": {
+        "directory.types": {
+          "file": "components/directory/types/directory.types.ts"
+        }
+      }
+    },
+    "ecommerce": {
+      "description": "",
+      "location": "design-system/components/ui2/components/ecommerce",
+      "components": {
+        "ApparelHeader": {
+          "file": "components/ecommerce/ApparelHeader.tsx"
+        },
+        "ApparelLanding": {
+          "file": "components/ecommerce/ApparelLanding.tsx"
+        },
+        "BrandCard": {
+          "file": "components/ecommerce/BrandCard.tsx"
+        },
+        "ColorSelector": {
+          "file": "components/ecommerce/ColorSelector.tsx"
+        },
+        "DeliveryOptions": {
+          "file": "components/ecommerce/DeliveryOptions.tsx"
+        },
+        "DenimFitSelector": {
+          "file": "components/ecommerce/DenimFitSelector.tsx"
+        },
+        "index": {
+          "file": "components/ecommerce/index.ts"
+        },
+        "ProductDetailPage": {
+          "file": "components/ecommerce/ProductDetailPage.tsx"
+        },
+        "ProductGallery": {
+          "file": "components/ecommerce/ProductGallery.tsx"
+        },
+        "ProductGrid": {
+          "file": "components/ecommerce/ProductGrid.tsx"
+        },
+        "ProductInfo": {
+          "file": "components/ecommerce/ProductInfo.tsx"
+        },
+        "ProductTabs": {
+          "file": "components/ecommerce/ProductTabs.tsx"
+        },
+        "QuantitySelector": {
+          "file": "components/ecommerce/QuantitySelector.tsx"
+        },
+        "ReviewCard": {
+          "file": "components/ecommerce/ReviewCard.tsx"
+        },
+        "SearchOverlay": {
+          "file": "components/ecommerce/SearchOverlay.tsx"
+        },
+        "SplitHero": {
+          "file": "components/ecommerce/SplitHero.tsx"
+        },
+        "types": {
+          "file": "components/ecommerce/types.ts"
+        }
+      }
+    },
+    "email": {
+      "description": "",
+      "location": "design-system/components/ui2/components/email",
+      "components": {
+        "AttachmentZone": {
+          "file": "components/email/AttachmentZone.tsx"
+        },
+        "AutoSaveIndicator": {
+          "file": "components/email/AutoSaveIndicator.tsx"
+        },
+        "ComposeForm": {
+          "file": "components/email/ComposeForm.tsx"
+        },
+        "ComposeHeader": {
+          "file": "components/email/ComposeHeader.tsx"
+        },
+        "ComposeSidebar": {
+          "file": "components/email/ComposeSidebar.tsx"
+        },
+        "ContactQuickAdd": {
+          "file": "components/email/ContactQuickAdd.tsx"
+        },
+        "EmailCompose": {
+          "file": "components/email/EmailCompose.tsx"
+        },
+        "FormatToolbar": {
+          "file": "components/email/FormatToolbar.tsx"
+        },
+        "index": {
+          "file": "components/email/index.ts"
+        },
+        "RecipientInput": {
+          "file": "components/email/RecipientInput.tsx"
+        },
+        "TemplateSelector": {
+          "file": "components/email/TemplateSelector.tsx"
+        },
+        "types": {
+          "file": "components/email/types.ts"
+        }
+      }
+    },
+    "faq": {
+      "description": "",
+      "location": "design-system/components/ui2/components/faq",
+      "components": {
+        "FAQCard": {
+          "file": "components/faq/FAQCard.tsx"
+        },
+        "FAQCategoryBadge": {
+          "file": "components/faq/FAQCategoryBadge.tsx"
+        },
+        "FAQCornerIcons": {
+          "file": "components/faq/FAQCornerIcons.tsx"
+        },
+        "FAQCTASection": {
+          "file": "components/faq/FAQCTASection.tsx"
+        },
+        "FAQGrid": {
+          "file": "components/faq/FAQGrid.tsx"
+        },
+        "FAQHero": {
+          "file": "components/faq/FAQHero.tsx"
+        },
+        "FAQSection": {
+          "file": "components/faq/FAQSection.tsx"
+        },
+        "index": {
+          "file": "components/faq/index.ts"
+        }
+      }
+    },
+    "fashion": {
+      "description": "",
+      "location": "design-system/components/ui2/components/fashion",
+      "components": {
+        "AboutStudio": {
+          "file": "components/fashion/AboutStudio.tsx"
+        },
+        "CollectionCard": {
+          "file": "components/fashion/CollectionCard.tsx"
+        },
+        "CollectionGrid": {
+          "file": "components/fashion/CollectionGrid.tsx"
+        },
+        "CTASection": {
+          "file": "components/fashion/CTASection.tsx"
+        },
+        "FashionHero": {
+          "file": "components/fashion/FashionHero.tsx"
+        },
+        "FashionLanding": {
+          "file": "components/fashion/FashionLanding.tsx"
+        },
+        "FloatingNav": {
+          "file": "components/fashion/FloatingNav.tsx"
+        },
+        "index": {
+          "file": "components/fashion/index.ts"
+        },
+        "ServiceCards": {
+          "file": "components/fashion/ServiceCards.tsx"
+        },
+        "StatsSection": {
+          "file": "components/fashion/StatsSection.tsx"
+        },
+        "TeamCard": {
+          "file": "components/fashion/TeamCard.tsx"
+        },
+        "TeamSection": {
+          "file": "components/fashion/TeamSection.tsx"
+        },
+        "TestimonialGrid": {
+          "file": "components/fashion/TestimonialGrid.tsx"
+        },
+        "TimelineSection": {
+          "file": "components/fashion/TimelineSection.tsx"
+        },
+        "TimelineStep": {
+          "file": "components/fashion/TimelineStep.tsx"
+        },
+        "types": {
+          "file": "components/fashion/types.ts"
+        }
+      }
+    },
+    "feature-grid": {
+      "description": "",
+      "location": "design-system/components/ui2/components/feature-grid",
+      "components": {
+        "FeatureCard": {
+          "file": "components/feature-grid/FeatureCard.tsx"
+        },
+        "FeatureGrid": {
+          "file": "components/feature-grid/FeatureGrid.tsx"
+        },
+        "FeaturesGridLayout": {
+          "file": "components/feature-grid/FeaturesGridLayout.tsx"
+        },
+        "index": {
+          "file": "components/feature-grid/index.ts"
+        },
+        "types": {
+          "file": "components/feature-grid/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/feature-grid/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "footer": {
+      "description": "",
+      "location": "design-system/components/ui2/components/footer",
+      "components": {
+        "ContactForm": {
+          "file": "components/footer/ContactForm.tsx"
+        },
+        "Footer": {
+          "file": "components/footer/Footer.tsx"
+        },
+        "index": {
+          "file": "components/footer/index.ts"
+        },
+        "NewsletterForm": {
+          "file": "components/footer/NewsletterForm.tsx"
+        },
+        "types": {
+          "file": "components/footer/types.ts"
+        }
+      }
+    },
+    "hero": {
+      "description": "",
+      "location": "design-system/components/ui2/components/hero",
+      "components": {
+        "FullScreenHero": {
+          "file": "components/hero/FullScreenHero.tsx"
+        },
+        "HeroContent": {
+          "file": "components/hero/HeroContent.tsx"
+        },
+        "HeroNav": {
+          "file": "components/hero/HeroNav.tsx"
+        },
+        "index": {
+          "file": "components/hero/index.ts"
+        },
+        "MobileMenu": {
+          "file": "components/hero/MobileMenu.tsx"
+        }
+      }
+    },
+    "hotel": {
+      "description": "",
+      "location": "design-system/components/ui2/components/hotel",
+      "components": {
+        "BookingForm": {
+          "file": "components/hotel/BookingForm.tsx"
+        },
+        "HotelHero": {
+          "file": "components/hotel/HotelHero.tsx"
+        },
+        "HotelNav": {
+          "file": "components/hotel/HotelNav.tsx"
+        },
+        "index": {
+          "file": "components/hotel/index.ts"
+        },
+        "RoomCard": {
+          "file": "components/hotel/RoomCard.tsx"
+        },
+        "RoomsGrid": {
+          "file": "components/hotel/RoomsGrid.tsx"
+        }
+      }
+    },
+    "interactive": {
+      "description": "",
+      "location": "design-system/components/ui2/components/interactive",
+      "components": {
+        "ExperienceCard": {
+          "file": "components/interactive/ExperienceCard.tsx"
+        },
+        "ExperienceSelector": {
+          "file": "components/interactive/ExperienceSelector.tsx"
+        },
+        "index": {
+          "file": "components/interactive/index.ts"
+        }
+      }
+    },
+    "interactive-studio": {
+      "description": "",
+      "location": "design-system/components/ui2/components/interactive-studio",
+      "components": {
+        "FloatingNavbar": {
+          "file": "components/interactive-studio/FloatingNavbar.tsx"
+        },
+        "GlassBadge": {
+          "file": "components/interactive-studio/GlassBadge.tsx"
+        },
+        "GlassButton": {
+          "file": "components/interactive-studio/GlassButton.tsx"
+        },
+        "GlassCard": {
+          "file": "components/interactive-studio/GlassCard.tsx"
+        },
+        "index": {
+          "file": "components/interactive-studio/index.ts"
+        },
+        "InteractiveStudioHero": {
+          "file": "components/interactive-studio/InteractiveStudioHero.tsx"
+        },
+        "SplineBackground": {
+          "file": "components/interactive-studio/SplineBackground.tsx"
+        },
+        "types": {
+          "file": "components/interactive-studio/types.ts"
+        }
+      }
+    },
+    "interior-design": {
+      "description": "",
+      "location": "design-system/components/ui2/components/interior-design",
+      "components": {
+        "AboutSection": {
+          "file": "components/interior-design/AboutSection.tsx"
+        },
+        "AnimatedGradientButton": {
+          "file": "components/interior-design/AnimatedGradientButton.tsx"
+        },
+        "DesignPortfolioLanding": {
+          "file": "components/interior-design/DesignPortfolioLanding.tsx"
+        },
+        "ExpandableProcessGrid": {
+          "file": "components/interior-design/ExpandableProcessGrid.tsx"
+        },
+        "FormaHero": {
+          "file": "components/interior-design/FormaHero.tsx"
+        },
+        "FormaNav": {
+          "file": "components/interior-design/FormaNav.tsx"
+        },
+        "index": {
+          "file": "components/interior-design/index.ts"
+        },
+        "LogoTicker": {
+          "file": "components/interior-design/LogoTicker.tsx"
+        },
+        "PortfolioGrid": {
+          "file": "components/interior-design/PortfolioGrid.tsx"
+        },
+        "ProcessTimeline": {
+          "file": "components/interior-design/ProcessTimeline.tsx"
+        },
+        "ServicesGrid": {
+          "file": "components/interior-design/ServicesGrid.tsx"
+        },
+        "StickyPortfolioCards": {
+          "file": "components/interior-design/StickyPortfolioCards.tsx"
+        },
+        "TestimonialsGrid": {
+          "file": "components/interior-design/TestimonialsGrid.tsx"
+        }
+      }
+    },
+    "medical": {
+      "description": "",
+      "location": "design-system/components/ui2/components/medical",
+      "components": {
+        "BentoCard": {
+          "file": "components/medical/BentoCard.tsx"
+        },
+        "BentoGrid": {
+          "file": "components/medical/BentoGrid.tsx"
+        },
+        "CTASection": {
+          "file": "components/medical/CTASection.tsx"
+        },
+        "HeroSection": {
+          "file": "components/medical/HeroSection.tsx"
+        },
+        "index": {
+          "file": "components/medical/index.ts"
+        },
+        "LAYOUT_EXAMPLES": {
+          "file": "components/medical/LAYOUT_EXAMPLES.tsx"
+        },
+        "MedicalInsuranceLanding": {
+          "file": "components/medical/MedicalInsuranceLanding.tsx"
+        },
+        "MedicalLanding": {
+          "file": "components/medical/MedicalLanding.tsx"
+        },
+        "MedicalLayout": {
+          "file": "components/medical/MedicalLayout.tsx"
+        },
+        "Navigation": {
+          "file": "components/medical/Navigation.tsx"
+        },
+        "types": {
+          "file": "components/medical/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/medical/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "medical.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/medical/hooks",
+      "components": {
+        "useScrollAnimation": {
+          "file": "components/medical/hooks/useScrollAnimation.ts"
+        }
+      }
+    },
+    "nova": {
+      "description": "",
+      "location": "design-system/components/ui2/components/nova",
+      "components": {
+        "ChatDemoCard": {
+          "file": "components/nova/ChatDemoCard.tsx"
+        },
+        "FAQItem": {
+          "file": "components/nova/FAQItem.tsx"
+        },
+        "FeatureCard": {
+          "file": "components/nova/FeatureCard.tsx"
+        },
+        "Footer": {
+          "file": "components/nova/Footer.tsx"
+        },
+        "HeroSection": {
+          "file": "components/nova/HeroSection.tsx"
+        },
+        "index": {
+          "file": "components/nova/index.ts"
+        },
+        "MetricsChart": {
+          "file": "components/nova/MetricsChart.tsx"
+        },
+        "NovaLandingDemo": {
+          "file": "components/nova/NovaLandingDemo.tsx"
+        },
+        "PricingCard": {
+          "file": "components/nova/PricingCard.tsx"
+        },
+        "StickyNav": {
+          "file": "components/nova/StickyNav.tsx"
+        },
+        "types": {
+          "file": "components/nova/types.ts"
+        }
+      }
+    },
+    "onboarding": {
+      "description": "",
+      "location": "design-system/components/ui2/components/onboarding",
+      "components": {
+        "AccountSetupModal": {
+          "file": "components/onboarding/AccountSetupModal.tsx"
+        },
+        "index": {
+          "file": "components/onboarding/index.ts"
+        },
+        "LAYOUT_EXAMPLES": {
+          "file": "components/onboarding/LAYOUT_EXAMPLES.tsx"
+        },
+        "ModalActions": {
+          "file": "components/onboarding/ModalActions.tsx"
+        },
+        "ModalHeader": {
+          "file": "components/onboarding/ModalHeader.tsx"
+        },
+        "ProgressStepper": {
+          "file": "components/onboarding/ProgressStepper.tsx"
+        },
+        "SecurityOptionCard": {
+          "file": "components/onboarding/SecurityOptionCard.tsx"
+        },
+        "types": {
+          "file": "components/onboarding/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/onboarding/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "payment": {
+      "description": "",
+      "location": "design-system/components/ui2/components/payment",
+      "components": {
+        "BillPaymentConfirmation": {
+          "file": "components/payment/BillPaymentConfirmation.tsx"
+        },
+        "CardBack": {
+          "file": "components/payment/CardBack.tsx"
+        },
+        "CardBrandIcons": {
+          "file": "components/payment/CardBrandIcons.tsx"
+        },
+        "CardChip": {
+          "file": "components/payment/CardChip.tsx"
+        },
+        "CardFront": {
+          "file": "components/payment/CardFront.tsx"
+        },
+        "CardLogo": {
+          "file": "components/payment/CardLogo.tsx"
+        },
+        "CardPreview": {
+          "file": "components/payment/CardPreview.tsx"
+        },
+        "ConfirmationActions": {
+          "file": "components/payment/ConfirmationActions.tsx"
+        },
+        "CONFIRMATION_EXAMPLES": {
+          "file": "components/payment/CONFIRMATION_EXAMPLES.tsx"
+        },
+        "CountrySelector": {
+          "file": "components/payment/CountrySelector.tsx"
+        },
+        "FlowPayHero": {
+          "file": "components/payment/FlowPayHero.tsx"
+        },
+        "GlassCard": {
+          "file": "components/payment/GlassCard.tsx"
+        },
+        "GlassInput": {
+          "file": "components/payment/GlassInput.tsx"
+        },
+        "GradientButton": {
+          "file": "components/payment/GradientButton.tsx"
+        },
+        "index": {
+          "file": "components/payment/index.ts"
+        },
+        "MeshGradientBackground": {
+          "file": "components/payment/MeshGradientBackground.tsx"
+        },
+        "OrderSummary": {
+          "file": "components/payment/OrderSummary.tsx"
+        },
+        "PaymentCompletion": {
+          "file": "components/payment/PaymentCompletion.tsx"
+        },
+        "PaymentCompletionForm": {
+          "file": "components/payment/PaymentCompletionForm.tsx"
+        },
+        "PaymentDashboard": {
+          "file": "components/payment/PaymentDashboard.tsx"
+        },
+        "PaymentDetailsPanel": {
+          "file": "components/payment/PaymentDetailsPanel.tsx"
+        },
+        "PaymentFeatureGrid": {
+          "file": "components/payment/PaymentFeatureGrid.tsx"
+        },
+        "PaymentForm": {
+          "file": "components/payment/PaymentForm.tsx"
+        },
+        "PaymentTestimonials": {
+          "file": "components/payment/PaymentTestimonials.tsx"
+        },
+        "SuccessIcon": {
+          "file": "components/payment/SuccessIcon.tsx"
+        },
+        "types": {
+          "file": "components/payment/types.ts"
+        },
+        "VirtualPaymentCard": {
+          "file": "components/payment/VirtualPaymentCard.tsx"
+        }
+      }
+    },
+    "portfolio": {
+      "description": "",
+      "location": "design-system/components/ui2/components/portfolio",
+      "components": {
+        "index": {
+          "file": "components/portfolio/index.ts"
+        },
+        "LAYOUT_EXAMPLES": {
+          "file": "components/portfolio/LAYOUT_EXAMPLES.tsx"
+        },
+        "PortfolioCard": {
+          "file": "components/portfolio/PortfolioCard.tsx"
+        },
+        "PortfolioGrid": {
+          "file": "components/portfolio/PortfolioGrid.tsx"
+        },
+        "PortfolioHeader": {
+          "file": "components/portfolio/PortfolioHeader.tsx"
+        },
+        "PortfolioLayout": {
+          "file": "components/portfolio/PortfolioLayout.tsx"
+        },
+        "types": {
+          "file": "components/portfolio/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/portfolio/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "portfolio.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/portfolio/hooks",
+      "components": {
+        "useLiveClock": {
+          "file": "components/portfolio/hooks/useLiveClock.ts"
+        }
+      }
+    },
+    "portfolio.kyro": {
+      "description": "",
+      "location": "design-system/components/ui2/components/portfolio/kyro",
+      "components": {
+        "AboutSection": {
+          "file": "components/portfolio/kyro/AboutSection.tsx"
+        },
+        "ContactFooter": {
+          "file": "components/portfolio/kyro/ContactFooter.tsx"
+        },
+        "Header": {
+          "file": "components/portfolio/kyro/Header.tsx"
+        },
+        "HeroSection": {
+          "file": "components/portfolio/kyro/HeroSection.tsx"
+        },
+        "index": {
+          "file": "components/portfolio/kyro/index.ts"
+        },
+        "InfoCard": {
+          "file": "components/portfolio/kyro/InfoCard.tsx"
+        },
+        "InfoGrid": {
+          "file": "components/portfolio/kyro/InfoGrid.tsx"
+        },
+        "KyroPortfolioLanding": {
+          "file": "components/portfolio/kyro/KyroPortfolioLanding.tsx"
+        },
+        "ServiceCard": {
+          "file": "components/portfolio/kyro/ServiceCard.tsx"
+        },
+        "ServicesSection": {
+          "file": "components/portfolio/kyro/ServicesSection.tsx"
+        },
+        "WorkCard": {
+          "file": "components/portfolio/kyro/WorkCard.tsx"
+        },
+        "WorkShowcase": {
+          "file": "components/portfolio/kyro/WorkShowcase.tsx"
+        }
+      }
+    },
+    "product": {
+      "description": "",
+      "location": "design-system/components/ui2/components/product",
+      "components": {
+        "CertificationGrid": {
+          "file": "components/product/CertificationGrid.tsx"
+        },
+        "DiagramWithNodes": {
+          "file": "components/product/DiagramWithNodes.tsx"
+        },
+        "index": {
+          "file": "components/product/index.ts"
+        },
+        "ProductFeatureTabs": {
+          "file": "components/product/ProductFeatureTabs.tsx"
+        },
+        "SpecList": {
+          "file": "components/product/SpecList.tsx"
+        }
+      }
+    },
+    "restaurant": {
+      "description": "",
+      "location": "design-system/components/ui2/components/restaurant",
+      "components": {
+        "ChefCard": {
+          "file": "components/restaurant/ChefCard.tsx"
+        },
+        "ChefTeamSection": {
+          "file": "components/restaurant/ChefTeamSection.tsx"
+        },
+        "DishCard": {
+          "file": "components/restaurant/DishCard.tsx"
+        },
+        "FeatureCard": {
+          "file": "components/restaurant/FeatureCard.tsx"
+        },
+        "FeatureGrid": {
+          "file": "components/restaurant/FeatureGrid.tsx"
+        },
+        "index": {
+          "file": "components/restaurant/index.ts"
+        },
+        "MenuShowcase": {
+          "file": "components/restaurant/MenuShowcase.tsx"
+        },
+        "ReservationForm": {
+          "file": "components/restaurant/ReservationForm.tsx"
+        },
+        "RestaurantBadge": {
+          "file": "components/restaurant/RestaurantBadge.tsx"
+        },
+        "RestaurantFooter": {
+          "file": "components/restaurant/RestaurantFooter.tsx"
+        },
+        "RestaurantHero": {
+          "file": "components/restaurant/RestaurantHero.tsx"
+        },
+        "types": {
+          "file": "components/restaurant/types.ts"
+        }
+      }
+    },
+    "scheduling": {
+      "description": "",
+      "location": "design-system/components/ui2/components/scheduling",
+      "components": {
+        "CalendarCard": {
+          "file": "components/scheduling/CalendarCard.tsx"
+        },
+        "GuestList": {
+          "file": "components/scheduling/GuestList.tsx"
+        },
+        "index": {
+          "file": "components/scheduling/index.ts"
+        },
+        "MeetingCard": {
+          "file": "components/scheduling/MeetingCard.tsx"
+        },
+        "SchedulingDashboard": {
+          "file": "components/scheduling/SchedulingDashboard.tsx"
+        }
+      }
+    },
+    "skincare": {
+      "description": "",
+      "location": "design-system/components/ui2/components/skincare",
+      "components": {
+        "index": {
+          "file": "components/skincare/index.ts"
+        },
+        "SkincareAnnouncement": {
+          "file": "components/skincare/SkincareAnnouncement.tsx"
+        },
+        "SkincareCart": {
+          "file": "components/skincare/SkincareCart.tsx"
+        },
+        "SkincareCollectionsDropdown": {
+          "file": "components/skincare/SkincareCollectionsDropdown.tsx"
+        },
+        "SkincareCollectionsGrid": {
+          "file": "components/skincare/SkincareCollectionsGrid.tsx"
+        },
+        "SkincareFooter": {
+          "file": "components/skincare/SkincareFooter.tsx"
+        },
+        "SkincareHeader": {
+          "file": "components/skincare/SkincareHeader.tsx"
+        },
+        "SkincareHero": {
+          "file": "components/skincare/SkincareHero.tsx"
+        },
+        "SkincareLayout": {
+          "file": "components/skincare/SkincareLayout.tsx"
+        },
+        "SkincareMobileMenu": {
+          "file": "components/skincare/SkincareMobileMenu.tsx"
+        },
+        "SkincarePhilosophy": {
+          "file": "components/skincare/SkincarePhilosophy.tsx"
+        },
+        "SkincareProductCard": {
+          "file": "components/skincare/SkincareProductCard.tsx"
+        },
+        "SkincareProductGrid": {
+          "file": "components/skincare/SkincareProductGrid.tsx"
+        },
+        "SkincareToast": {
+          "file": "components/skincare/SkincareToast.tsx"
+        },
+        "SkincareTrustBar": {
+          "file": "components/skincare/SkincareTrustBar.tsx"
+        },
+        "types": {
+          "file": "components/skincare/types.ts"
+        }
+      }
+    },
+    "storytelling": {
+      "description": "",
+      "location": "design-system/components/ui2/components/storytelling",
+      "components": {
+        "Chapter": {
+          "file": "components/storytelling/Chapter.tsx"
+        },
+        "ChapterContent": {
+          "file": "components/storytelling/ChapterContent.tsx"
+        },
+        "ChapterNavigation": {
+          "file": "components/storytelling/ChapterNavigation.tsx"
+        },
+        "CustomCursor": {
+          "file": "components/storytelling/CustomCursor.tsx"
+        },
+        "index": {
+          "file": "components/storytelling/index.ts"
+        },
+        "ScrollStory": {
+          "file": "components/storytelling/ScrollStory.tsx"
+        },
+        "types": {
+          "file": "components/storytelling/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/storytelling/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "storytelling.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/storytelling/hooks",
+      "components": {
+        "useScrollNavigation": {
+          "file": "components/storytelling/hooks/useScrollNavigation.ts"
+        }
+      }
+    },
+    "testimonials": {
+      "description": "",
+      "location": "design-system/components/ui2/components/testimonials",
+      "components": {
+        "index": {
+          "file": "components/testimonials/index.ts"
+        },
+        "MeteorBackground": {
+          "file": "components/testimonials/MeteorBackground.tsx"
+        },
+        "QuoteIcon": {
+          "file": "components/testimonials/QuoteIcon.tsx"
+        },
+        "TestimonialCard": {
+          "file": "components/testimonials/TestimonialCard.tsx"
+        },
+        "TestimonialsGrid": {
+          "file": "components/testimonials/TestimonialsGrid.tsx"
+        },
+        "TestimonialsMasonry": {
+          "file": "components/testimonials/TestimonialsMasonry.tsx"
+        },
+        "types": {
+          "file": "components/testimonials/types.ts"
+        }
+      }
+    },
+    "types": {
+      "description": "",
+      "location": "design-system/components/ui2/components/types",
+      "components": {
+        "admin.types": {
+          "file": "components/types/admin.types.ts"
+        },
+        "analytics.types": {
+          "file": "components/types/analytics.types.ts"
+        },
+        "auth.types": {
+          "file": "components/types/auth.types.ts"
+        },
+        "automotive.types": {
+          "file": "components/types/automotive.types.ts"
+        },
+        "background.types": {
+          "file": "components/types/background.types.ts"
+        },
+        "booking.types": {
+          "file": "components/types/booking.types.ts"
+        },
+        "business-dashboard.types": {
+          "file": "components/types/business-dashboard.types.ts"
+        },
+        "business-listing.types": {
+          "file": "components/types/business-listing.types.ts"
+        },
+        "business.types": {
+          "file": "components/types/business.types.ts"
+        },
+        "chat.types": {
+          "file": "components/types/chat.types.ts"
+        },
+        "childcare.types": {
+          "file": "components/types/childcare.types.ts"
+        },
+        "creative-studio.types": {
+          "file": "components/types/creative-studio.types.ts"
+        },
+        "dashboard-sidebar.types": {
+          "file": "components/types/dashboard-sidebar.types.ts"
+        },
+        "dashboard.types": {
+          "file": "components/types/dashboard.types.ts"
+        },
+        "defi-earn.types": {
+          "file": "components/types/defi-earn.types.ts"
+        },
+        "digital-health.types": {
+          "file": "components/types/digital-health.types.ts"
+        },
+        "ecommerce.types": {
+          "file": "components/types/ecommerce.types.ts"
+        },
+        "email.types": {
+          "file": "components/types/email.types.ts"
+        },
+        "faq.types": {
+          "file": "components/types/faq.types.ts"
+        },
+        "fashion.types": {
+          "file": "components/types/fashion.types.ts"
+        },
+        "feature-grid.types": {
+          "file": "components/types/feature-grid.types.ts"
+        },
+        "footer.types": {
+          "file": "components/types/footer.types.ts"
+        },
+        "hero.types": {
+          "file": "components/types/hero.types.ts"
+        },
+        "interactive-studio.types": {
+          "file": "components/types/interactive-studio.types.ts"
+        },
+        "interactive.types": {
+          "file": "components/types/interactive.types.ts"
+        },
+        "interior-design.types": {
+          "file": "components/types/interior-design.types.ts"
+        },
+        "kyro-portfolio.types": {
+          "file": "components/types/kyro-portfolio.types.ts"
+        },
+        "medical.types": {
+          "file": "components/types/medical.types.ts"
+        },
+        "nova.types": {
+          "file": "components/types/nova.types.ts"
+        },
+        "payment.types": {
+          "file": "components/types/payment.types.ts"
+        },
+        "portfolio.types": {
+          "file": "components/types/portfolio.types.ts"
+        },
+        "product.types": {
+          "file": "components/types/product.types.ts"
+        },
+        "restaurant.types": {
+          "file": "components/types/restaurant.types.ts"
+        },
+        "scheduling.types": {
+          "file": "components/types/scheduling.types.ts"
+        },
+        "skincare.types": {
+          "file": "components/types/skincare.types.ts"
+        },
+        "storytelling.types": {
+          "file": "components/types/storytelling.types.ts"
+        },
+        "testimonials.types": {
+          "file": "components/types/testimonials.types.ts"
+        },
+        "unboxing.types": {
+          "file": "components/types/unboxing.types.ts"
+        },
+        "web3.types": {
+          "file": "components/types/web3.types.ts"
+        },
+        "webgl.types": {
+          "file": "components/types/webgl.types.ts"
+        },
+        "wellness.types": {
+          "file": "components/types/wellness.types.ts"
+        }
+      }
+    },
+    "unboxing": {
+      "description": "",
+      "location": "design-system/components/ui2/components/unboxing",
+      "components": {
+        "index": {
+          "file": "components/unboxing/index.ts"
+        },
+        "types": {
+          "file": "components/unboxing/types.ts"
+        },
+        "UnboxingFeatureColumn": {
+          "file": "components/unboxing/UnboxingFeatureColumn.tsx"
+        },
+        "UnboxingFooter": {
+          "file": "components/unboxing/UnboxingFooter.tsx"
+        },
+        "UnboxingHeader": {
+          "file": "components/unboxing/UnboxingHeader.tsx"
+        },
+        "UnboxingLayout": {
+          "file": "components/unboxing/UnboxingLayout.tsx"
+        },
+        "UnboxingProductCard": {
+          "file": "components/unboxing/UnboxingProductCard.tsx"
+        }
+      }
+    },
+    "web3": {
+      "description": "",
+      "location": "design-system/components/ui2/components/web3",
+      "components": {
+        "AuraFooter": {
+          "file": "components/web3/AuraFooter.tsx"
+        },
+        "AuraHeader": {
+          "file": "components/web3/AuraHeader.tsx"
+        },
+        "AuraHero": {
+          "file": "components/web3/AuraHero.tsx"
+        },
+        "AuraLanding": {
+          "file": "components/web3/AuraLanding.tsx"
+        },
+        "FAQSection": {
+          "file": "components/web3/FAQSection.tsx"
+        },
+        "GridHero": {
+          "file": "components/web3/GridHero.tsx"
+        },
+        "index": {
+          "file": "components/web3/index.ts"
+        },
+        "InfoCard": {
+          "file": "components/web3/InfoCard.tsx"
+        },
+        "LAYOUT_EXAMPLES": {
+          "file": "components/web3/LAYOUT_EXAMPLES.tsx"
+        },
+        "NetworksSection": {
+          "file": "components/web3/NetworksSection.tsx"
+        },
+        "PricingSection": {
+          "file": "components/web3/PricingSection.tsx"
+        },
+        "TestimonialsSection": {
+          "file": "components/web3/TestimonialsSection.tsx"
+        },
+        "types": {
+          "file": "components/web3/types.ts"
+        },
+        "USAGE_EXAMPLE": {
+          "file": "components/web3/USAGE_EXAMPLE.tsx"
+        }
+      }
+    },
+    "webgl": {
+      "description": "",
+      "location": "design-system/components/ui2/components/webgl",
+      "components": {
+        "FeatureCard": {
+          "file": "components/webgl/FeatureCard.tsx"
+        },
+        "GlassCard": {
+          "file": "components/webgl/GlassCard.tsx"
+        },
+        "index": {
+          "file": "components/webgl/index.ts"
+        },
+        "Navigation": {
+          "file": "components/webgl/Navigation.tsx"
+        },
+        "ShaderBackground": {
+          "file": "components/webgl/ShaderBackground.tsx"
+        },
+        "StatCard": {
+          "file": "components/webgl/StatCard.tsx"
+        },
+        "types": {
+          "file": "components/webgl/types.ts"
+        },
+        "WebGLShaderDemo": {
+          "file": "components/webgl/WebGLShaderDemo.tsx"
+        }
+      }
+    },
+    "webgl.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/webgl/hooks",
+      "components": {
+        "useWebGLShader": {
+          "file": "components/webgl/hooks/useWebGLShader.ts"
+        }
+      }
+    },
+    "wellness": {
+      "description": "",
+      "location": "design-system/components/ui2/components/wellness",
+      "components": {
+        "CommunityCard": {
+          "file": "components/wellness/CommunityCard.tsx"
+        },
+        "index": {
+          "file": "components/wellness/index.ts"
+        },
+        "MeditationCard": {
+          "file": "components/wellness/MeditationCard.tsx"
+        },
+        "MeditationGrid": {
+          "file": "components/wellness/MeditationGrid.tsx"
+        },
+        "ProgressAnalyticsCard": {
+          "file": "components/wellness/ProgressAnalyticsCard.tsx"
+        },
+        "SessionLibraryCard": {
+          "file": "components/wellness/SessionLibraryCard.tsx"
+        }
+      }
+    },
+    "hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/hooks",
+      "components": {
+        "index": {
+          "file": "hooks/index.ts"
+        },
+        "useCalendar": {
+          "file": "hooks/useCalendar.ts"
+        },
+        "useCardFormatter": {
+          "file": "hooks/useCardFormatter.ts"
+        },
+        "useCardValidation": {
+          "file": "hooks/useCardValidation.ts"
+        },
+        "useCart": {
+          "file": "hooks/useCart.ts"
+        },
+        "useChartSetup": {
+          "file": "hooks/useChartSetup.ts"
+        },
+        "useCounterAnimation": {
+          "file": "hooks/useCounterAnimation.ts"
+        },
+        "useMousePosition": {
+          "file": "hooks/useMousePosition.ts"
+        },
+        "useParallax": {
+          "file": "hooks/useParallax.ts"
+        },
+        "useRevealAnimation": {
+          "file": "hooks/useRevealAnimation.ts"
+        },
+        "useScrollAnimation": {
+          "file": "hooks/useScrollAnimation.ts"
+        },
+        "useScrollProgress": {
+          "file": "hooks/useScrollProgress.ts"
+        },
+        "useScrollToTop": {
+          "file": "hooks/useScrollToTop.ts"
+        },
+        "useTheme": {
+          "file": "hooks/useTheme.ts"
+        },
+        "useWebGLShader": {
+          "file": "hooks/useWebGLShader.ts"
+        }
+      }
+    }
+  }
+}

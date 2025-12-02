@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/candle/index.json",
+  "meta": {
+    "namespace": "candle",
+    "description": "",
+    "location": "design-system/components/ui2/components/candle",
+    "componentCount": 3
+  },
+  "components": {
+    "CandleLandingClean": {
+      "file": "components/candle/CandleLandingClean.tsx"
+    },
+    "index": {
+      "file": "components/candle/index.ts"
+    },
+    "UpbeatCandleLanding": {
+      "file": "components/candle/UpbeatCandleLanding.tsx"
+    }
+  }
+}

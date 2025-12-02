@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/business-dashboard.forms/index.json",
+  "meta": {
+    "namespace": "business-dashboard.forms",
+    "description": "",
+    "location": "design-system/components/ui2/components/business-dashboard/forms",
+    "componentCount": 4
+  },
+  "components": {
+    "BasicInfoForm": {
+      "file": "components/business-dashboard/forms/BasicInfoForm.tsx"
+    },
+    "ContactForm": {
+      "file": "components/business-dashboard/forms/ContactForm.tsx"
+    },
+    "HoursForm": {
+      "file": "components/business-dashboard/forms/HoursForm.tsx"
+    },
+    "PhotosForm": {
+      "file": "components/business-dashboard/forms/PhotosForm.tsx"
+    }
+  }
+}

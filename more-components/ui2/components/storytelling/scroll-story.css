@@ -1,0 +1,147 @@
+/**
+ * Custom Animations and Styles for Scroll Story Component
+ * @module scroll-story.css
+ */
+
+/* Fade-in Animation with Blur and Scale */
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  filter: blur(20px);
+  transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  visibility: hidden;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0px);
+  visibility: visible;
+}
+
+/* Section Transition */
+.section {
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.1s;
+}
+
+/* Typography - Responsive with clamp() */
+.story-text {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.hero-text {
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 1.1;
+  font-weight: 100;
+}
+
+.large-text {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.chapter-number {
+  font-size: clamp(10rem, 20vw, 25rem);
+  opacity: 0.08;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+  pointer-events: none;
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .section,
+  .custom-cursor {
+    transition: none;
+    animation: none;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    visibility: visible;
+  }
+}
+
+/* Spinning Animation Variants */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 15s linear infinite;
+}
+
+/* Pulse Delay Variants */
+.animate-pulse-delay-300 {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 300ms;
+}
+
+.animate-pulse-delay-700 {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 700ms;
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/ecommerce/index.json",
+  "meta": {
+    "namespace": "ecommerce",
+    "description": "",
+    "location": "design-system/components/ui2/components/ecommerce",
+    "componentCount": 17
+  },
+  "components": {
+    "ApparelHeader": {
+      "file": "components/ecommerce/ApparelHeader.tsx"
+    },
+    "ApparelLanding": {
+      "file": "components/ecommerce/ApparelLanding.tsx"
+    },
+    "BrandCard": {
+      "file": "components/ecommerce/BrandCard.tsx"
+    },
+    "ColorSelector": {
+      "file": "components/ecommerce/ColorSelector.tsx"
+    },
+    "DeliveryOptions": {
+      "file": "components/ecommerce/DeliveryOptions.tsx"
+    },
+    "DenimFitSelector": {
+      "file": "components/ecommerce/DenimFitSelector.tsx"
+    },
+    "index": {
+      "file": "components/ecommerce/index.ts"
+    },
+    "ProductDetailPage": {
+      "file": "components/ecommerce/ProductDetailPage.tsx"
+    },
+    "ProductGallery": {
+      "file": "components/ecommerce/ProductGallery.tsx"
+    },
+    "ProductGrid": {
+      "file": "components/ecommerce/ProductGrid.tsx"
+    },
+    "ProductInfo": {
+      "file": "components/ecommerce/ProductInfo.tsx"
+    },
+    "ProductTabs": {
+      "file": "components/ecommerce/ProductTabs.tsx"
+    },
+    "QuantitySelector": {
+      "file": "components/ecommerce/QuantitySelector.tsx"
+    },
+    "ReviewCard": {
+      "file": "components/ecommerce/ReviewCard.tsx"
+    },
+    "SearchOverlay": {
+      "file": "components/ecommerce/SearchOverlay.tsx"
+    },
+    "SplitHero": {
+      "file": "components/ecommerce/SplitHero.tsx"
+    },
+    "types": {
+      "file": "components/ecommerce/types.ts"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/portfolio.hooks/index.json",
+  "meta": {
+    "namespace": "portfolio.hooks",
+    "description": "",
+    "location": "design-system/components/ui2/components/portfolio/hooks",
+    "componentCount": 1
+  },
+  "components": {
+    "useLiveClock": {
+      "file": "components/portfolio/hooks/useLiveClock.ts"
+    }
+  }
+}

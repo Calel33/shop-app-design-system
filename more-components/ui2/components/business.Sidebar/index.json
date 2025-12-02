@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/business.Sidebar/index.json",
+  "meta": {
+    "namespace": "business.Sidebar",
+    "description": "",
+    "location": "design-system/components/ui2/components/business/Sidebar",
+    "componentCount": 5
+  },
+  "components": {
+    "ContactInfo": {
+      "file": "components/business/Sidebar/ContactInfo.tsx"
+    },
+    "Features": {
+      "file": "components/business/Sidebar/Features.tsx"
+    },
+    "HealthSafety": {
+      "file": "components/business/Sidebar/HealthSafety.tsx"
+    },
+    "Hours": {
+      "file": "components/business/Sidebar/Hours.tsx"
+    },
+    "QuickActions": {
+      "file": "components/business/Sidebar/QuickActions.tsx"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/skincare/index.json",
+  "meta": {
+    "namespace": "skincare",
+    "description": "",
+    "location": "design-system/components/ui2/components/skincare",
+    "componentCount": 16
+  },
+  "components": {
+    "index": {
+      "file": "components/skincare/index.ts"
+    },
+    "SkincareAnnouncement": {
+      "file": "components/skincare/SkincareAnnouncement.tsx"
+    },
+    "SkincareCart": {
+      "file": "components/skincare/SkincareCart.tsx"
+    },
+    "SkincareCollectionsDropdown": {
+      "file": "components/skincare/SkincareCollectionsDropdown.tsx"
+    },
+    "SkincareCollectionsGrid": {
+      "file": "components/skincare/SkincareCollectionsGrid.tsx"
+    },
+    "SkincareFooter": {
+      "file": "components/skincare/SkincareFooter.tsx"
+    },
+    "SkincareHeader": {
+      "file": "components/skincare/SkincareHeader.tsx"
+    },
+    "SkincareHero": {
+      "file": "components/skincare/SkincareHero.tsx"
+    },
+    "SkincareLayout": {
+      "file": "components/skincare/SkincareLayout.tsx"
+    },
+    "SkincareMobileMenu": {
+      "file": "components/skincare/SkincareMobileMenu.tsx"
+    },
+    "SkincarePhilosophy": {
+      "file": "components/skincare/SkincarePhilosophy.tsx"
+    },
+    "SkincareProductCard": {
+      "file": "components/skincare/SkincareProductCard.tsx"
+    },
+    "SkincareProductGrid": {
+      "file": "components/skincare/SkincareProductGrid.tsx"
+    },
+    "SkincareToast": {
+      "file": "components/skincare/SkincareToast.tsx"
+    },
+    "SkincareTrustBar": {
+      "file": "components/skincare/SkincareTrustBar.tsx"
+    },
+    "types": {
+      "file": "components/skincare/types.ts"
+    }
+  }
+}

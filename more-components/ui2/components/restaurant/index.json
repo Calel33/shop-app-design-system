@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/restaurant/index.json",
+  "meta": {
+    "namespace": "restaurant",
+    "description": "",
+    "location": "design-system/components/ui2/components/restaurant",
+    "componentCount": 12
+  },
+  "components": {
+    "ChefCard": {
+      "file": "components/restaurant/ChefCard.tsx"
+    },
+    "ChefTeamSection": {
+      "file": "components/restaurant/ChefTeamSection.tsx"
+    },
+    "DishCard": {
+      "file": "components/restaurant/DishCard.tsx"
+    },
+    "FeatureCard": {
+      "file": "components/restaurant/FeatureCard.tsx"
+    },
+    "FeatureGrid": {
+      "file": "components/restaurant/FeatureGrid.tsx"
+    },
+    "index": {
+      "file": "components/restaurant/index.ts"
+    },
+    "MenuShowcase": {
+      "file": "components/restaurant/MenuShowcase.tsx"
+    },
+    "ReservationForm": {
+      "file": "components/restaurant/ReservationForm.tsx"
+    },
+    "RestaurantBadge": {
+      "file": "components/restaurant/RestaurantBadge.tsx"
+    },
+    "RestaurantFooter": {
+      "file": "components/restaurant/RestaurantFooter.tsx"
+    },
+    "RestaurantHero": {
+      "file": "components/restaurant/RestaurantHero.tsx"
+    },
+    "types": {
+      "file": "components/restaurant/types.ts"
+    }
+  }
+}

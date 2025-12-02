@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/alimony/index.json",
+  "meta": {
+    "namespace": "alimony",
+    "description": "",
+    "location": "design-system/components/ui2/components/alimony",
+    "componentCount": 2
+  },
+  "components": {
+    "AlimonyLanding": {
+      "file": "components/alimony/AlimonyLanding.tsx"
+    },
+    "index": {
+      "file": "components/alimony/index.ts"
+    }
+  }
+}

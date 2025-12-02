@@ -1,0 +1,1584 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://belize-directory.com/component-index.json",
+  "meta": {
+    "name": "Belize Directory Component Index",
+    "version": "1.0.0",
+    "description": "Comprehensive index of all components in the design system with full API documentation",
+    "lastUpdated": "2025-11-16",
+    "totalComponents": 42
+  },
+
+  "categories": {
+    "ui": {
+      "name": "UI Primitives",
+      "description": "Core reusable UI components that form the foundation of the design system",
+      "location": "src/components/ui/",
+      "componentCount": 17
+    },
+    "business": {
+      "name": "Business Domain",
+      "description": "Domain-specific components for business listings and directory features",
+      "location": "src/components/business/",
+      "componentCount": 14
+    },
+    "layout": {
+      "name": "Layout Components",
+      "description": "Structural components for page layout and navigation",
+      "location": "src/components/layout/",
+      "componentCount": 4
+    },
+    "food": {
+      "name": "Food Listing",
+      "description": "Components specific to restaurant and food business listings",
+      "location": "src/components/food/",
+      "componentCount": 4
+    },
+    "home": {
+      "name": "Home Page",
+      "description": "Components for the homepage and landing experience",
+      "location": "src/components/home/",
+      "componentCount": 3
+    },
+    "admin": {
+      "name": "Admin Dashboard",
+      "description": "Components for admin dashboard and management features",
+      "location": "src/components/admin/",
+      "componentCount": 4
+    }
+  },
+
+  "components": {
+    "ui": {
+      "Button": {
+        "file": "src/components/ui/Button.tsx",
+        "description": "Primary interactive element for actions and navigation with multiple variants and sizes",
+        "category": "ui",
+        "type": "interactive",
+        
+        "props": {
+          "variant": {
+            "type": "enum",
+            "required": false,
+            "default": "primary",
+            "options": ["primary", "secondary", "destructive", "outline", "ghost", "success", "warning", "danger", "muted"],
+            "description": "Visual style variant of the button"
+          },
+          "size": {
+            "type": "enum",
+            "required": false,
+            "default": "md",
+            "options": ["sm", "md", "lg"],
+            "description": "Size of the button"
+          },
+          "iconOnly": {
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "description": "Whether button contains only an icon (makes it circular)"
+          },
+          "children": {
+            "type": "ReactNode",
+            "required": true,
+            "description": "Button content (text, icon, or both)"
+          },
+          "...props": {
+            "type": "ButtonHTMLAttributes",
+            "description": "All standard HTML button attributes (onClick, disabled, type, etc.)"
+          }
+        },
+
+        "variants": {
+          "primary": "Main CTAs, primary actions, submit buttons",
+          "secondary": "Secondary actions, alternative paths",
+          "destructive": "Delete actions, permanent operations",
+          "outline": "Tertiary actions, secondary navigation",
+          "ghost": "Subtle actions, icon buttons, menu items",
+          "success": "Approve actions, success confirmations",
+          "warning": "Warning actions requiring caution",
+          "danger": "Critical destructive actions",
+          "muted": "Low-priority actions"
+        },
+
+        "sizes": {
+          "sm": "Compact UIs, inline actions (h-8, 32px)",
+          "md": "Default size for most buttons (h-10, 40px)",
+          "lg": "Hero CTAs, prominent actions (h-12, 48px)"
+        },
+
+        "states": ["default", "hover", "focus", "disabled"],
+
+        "usage": {
+          "basic": "<Button variant=\"primary\">Submit</Button>",
+          "withIcon": "<Button variant=\"secondary\"><Save className=\"h-4 w-4 mr-2\" />Save</Button>",
+          "iconOnly": "<Button iconOnly variant=\"ghost\" aria-label=\"Delete\"><Trash2 className=\"h-4 w-4\" /></Button>",
+          "destructive": "<Button variant=\"destructive\" onClick={handleDelete}>Delete</Button>"
+        },
+
+        "accessibility": [
+          "Icon-only buttons must have aria-label",
+          "Use semantic button type (button, submit, reset)",
+          "Focus visible with ring on keyboard navigation",
+          "Disabled state prevents interaction"
+        ],
+
+        "relatedComponents": ["Badge", "Card"],
+        "whenToUse": "For any user action: form submission, navigation, triggering actions, opening modals",
+        "whenNotToUse": "For navigation to external pages (use <a> tag), for non-interactive labels (use Badge)"
+      },
+
+      "Card": {
+        "file": "src/components/ui/Card.tsx",
+        "description": "Container component for grouping related content with consistent elevation and structure",
+        "category": "ui",
+        "type": "container",
+        
+        "subComponents": {
+          "Card": {
+            "description": "Main container wrapper",
+            "props": {
+              "children": {"type": "ReactNode", "required": true},
+              "className": {"type": "string", "required": false},
+              "...props": {"type": "HTMLAttributes<HTMLDivElement>"}
+            }
+          },
+          "CardHeader": {
+            "description": "Top section for titles and descriptions",
+            "defaultPadding": "p-6",
+            "defaultSpacing": "space-y-1.5"
+          },
+          "CardTitle": {
+            "description": "Card heading",
+            "defaultStyle": "text-h3 font-semibold"
+          },
+          "CardDescription": {
+            "description": "Subtitle or brief description",
+            "defaultStyle": "text-small text-muted-foreground"
+          },
+          "CardContent": {
+            "description": "Main content area",
+            "defaultPadding": "p-6 pt-0"
+          },
+          "CardFooter": {
+            "description": "Bottom section for actions or metadata",
+            "defaultStyle": "flex items-center p-6 pt-0"
+          }
+        },
+
+        "baseStyle": "rounded-lg border border-border bg-card text-card-foreground shadow-sm",
+
+        "patterns": {
+          "basic": {
+            "description": "Simple card with content",
+            "code": "<Card><CardContent>Content here</CardContent></Card>"
+          },
+          "withHeader": {
+            "description": "Card with title and description",
+            "code": "<Card><CardHeader><CardTitle>Title</CardTitle><CardDescription>Description</CardDescription></CardHeader><CardContent>Content</CardContent></Card>"
+          },
+          "withFooter": {
+            "description": "Card with action buttons in footer",
+            "code": "<Card><CardHeader>...</CardHeader><CardContent>...</CardContent><CardFooter><Button>Action</Button></CardFooter></Card>"
+          },
+          "withImage": {
+            "description": "Card with image at top",
+            "code": "<Card><img className=\"aspect-video w-full rounded-t-lg\" src=\"...\" /><CardHeader>...</CardHeader><CardContent>...</CardContent></Card>"
+          }
+        },
+
+        "usage": {
+          "listingCard": "Wrap business listing information",
+          "dashboardWidget": "Display metrics and stats",
+          "formSection": "Group related form fields",
+          "infoPanel": "Display structured information"
+        },
+
+        "accessibility": [
+          "Use semantic heading levels inside CardTitle",
+          "Ensure proper heading hierarchy",
+          "Interactive cards should have hover states"
+        ],
+
+        "relatedComponents": ["Button", "Badge", "ListingCard"],
+        "whenToUse": "Grouping related content, creating visual sections, listing items",
+        "whenNotToUse": "For single pieces of text (use div), for navigation items (use nav)"
+      },
+
+      "Input": {
+        "file": "src/components/ui/Input.tsx",
+        "description": "Form input field with support for icons and various input types",
+        "category": "ui",
+        "type": "form",
+        
+        "props": {
+          "leftIcon": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Icon element to display on the left inside input"
+          },
+          "rightIcon": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Icon element to display on the right inside input"
+          },
+          "type": {
+            "type": "string",
+            "required": false,
+            "default": "text",
+            "options": ["text", "email", "password", "number", "tel", "url", "search", "date"],
+            "description": "HTML input type"
+          },
+          "...props": {
+            "type": "InputHTMLAttributes",
+            "description": "All standard HTML input attributes"
+          }
+        },
+
+        "baseStyle": "flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-body",
+
+        "states": {
+          "default": "Normal state with border-input",
+          "focus": "Ring appears with ring-ring color",
+          "disabled": "Cursor not-allowed, opacity 50%",
+          "error": "Add border-destructive for error state"
+        },
+
+        "usage": {
+          "basic": "<Input type=\"text\" placeholder=\"Enter name\" />",
+          "withLeftIcon": "<Input leftIcon={<Search className=\"h-4 w-4\" />} placeholder=\"Search...\" />",
+          "withRightIcon": "<Input type=\"password\" rightIcon={<Eye className=\"h-4 w-4\" />} />",
+          "email": "<Input type=\"email\" placeholder=\"email@example.com\" />",
+          "search": "<Input type=\"search\" leftIcon={<Search />} placeholder=\"Search businesses...\" />"
+        },
+
+        "accessibility": [
+          "Always pair with <label> element",
+          "Use proper type attribute for mobile keyboards",
+          "Provide placeholder as hint, not instruction",
+          "Use aria-label if no visible label",
+          "Error messages should be associated with aria-describedby"
+        ],
+
+        "relatedComponents": ["Select", "Checkbox", "Button"],
+        "whenToUse": "Text input, email, password, search, number fields",
+        "whenNotToUse": "For dropdowns (use Select), for boolean (use Checkbox), for dates needing calendar (consider date picker)"
+      },
+
+      "Select": {
+        "file": "src/components/ui/Select.tsx",
+        "description": "Dropdown select input for choosing from multiple options",
+        "category": "ui",
+        "type": "form",
+        
+        "props": {
+          "children": {
+            "type": "ReactNode",
+            "required": true,
+            "description": "Option elements to display in dropdown"
+          },
+          "...props": {
+            "type": "SelectHTMLAttributes",
+            "description": "All standard HTML select attributes (value, onChange, etc.)"
+          }
+        },
+
+        "baseStyle": "flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-body",
+
+        "usage": {
+          "basic": "<Select><option value=\"\">Choose...</option><option value=\"1\">Option 1</option><option value=\"2\">Option 2</option></Select>",
+          "controlled": "<Select value={value} onChange={(e) => setValue(e.target.value)}><option value=\"all\">All Categories</option><option value=\"food\">Food</option></Select>"
+        },
+
+        "accessibility": [
+          "Always pair with <label>",
+          "First option can be placeholder with empty value",
+          "Keyboard navigable with arrow keys",
+          "Focus visible state included"
+        ],
+
+        "relatedComponents": ["Input", "FilterChip"],
+        "whenToUse": "Selecting from 5+ options, categorical choices, filters",
+        "whenNotToUse": "For 2-4 options (use radio buttons), for boolean (use Checkbox), for searchable lists (consider custom dropdown)"
+      },
+
+      "Checkbox": {
+        "file": "src/components/ui/Checkbox.tsx",
+        "description": "Checkbox input for boolean selections or multi-select scenarios",
+        "category": "ui",
+        "type": "form",
+        
+        "props": {
+          "label": {
+            "type": "string",
+            "required": false,
+            "description": "Optional label text displayed next to checkbox"
+          },
+          "...props": {
+            "type": "InputHTMLAttributes",
+            "description": "All standard HTML input checkbox attributes"
+          }
+        },
+
+        "baseStyle": "h-4 w-4 rounded border-input text-primary focus:ring-2 focus:ring-ring",
+
+        "usage": {
+          "basic": "<Checkbox id=\"agree\" label=\"I agree to terms\" />",
+          "controlled": "<Checkbox checked={checked} onChange={(e) => setChecked(e.target.checked)} label=\"Subscribe\" />",
+          "group": "<div className=\"space-y-2\"><Checkbox label=\"Feature 1\" /><Checkbox label=\"Feature 2\" /><Checkbox label=\"Feature 3\" /></div>"
+        },
+
+        "accessibility": [
+          "Use label prop or wrap in <label> with htmlFor",
+          "Checkbox must have associated label text",
+          "Keyboard focusable with space to toggle",
+          "Use in fieldset with legend for groups"
+        ],
+
+        "relatedComponents": ["Input", "Select", "FilterChip"],
+        "whenToUse": "Boolean choices, multi-select filters, feature toggles, agreeing to terms",
+        "whenNotToUse": "For single choice from multiple options (use radio), for on/off toggle (consider switch)"
+      },
+
+      "Badge": {
+        "file": "src/components/ui/Badge.tsx",
+        "description": "Small label component for displaying status, categories, or metadata",
+        "category": "ui",
+        "type": "display",
+        
+        "props": {
+          "variant": {
+            "type": "enum",
+            "required": false,
+            "default": "default",
+            "options": ["default", "draft", "submitted", "approved", "rejected", "secondary", "destructive", "warning", "info"],
+            "description": "Visual style variant"
+          },
+          "children": {
+            "type": "ReactNode",
+            "required": true,
+            "description": "Badge content (typically short text)"
+          }
+        },
+
+        "variants": {
+          "default": "General purpose default badge",
+          "draft": "Draft status (muted)",
+          "submitted": "Submitted status (accent color)",
+          "approved": "Approved/active status (secondary color)",
+          "rejected": "Rejected status (destructive)",
+          "secondary": "Secondary badges, featured items",
+          "destructive": "Error or critical status",
+          "warning": "Warning status",
+          "info": "Informational badges"
+        },
+
+        "baseStyle": "inline-flex items-center rounded-md px-2.5 py-0.5 text-small font-semibold",
+
+        "usage": {
+          "status": "<Badge variant=\"approved\">Approved</Badge>",
+          "category": "<Badge variant=\"default\">Restaurant</Badge>",
+          "count": "<Badge variant=\"info\">12 new</Badge>",
+          "featured": "<Badge variant=\"secondary\">Featured</Badge>"
+        },
+
+        "accessibility": [
+          "Keep text short (1-2 words)",
+          "Ensure sufficient color contrast",
+          "Use semantic variants matching meaning",
+          "Consider aria-label for icon-only badges"
+        ],
+
+        "relatedComponents": ["Button", "Card", "StatusCard"],
+        "whenToUse": "Status indicators, categories, tags, counts, small labels",
+        "whenNotToUse": "For actions (use Button), for long text (use regular text), for emphasis (use Typography)"
+      },
+
+      "Alert": {
+        "file": "src/components/ui/Alert.tsx",
+        "description": "Notification component for displaying important messages and feedback",
+        "category": "ui",
+        "type": "feedback",
+        
+        "subComponents": {
+          "Alert": {
+            "description": "Main container",
+            "props": {
+              "variant": {
+                "type": "enum",
+                "options": ["default", "destructive", "success"],
+                "default": "default"
+              }
+            }
+          },
+          "AlertTitle": {
+            "description": "Alert heading",
+            "defaultStyle": "font-medium leading-none tracking-tight"
+          },
+          "AlertDescription": {
+            "description": "Alert message content",
+            "defaultStyle": "text-small"
+          }
+        },
+
+        "variants": {
+          "default": "General information, neutral messages",
+          "destructive": "Errors, critical warnings, failed actions",
+          "success": "Success messages, confirmations"
+        },
+
+        "usage": {
+          "basic": "<Alert><AlertTitle>Note</AlertTitle><AlertDescription>This is important information.</AlertDescription></Alert>",
+          "error": "<Alert variant=\"destructive\"><AlertTitle>Error</AlertTitle><AlertDescription>Something went wrong.</AlertDescription></Alert>",
+          "success": "<Alert variant=\"success\"><AlertTitle>Success</AlertTitle><AlertDescription>Changes saved successfully.</AlertDescription></Alert>"
+        },
+
+        "accessibility": [
+          "Use appropriate role (alert, status)",
+          "Screen readers announce automatically",
+          "Keep messages concise and actionable",
+          "Include icon for visual distinction"
+        ],
+
+        "relatedComponents": ["StatusCard", "Badge"],
+        "whenToUse": "Form errors, success messages, important notifications, warnings",
+        "whenNotToUse": "For static information (use Card), for navigation (use links), for temporary toasts (consider toast component)"
+      },
+
+      "Tabs": {
+        "file": "src/components/ui/Tabs.tsx",
+        "description": "Tab navigation component for switching between related content sections",
+        "category": "ui",
+        "type": "navigation",
+        
+        "subComponents": {
+          "Tabs": {
+            "description": "Container with state management",
+            "props": {
+              "value": {"type": "string", "required": true, "description": "Currently active tab"},
+              "onValueChange": {"type": "(value: string) => void", "required": true, "description": "Handler when tab changes"}
+            }
+          },
+          "TabList": {
+            "description": "Horizontal container for tab buttons"
+          },
+          "Tab": {
+            "description": "Individual tab button",
+            "props": {
+              "value": {"type": "string", "required": true, "description": "Unique identifier for this tab"}
+            }
+          }
+        },
+
+        "usage": {
+          "basic": "<Tabs value={activeTab} onValueChange={setActiveTab}><TabList><Tab value=\"overview\">Overview</Tab><Tab value=\"details\">Details</Tab></TabList>{activeTab === 'overview' && <div>Overview content</div>}{activeTab === 'details' && <div>Details content</div>}</Tabs>"
+        },
+
+        "accessibility": [
+          "Use semantic tab roles",
+          "Arrow keys navigate between tabs",
+          "Active tab visually distinct",
+          "Content updates when tab changes"
+        ],
+
+        "relatedComponents": ["Card", "Button"],
+        "whenToUse": "Switching between related content views, organizing content sections",
+        "whenNotToUse": "For page navigation (use links), for forms with steps (use stepper), for filters (use FilterChip)"
+      },
+
+      "Avatar": {
+        "file": "src/components/ui/Avatar.tsx",
+        "description": "Display user profile image or fallback initials",
+        "category": "ui",
+        "type": "display",
+        
+        "props": {
+          "src": {
+            "type": "string",
+            "required": false,
+            "description": "Image URL"
+          },
+          "alt": {
+            "type": "string",
+            "required": false,
+            "default": "Avatar",
+            "description": "Alt text for image"
+          },
+          "size": {
+            "type": "enum",
+            "required": false,
+            "default": "md",
+            "options": ["sm", "md", "lg", "xl"],
+            "description": "Avatar size"
+          },
+          "fallback": {
+            "type": "string",
+            "required": false,
+            "description": "Fallback text (initials) when no image"
+          }
+        },
+
+        "sizes": {
+          "sm": "32px (size-8)",
+          "md": "40px (size-10)",
+          "lg": "48px (size-12)",
+          "xl": "64px (size-16)"
+        },
+
+        "subComponents": {
+          "AvatarGroup": {
+            "description": "Display overlapping avatars",
+            "props": {
+              "max": {"type": "number", "default": 3, "description": "Max avatars to show before +N"}
+            }
+          }
+        },
+
+        "usage": {
+          "basic": "<Avatar src=\"/user.jpg\" alt=\"John Doe\" />",
+          "fallback": "<Avatar fallback=\"JD\" alt=\"John Doe\" />",
+          "sizes": "<Avatar size=\"lg\" src=\"/user.jpg\" />",
+          "group": "<AvatarGroup max={3}><Avatar src=\"/user1.jpg\" /><Avatar src=\"/user2.jpg\" /><Avatar src=\"/user3.jpg\" /><Avatar src=\"/user4.jpg\" /></AvatarGroup>"
+        },
+
+        "accessibility": [
+          "Always provide alt text",
+          "Fallback shows first letter or initials",
+          "Circular shape with overflow hidden"
+        ],
+
+        "relatedComponents": ["Card", "Badge"],
+        "whenToUse": "User profiles, comment authors, team members, owner info",
+        "whenNotToUse": "For business logos (use img), for decorative images (use img with alt=\"\")"
+      },
+
+      "Skeleton": {
+        "file": "src/components/ui/Skeleton.tsx",
+        "description": "Loading placeholder that mimics content structure with animated pulse",
+        "category": "ui",
+        "type": "feedback",
+        
+        "props": {
+          "className": {
+            "type": "string",
+            "required": false,
+            "description": "Custom classes to set dimensions and shape"
+          }
+        },
+
+        "baseStyle": "animate-pulse rounded-md bg-muted",
+
+        "usage": {
+          "text": "<Skeleton className=\"h-4 w-full\" />",
+          "heading": "<Skeleton className=\"h-8 w-3/4\" />",
+          "avatar": "<Skeleton className=\"h-12 w-12 rounded-full\" />",
+          "card": "<Card><CardHeader><Skeleton className=\"h-6 w-1/2 mb-2\" /><Skeleton className=\"h-4 w-3/4\" /></CardHeader><CardContent><Skeleton className=\"h-4 w-full mb-2\" /><Skeleton className=\"h-4 w-full mb-2\" /><Skeleton className=\"h-4 w-2/3\" /></CardContent></Card>"
+        },
+
+        "patterns": {
+          "listingCardSkeleton": "Skeleton for ListingCard with image, title, description",
+          "profileSkeleton": "Skeleton for user profile with avatar and info",
+          "dashboardSkeleton": "Skeleton for dashboard metrics"
+        },
+
+        "accessibility": [
+          "Use aria-busy=\"true\" on container",
+          "Use aria-live=\"polite\" for updates",
+          "Replace with real content when loaded"
+        ],
+
+        "relatedComponents": ["Card", "Avatar"],
+        "whenToUse": "Data loading states, slow API responses, optimistic UI",
+        "whenNotToUse": "For immediate loads (show content directly), for errors (use Alert)"
+      },
+
+      "Pagination": {
+        "file": "src/components/ui/Pagination.tsx",
+        "description": "Page navigation component with previous/next and numbered page buttons",
+        "category": "ui",
+        "type": "navigation",
+        
+        "props": {
+          "currentPage": {
+            "type": "number",
+            "required": true,
+            "description": "Current active page number (1-indexed)"
+          },
+          "totalPages": {
+            "type": "number",
+            "required": true,
+            "description": "Total number of pages"
+          },
+          "onPageChange": {
+            "type": "(page: number) => void",
+            "required": true,
+            "description": "Handler when page changes"
+          },
+          "maxVisible": {
+            "type": "number",
+            "required": false,
+            "default": 5,
+            "description": "Maximum page buttons to show before ellipsis"
+          }
+        },
+
+        "behavior": {
+          "ellipsis": "Shows ... when total pages exceeds maxVisible",
+          "boundaries": "Always shows first and last page",
+          "disabled": "Previous disabled on first page, Next disabled on last page"
+        },
+
+        "usage": {
+          "basic": "<Pagination currentPage={page} totalPages={10} onPageChange={setPage} />",
+          "withState": "const [page, setPage] = useState(1);\n<Pagination currentPage={page} totalPages={totalPages} onPageChange={setPage} />"
+        },
+
+        "accessibility": [
+          "Buttons have aria-label",
+          "Current page has aria-current=\"page\"",
+          "Disabled buttons have disabled state",
+          "Keyboard navigable"
+        ],
+
+        "relatedComponents": ["Button", "Card"],
+        "whenToUse": "Below list views, search results, data tables",
+        "whenNotToUse": "For small datasets (show all), for infinite scroll (use different pattern)"
+      },
+
+      "FilterChip": {
+        "file": "src/components/ui/FilterChip.tsx",
+        "description": "Chip component for filters with active state, dropdown indicator, and close button",
+        "category": "ui",
+        "type": "interactive",
+        
+        "props": {
+          "label": {
+            "type": "string",
+            "required": true,
+            "description": "Chip label text"
+          },
+          "active": {
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "description": "Whether chip is in active state"
+          },
+          "showDropdown": {
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "description": "Show dropdown chevron icon"
+          },
+          "showClose": {
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "description": "Show close X icon"
+          },
+          "onClose": {
+            "type": "() => void",
+            "required": false,
+            "description": "Handler when close icon clicked"
+          }
+        },
+
+        "subComponents": {
+          "FilterChipGroup": {
+            "description": "Container for multiple filter chips with proper spacing"
+          }
+        },
+
+        "usage": {
+          "basic": "<FilterChip label=\"All Categories\" />",
+          "active": "<FilterChip label=\"Restaurants\" active />",
+          "dropdown": "<FilterChip label=\"Sort By\" showDropdown />",
+          "closeable": "<FilterChip label=\"Open Now\" active showClose onClose={() => removeFilter()} />",
+          "group": "<FilterChipGroup><FilterChip label=\"All\" active /><FilterChip label=\"Food\" /><FilterChip label=\"Gym\" /></FilterChipGroup>"
+        },
+
+        "accessibility": [
+          "Buttons are keyboard focusable",
+          "Active state visually distinct",
+          "Close action doesn't propagate to chip click"
+        ],
+
+        "relatedComponents": ["Button", "Badge", "Select"],
+        "whenToUse": "Filter bars, tag selection, category chips, active filters display",
+        "whenNotToUse": "For static tags (use Badge), for navigation (use Tabs)"
+      },
+
+      "StatusCard": {
+        "file": "src/components/ui/StatusCard.tsx",
+        "description": "Colored card for displaying status messages with icon support",
+        "category": "ui",
+        "type": "feedback",
+        
+        "props": {
+          "variant": {
+            "type": "enum",
+            "required": false,
+            "default": "info",
+            "options": ["info", "warning", "success"],
+            "description": "Status variant"
+          },
+          "title": {
+            "type": "ReactNode",
+            "required": true,
+            "description": "Status title or message"
+          },
+          "icon": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Optional icon element"
+          },
+          "children": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Additional details or description"
+          }
+        },
+
+        "variants": {
+          "info": "Blue tones for informational messages",
+          "warning": "Amber tones for warnings or cautions",
+          "success": "Emerald tones for success messages"
+        },
+
+        "usage": {
+          "basic": "<StatusCard variant=\"info\" title=\"New feature available\" />",
+          "withIcon": "<StatusCard variant=\"warning\" title=\"Action required\" icon={<AlertTriangle />} />",
+          "withDetails": "<StatusCard variant=\"success\" title=\"Profile complete\" icon={<CheckCircle />}>Your profile is now visible to users.</StatusCard>"
+        },
+
+        "accessibility": [
+          "Use appropriate role",
+          "Color not sole indicator (includes icon/text)",
+          "Sufficient contrast in both themes"
+        ],
+
+        "relatedComponents": ["Alert", "Card", "Badge"],
+        "whenToUse": "Status notifications, informational banners, contextual messages",
+        "whenNotToUse": "For form validation (use Alert), for navigation (use links)"
+      },
+
+      "MetaItem": {
+        "file": "src/components/ui/MetaItem.tsx",
+        "description": "Small inline metadata item with optional icon",
+        "category": "ui",
+        "type": "display",
+        
+        "props": {
+          "icon": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Icon element to display before text"
+          },
+          "children": {
+            "type": "ReactNode",
+            "required": true,
+            "description": "Metadata text content"
+          }
+        },
+
+        "baseStyle": "flex items-center gap-1.5 text-small text-muted-foreground",
+
+        "usage": {
+          "basic": "<MetaItem>Updated 2 hours ago</MetaItem>",
+          "withIcon": "<MetaItem icon={<MapPin className=\"h-4 w-4\" />}>San Pedro, Belize</MetaItem>",
+          "group": "<div className=\"flex gap-4\"><MetaItem icon={<Clock />}>9 AM - 5 PM</MetaItem><MetaItem icon={<Phone />}>501-1234</MetaItem></div>"
+        },
+
+        "accessibility": [
+          "Icons should be decorative (aria-hidden)",
+          "Text provides full context"
+        ],
+
+        "relatedComponents": ["Badge", "InfoStat"],
+        "whenToUse": "Timestamps, locations, phone numbers, small metadata display",
+        "whenNotToUse": "For prominent information (use InfoStat), for labels (use Badge)"
+      },
+
+      "InfoStat": {
+        "file": "src/components/ui/InfoStat.tsx",
+        "description": "Display a statistic or metric with icon, label, and value",
+        "category": "ui",
+        "type": "display",
+        
+        "props": {
+          "icon": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Icon element displayed in circular container"
+          },
+          "label": {
+            "type": "string",
+            "required": true,
+            "description": "Stat label (e.g., 'Total Members')"
+          },
+          "value": {
+            "type": "string",
+            "required": true,
+            "description": "Stat value (e.g., '500+')"
+          },
+          "tone": {
+            "type": "enum",
+            "required": false,
+            "default": "primary",
+            "options": ["primary", "accent", "muted"],
+            "description": "Color tone for icon circle"
+          }
+        },
+
+        "tones": {
+          "primary": "Primary brand color",
+          "accent": "Accent/amber color",
+          "muted": "Muted/gray color"
+        },
+
+        "usage": {
+          "basic": "<InfoStat icon={<Users />} label=\"Members\" value=\"500+\" />",
+          "tones": "<div className=\"grid grid-cols-3 gap-4\"><InfoStat icon={<Dumbbell />} label=\"Equipment\" value=\"50+ Items\" tone=\"primary\" /><InfoStat icon={<Calendar />} label=\"Classes\" value=\"20/Week\" tone=\"accent\" /><InfoStat icon={<Clock />} label=\"Hours\" value=\"6 AM - 10 PM\" tone=\"muted\" /></div>"
+        },
+
+        "accessibility": [
+          "Label and value clearly associated",
+          "Icon is decorative",
+          "Good contrast in all tones"
+        ],
+
+        "relatedComponents": ["Card", "MetaItem", "StatusCard"],
+        "whenToUse": "Dashboard metrics, key statistics, highlighted numbers",
+        "whenNotToUse": "For small metadata (use MetaItem), for status (use StatusCard)"
+      },
+
+      "ThemeToggle": {
+        "file": "src/components/ui/ThemeToggle.tsx",
+        "description": "Toggle component for switching between light and dark themes",
+        "category": "ui",
+        "type": "interactive",
+        
+        "props": {
+          "variant": {
+            "type": "enum",
+            "required": false,
+            "default": "switch",
+            "options": ["switch", "button"],
+            "description": "Toggle UI style"
+          },
+          "showLabel": {
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "description": "Show theme label text"
+          }
+        },
+
+        "variants": {
+          "switch": "Toggle switch UI with sliding indicator",
+          "button": "Button UI that changes icon"
+        },
+
+        "usage": {
+          "switch": "<ThemeToggle variant=\"switch\" />",
+          "switchWithLabel": "<ThemeToggle variant=\"switch\" showLabel />",
+          "button": "<ThemeToggle variant=\"button\" />",
+          "buttonWithLabel": "<ThemeToggle variant=\"button\" showLabel />"
+        },
+
+        "behavior": {
+          "persistence": "Theme saved to localStorage",
+          "transition": "Smooth 300ms transition between themes",
+          "icons": "Sun for light mode, Moon for dark mode"
+        },
+
+        "accessibility": [
+          "Has role=\"switch\" for switch variant",
+          "aria-checked reflects current state",
+          "aria-label describes action",
+          "Keyboard accessible"
+        ],
+
+        "relatedComponents": ["Checkbox", "Button"],
+        "whenToUse": "In header, settings panel, user preferences",
+        "whenNotToUse": "For other boolean toggles (use Checkbox)"
+      },
+
+      "PhotoUpload": {
+        "file": "src/components/ui/PhotoUpload.tsx",
+        "description": "Drag-and-drop file upload component for images",
+        "category": "ui",
+        "type": "form",
+        
+        "props": {
+          "label": {
+            "type": "string",
+            "required": false,
+            "default": "Drag and drop photos here",
+            "description": "Main label text"
+          },
+          "hint": {
+            "type": "string",
+            "required": false,
+            "default": "or click to browse • JPG, PNG up to 5MB each",
+            "description": "Hint text with file requirements"
+          },
+          "icon": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Icon element"
+          }
+        },
+
+        "baseStyle": "Dashed border, muted background, hover states",
+
+        "usage": {
+          "basic": "<PhotoUpload />",
+          "withIcon": "<PhotoUpload icon={<Upload className=\"h-8 w-8\" />} />",
+          "custom": "<PhotoUpload label=\"Upload business photos\" hint=\"Max 10 photos, 5MB each\" />"
+        },
+
+        "accessibility": [
+          "Should be clickable to open file dialog",
+          "Support drag and drop",
+          "Show upload progress",
+          "Display uploaded files"
+        ],
+
+        "relatedComponents": ["Input", "Button", "Card"],
+        "whenToUse": "Uploading images, business photos, profile pictures",
+        "whenNotToUse": "For non-image files (adapt component), for single click upload (use Input type=file)"
+      },
+
+      "SidePanel": {
+        "file": "src/components/ui/SidePanel.tsx",
+        "description": "Sliding panel that appears from the right side of the screen",
+        "category": "ui",
+        "type": "overlay",
+        
+        "props": {
+          "isOpen": {
+            "type": "boolean",
+            "required": true,
+            "description": "Whether panel is open"
+          },
+          "onClose": {
+            "type": "() => void",
+            "required": true,
+            "description": "Handler to close panel"
+          },
+          "title": {
+            "type": "string",
+            "required": false,
+            "description": "Panel header title"
+          },
+          "children": {
+            "type": "ReactNode",
+            "required": true,
+            "description": "Panel content"
+          }
+        },
+
+        "behavior": {
+          "animation": "Slides in from right with 300ms transition",
+          "backdrop": "Dark overlay behind panel",
+          "escapeKey": "Closes panel on Escape key",
+          "scrollLock": "Prevents body scroll when open",
+          "responsive": "Full width on mobile, 400px on desktop"
+        },
+
+        "usage": {
+          "basic": "<SidePanel isOpen={open} onClose={() => setOpen(false)} title=\"Details\"><p>Panel content</p></SidePanel>",
+          "withForm": "<SidePanel isOpen={open} onClose={handleClose} title=\"Edit Item\"><form>...</form></SidePanel>"
+        },
+
+        "accessibility": [
+          "Focus trapped within panel when open",
+          "Escape key closes panel",
+          "Backdrop click closes panel",
+          "Close button has aria-label"
+        ],
+
+        "relatedComponents": ["Card", "Button"],
+        "whenToUse": "Details views, forms, filters, additional info",
+        "whenNotToUse": "For critical actions (use modal), for navigation (use Sidebar)"
+      }
+    },
+
+    "business": {
+      "ListingCard": {
+        "file": "src/components/business/ListingCard.tsx",
+        "description": "Card component displaying business listing preview with image, details, and metadata",
+        "category": "business",
+        "type": "composite",
+        
+        "props": {
+          "business": {
+            "type": "Business",
+            "required": true,
+            "description": "Business data object from mockData"
+          },
+          "onClick": {
+            "type": "() => void",
+            "required": false,
+            "description": "Handler when card is clicked"
+          }
+        },
+
+        "composition": [
+          "Card wrapper with hover shadow",
+          "Optional image (aspect-video, rounded-t-lg)",
+          "CardHeader with business name and category",
+          "Featured badge if applicable",
+          "CardContent with description, address, phone, hours, tags"
+        ],
+
+        "usage": {
+          "basic": "<ListingCard business={businessData} />",
+          "interactive": "<ListingCard business={businessData} onClick={() => navigate(`/business/${businessData.id}`)} />",
+          "grid": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">{businesses.map(b => <ListingCard key={b.id} business={b} />)}</div>"
+        },
+
+        "relatedComponents": ["Card", "Badge", "Button"],
+        "whenToUse": "Search results, listing grids, featured business sections",
+        "whenNotToUse": "For detailed view (use full page), for admin list (use simplified card)"
+      },
+
+      "BusinessInfoCard": {
+        "file": "src/components/business/BusinessInfoCard.tsx",
+        "description": "Card displaying structured business information (address, phone, website, capacity)",
+        "category": "business",
+        "type": "composite",
+        
+        "props": {
+          "addressLines": {
+            "type": "string[]",
+            "required": true,
+            "description": "Array of address lines"
+          },
+          "phone": {
+            "type": "string",
+            "required": true,
+            "description": "Phone number (formatted)"
+          },
+          "website": {
+            "type": "string",
+            "required": true,
+            "description": "Website URL"
+          },
+          "capacity": {
+            "type": "string",
+            "required": true,
+            "description": "Capacity information"
+          }
+        },
+
+        "composition": [
+          "Card with Info icon",
+          "Labeled rows with borders",
+          "Clickable phone and website links"
+        ],
+
+        "usage": {
+          "basic": "<BusinessInfoCard addressLines={['123 Main St', 'San Pedro, Belize']} phone=\"501-1234\" website=\"https://example.com\" capacity=\"50 people\" />"
+        },
+
+        "relatedComponents": ["Card", "MetaItem"],
+        "whenToUse": "Business detail pages, gym/restaurant info sections",
+        "whenNotToUse": "For list views (too detailed), for cards without structured info"
+      },
+
+      "BusinessHoursCard": {
+        "file": "src/components/business/BusinessHoursCard.tsx",
+        "description": "Card displaying business hours for each day of the week",
+        "category": "business",
+        "type": "composite",
+        
+        "props": {
+          "hours": {
+            "type": "BusinessHour[]",
+            "required": true,
+            "description": "Array of day/time objects"
+          }
+        },
+
+        "dataStructure": {
+          "BusinessHour": {
+            "day": "string (e.g., 'Monday')",
+            "time": "string (e.g., '6:00 AM - 10:00 PM')",
+            "isOpen": "boolean (optional, highlights if true)"
+          }
+        },
+
+        "usage": {
+          "basic": "<BusinessHoursCard hours={[{day: 'Monday', time: '9AM-5PM', isOpen: true}, ...]} />"
+        },
+
+        "relatedComponents": ["Card", "MetaItem"],
+        "whenToUse": "Business detail pages, info sections",
+        "whenNotToUse": "For simplified displays (use text), for always-open businesses"
+      },
+
+      "VerificationBadge": {
+        "file": "src/components/business/VerificationBadge.tsx",
+        "description": "Badge indicating verified or premium business status",
+        "category": "business",
+        "type": "display",
+        
+        "props": {
+          "label": {
+            "type": "string",
+            "required": true,
+            "description": "Badge text (e.g., 'Verified Business')"
+          },
+          "icon": {
+            "type": "ReactNode",
+            "required": false,
+            "description": "Icon element (e.g., checkmark)"
+          }
+        },
+
+        "style": "Emerald gradient background with shadow",
+
+        "usage": {
+          "basic": "<VerificationBadge label=\"Verified Business\" />",
+          "withIcon": "<VerificationBadge label=\"Verified\" icon={<Check className=\"h-4 w-4\" />} />"
+        },
+
+        "relatedComponents": ["Badge"],
+        "whenToUse": "Verified businesses, premium listings, certified providers",
+        "whenNotToUse": "For status indicators (use Badge), for regular tags"
+      },
+
+      "BizListingPreviewCard": {
+        "file": "src/components/business/BizListingPreviewCard.tsx",
+        "description": "Preview card for business listing in admin/owner views",
+        "category": "business",
+        "type": "composite",
+        
+        "usage": "Admin and owner dashboards for managing listings",
+        "relatedComponents": ["ListingCard", "Card", "Badge"],
+        "whenToUse": "Admin review queue, owner dashboard, listing management"
+      },
+
+      "BusinessMeta": {
+        "file": "src/components/business/BusinessMeta.tsx",
+        "description": "Display business metadata in a consistent format",
+        "category": "business",
+        "type": "display",
+        
+        "relatedComponents": ["MetaItem", "InfoStat"],
+        "whenToUse": "Business cards, listing details, metadata sections"
+      },
+
+      "LastUpdatedStamp": {
+        "file": "src/components/business/LastUpdatedStamp.tsx",
+        "description": "Display last updated timestamp",
+        "category": "business",
+        "type": "display",
+        
+        "relatedComponents": ["MetaItem"],
+        "whenToUse": "Admin views, owner dashboards, content management"
+      },
+
+      "LevelBadges": {
+        "file": "src/components/business/LevelBadges.tsx",
+        "description": "Display skill level badges (e.g., Beginner, Intermediate, Advanced)",
+        "category": "business",
+        "type": "display",
+        
+        "relatedComponents": ["Badge", "FilterChip"],
+        "whenToUse": "Gym listings, class schedules, fitness programs"
+      },
+
+      "FitnessHighlightCard": {
+        "file": "src/components/business/FitnessHighlightCard.tsx",
+        "description": "Highlight card for fitness business features",
+        "category": "business",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "InfoStat"],
+        "whenToUse": "Gym detail pages, fitness center showcases"
+      },
+
+      "EquipmentFeaturesCard": {
+        "file": "src/components/business/EquipmentFeaturesCard.tsx",
+        "description": "Display gym equipment and features",
+        "category": "business",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Badge"],
+        "whenToUse": "Gym listings, equipment showcases"
+      },
+
+      "TrainerCard": {
+        "file": "src/components/business/TrainerCard.tsx",
+        "description": "Display trainer profile information",
+        "category": "business",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Avatar", "Badge"],
+        "whenToUse": "Gym listings, trainer directories"
+      },
+
+      "TrainerGrid": {
+        "file": "src/components/business/TrainerGrid.tsx",
+        "description": "Grid layout for displaying multiple trainers",
+        "category": "business",
+        "type": "composite",
+        
+        "relatedComponents": ["TrainerCard"],
+        "whenToUse": "Gym detail pages with multiple trainers"
+      },
+
+      "TodayClassesCard": {
+        "file": "src/components/business/TodayClassesCard.tsx",
+        "description": "Display today's class schedule",
+        "category": "business",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Badge"],
+        "whenToUse": "Gym detail pages, class schedules"
+      },
+
+      "PricingPlanCard": {
+        "file": "src/components/business/PricingPlanCard.tsx",
+        "description": "Display pricing plan details",
+        "category": "business",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Button", "Badge"],
+        "whenToUse": "Gym listings, membership pages"
+      },
+
+      "PricingPlanGrid": {
+        "file": "src/components/business/PricingPlanGrid.tsx",
+        "description": "Grid layout for pricing plans",
+        "category": "business",
+        "type": "composite",
+        
+        "relatedComponents": ["PricingPlanCard"],
+        "whenToUse": "Pricing pages, membership options"
+      },
+
+      "BizListingForm": {
+        "file": "src/components/business/BizListingForm.tsx",
+        "description": "Form for creating/editing business listings",
+        "category": "business",
+        "type": "form",
+        
+        "relatedComponents": ["Input", "Select", "Checkbox", "Button", "Card"],
+        "whenToUse": "Create listing page, edit listing page, admin management"
+      },
+
+      "BizListingLayout": {
+        "file": "src/components/business/BizListingLayout.tsx",
+        "description": "Layout wrapper for business listing detail pages",
+        "category": "business",
+        "type": "layout",
+        
+        "relatedComponents": ["Card", "Tabs", "SidePanel"],
+        "whenToUse": "Business detail pages with consistent layout"
+      }
+    },
+
+    "layout": {
+      "Sidebar": {
+        "file": "src/components/layout/Sidebar.tsx",
+        "description": "Fixed left navigation sidebar with grouped navigation items",
+        "category": "layout",
+        "type": "navigation",
+        
+        "props": {
+          "currentPage": {
+            "type": "string",
+            "required": true,
+            "description": "Currently active page ID"
+          },
+          "onNavigate": {
+            "type": "(page: string) => void",
+            "required": true,
+            "description": "Navigation handler"
+          },
+          "isOpen": {
+            "type": "boolean",
+            "required": true,
+            "description": "Whether sidebar is open (for mobile toggle)"
+          }
+        },
+
+        "structure": {
+          "width": "256px (w-64)",
+          "position": "fixed left-0 top-0 h-full",
+          "sections": "Navigation items grouped by section with headings",
+          "responsive": "Slides out on mobile, fixed on desktop"
+        },
+
+        "navigation": {
+          "items": "Array of {id, label, icon, section}",
+          "activeState": "bg-sidebar-primary text-sidebar-primary-foreground",
+          "hoverState": "hover:bg-sidebar-accent"
+        },
+
+        "usage": {
+          "basic": "<Sidebar currentPage={page} onNavigate={setPage} isOpen={sidebarOpen} />"
+        },
+
+        "relatedComponents": ["Header", "Button"],
+        "whenToUse": "App-wide navigation, persistent navigation",
+        "whenNotToUse": "For content navigation (use Tabs), for mobile-only nav (consider bottom nav)"
+      },
+
+      "Header": {
+        "file": "src/components/layout/Header.tsx",
+        "description": "Top header bar with page title, theme toggle, and user actions",
+        "category": "layout",
+        "type": "navigation",
+        
+        "composition": [
+          "Sidebar toggle (mobile)",
+          "Page title",
+          "ThemeToggle",
+          "User menu/actions"
+        ],
+
+        "relatedComponents": ["ThemeToggle", "Button", "Avatar"],
+        "whenToUse": "Every page as consistent top navigation",
+        "whenNotToUse": "For landing pages without app chrome"
+      },
+
+      "NavMenu": {
+        "file": "src/components/layout/NavMenu.tsx",
+        "description": "Navigation menu component",
+        "category": "layout",
+        "type": "navigation",
+        
+        "relatedComponents": ["Sidebar", "Button"],
+        "whenToUse": "Dropdown menus, context menus"
+      },
+
+      "AdminSidebar": {
+        "file": "src/components/admin/AdminSidebar.tsx",
+        "description": "Specialized sidebar for admin dashboard",
+        "category": "layout",
+        "type": "navigation",
+        
+        "relatedComponents": ["Sidebar"],
+        "whenToUse": "Admin dashboard pages"
+      }
+    },
+
+    "food": {
+      "FoodHero": {
+        "file": "src/components/food/FoodHero.tsx",
+        "description": "Hero section for restaurant detail pages",
+        "category": "food",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Badge", "Button"],
+        "whenToUse": "Restaurant detail pages, food listing headers"
+      },
+
+      "FoodSidebar": {
+        "file": "src/components/food/FoodSidebar.tsx",
+        "description": "Sidebar for restaurant information and actions",
+        "category": "food",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Button", "BusinessInfoCard"],
+        "whenToUse": "Restaurant detail pages with persistent info"
+      },
+
+      "FoodMenuSection": {
+        "file": "src/components/food/FoodMenuSection.tsx",
+        "description": "Display restaurant menu section with items",
+        "category": "food",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Badge"],
+        "whenToUse": "Restaurant menus, food item listings"
+      },
+
+      "FoodQuickInfoRow": {
+        "file": "src/components/food/FoodQuickInfoRow.tsx",
+        "description": "Quick info row for restaurant (cuisine, price range, etc.)",
+        "category": "food",
+        "type": "display",
+        
+        "relatedComponents": ["MetaItem", "Badge"],
+        "whenToUse": "Restaurant cards, food listing previews"
+      }
+    },
+
+    "home": {
+      "HeroSearch": {
+        "file": "src/components/home/HeroSearch.tsx",
+        "description": "Hero section with search functionality",
+        "category": "home",
+        "type": "composite",
+        
+        "relatedComponents": ["Input", "Button", "Select"],
+        "whenToUse": "Homepage, landing page search"
+      },
+
+      "FeaturedCategories": {
+        "file": "src/components/home/FeaturedCategories.tsx",
+        "description": "Display featured business categories",
+        "category": "home",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Badge"],
+        "whenToUse": "Homepage category showcase"
+      },
+
+      "FeaturedBusinesses": {
+        "file": "src/components/home/FeaturedBusinesses.tsx",
+        "description": "Display featured business listings",
+        "category": "home",
+        "type": "composite",
+        
+        "relatedComponents": ["ListingCard"],
+        "whenToUse": "Homepage featured section"
+      }
+    },
+
+    "admin": {
+      "BusinessCard": {
+        "file": "src/components/admin/BusinessCard.tsx",
+        "description": "Admin view of business for review queue",
+        "category": "admin",
+        "type": "composite",
+        
+        "relatedComponents": ["Card", "Badge", "Button"],
+        "whenToUse": "Admin review queue, business management"
+      },
+
+      "FilterBar": {
+        "file": "src/components/admin/FilterBar.tsx",
+        "description": "Filter bar for admin lists with search and filters",
+        "category": "admin",
+        "type": "composite",
+        
+        "relatedComponents": ["Input", "Select", "FilterChip"],
+        "whenToUse": "Admin list pages, filterable data tables"
+      },
+
+      "BulkActionsBar": {
+        "file": "src/components/admin/BulkActionsBar.tsx",
+        "description": "Bulk action toolbar for selected items",
+        "category": "admin",
+        "type": "composite",
+        
+        "relatedComponents": ["Button", "Select"],
+        "whenToUse": "Admin lists with multi-select"
+      }
+    }
+  },
+
+  "usagePatterns": {
+    "forms": {
+      "description": "Form patterns using Input, Select, Checkbox, Button components",
+      "structure": [
+        "Card wrapper for form sections",
+        "CardHeader with title",
+        "CardContent with form fields (space-y-4)",
+        "Label + Input/Select/Checkbox groups",
+        "CardFooter with action buttons"
+      ],
+      "example": "<Card><CardHeader><CardTitle>Business Information</CardTitle></CardHeader><CardContent className=\"space-y-4\"><div><label>Name</label><Input /></div><div><label>Category</label><Select>...</Select></div></CardContent><CardFooter><Button variant=\"outline\">Cancel</Button><Button>Save</Button></CardFooter></Card>"
+    },
+
+    "lists": {
+      "description": "List patterns using responsive grids and cards",
+      "structure": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "itemComponent": "ListingCard or similar",
+      "pagination": "Pagination component below grid",
+      "empty": "Empty state message when no items",
+      "loading": "Skeleton components during load"
+    },
+
+    "dashboards": {
+      "description": "Dashboard layouts with metrics and data",
+      "components": ["StatusCard", "InfoStat", "Card", "Badge"],
+      "layout": "Grid of metric cards, followed by detailed sections",
+      "responsive": "Stack on mobile, multi-column on desktop"
+    },
+
+    "detailPages": {
+      "description": "Business/item detail pages",
+      "structure": [
+        "Hero section with image and key info",
+        "Two-column layout (main content + sidebar)",
+        "Tabs for different content sections",
+        "Cards for grouped information"
+      ],
+      "components": ["Card", "Tabs", "Badge", "Button", "BusinessInfoCard"]
+    },
+
+    "filterBars": {
+      "description": "Filter interfaces above lists",
+      "components": ["Input (search)", "Select (dropdowns)", "FilterChip (active filters)", "FilterChipGroup"],
+      "layout": "Flex row, wraps on small screens",
+      "behavior": "Updates list below when filters change"
+    }
+  },
+
+  "compositionGuide": {
+    "principle": "Build complex UIs from simple primitives",
+    
+    "examples": {
+      "ListingCard": {
+        "primitives": ["Card", "CardHeader", "CardTitle", "CardDescription", "CardContent", "Badge"],
+        "pattern": "Combine Card structure with business data rendering"
+      },
+      "BusinessInfoCard": {
+        "primitives": ["Card", "CardHeader", "CardTitle", "CardContent"],
+        "pattern": "Structured info rows within Card"
+      },
+      "FilterBar": {
+        "primitives": ["Input", "Select", "FilterChipGroup", "FilterChip"],
+        "pattern": "Horizontal layout of form controls"
+      }
+    },
+
+    "guidelines": [
+      "Always use UI primitives from src/components/ui/",
+      "Domain components compose primitives, don't reimplement",
+      "Maintain consistent prop patterns (className, children, ...props)",
+      "Keep domain components under 500 lines",
+      "Extract repeated patterns into new primitives"
+    ]
+  },
+
+  "quickReference": {
+    "findingComponents": "Use component index to locate by name, search by category",
+    "checkingAPI": "Each component documents props with types, defaults, descriptions",
+    "usage": "Every component includes usage examples with code",
+    "accessibility": "Accessibility guidelines listed for each component",
+    "related": "Related components help discover alternatives",
+    "whenToUse": "Clear guidance on appropriate use cases"
+  },
+
+  "aiAgentGuidance": {
+    "beforeBuilding": [
+      "Search component index for existing components",
+      "Check if similar component exists in same category",
+      "Review composition patterns before creating new components",
+      "Use primitives from ui/ category when possible"
+    ],
+    
+    "whileBuilding": [
+      "Follow prop patterns from existing components",
+      "Use design tokens (reference design-system.json)",
+      "Include TypeScript types for all props",
+      "Add accessibility features (aria-labels, keyboard support)",
+      "Follow composition principle"
+    ],
+
+    "afterBuilding": [
+      "Add component to this index",
+      "Document props, usage, accessibility",
+      "Add to appropriate category",
+      "Create usage examples",
+      "Test in both light and dark themes"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/wellness/index.json",
+  "meta": {
+    "namespace": "wellness",
+    "description": "",
+    "location": "design-system/components/ui2/components/wellness",
+    "componentCount": 6
+  },
+  "components": {
+    "CommunityCard": {
+      "file": "components/wellness/CommunityCard.tsx"
+    },
+    "index": {
+      "file": "components/wellness/index.ts"
+    },
+    "MeditationCard": {
+      "file": "components/wellness/MeditationCard.tsx"
+    },
+    "MeditationGrid": {
+      "file": "components/wellness/MeditationGrid.tsx"
+    },
+    "ProgressAnalyticsCard": {
+      "file": "components/wellness/ProgressAnalyticsCard.tsx"
+    },
+    "SessionLibraryCard": {
+      "file": "components/wellness/SessionLibraryCard.tsx"
+    }
+  }
+}

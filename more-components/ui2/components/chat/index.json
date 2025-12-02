@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/chat/index.json",
+  "meta": {
+    "namespace": "chat",
+    "description": "",
+    "location": "design-system/components/ui2/components/chat",
+    "componentCount": 6
+  },
+  "components": {
+    "ChatHeader": {
+      "file": "components/chat/ChatHeader.tsx"
+    },
+    "ChatInput": {
+      "file": "components/chat/ChatInput.tsx"
+    },
+    "ChatMessage": {
+      "file": "components/chat/ChatMessage.tsx"
+    },
+    "ChatMessages": {
+      "file": "components/chat/ChatMessages.tsx"
+    },
+    "GlassChatCard": {
+      "file": "components/chat/GlassChatCard.tsx"
+    },
+    "index": {
+      "file": "components/chat/index.ts"
+    }
+  }
+}

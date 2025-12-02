@@ -1,0 +1,1024 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://belize-directory.com/design-system.json",
+  "meta": {
+    "name": "Belize Directory Design System",
+    "version": "1.0.0",
+    "description": "Comprehensive design system for the Belize local business directory application",
+    "grid": "8pt spacing system",
+    "stack": "React 18 + TypeScript + Tailwind CSS v3",
+    "lastUpdated": "2025-11-16"
+  },
+
+  "principles": {
+    "core": [
+      {
+        "name": "KISS (Keep It Simple, Stupid)",
+        "description": "Prioritize straightforward solutions over clever or complex ones. Avoid over-engineering.",
+        "application": "Choose readability over cleverness in all implementations"
+      },
+      {
+        "name": "YAGNI (You Aren't Gonna Need It)",
+        "description": "Don't implement features unless needed NOW. Avoid speculative architecture.",
+        "application": "Build for current requirements, not hypothetical future ones"
+      },
+      {
+        "name": "Component-First",
+        "description": "Components should be reusable, composable, and self-contained.",
+        "application": "Co-locate styles, tests, and logic with components. Follow vertical slice architecture."
+      },
+      {
+        "name": "Token-Only Rule",
+        "description": "ALWAYS use design system tokens for colors, typography, spacing, border radius, and shadows.",
+        "application": "NEVER use hard-coded style values. Update design tokens if needed, never inline styles.",
+        "critical": true
+      }
+    ],
+    "philosophy": {
+      "composition": "Prefer composition over inheritance. Build complex UIs from simple, reusable primitives.",
+      "performance": "Focus on clean, readable code. Let React 19's compiler handle optimizations. Only memoize when profiling reveals actual issues.",
+      "accessibility": "All components must be keyboard-navigable and screen-reader friendly. Use semantic HTML.",
+      "responsiveness": "Mobile-first approach. All layouts must work from 320px to 4K displays.",
+      "themeable": "All components must support both light and dark themes via CSS variables."
+    }
+  },
+
+  "foundation": {
+    "colorSystem": {
+      "approach": "Semantic color tokens using HSL values via CSS variables",
+      "implementation": "All colors are theme-aware and defined in src/index.css",
+      "usage": "Use Tailwind classes like 'bg-primary', 'text-foreground', never hard-coded colors",
+      
+      "semanticTokens": {
+        "primary": {
+          "purpose": "Main brand color for primary actions and emphasis",
+          "light": "hsl(243 67% 59%)",
+          "dark": "hsl(243 75% 74%)",
+          "foreground": {
+            "light": "hsl(0 0% 100%)",
+            "dark": "hsl(0 0% 0%)"
+          },
+          "usage": ["Primary buttons", "Active navigation items", "Key CTAs", "Important highlights"],
+          "tailwind": "bg-primary text-primary-foreground"
+        },
+        "secondary": {
+          "purpose": "Secondary brand color for supporting actions",
+          "light": "hsl(173 80% 40%)",
+          "dark": "hsl(173 80% 50%)",
+          "foreground": {
+            "light": "hsl(0 0% 100%)",
+            "dark": "hsl(0 0% 0%)"
+          },
+          "usage": ["Secondary buttons", "Featured badges", "Success states", "Approved items"],
+          "tailwind": "bg-secondary text-secondary-foreground"
+        },
+        "accent": {
+          "purpose": "Accent color for highlights and attention-grabbing elements",
+          "light": "hsl(32 95% 50%)",
+          "dark": "hsl(43 96% 65%)",
+          "foreground": {
+            "light": "hsl(0 0% 0%)",
+            "dark": "hsl(0 0% 0%)"
+          },
+          "usage": ["Submitted status", "Active filters", "Hover states", "Special highlights"],
+          "tailwind": "bg-accent text-accent-foreground"
+        },
+        "destructive": {
+          "purpose": "Error states and destructive actions",
+          "light": "hsl(0 84% 60%)",
+          "dark": "hsl(0 91% 71%)",
+          "foreground": {
+            "light": "hsl(0 0% 100%)",
+            "dark": "hsl(0 0% 0%)"
+          },
+          "usage": ["Delete buttons", "Error messages", "Rejected status", "Warning actions"],
+          "tailwind": "bg-destructive text-destructive-foreground"
+        },
+        "background": {
+          "purpose": "Page/app background",
+          "light": "hsl(90 33% 97%)",
+          "dark": "hsl(0 0% 0%)",
+          "usage": ["Body background", "App shell"],
+          "tailwind": "bg-background"
+        },
+        "foreground": {
+          "purpose": "Primary text color",
+          "light": "hsl(0 0% 0%)",
+          "dark": "hsl(0 0% 100%)",
+          "usage": ["Body text", "Headings", "Primary content"],
+          "tailwind": "text-foreground"
+        },
+        "card": {
+          "purpose": "Card backgrounds and containers",
+          "light": "hsl(0 0% 100%)",
+          "dark": "hsl(210 24% 13%)",
+          "foreground": {
+            "light": "hsl(0 0% 0%)",
+            "dark": "hsl(0 0% 100%)"
+          },
+          "usage": ["Cards", "Panels", "Elevated surfaces"],
+          "tailwind": "bg-card text-card-foreground"
+        },
+        "muted": {
+          "purpose": "Muted backgrounds and secondary text",
+          "light": "hsl(0 0% 94%)",
+          "dark": "hsl(0 0% 20%)",
+          "foreground": {
+            "light": "hsl(0 0% 20%)",
+            "dark": "hsl(0 0% 80%)"
+          },
+          "usage": ["Secondary text", "Disabled states", "Subtle backgrounds", "Draft status"],
+          "tailwind": "bg-muted text-muted-foreground"
+        },
+        "border": {
+          "purpose": "Border color for elements",
+          "light": "hsl(0 0% 0%)",
+          "dark": "hsl(0 0% 33%)",
+          "usage": ["Card borders", "Dividers", "Input borders"],
+          "tailwind": "border-border"
+        },
+        "input": {
+          "purpose": "Input field borders in default state",
+          "light": "hsl(0 0% 45%)",
+          "dark": "hsl(0 0% 100%)",
+          "usage": ["Input borders", "Select borders", "Form field outlines"],
+          "tailwind": "border-input"
+        },
+        "ring": {
+          "purpose": "Focus ring color",
+          "light": "hsl(243 67% 82%)",
+          "dark": "hsl(243 75% 74%)",
+          "usage": ["Focus states", "Focus rings", "Keyboard navigation indicators"],
+          "tailwind": "ring-ring"
+        }
+      },
+
+      "specialColors": {
+        "success": {
+          "light": "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
+          "usage": ["Success messages", "Approved states", "Positive feedback"]
+        },
+        "warning": {
+          "light": "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
+          "usage": ["Warning messages", "Caution states", "Pending actions"]
+        },
+        "danger": {
+          "light": "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
+          "usage": ["Danger buttons", "Critical errors", "Permanent delete actions"]
+        },
+        "info": {
+          "light": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+          "usage": ["Info messages", "Helpful tips", "Non-critical notifications"]
+        }
+      },
+
+      "chart": {
+        "description": "Color palette for charts and data visualization",
+        "colors": {
+          "1": {"light": "hsl(243 67% 59%)", "dark": "hsl(243 75% 74%)"},
+          "2": {"light": "hsl(173 80% 40%)", "dark": "hsl(173 80% 50%)"},
+          "3": {"light": "hsl(32 95% 50%)", "dark": "hsl(43 96% 65%)"},
+          "4": {"light": "hsl(330 81% 60%)", "dark": "hsl(330 81% 70%)"},
+          "5": {"light": "hsl(142 76% 45%)", "dark": "hsl(142 76% 58%)"}
+        },
+        "usage": ["Dashboard charts", "Analytics graphs", "Data visualization"],
+        "tailwind": "bg-chart-1, bg-chart-2, bg-chart-3, bg-chart-4, bg-chart-5"
+      }
+    },
+
+    "typography": {
+      "fonts": {
+        "sans": {
+          "value": "Anek Latin, ui-sans-serif, sans-serif, system-ui",
+          "usage": "Body text, UI elements, most content",
+          "tailwind": "font-sans",
+          "weights": [400, 500, 600, 700]
+        },
+        "serif": {
+          "value": "Andada Pro, ui-serif, serif",
+          "usage": "Headings, editorial content, emphasis",
+          "tailwind": "font-serif",
+          "weights": [400, 600, 700]
+        },
+        "mono": {
+          "value": "Sometype Mono, ui-monospace, monospace",
+          "usage": "Code, technical content, IDs",
+          "tailwind": "font-mono",
+          "weights": [400, 600]
+        }
+      },
+
+      "scale": {
+        "h1": {
+          "size": "32px",
+          "lineHeight": "40px",
+          "fontWeight": "700",
+          "usage": "Page titles, major section headers",
+          "tailwind": "text-h1 font-bold"
+        },
+        "h2": {
+          "size": "24px",
+          "lineHeight": "32px",
+          "fontWeight": "600",
+          "usage": "Section titles, subsection headers",
+          "tailwind": "text-h2 font-semibold"
+        },
+        "h3": {
+          "size": "18px",
+          "lineHeight": "24px",
+          "fontWeight": "600",
+          "usage": "Card titles, component headers, sidebar sections",
+          "tailwind": "text-h3 font-semibold"
+        },
+        "body": {
+          "size": "16px",
+          "lineHeight": "22px",
+          "fontWeight": "400",
+          "usage": "Body text, buttons, form labels, primary content",
+          "tailwind": "text-body"
+        },
+        "small": {
+          "size": "14px",
+          "lineHeight": "20px",
+          "fontWeight": "400",
+          "usage": "Secondary text, captions, helper text, badges",
+          "tailwind": "text-small"
+        }
+      },
+
+      "guidelines": [
+        "Use sans-serif (Anek Latin) for all UI elements and body text",
+        "Use serif (Andada Pro) sparingly for decorative headings when needed",
+        "Never hard-code font sizes - always use text-h1, text-h2, text-h3, text-body, or text-small",
+        "Maintain minimum 1.375 line-height ratio for body text for readability",
+        "Use font-semibold (600) for headings, font-medium (500) for emphasis, font-normal (400) for body"
+      ]
+    },
+
+    "spacing": {
+      "system": "8pt grid system",
+      "scale": {
+        "0": "0px",
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "6": "24px",
+        "8": "32px",
+        "10": "40px",
+        "12": "48px",
+        "14": "56px",
+        "16": "64px",
+        "20": "80px",
+        "24": "96px",
+        "28": "112px"
+      },
+      "usage": {
+        "0": "No spacing, reset values",
+        "1": "Minimal spacing, icon padding",
+        "2": "Tight spacing, inline elements",
+        "3": "Small spacing, compact layouts",
+        "4": "Default spacing, standard padding",
+        "6": "Medium spacing, section gaps",
+        "8": "Large spacing, major sections",
+        "10": "Extra large spacing",
+        "12": "Section spacing, page padding",
+        "16": "Major section dividers",
+        "20": "Extra large gaps",
+        "24": "Page-level spacing",
+        "28": "Maximum spacing"
+      },
+      "guidelines": [
+        "Use spacing-4 (16px) as default component padding",
+        "Use spacing-6 (24px) for section gaps within cards",
+        "Use spacing-2 (8px) or spacing-3 (12px) for tight element spacing",
+        "Always use tokens (p-4, gap-6, space-y-2) never hard-coded pixel values",
+        "Maintain consistent vertical rhythm using the 8pt grid"
+      ],
+      "tailwind": "p-4, m-6, gap-2, space-y-4, etc."
+    },
+
+    "borderRadius": {
+      "scale": {
+        "sm": "calc(1rem - 4px)",
+        "md": "calc(1rem - 2px)",
+        "lg": "1rem",
+        "xl": "calc(1rem + 4px)",
+        "full": "9999px"
+      },
+      "usage": {
+        "sm": "Small elements, nested items (rarely used)",
+        "md": "Medium elements (rarely used)",
+        "lg": "Default radius for cards, inputs, buttons, most UI elements",
+        "xl": "Larger elements needing more roundness",
+        "full": "Circular elements, icon-only buttons, avatars"
+      },
+      "default": "lg (1rem)",
+      "guidelines": [
+        "Use rounded-lg as default for all rectangular elements (cards, inputs, buttons)",
+        "Use rounded-full for circular elements (avatars, icon-only buttons)",
+        "Maintain consistency - don't mix different radius values without reason",
+        "Child elements should use slightly smaller radius if nested"
+      ],
+      "tailwind": "rounded-lg, rounded-full"
+    },
+
+    "shadows": {
+      "scale": {
+        "2xs": "0px 0px 0px 0px hsl(0 0% 10% / 0.03)",
+        "xs": "0px 0px 0px 0px hsl(0 0% 10% / 0.03)",
+        "sm": "0px 0px 0px 0px hsl(0 0% 10% / 0.05), 0px 1px 2px -1px hsl(0 0% 10% / 0.05)",
+        "default": "0px 0px 0px 0px hsl(0 0% 10% / 0.05), 0px 1px 2px -1px hsl(0 0% 10% / 0.05)",
+        "md": "0px 0px 0px 0px hsl(0 0% 10% / 0.05), 0px 2px 4px -1px hsl(0 0% 10% / 0.05)",
+        "lg": "0px 0px 0px 0px hsl(0 0% 10% / 0.05), 0px 4px 6px -1px hsl(0 0% 10% / 0.05)",
+        "xl": "0px 0px 0px 0px hsl(0 0% 10% / 0.05), 0px 8px 10px -1px hsl(0 0% 10% / 0.05)",
+        "2xl": "0px 0px 0px 0px hsl(0 0% 10% / 0.13)"
+      },
+      "usage": {
+        "sm": "Cards in default state, subtle elevation",
+        "default": "Standard cards, most UI elements",
+        "md": "Hovered cards, slightly elevated elements",
+        "lg": "Popovers, dropdowns, modal dialogs",
+        "xl": "Floating action buttons, important elevated UI",
+        "2xl": "Maximum elevation, rarely used"
+      },
+      "guidelines": [
+        "Cards use shadow-sm by default",
+        "Hover states typically upgrade from shadow-sm to shadow-md",
+        "Modals and popovers use shadow-lg",
+        "Keep shadows subtle - avoid heavy drop shadows",
+        "Shadows are theme-aware and adjust automatically"
+      ],
+      "tailwind": "shadow-sm, shadow-md, shadow-lg"
+    },
+
+    "transitions": {
+      "duration": {
+        "fast": "150ms",
+        "default": "200ms",
+        "slow": "300ms"
+      },
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "properties": ["background-color", "border-color", "color", "fill", "stroke"],
+      "guidelines": [
+        "All color/background transitions use 200ms by default",
+        "Theme transitions use 300ms for smooth appearance",
+        "Hover states use default transition duration",
+        "Respect prefers-reduced-motion for accessibility",
+        "Use transition-colors for color-only transitions"
+      ],
+      "implementation": "Set globally in src/index.css, applied to all elements automatically"
+    }
+  },
+
+  "components": {
+    "Button": {
+      "location": "src/components/ui/Button.tsx",
+      "description": "Primary interactive element for actions and navigation",
+      
+      "variants": {
+        "primary": {
+          "className": "bg-primary text-primary-foreground hover:bg-primary/90",
+          "usage": "Main CTAs, primary actions, submit buttons",
+          "example": "<Button variant=\"primary\">Submit</Button>"
+        },
+        "secondary": {
+          "className": "bg-secondary text-secondary-foreground hover:bg-secondary/90",
+          "usage": "Secondary actions, alternative paths",
+          "example": "<Button variant=\"secondary\">Cancel</Button>"
+        },
+        "destructive": {
+          "className": "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "usage": "Delete actions, permanent destructive operations",
+          "example": "<Button variant=\"destructive\">Delete</Button>"
+        },
+        "outline": {
+          "className": "border border-border bg-transparent hover:bg-muted",
+          "usage": "Tertiary actions, secondary navigation",
+          "example": "<Button variant=\"outline\">Learn More</Button>"
+        },
+        "ghost": {
+          "className": "hover:bg-muted hover:text-foreground",
+          "usage": "Subtle actions, icon buttons, menu items",
+          "example": "<Button variant=\"ghost\">Edit</Button>"
+        },
+        "success": {
+          "className": "bg-green-100 text-green-700 hover:bg-green-200 dark:bg-green-900/30 dark:text-green-400",
+          "usage": "Approve actions, success confirmations",
+          "example": "<Button variant=\"success\">Approve</Button>"
+        },
+        "warning": {
+          "className": "bg-amber-100 text-amber-700 hover:bg-amber-200 dark:bg-amber-900/30 dark:text-amber-400",
+          "usage": "Warning actions, caution needed",
+          "example": "<Button variant=\"warning\">Proceed with Caution</Button>"
+        },
+        "danger": {
+          "className": "bg-red-100 text-red-700 hover:bg-red-200 dark:bg-red-900/30 dark:text-red-400",
+          "usage": "Critical destructive actions",
+          "example": "<Button variant=\"danger\">Permanently Delete</Button>"
+        },
+        "muted": {
+          "className": "bg-muted text-muted-foreground hover:bg-muted/80",
+          "usage": "Disabled-looking but interactive buttons, low-priority actions",
+          "example": "<Button variant=\"muted\">Skip</Button>"
+        }
+      },
+
+      "sizes": {
+        "sm": {
+          "className": "h-8 px-3 text-small",
+          "usage": "Compact UIs, inline actions, tight spaces",
+          "iconOnly": "size-8"
+        },
+        "md": {
+          "className": "h-10 px-4 text-body",
+          "usage": "Default size for most buttons",
+          "iconOnly": "size-10"
+        },
+        "lg": {
+          "className": "h-12 px-6 text-body",
+          "usage": "Hero CTAs, prominent actions, marketing pages",
+          "iconOnly": "size-12"
+        }
+      },
+
+      "states": {
+        "default": "Normal state with hover effects",
+        "hover": "Opacity reduced to 90% (hover:bg-primary/90)",
+        "focus": "Focus ring appears (focus-visible:ring-2 focus-visible:ring-ring)",
+        "disabled": "Pointer events disabled, opacity 50%"
+      },
+
+      "modifiers": {
+        "iconOnly": {
+          "description": "Circular button with only an icon, no text",
+          "className": "rounded-full size-{size}",
+          "usage": "Icon buttons, action menus, compact controls",
+          "example": "<Button iconOnly size=\"md\" variant=\"ghost\"><Icon /></Button>"
+        }
+      },
+
+      "guidelines": [
+        "Primary buttons should appear only once per section for clear hierarchy",
+        "Use outline or ghost variants for secondary actions to reduce visual weight",
+        "Icon-only buttons must have aria-label for accessibility",
+        "Button text should be concise action verbs (Submit, Delete, Edit, etc.)",
+        "Destructive actions should use destructive or danger variants to signal risk"
+      ]
+    },
+
+    "Card": {
+      "location": "src/components/ui/Card.tsx",
+      "description": "Container component for grouping related content with consistent styling",
+      
+      "structure": {
+        "Card": {
+          "className": "rounded-lg border border-border bg-card text-card-foreground shadow-sm",
+          "usage": "Main container wrapper"
+        },
+        "CardHeader": {
+          "className": "flex flex-col space-y-1.5 p-6",
+          "usage": "Top section for titles and descriptions"
+        },
+        "CardTitle": {
+          "className": "text-h3 font-semibold leading-none tracking-tight",
+          "usage": "Card title/heading"
+        },
+        "CardDescription": {
+          "className": "text-small text-muted-foreground",
+          "usage": "Subtitle or brief description"
+        },
+        "CardContent": {
+          "className": "p-6 pt-0",
+          "usage": "Main content area"
+        },
+        "CardFooter": {
+          "className": "flex items-center p-6 pt-0",
+          "usage": "Bottom section for actions or metadata"
+        }
+      },
+
+      "patterns": {
+        "basic": {
+          "description": "Simple card with title and content",
+          "example": "<Card><CardHeader><CardTitle>Title</CardTitle></CardHeader><CardContent>Content</CardContent></Card>"
+        },
+        "withDescription": {
+          "description": "Card with title, subtitle, and content",
+          "example": "<Card><CardHeader><CardTitle>Title</CardTitle><CardDescription>Subtitle</CardDescription></CardHeader><CardContent>Content</CardContent></Card>"
+        },
+        "withFooter": {
+          "description": "Card with footer for actions",
+          "example": "<Card>...<CardFooter><Button>Action</Button></CardFooter></Card>"
+        },
+        "withImage": {
+          "description": "Card with image at top (ListingCard pattern)",
+          "example": "<Card><img className=\"aspect-video w-full rounded-t-lg\" />...</Card>"
+        }
+      },
+
+      "guidelines": [
+        "Always wrap card contents in proper structure (CardHeader, CardContent, CardFooter)",
+        "Use CardTitle for the main heading, CardDescription for subtitles",
+        "Images should have rounded-t-lg to match card top corners",
+        "Card padding is consistent at p-6 for all sections",
+        "Cards use shadow-sm by default, shadow-md on hover for interactive cards"
+      ]
+    },
+
+    "Input": {
+      "location": "src/components/ui/Input.tsx",
+      "description": "Form input field with optional icons and states",
+      
+      "baseStyle": "flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-body",
+      
+      "features": {
+        "leftIcon": {
+          "usage": "Icon positioned at left inside input",
+          "implementation": "Absolute positioned icon with pl-10 on input",
+          "example": "<Input leftIcon={<SearchIcon />} />"
+        },
+        "rightIcon": {
+          "usage": "Icon positioned at right inside input",
+          "implementation": "Absolute positioned icon with pr-10 on input",
+          "example": "<Input rightIcon={<EyeIcon />} />"
+        }
+      },
+
+      "states": {
+        "default": "Normal input with border-input",
+        "focus": "Focus ring appears (focus-visible:ring-2 focus-visible:ring-ring)",
+        "disabled": "Cursor not-allowed, opacity 50%",
+        "error": "Add border-destructive class for error state"
+      },
+
+      "types": [
+        "text",
+        "email",
+        "password",
+        "number",
+        "tel",
+        "url",
+        "search",
+        "date"
+      ],
+
+      "guidelines": [
+        "Always provide proper type attribute for correct keyboard on mobile",
+        "Use leftIcon for search or filter inputs",
+        "Use rightIcon for password visibility toggle or clear button",
+        "Pair with label element for accessibility",
+        "Use placeholder for hints, not instructions"
+      ]
+    },
+
+    "Badge": {
+      "location": "src/components/ui/Badge.tsx",
+      "description": "Small label for status, categories, or metadata",
+      
+      "variants": {
+        "default": {
+          "className": "bg-primary text-primary-foreground",
+          "usage": "Default badge, general purpose"
+        },
+        "draft": {
+          "className": "bg-muted text-muted-foreground",
+          "usage": "Draft status in listings"
+        },
+        "submitted": {
+          "className": "bg-accent text-accent-foreground",
+          "usage": "Submitted status pending review"
+        },
+        "approved": {
+          "className": "bg-secondary text-secondary-foreground",
+          "usage": "Approved/active status"
+        },
+        "rejected": {
+          "className": "bg-destructive text-destructive-foreground",
+          "usage": "Rejected status"
+        },
+        "secondary": {
+          "className": "bg-secondary text-secondary-foreground",
+          "usage": "Secondary badges, featured items"
+        },
+        "destructive": {
+          "className": "bg-destructive text-destructive-foreground",
+          "usage": "Error or critical status"
+        },
+        "warning": {
+          "className": "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
+          "usage": "Warning status"
+        },
+        "info": {
+          "className": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+          "usage": "Informational badges"
+        }
+      },
+
+      "style": {
+        "base": "inline-flex items-center rounded-md px-2.5 py-0.5 text-small font-semibold",
+        "size": "Small and compact, uses text-small"
+      },
+
+      "guidelines": [
+        "Use specific status variants (draft, submitted, approved, rejected) for listing statuses",
+        "Keep badge text short (1-2 words)",
+        "Badges are inline elements, can be placed inline with text",
+        "Use semantic variants that match the meaning (don't use 'approved' for errors)"
+      ]
+    },
+
+    "Alert": {
+      "location": "src/components/ui/Alert.tsx",
+      "description": "Notification component for important messages and feedback",
+      
+      "structure": {
+        "Alert": {
+          "className": "relative w-full rounded-lg border p-4",
+          "usage": "Main container"
+        },
+        "AlertTitle": {
+          "className": "mb-1 font-medium leading-none tracking-tight",
+          "usage": "Alert title/heading"
+        },
+        "AlertDescription": {
+          "className": "text-small [&_p]:leading-relaxed",
+          "usage": "Alert message content"
+        }
+      },
+
+      "variants": {
+        "default": {
+          "className": "bg-card text-card-foreground border-border",
+          "usage": "General information, neutral messages"
+        },
+        "destructive": {
+          "className": "bg-destructive/10 text-destructive border-destructive/50",
+          "usage": "Errors, critical warnings, failed actions"
+        },
+        "success": {
+          "className": "bg-secondary/10 text-secondary border-secondary/50",
+          "usage": "Success messages, confirmations"
+        }
+      },
+
+      "guidelines": [
+        "Use AlertTitle for the main message, AlertDescription for details",
+        "Place at top of forms or sections where context is needed",
+        "Keep messages concise and actionable",
+        "Use destructive variant sparingly for true errors only",
+        "Can include icons in AlertTitle for visual emphasis"
+      ]
+    },
+
+    "Select": {
+      "location": "src/components/ui/Select.tsx",
+      "description": "Dropdown select input for choosing from options",
+      "baseStyle": "flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-body",
+      "guidelines": [
+        "Similar styling to Input component for consistency",
+        "Use for 5+ options (use radio buttons for fewer options)",
+        "First option can be placeholder with empty value",
+        "Always provide label for accessibility"
+      ]
+    },
+
+    "Checkbox": {
+      "location": "src/components/ui/Checkbox.tsx",
+      "description": "Checkbox input for boolean selections or multi-select",
+      "guidelines": [
+        "Use for single boolean choices or multi-select scenarios",
+        "Always pair with label text",
+        "Use in groups for filtering or feature selection",
+        "Ensure keyboard navigable and proper focus states"
+      ]
+    },
+
+    "Tabs": {
+      "location": "src/components/ui/Tabs.tsx",
+      "description": "Tab navigation for switching between content sections",
+      "guidelines": [
+        "Use for switching between related content views",
+        "Keep tab labels short and clear",
+        "Active tab should have clear visual distinction",
+        "Content should change without page reload"
+      ]
+    },
+
+    "Avatar": {
+      "location": "src/components/ui/Avatar.tsx",
+      "description": "User profile image or fallback initials",
+      "guidelines": [
+        "Use rounded-full for circular avatars",
+        "Provide fallback initials when no image available",
+        "Common sizes: size-8, size-10, size-12",
+        "Use in user profiles, comments, listings"
+      ]
+    },
+
+    "Skeleton": {
+      "location": "src/components/ui/Skeleton.tsx",
+      "description": "Loading placeholder that mimics content structure",
+      "guidelines": [
+        "Use during data loading states",
+        "Match skeleton shape to actual content layout",
+        "Animate with pulse effect for loading indication",
+        "Replace with actual content when loaded"
+      ]
+    }
+  },
+
+  "layoutPatterns": {
+    "Sidebar": {
+      "location": "src/components/layout/Sidebar.tsx",
+      "description": "Fixed left sidebar navigation",
+      
+      "structure": {
+        "width": "w-64 (256px)",
+        "position": "fixed left-0 top-0 h-full",
+        "responsive": "Slides out on mobile with toggle",
+        "sections": "Grouped navigation with section headings"
+      },
+
+      "navigation": {
+        "grouping": "Items grouped by section (Public, Owner, Admin, Design System)",
+        "activeState": "bg-sidebar-primary text-sidebar-primary-foreground",
+        "inactiveState": "text-sidebar-foreground hover:bg-sidebar-accent",
+        "structure": "Icon + label, full width buttons"
+      },
+
+      "guidelines": [
+        "Use Sidebar for app-wide navigation",
+        "Group related pages under section headings",
+        "Active page highlighted with sidebar-primary background",
+        "Icons should be 20px (h-5 w-5) for consistency"
+      ]
+    },
+
+    "Header": {
+      "location": "src/components/layout/Header.tsx",
+      "description": "Top header bar with page title and actions",
+      "guidelines": [
+        "Displays current page title",
+        "Includes theme toggle and user menu",
+        "Fixed height, full width",
+        "Mobile: includes sidebar toggle button"
+      ]
+    },
+
+    "ResponsiveLayout": {
+      "approach": "Mobile-first responsive design",
+      "breakpoints": {
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": "1536px"
+      },
+      "patterns": {
+        "sidebar": "Hidden on mobile (<lg), fixed visible on desktop (lg:)",
+        "grid": "Single column on mobile, multi-column on larger screens (grid-cols-1 md:grid-cols-2 lg:grid-cols-3)",
+        "spacing": "Smaller padding on mobile (p-4), larger on desktop (lg:p-8)",
+        "typography": "Base sizes optimized for mobile, scale up on larger screens if needed"
+      },
+      "guidelines": [
+        "Test all layouts from 320px to 1920px widths",
+        "Use grid for card layouts: grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+        "Stack elements vertically on mobile, horizontal on desktop",
+        "Touch targets minimum 44x44px on mobile"
+      ]
+    }
+  },
+
+  "compositionPatterns": {
+    "ListingCard": {
+      "description": "Card displaying business listing preview",
+      "location": "src/components/business/ListingCard.tsx",
+      "composition": [
+        "Card wrapper",
+        "Optional image (aspect-video)",
+        "CardHeader with title, description, optional badge",
+        "CardContent with details (address, phone, hours, tags)"
+      ],
+      "pattern": "Uses Card primitives + domain-specific content",
+      "usage": "List views, search results, featured sections"
+    },
+
+    "FormPattern": {
+      "description": "Standard form layout pattern",
+      "structure": [
+        "Card wrapper for form sections",
+        "CardHeader with title and description",
+        "CardContent with form fields",
+        "Label + Input/Select/Checkbox groups",
+        "CardFooter with action buttons"
+      ],
+      "spacing": "space-y-4 between form fields",
+      "buttons": "Primary submit on right, secondary cancel on left"
+    },
+
+    "DashboardCard": {
+      "description": "Metric or status card in dashboards",
+      "structure": [
+        "Card wrapper",
+        "Icon + metric value in header",
+        "Label/description below",
+        "Optional trend indicator"
+      ],
+      "usage": "Admin dashboard, owner dashboard, analytics"
+    },
+
+    "FilterBar": {
+      "description": "Horizontal bar with filters and search",
+      "components": ["Input with search icon", "Select dropdowns for filters", "FilterChip components"],
+      "layout": "Flex row, wraps on small screens",
+      "usage": "Above list views for filtering content"
+    }
+  },
+
+  "dataDisplay": {
+    "lists": {
+      "pattern": "Grid layout with responsive columns",
+      "implementation": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "itemComponent": "ListingCard or similar card component",
+      "empty": "Show empty state message when no items"
+    },
+
+    "tables": {
+      "style": "Minimal borders, alternating row backgrounds",
+      "responsive": "Horizontal scroll on mobile, full table on desktop",
+      "actions": "Right-aligned action column with icon buttons"
+    },
+
+    "pagination": {
+      "location": "src/components/ui/Pagination.tsx",
+      "placement": "Below list, centered",
+      "controls": "Previous, page numbers, Next"
+    }
+  },
+
+  "interactionPatterns": {
+    "hover": {
+      "cards": "shadow-sm to shadow-md, cursor-pointer",
+      "buttons": "Opacity 90%, transition-colors",
+      "links": "Underline or color change"
+    },
+
+    "focus": {
+      "implementation": "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+      "visibility": "Only visible on keyboard navigation, not mouse clicks",
+      "all": "All interactive elements must have visible focus state"
+    },
+
+    "loading": {
+      "approach": "Skeleton components or loading spinners",
+      "preservation": "Maintain layout during loading to prevent shifts",
+      "feedback": "Visual indication that content is loading"
+    },
+
+    "errors": {
+      "inline": "Show below field with text-destructive and icon",
+      "form": "Alert component at top of form with destructive variant",
+      "toast": "Optional toast notifications for async actions"
+    }
+  },
+
+  "accessibility": {
+    "requirements": [
+      "All interactive elements keyboard navigable",
+      "Focus states visible for keyboard users",
+      "Semantic HTML elements (button, nav, main, section, etc.)",
+      "ARIA labels for icon-only buttons and complex components",
+      "Sufficient color contrast (WCAG AA minimum)",
+      "Alt text for all images",
+      "Form labels properly associated with inputs"
+    ],
+    "testing": [
+      "Tab through all interactive elements",
+      "Test with screen reader",
+      "Verify contrast ratios in both themes",
+      "Ensure keyboard-only navigation works"
+    ]
+  },
+
+  "theming": {
+    "implementation": "CSS variables with light/dark mode toggle",
+    "toggle": "ThemeToggle component in header",
+    "storage": "Theme preference saved in localStorage",
+    "transition": "Smooth 300ms transition between themes",
+    "testing": [
+      "All components work in both light and dark themes",
+      "Colors use semantic tokens, not hard-coded values",
+      "Contrast ratios maintained in both themes"
+    ]
+  },
+
+  "fileStructure": {
+    "components": {
+      "ui": "Generic reusable primitives (Button, Card, Input, etc.)",
+      "business": "Business domain components (ListingCard, BusinessInfoCard, etc.)",
+      "layout": "Layout components (Sidebar, Header, NavMenu)",
+      "home": "Homepage-specific components",
+      "admin": "Admin dashboard components",
+      "food": "Restaurant/food listing components"
+    },
+    "pages": "Page-level components rendered by App.tsx",
+    "contexts": "React context providers (ThemeContext)",
+    "data": "Mock data and type definitions",
+    "lib": "Utility functions (cn utility for className merging)"
+  },
+
+  "guidelines": {
+    "dos": [
+      "✅ Always use design tokens for colors, spacing, typography, shadows, and border radius",
+      "✅ Use semantic HTML elements for proper structure and accessibility",
+      "✅ Keep components under 500 lines, break into smaller pieces if needed",
+      "✅ Use TypeScript with proper type definitions for all props",
+      "✅ Use Tailwind utility classes, follow existing patterns",
+      "✅ Test in both light and dark themes",
+      "✅ Ensure responsive behavior from mobile to desktop",
+      "✅ Follow composition pattern: build complex UIs from simple primitives",
+      "✅ Co-locate related components (business domain components together)",
+      "✅ Use React.forwardRef for form components that need ref access"
+    ],
+
+    "donts": [
+      "❌ Never hard-code colors, spacing, fonts, or other style values",
+      "❌ Never use inline styles or styled-components",
+      "❌ Never use class components, only function components",
+      "❌ Don't create duplicate components, reuse existing primitives",
+      "❌ Don't break existing functionality when adding new features",
+      "❌ Don't introduce new design patterns without updating this guide",
+      "❌ Don't use hard-coded pixel values, always use spacing tokens",
+      "❌ Don't mix different styling approaches (Tailwind only)",
+      "❌ Don't skip accessibility features (focus states, labels, semantic HTML)",
+      "❌ Don't commit code that fails 'npm run lint' or 'npm run build'"
+    ]
+  },
+
+  "developmentWorkflow": {
+    "beforeCoding": [
+      "Read existing components in src/components to understand patterns",
+      "Check if similar component exists that can be reused or extended",
+      "Verify design tokens exist for any new styles needed",
+      "Plan component structure using existing primitives"
+    ],
+
+    "whileCoding": [
+      "Use existing UI primitives from src/components/ui",
+      "Follow existing naming conventions and file structure",
+      "Match surrounding code style and patterns",
+      "Use TypeScript for proper type safety",
+      "Add proper aria-labels and accessibility features"
+    ],
+
+    "beforeCommitting": [
+      "Run 'npm run lint' and fix all errors",
+      "Run 'npm run build' and ensure it succeeds",
+      "Test in browser in both light and dark themes",
+      "Test responsive behavior from mobile to desktop",
+      "Verify no hard-coded styles were used",
+      "Check that no existing functionality was broken"
+    ]
+  },
+
+  "examples": {
+    "simpleButton": {
+      "code": "<Button variant=\"primary\" size=\"md\">Submit</Button>",
+      "explanation": "Basic button with primary variant and default medium size"
+    },
+
+    "iconButton": {
+      "code": "<Button variant=\"ghost\" size=\"md\" iconOnly aria-label=\"Delete\"><Trash2 className=\"h-4 w-4\" /></Button>",
+      "explanation": "Icon-only button with ghost variant, must include aria-label"
+    },
+
+    "basicCard": {
+      "code": "<Card>\n  <CardHeader>\n    <CardTitle>Title</CardTitle>\n    <CardDescription>Description text</CardDescription>\n  </CardHeader>\n  <CardContent>\n    Main content here\n  </CardContent>\n</Card>",
+      "explanation": "Standard card structure with header and content"
+    },
+
+    "inputWithIcon": {
+      "code": "<Input\n  leftIcon={<Search className=\"h-4 w-4\" />}\n  placeholder=\"Search...\"\n  type=\"search\"\n/>",
+      "explanation": "Search input with icon on left side"
+    },
+
+    "statusBadge": {
+      "code": "<Badge variant=\"approved\">Approved</Badge>",
+      "explanation": "Status badge showing approved state"
+    },
+
+    "responsiveGrid": {
+      "code": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">\n  {items.map(item => <ListingCard key={item.id} business={item} />)}\n</div>",
+      "explanation": "Responsive grid: 1 column mobile, 2 columns tablet, 3 columns desktop"
+    }
+  },
+
+  "references": {
+    "designTokens": "style.json - Original design system tokens",
+    "tailwindConfig": "tailwind.config.js - Tailwind configuration with extended tokens",
+    "cssVariables": "src/index.css - CSS custom properties for theming",
+    "componentFolder": "src/components/ - All component implementations",
+    "agentsGuide": "AGENTS.md - Root project guidelines for AI agents"
+  }
+}

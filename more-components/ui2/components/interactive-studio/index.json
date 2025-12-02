@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/interactive-studio/index.json",
+  "meta": {
+    "namespace": "interactive-studio",
+    "description": "",
+    "location": "design-system/components/ui2/components/interactive-studio",
+    "componentCount": 8
+  },
+  "components": {
+    "FloatingNavbar": {
+      "file": "components/interactive-studio/FloatingNavbar.tsx"
+    },
+    "GlassBadge": {
+      "file": "components/interactive-studio/GlassBadge.tsx"
+    },
+    "GlassButton": {
+      "file": "components/interactive-studio/GlassButton.tsx"
+    },
+    "GlassCard": {
+      "file": "components/interactive-studio/GlassCard.tsx"
+    },
+    "index": {
+      "file": "components/interactive-studio/index.ts"
+    },
+    "InteractiveStudioHero": {
+      "file": "components/interactive-studio/InteractiveStudioHero.tsx"
+    },
+    "SplineBackground": {
+      "file": "components/interactive-studio/SplineBackground.tsx"
+    },
+    "types": {
+      "file": "components/interactive-studio/types.ts"
+    }
+  }
+}

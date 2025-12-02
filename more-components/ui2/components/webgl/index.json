@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/webgl/index.json",
+  "meta": {
+    "namespace": "webgl",
+    "description": "",
+    "location": "design-system/components/ui2/components/webgl",
+    "componentCount": 8
+  },
+  "components": {
+    "FeatureCard": {
+      "file": "components/webgl/FeatureCard.tsx"
+    },
+    "GlassCard": {
+      "file": "components/webgl/GlassCard.tsx"
+    },
+    "index": {
+      "file": "components/webgl/index.ts"
+    },
+    "Navigation": {
+      "file": "components/webgl/Navigation.tsx"
+    },
+    "ShaderBackground": {
+      "file": "components/webgl/ShaderBackground.tsx"
+    },
+    "StatCard": {
+      "file": "components/webgl/StatCard.tsx"
+    },
+    "types": {
+      "file": "components/webgl/types.ts"
+    },
+    "WebGLShaderDemo": {
+      "file": "components/webgl/WebGLShaderDemo.tsx"
+    }
+  }
+}

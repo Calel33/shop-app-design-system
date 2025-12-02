@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/scheduling/index.json",
+  "meta": {
+    "namespace": "scheduling",
+    "description": "",
+    "location": "design-system/components/ui2/components/scheduling",
+    "componentCount": 5
+  },
+  "components": {
+    "CalendarCard": {
+      "file": "components/scheduling/CalendarCard.tsx"
+    },
+    "GuestList": {
+      "file": "components/scheduling/GuestList.tsx"
+    },
+    "index": {
+      "file": "components/scheduling/index.ts"
+    },
+    "MeetingCard": {
+      "file": "components/scheduling/MeetingCard.tsx"
+    },
+    "SchedulingDashboard": {
+      "file": "components/scheduling/SchedulingDashboard.tsx"
+    }
+  }
+}

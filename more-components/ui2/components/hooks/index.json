@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/hooks/index.json",
+  "meta": {
+    "namespace": "hooks",
+    "description": "",
+    "location": "design-system/components/ui2/hooks",
+    "componentCount": 15
+  },
+  "components": {
+    "index": {
+      "file": "hooks/index.ts"
+    },
+    "useCalendar": {
+      "file": "hooks/useCalendar.ts"
+    },
+    "useCardFormatter": {
+      "file": "hooks/useCardFormatter.ts"
+    },
+    "useCardValidation": {
+      "file": "hooks/useCardValidation.ts"
+    },
+    "useCart": {
+      "file": "hooks/useCart.ts"
+    },
+    "useChartSetup": {
+      "file": "hooks/useChartSetup.ts"
+    },
+    "useCounterAnimation": {
+      "file": "hooks/useCounterAnimation.ts"
+    },
+    "useMousePosition": {
+      "file": "hooks/useMousePosition.ts"
+    },
+    "useParallax": {
+      "file": "hooks/useParallax.ts"
+    },
+    "useRevealAnimation": {
+      "file": "hooks/useRevealAnimation.ts"
+    },
+    "useScrollAnimation": {
+      "file": "hooks/useScrollAnimation.ts"
+    },
+    "useScrollProgress": {
+      "file": "hooks/useScrollProgress.ts"
+    },
+    "useScrollToTop": {
+      "file": "hooks/useScrollToTop.ts"
+    },
+    "useTheme": {
+      "file": "hooks/useTheme.ts"
+    },
+    "useWebGLShader": {
+      "file": "hooks/useWebGLShader.ts"
+    }
+  }
+}

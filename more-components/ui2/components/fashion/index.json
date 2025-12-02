@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/fashion/index.json",
+  "meta": {
+    "namespace": "fashion",
+    "description": "",
+    "location": "design-system/components/ui2/components/fashion",
+    "componentCount": 16
+  },
+  "components": {
+    "AboutStudio": {
+      "file": "components/fashion/AboutStudio.tsx"
+    },
+    "CollectionCard": {
+      "file": "components/fashion/CollectionCard.tsx"
+    },
+    "CollectionGrid": {
+      "file": "components/fashion/CollectionGrid.tsx"
+    },
+    "CTASection": {
+      "file": "components/fashion/CTASection.tsx"
+    },
+    "FashionHero": {
+      "file": "components/fashion/FashionHero.tsx"
+    },
+    "FashionLanding": {
+      "file": "components/fashion/FashionLanding.tsx"
+    },
+    "FloatingNav": {
+      "file": "components/fashion/FloatingNav.tsx"
+    },
+    "index": {
+      "file": "components/fashion/index.ts"
+    },
+    "ServiceCards": {
+      "file": "components/fashion/ServiceCards.tsx"
+    },
+    "StatsSection": {
+      "file": "components/fashion/StatsSection.tsx"
+    },
+    "TeamCard": {
+      "file": "components/fashion/TeamCard.tsx"
+    },
+    "TeamSection": {
+      "file": "components/fashion/TeamSection.tsx"
+    },
+    "TestimonialGrid": {
+      "file": "components/fashion/TestimonialGrid.tsx"
+    },
+    "TimelineSection": {
+      "file": "components/fashion/TimelineSection.tsx"
+    },
+    "TimelineStep": {
+      "file": "components/fashion/TimelineStep.tsx"
+    },
+    "types": {
+      "file": "components/fashion/types.ts"
+    }
+  }
+}

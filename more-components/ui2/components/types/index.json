@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/types/index.json",
+  "meta": {
+    "namespace": "types",
+    "description": "",
+    "location": "design-system/components/ui2/components/types",
+    "componentCount": 41
+  },
+  "components": {
+    "admin.types": {
+      "file": "components/types/admin.types.ts"
+    },
+    "analytics.types": {
+      "file": "components/types/analytics.types.ts"
+    },
+    "auth.types": {
+      "file": "components/types/auth.types.ts"
+    },
+    "automotive.types": {
+      "file": "components/types/automotive.types.ts"
+    },
+    "background.types": {
+      "file": "components/types/background.types.ts"
+    },
+    "booking.types": {
+      "file": "components/types/booking.types.ts"
+    },
+    "business-dashboard.types": {
+      "file": "components/types/business-dashboard.types.ts"
+    },
+    "business-listing.types": {
+      "file": "components/types/business-listing.types.ts"
+    },
+    "business.types": {
+      "file": "components/types/business.types.ts"
+    },
+    "chat.types": {
+      "file": "components/types/chat.types.ts"
+    },
+    "childcare.types": {
+      "file": "components/types/childcare.types.ts"
+    },
+    "creative-studio.types": {
+      "file": "components/types/creative-studio.types.ts"
+    },
+    "dashboard-sidebar.types": {
+      "file": "components/types/dashboard-sidebar.types.ts"
+    },
+    "dashboard.types": {
+      "file": "components/types/dashboard.types.ts"
+    },
+    "defi-earn.types": {
+      "file": "components/types/defi-earn.types.ts"
+    },
+    "digital-health.types": {
+      "file": "components/types/digital-health.types.ts"
+    },
+    "ecommerce.types": {
+      "file": "components/types/ecommerce.types.ts"
+    },
+    "email.types": {
+      "file": "components/types/email.types.ts"
+    },
+    "faq.types": {
+      "file": "components/types/faq.types.ts"
+    },
+    "fashion.types": {
+      "file": "components/types/fashion.types.ts"
+    },
+    "feature-grid.types": {
+      "file": "components/types/feature-grid.types.ts"
+    },
+    "footer.types": {
+      "file": "components/types/footer.types.ts"
+    },
+    "hero.types": {
+      "file": "components/types/hero.types.ts"
+    },
+    "interactive-studio.types": {
+      "file": "components/types/interactive-studio.types.ts"
+    },
+    "interactive.types": {
+      "file": "components/types/interactive.types.ts"
+    },
+    "interior-design.types": {
+      "file": "components/types/interior-design.types.ts"
+    },
+    "kyro-portfolio.types": {
+      "file": "components/types/kyro-portfolio.types.ts"
+    },
+    "medical.types": {
+      "file": "components/types/medical.types.ts"
+    },
+    "nova.types": {
+      "file": "components/types/nova.types.ts"
+    },
+    "payment.types": {
+      "file": "components/types/payment.types.ts"
+    },
+    "portfolio.types": {
+      "file": "components/types/portfolio.types.ts"
+    },
+    "product.types": {
+      "file": "components/types/product.types.ts"
+    },
+    "restaurant.types": {
+      "file": "components/types/restaurant.types.ts"
+    },
+    "scheduling.types": {
+      "file": "components/types/scheduling.types.ts"
+    },
+    "skincare.types": {
+      "file": "components/types/skincare.types.ts"
+    },
+    "storytelling.types": {
+      "file": "components/types/storytelling.types.ts"
+    },
+    "testimonials.types": {
+      "file": "components/types/testimonials.types.ts"
+    },
+    "unboxing.types": {
+      "file": "components/types/unboxing.types.ts"
+    },
+    "web3.types": {
+      "file": "components/types/web3.types.ts"
+    },
+    "webgl.types": {
+      "file": "components/types/webgl.types.ts"
+    },
+    "wellness.types": {
+      "file": "components/types/wellness.types.ts"
+    }
+  }
+}

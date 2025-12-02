@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/payment/index.json",
+  "meta": {
+    "namespace": "payment",
+    "description": "",
+    "location": "design-system/components/ui2/components/payment",
+    "componentCount": 27
+  },
+  "components": {
+    "BillPaymentConfirmation": {
+      "file": "components/payment/BillPaymentConfirmation.tsx"
+    },
+    "CardBack": {
+      "file": "components/payment/CardBack.tsx"
+    },
+    "CardBrandIcons": {
+      "file": "components/payment/CardBrandIcons.tsx"
+    },
+    "CardChip": {
+      "file": "components/payment/CardChip.tsx"
+    },
+    "CardFront": {
+      "file": "components/payment/CardFront.tsx"
+    },
+    "CardLogo": {
+      "file": "components/payment/CardLogo.tsx"
+    },
+    "CardPreview": {
+      "file": "components/payment/CardPreview.tsx"
+    },
+    "ConfirmationActions": {
+      "file": "components/payment/ConfirmationActions.tsx"
+    },
+    "CONFIRMATION_EXAMPLES": {
+      "file": "components/payment/CONFIRMATION_EXAMPLES.tsx"
+    },
+    "CountrySelector": {
+      "file": "components/payment/CountrySelector.tsx"
+    },
+    "FlowPayHero": {
+      "file": "components/payment/FlowPayHero.tsx"
+    },
+    "GlassCard": {
+      "file": "components/payment/GlassCard.tsx"
+    },
+    "GlassInput": {
+      "file": "components/payment/GlassInput.tsx"
+    },
+    "GradientButton": {
+      "file": "components/payment/GradientButton.tsx"
+    },
+    "index": {
+      "file": "components/payment/index.ts"
+    },
+    "MeshGradientBackground": {
+      "file": "components/payment/MeshGradientBackground.tsx"
+    },
+    "OrderSummary": {
+      "file": "components/payment/OrderSummary.tsx"
+    },
+    "PaymentCompletion": {
+      "file": "components/payment/PaymentCompletion.tsx"
+    },
+    "PaymentCompletionForm": {
+      "file": "components/payment/PaymentCompletionForm.tsx"
+    },
+    "PaymentDashboard": {
+      "file": "components/payment/PaymentDashboard.tsx"
+    },
+    "PaymentDetailsPanel": {
+      "file": "components/payment/PaymentDetailsPanel.tsx"
+    },
+    "PaymentFeatureGrid": {
+      "file": "components/payment/PaymentFeatureGrid.tsx"
+    },
+    "PaymentForm": {
+      "file": "components/payment/PaymentForm.tsx"
+    },
+    "PaymentTestimonials": {
+      "file": "components/payment/PaymentTestimonials.tsx"
+    },
+    "SuccessIcon": {
+      "file": "components/payment/SuccessIcon.tsx"
+    },
+    "types": {
+      "file": "components/payment/types.ts"
+    },
+    "VirtualPaymentCard": {
+      "file": "components/payment/VirtualPaymentCard.tsx"
+    }
+  }
+}

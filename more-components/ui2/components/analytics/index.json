@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/analytics/index.json",
+  "meta": {
+    "namespace": "analytics",
+    "description": "",
+    "location": "design-system/components/ui2/components/analytics",
+    "componentCount": 8
+  },
+  "components": {
+    "AnalyticsDashboard": {
+      "file": "components/analytics/AnalyticsDashboard.tsx"
+    },
+    "AnalyticsHero": {
+      "file": "components/analytics/AnalyticsHero.tsx"
+    },
+    "ChurnMetricCard": {
+      "file": "components/analytics/ChurnMetricCard.tsx"
+    },
+    "DashboardNav": {
+      "file": "components/analytics/DashboardNav.tsx"
+    },
+    "index": {
+      "file": "components/analytics/index.ts"
+    },
+    "KPISnapshotCard": {
+      "file": "components/analytics/KPISnapshotCard.tsx"
+    },
+    "MetricCard": {
+      "file": "components/analytics/MetricCard.tsx"
+    },
+    "ObjectivesCard": {
+      "file": "components/analytics/ObjectivesCard.tsx"
+    }
+  }
+}

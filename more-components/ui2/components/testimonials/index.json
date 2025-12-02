@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/testimonials/index.json",
+  "meta": {
+    "namespace": "testimonials",
+    "description": "",
+    "location": "design-system/components/ui2/components/testimonials",
+    "componentCount": 7
+  },
+  "components": {
+    "index": {
+      "file": "components/testimonials/index.ts"
+    },
+    "MeteorBackground": {
+      "file": "components/testimonials/MeteorBackground.tsx"
+    },
+    "QuoteIcon": {
+      "file": "components/testimonials/QuoteIcon.tsx"
+    },
+    "TestimonialCard": {
+      "file": "components/testimonials/TestimonialCard.tsx"
+    },
+    "TestimonialsGrid": {
+      "file": "components/testimonials/TestimonialsGrid.tsx"
+    },
+    "TestimonialsMasonry": {
+      "file": "components/testimonials/TestimonialsMasonry.tsx"
+    },
+    "types": {
+      "file": "components/testimonials/types.ts"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/hero/index.json",
+  "meta": {
+    "namespace": "hero",
+    "description": "",
+    "location": "design-system/components/ui2/components/hero",
+    "componentCount": 5
+  },
+  "components": {
+    "FullScreenHero": {
+      "file": "components/hero/FullScreenHero.tsx"
+    },
+    "HeroContent": {
+      "file": "components/hero/HeroContent.tsx"
+    },
+    "HeroNav": {
+      "file": "components/hero/HeroNav.tsx"
+    },
+    "index": {
+      "file": "components/hero/index.ts"
+    },
+    "MobileMenu": {
+      "file": "components/hero/MobileMenu.tsx"
+    }
+  }
+}

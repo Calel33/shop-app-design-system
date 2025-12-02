@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/dashboard-sidebar/index.json",
+  "meta": {
+    "namespace": "dashboard-sidebar",
+    "description": "",
+    "location": "design-system/components/ui2/components/dashboard-sidebar",
+    "componentCount": 11
+  },
+  "components": {
+    "ArtistsTable": {
+      "file": "components/dashboard-sidebar/ArtistsTable.tsx"
+    },
+    "DashboardHeader": {
+      "file": "components/dashboard-sidebar/DashboardHeader.tsx"
+    },
+    "DashboardLayout": {
+      "file": "components/dashboard-sidebar/DashboardLayout.tsx"
+    },
+    "GenreChart": {
+      "file": "components/dashboard-sidebar/GenreChart.tsx"
+    },
+    "index": {
+      "file": "components/dashboard-sidebar/index.ts"
+    },
+    "RevenueChart": {
+      "file": "components/dashboard-sidebar/RevenueChart.tsx"
+    },
+    "Sidebar": {
+      "file": "components/dashboard-sidebar/Sidebar.tsx"
+    },
+    "SpectrumChart": {
+      "file": "components/dashboard-sidebar/SpectrumChart.tsx"
+    },
+    "StatsCard": {
+      "file": "components/dashboard-sidebar/StatsCard.tsx"
+    },
+    "types": {
+      "file": "components/dashboard-sidebar/types.ts"
+    },
+    "UsageChart": {
+      "file": "components/dashboard-sidebar/UsageChart.tsx"
+    }
+  }
+}

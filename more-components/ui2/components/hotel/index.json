@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/hotel/index.json",
+  "meta": {
+    "namespace": "hotel",
+    "description": "",
+    "location": "design-system/components/ui2/components/hotel",
+    "componentCount": 6
+  },
+  "components": {
+    "BookingForm": {
+      "file": "components/hotel/BookingForm.tsx"
+    },
+    "HotelHero": {
+      "file": "components/hotel/HotelHero.tsx"
+    },
+    "HotelNav": {
+      "file": "components/hotel/HotelNav.tsx"
+    },
+    "index": {
+      "file": "components/hotel/index.ts"
+    },
+    "RoomCard": {
+      "file": "components/hotel/RoomCard.tsx"
+    },
+    "RoomsGrid": {
+      "file": "components/hotel/RoomsGrid.tsx"
+    }
+  }
+}

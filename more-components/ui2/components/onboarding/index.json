@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/onboarding/index.json",
+  "meta": {
+    "namespace": "onboarding",
+    "description": "",
+    "location": "design-system/components/ui2/components/onboarding",
+    "componentCount": 9
+  },
+  "components": {
+    "AccountSetupModal": {
+      "file": "components/onboarding/AccountSetupModal.tsx"
+    },
+    "index": {
+      "file": "components/onboarding/index.ts"
+    },
+    "LAYOUT_EXAMPLES": {
+      "file": "components/onboarding/LAYOUT_EXAMPLES.tsx"
+    },
+    "ModalActions": {
+      "file": "components/onboarding/ModalActions.tsx"
+    },
+    "ModalHeader": {
+      "file": "components/onboarding/ModalHeader.tsx"
+    },
+    "ProgressStepper": {
+      "file": "components/onboarding/ProgressStepper.tsx"
+    },
+    "SecurityOptionCard": {
+      "file": "components/onboarding/SecurityOptionCard.tsx"
+    },
+    "types": {
+      "file": "components/onboarding/types.ts"
+    },
+    "USAGE_EXAMPLE": {
+      "file": "components/onboarding/USAGE_EXAMPLE.tsx"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/creative-studio/index.json",
+  "meta": {
+    "namespace": "creative-studio",
+    "description": "",
+    "location": "design-system/components/ui2/components/creative-studio",
+    "componentCount": 12
+  },
+  "components": {
+    "CreativeStudioFooter": {
+      "file": "components/creative-studio/CreativeStudioFooter.tsx"
+    },
+    "CreativeStudioHero": {
+      "file": "components/creative-studio/CreativeStudioHero.tsx"
+    },
+    "CreativeStudioLanding.backup": {
+      "file": "components/creative-studio/CreativeStudioLanding.backup.tsx"
+    },
+    "CreativeStudioLanding": {
+      "file": "components/creative-studio/CreativeStudioLanding.tsx"
+    },
+    "index": {
+      "file": "components/creative-studio/index.ts"
+    },
+    "PricingTiers": {
+      "file": "components/creative-studio/PricingTiers.tsx"
+    },
+    "ProcessSteps": {
+      "file": "components/creative-studio/ProcessSteps.tsx"
+    },
+    "ProjectCard": {
+      "file": "components/creative-studio/ProjectCard.tsx"
+    },
+    "SplineBackground": {
+      "file": "components/creative-studio/SplineBackground.tsx"
+    },
+    "TeamCollage": {
+      "file": "components/creative-studio/TeamCollage.tsx"
+    },
+    "TestimonialsCarousel": {
+      "file": "components/creative-studio/TestimonialsCarousel.tsx"
+    },
+    "types": {
+      "file": "components/creative-studio/types.ts"
+    }
+  }
+}

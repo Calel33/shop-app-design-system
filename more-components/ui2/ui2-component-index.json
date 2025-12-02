@@ -1,0 +1,1049 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/component-index.json",
+  "meta": {
+    "name": "UI2 Component Index",
+    "version": "1.0.0",
+    "description": "Index of UI2 composable sections, primitives, hooks, and types under design-system/components/ui2",
+    "lastUpdated": "2025-11-16",
+    "rootDirectory": "design-system/components/ui2",
+    "indexType": "slim",
+    "totalComponents": 536,
+    "namespaceCount": 61,
+    "note": "Slim index for quick lookup. Full docs in components/{namespace}/index.json"
+  },
+  "namespaces": {
+    "root": {
+      "description": "",
+      "location": "design-system/components/ui2/",
+      "components": {
+        "index": {
+          "file": "index.ts"
+        }
+      }
+    },
+    "admin": {
+      "description": "",
+      "location": "design-system/components/ui2/components/admin",
+      "componentCount": 25,
+      "components": [
+        "ActivityFeed",
+        "AdminDashboard",
+        "AdminHeader",
+        "AdminListingFilters",
+        "AdminListingHeader",
+        "AdminListingLayout",
+        "AdminListingSidebar",
+        "AdminSidebar",
+        "BulkToolbar",
+        "BusinessApprovalCard",
+        "BusinessApprovalItem",
+        "BusinessApprovalQueue",
+        "BusinessCardGrid",
+        "BusinessDashboard",
+        "BusinessDetailPanel",
+        "BusinessDirectory",
+        "BusinessFilters",
+        "BusinessListItem",
+        "index",
+        "MetricCard",
+        "PaginationControls",
+        "QuickStats",
+        "Sidebar",
+        "SystemStatus",
+        "TopBar"
+      ],
+      "detailFile": "components/admin/index.json"
+    },
+    "alimony": {
+      "description": "",
+      "location": "design-system/components/ui2/components/alimony",
+      "componentCount": 2,
+      "components": [
+        "AlimonyLanding",
+        "index"
+      ],
+      "detailFile": "components/alimony/index.json"
+    },
+    "analytics": {
+      "description": "",
+      "location": "design-system/components/ui2/components/analytics",
+      "componentCount": 8,
+      "components": [
+        "AnalyticsDashboard",
+        "AnalyticsHero",
+        "ChurnMetricCard",
+        "DashboardNav",
+        "index",
+        "KPISnapshotCard",
+        "MetricCard",
+        "ObjectivesCard"
+      ],
+      "detailFile": "components/analytics/index.json"
+    },
+    "auth": {
+      "description": "",
+      "location": "design-system/components/ui2/components/auth",
+      "componentCount": 14,
+      "components": [
+        "AnimatedBackground",
+        "AnimatedGradientButton",
+        "CustomCheckbox",
+        "DividerWithText",
+        "FormField",
+        "GlasmorphicSignIn",
+        "GlassmorphicCard",
+        "index",
+        "LAYOUT_EXAMPLES",
+        "NebulaLoginForm",
+        "QuantumLoginForm",
+        "SocialLoginButton",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/auth/index.json"
+    },
+    "automotive": {
+      "description": "",
+      "location": "design-system/components/ui2/components/automotive",
+      "componentCount": 6,
+      "components": [
+        "CarDetailGallery",
+        "ContactDealer",
+        "index",
+        "PriceBreakdown",
+        "VehicleGallery",
+        "VehicleSpecs"
+      ],
+      "detailFile": "components/automotive/index.json"
+    },
+    "background": {
+      "description": "",
+      "location": "design-system/components/ui2/components/background",
+      "componentCount": 4,
+      "components": [
+        "AnimatedButton",
+        "AnimatedGridBackground",
+        "CursorGlow",
+        "index"
+      ],
+      "detailFile": "components/background/index.json"
+    },
+    "business": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business",
+      "componentCount": 8,
+      "components": [
+        "BusinessHero",
+        "BusinessListing",
+        "HeaderNav",
+        "index",
+        "LoyaltyBanner",
+        "MenuCategoryList",
+        "MenuTabs",
+        "NutritionLegend"
+      ],
+      "detailFile": "components/business/index.json"
+    },
+    "business.Sidebar": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business/Sidebar",
+      "componentCount": 5,
+      "components": [
+        "ContactInfo",
+        "Features",
+        "HealthSafety",
+        "Hours",
+        "QuickActions"
+      ],
+      "detailFile": "components/business.Sidebar/index.json"
+    },
+    "business-dashboard": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business-dashboard",
+      "componentCount": 11,
+      "components": [
+        "BusinessCardPreview",
+        "BusinessDashboardLayout",
+        "DashboardHeader",
+        "DashboardSidebar",
+        "DragDropUpload",
+        "EditPanel",
+        "FormTabs",
+        "index",
+        "PreviewPanel",
+        "SplitViewContainer",
+        "StatusCard"
+      ],
+      "detailFile": "components/business-dashboard/index.json"
+    },
+    "business-dashboard.forms": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business-dashboard/forms",
+      "componentCount": 4,
+      "components": [
+        "BasicInfoForm",
+        "ContactForm",
+        "HoursForm",
+        "PhotosForm"
+      ],
+      "detailFile": "components/business-dashboard.forms/index.json"
+    },
+    "business-listing": {
+      "description": "",
+      "location": "design-system/components/ui2/components/business-listing",
+      "componentCount": 14,
+      "components": [
+        "Breadcrumb",
+        "BusinessDetails",
+        "BusinessHeader",
+        "BusinessHero",
+        "BusinessListingLayout",
+        "BusinessSidebar",
+        "ContactInfo",
+        "CredentialsDisplay",
+        "HoursDisplay",
+        "ImageGallery",
+        "index",
+        "InfoCard",
+        "LastUpdatedBadge",
+        "ReviewsPlaceholder"
+      ],
+      "detailFile": "components/business-listing/index.json"
+    },
+    "candle": {
+      "description": "",
+      "location": "design-system/components/ui2/components/candle",
+      "componentCount": 3,
+      "components": [
+        "CandleLandingClean",
+        "index",
+        "UpbeatCandleLanding"
+      ],
+      "detailFile": "components/candle/index.json"
+    },
+    "chat": {
+      "description": "",
+      "location": "design-system/components/ui2/components/chat",
+      "componentCount": 6,
+      "components": [
+        "ChatHeader",
+        "ChatInput",
+        "ChatMessage",
+        "ChatMessages",
+        "GlassChatCard",
+        "index"
+      ],
+      "detailFile": "components/chat/index.json"
+    },
+    "childcare": {
+      "description": "",
+      "location": "design-system/components/ui2/components/childcare",
+      "componentCount": 13,
+      "components": [
+        "BubbleFooter",
+        "BubbleHeader",
+        "BubbleHero",
+        "BubbleLanding",
+        "FeatureHighlights",
+        "index",
+        "LAYOUT_EXAMPLES",
+        "ProgramsSection",
+        "PromiseSection",
+        "TestimonialsSection",
+        "types",
+        "USAGE_EXAMPLE",
+        "VisitCTA"
+      ],
+      "detailFile": "components/childcare/index.json"
+    },
+    "creative-studio": {
+      "description": "",
+      "location": "design-system/components/ui2/components/creative-studio",
+      "componentCount": 12,
+      "components": [
+        "CreativeStudioFooter",
+        "CreativeStudioHero",
+        "CreativeStudioLanding.backup",
+        "CreativeStudioLanding",
+        "index",
+        "PricingTiers",
+        "ProcessSteps",
+        "ProjectCard",
+        "SplineBackground",
+        "TeamCollage",
+        "TestimonialsCarousel",
+        "types"
+      ],
+      "detailFile": "components/creative-studio/index.json"
+    },
+    "dashboard": {
+      "description": "",
+      "location": "design-system/components/ui2/components/dashboard",
+      "componentCount": 15,
+      "components": [
+        "ActiveJobs",
+        "ActivityTable",
+        "BIDashboard",
+        "BIHeader",
+        "BISidebar",
+        "GPUDashboard",
+        "index",
+        "KPICard",
+        "PerformanceMetrics",
+        "ResourceAllocation",
+        "ResourceOverviewCard",
+        "RevenueChart",
+        "SystemStatus",
+        "types",
+        "UsageChart"
+      ],
+      "detailFile": "components/dashboard/index.json"
+    },
+    "dashboard-sidebar": {
+      "description": "",
+      "location": "design-system/components/ui2/components/dashboard-sidebar",
+      "componentCount": 11,
+      "components": [
+        "ArtistsTable",
+        "DashboardHeader",
+        "DashboardLayout",
+        "GenreChart",
+        "index",
+        "RevenueChart",
+        "Sidebar",
+        "SpectrumChart",
+        "StatsCard",
+        "types",
+        "UsageChart"
+      ],
+      "detailFile": "components/dashboard-sidebar/index.json"
+    },
+    "defi-earn": {
+      "description": "",
+      "location": "design-system/components/ui2/components/defi-earn",
+      "componentCount": 14,
+      "components": [
+        "data",
+        "DeFiFooter",
+        "DeFiHeader",
+        "DeFiLayout",
+        "DepositsSidebar",
+        "HeroBanner",
+        "index",
+        "PortfolioCard",
+        "StrategyBadge",
+        "TokenIcon",
+        "types",
+        "UtilizationBar",
+        "VaultRow",
+        "VaultsTable"
+      ],
+      "detailFile": "components/defi-earn/index.json"
+    },
+    "defi-earn.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/defi-earn/hooks",
+      "componentCount": 2,
+      "components": [
+        "useVaultsFilters",
+        "useWallet"
+      ],
+      "detailFile": "components/defi-earn.hooks/index.json"
+    },
+    "digital-health": {
+      "description": "",
+      "location": "design-system/components/ui2/components/digital-health",
+      "componentCount": 14,
+      "components": [
+        "AppPreviewCard",
+        "BrandCard",
+        "ChatTeaserCard",
+        "ConsultationCard",
+        "CountdownBadge",
+        "DoctorCard",
+        "GlucoseChartCard",
+        "HealthDashboardGrid",
+        "index",
+        "MessageBubble",
+        "MobileAppCard",
+        "StyleGuideCard",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/digital-health/index.json"
+    },
+    "directory": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory",
+      "componentCount": 2,
+      "components": [
+        "index",
+        "mockData"
+      ],
+      "detailFile": "components/directory/index.json"
+    },
+    "directory.business": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/business",
+      "componentCount": 6,
+      "components": [
+        "BusinessCard",
+        "NewBusinessCard",
+        "NewBusinessesShowcase",
+        "TrendingSection",
+        "VerifiedBusinessCard",
+        "VerifiedCarousel"
+      ],
+      "detailFile": "components/directory.business/index.json"
+    },
+    "directory.categories": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/categories",
+      "componentCount": 2,
+      "components": [
+        "CategoryGrid",
+        "CategoryTile"
+      ],
+      "detailFile": "components/directory.categories/index.json"
+    },
+    "directory.hero": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/hero",
+      "componentCount": 3,
+      "components": [
+        "HeroSearchSection",
+        "SearchBar",
+        "StatsDisplay"
+      ],
+      "detailFile": "components/directory.hero/index.json"
+    },
+    "directory.layout": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/layout",
+      "componentCount": 3,
+      "components": [
+        "DirectoryHeader",
+        "ListingHomepageLayout",
+        "QuickFiltersBar"
+      ],
+      "detailFile": "components/directory.layout/index.json"
+    },
+    "directory.shared": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/shared",
+      "componentCount": 1,
+      "components": [
+        "LocationBanner"
+      ],
+      "detailFile": "components/directory.shared/index.json"
+    },
+    "directory.types": {
+      "description": "",
+      "location": "design-system/components/ui2/components/directory/types",
+      "componentCount": 1,
+      "components": [
+        "directory.types"
+      ],
+      "detailFile": "components/directory.types/index.json"
+    },
+    "ecommerce": {
+      "description": "",
+      "location": "design-system/components/ui2/components/ecommerce",
+      "componentCount": 17,
+      "components": [
+        "ApparelHeader",
+        "ApparelLanding",
+        "BrandCard",
+        "ColorSelector",
+        "DeliveryOptions",
+        "DenimFitSelector",
+        "index",
+        "ProductDetailPage",
+        "ProductGallery",
+        "ProductGrid",
+        "ProductInfo",
+        "ProductTabs",
+        "QuantitySelector",
+        "ReviewCard",
+        "SearchOverlay",
+        "SplitHero",
+        "types"
+      ],
+      "detailFile": "components/ecommerce/index.json"
+    },
+    "email": {
+      "description": "",
+      "location": "design-system/components/ui2/components/email",
+      "componentCount": 12,
+      "components": [
+        "AttachmentZone",
+        "AutoSaveIndicator",
+        "ComposeForm",
+        "ComposeHeader",
+        "ComposeSidebar",
+        "ContactQuickAdd",
+        "EmailCompose",
+        "FormatToolbar",
+        "index",
+        "RecipientInput",
+        "TemplateSelector",
+        "types"
+      ],
+      "detailFile": "components/email/index.json"
+    },
+    "faq": {
+      "description": "",
+      "location": "design-system/components/ui2/components/faq",
+      "componentCount": 8,
+      "components": [
+        "FAQCard",
+        "FAQCategoryBadge",
+        "FAQCornerIcons",
+        "FAQCTASection",
+        "FAQGrid",
+        "FAQHero",
+        "FAQSection",
+        "index"
+      ],
+      "detailFile": "components/faq/index.json"
+    },
+    "fashion": {
+      "description": "",
+      "location": "design-system/components/ui2/components/fashion",
+      "componentCount": 16,
+      "components": [
+        "AboutStudio",
+        "CollectionCard",
+        "CollectionGrid",
+        "CTASection",
+        "FashionHero",
+        "FashionLanding",
+        "FloatingNav",
+        "index",
+        "ServiceCards",
+        "StatsSection",
+        "TeamCard",
+        "TeamSection",
+        "TestimonialGrid",
+        "TimelineSection",
+        "TimelineStep",
+        "types"
+      ],
+      "detailFile": "components/fashion/index.json"
+    },
+    "feature-grid": {
+      "description": "",
+      "location": "design-system/components/ui2/components/feature-grid",
+      "componentCount": 6,
+      "components": [
+        "FeatureCard",
+        "FeatureGrid",
+        "FeaturesGridLayout",
+        "index",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/feature-grid/index.json"
+    },
+    "footer": {
+      "description": "",
+      "location": "design-system/components/ui2/components/footer",
+      "componentCount": 5,
+      "components": [
+        "ContactForm",
+        "Footer",
+        "index",
+        "NewsletterForm",
+        "types"
+      ],
+      "detailFile": "components/footer/index.json"
+    },
+    "hero": {
+      "description": "",
+      "location": "design-system/components/ui2/components/hero",
+      "componentCount": 5,
+      "components": [
+        "FullScreenHero",
+        "HeroContent",
+        "HeroNav",
+        "index",
+        "MobileMenu"
+      ],
+      "detailFile": "components/hero/index.json"
+    },
+    "hotel": {
+      "description": "",
+      "location": "design-system/components/ui2/components/hotel",
+      "componentCount": 6,
+      "components": [
+        "BookingForm",
+        "HotelHero",
+        "HotelNav",
+        "index",
+        "RoomCard",
+        "RoomsGrid"
+      ],
+      "detailFile": "components/hotel/index.json"
+    },
+    "interactive": {
+      "description": "",
+      "location": "design-system/components/ui2/components/interactive",
+      "componentCount": 3,
+      "components": [
+        "ExperienceCard",
+        "ExperienceSelector",
+        "index"
+      ],
+      "detailFile": "components/interactive/index.json"
+    },
+    "interactive-studio": {
+      "description": "",
+      "location": "design-system/components/ui2/components/interactive-studio",
+      "componentCount": 8,
+      "components": [
+        "FloatingNavbar",
+        "GlassBadge",
+        "GlassButton",
+        "GlassCard",
+        "index",
+        "InteractiveStudioHero",
+        "SplineBackground",
+        "types"
+      ],
+      "detailFile": "components/interactive-studio/index.json"
+    },
+    "interior-design": {
+      "description": "",
+      "location": "design-system/components/ui2/components/interior-design",
+      "componentCount": 13,
+      "components": [
+        "AboutSection",
+        "AnimatedGradientButton",
+        "DesignPortfolioLanding",
+        "ExpandableProcessGrid",
+        "FormaHero",
+        "FormaNav",
+        "index",
+        "LogoTicker",
+        "PortfolioGrid",
+        "ProcessTimeline",
+        "ServicesGrid",
+        "StickyPortfolioCards",
+        "TestimonialsGrid"
+      ],
+      "detailFile": "components/interior-design/index.json"
+    },
+    "medical": {
+      "description": "",
+      "location": "design-system/components/ui2/components/medical",
+      "componentCount": 12,
+      "components": [
+        "BentoCard",
+        "BentoGrid",
+        "CTASection",
+        "HeroSection",
+        "index",
+        "LAYOUT_EXAMPLES",
+        "MedicalInsuranceLanding",
+        "MedicalLanding",
+        "MedicalLayout",
+        "Navigation",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/medical/index.json"
+    },
+    "medical.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/medical/hooks",
+      "componentCount": 1,
+      "components": [
+        "useScrollAnimation"
+      ],
+      "detailFile": "components/medical.hooks/index.json"
+    },
+    "nova": {
+      "description": "",
+      "location": "design-system/components/ui2/components/nova",
+      "componentCount": 11,
+      "components": [
+        "ChatDemoCard",
+        "FAQItem",
+        "FeatureCard",
+        "Footer",
+        "HeroSection",
+        "index",
+        "MetricsChart",
+        "NovaLandingDemo",
+        "PricingCard",
+        "StickyNav",
+        "types"
+      ],
+      "detailFile": "components/nova/index.json"
+    },
+    "onboarding": {
+      "description": "",
+      "location": "design-system/components/ui2/components/onboarding",
+      "componentCount": 9,
+      "components": [
+        "AccountSetupModal",
+        "index",
+        "LAYOUT_EXAMPLES",
+        "ModalActions",
+        "ModalHeader",
+        "ProgressStepper",
+        "SecurityOptionCard",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/onboarding/index.json"
+    },
+    "payment": {
+      "description": "",
+      "location": "design-system/components/ui2/components/payment",
+      "componentCount": 27,
+      "components": [
+        "BillPaymentConfirmation",
+        "CardBack",
+        "CardBrandIcons",
+        "CardChip",
+        "CardFront",
+        "CardLogo",
+        "CardPreview",
+        "ConfirmationActions",
+        "CONFIRMATION_EXAMPLES",
+        "CountrySelector",
+        "FlowPayHero",
+        "GlassCard",
+        "GlassInput",
+        "GradientButton",
+        "index",
+        "MeshGradientBackground",
+        "OrderSummary",
+        "PaymentCompletion",
+        "PaymentCompletionForm",
+        "PaymentDashboard",
+        "PaymentDetailsPanel",
+        "PaymentFeatureGrid",
+        "PaymentForm",
+        "PaymentTestimonials",
+        "SuccessIcon",
+        "types",
+        "VirtualPaymentCard"
+      ],
+      "detailFile": "components/payment/index.json"
+    },
+    "portfolio": {
+      "description": "",
+      "location": "design-system/components/ui2/components/portfolio",
+      "componentCount": 8,
+      "components": [
+        "index",
+        "LAYOUT_EXAMPLES",
+        "PortfolioCard",
+        "PortfolioGrid",
+        "PortfolioHeader",
+        "PortfolioLayout",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/portfolio/index.json"
+    },
+    "portfolio.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/portfolio/hooks",
+      "componentCount": 1,
+      "components": [
+        "useLiveClock"
+      ],
+      "detailFile": "components/portfolio.hooks/index.json"
+    },
+    "portfolio.kyro": {
+      "description": "",
+      "location": "design-system/components/ui2/components/portfolio/kyro",
+      "componentCount": 12,
+      "components": [
+        "AboutSection",
+        "ContactFooter",
+        "Header",
+        "HeroSection",
+        "index",
+        "InfoCard",
+        "InfoGrid",
+        "KyroPortfolioLanding",
+        "ServiceCard",
+        "ServicesSection",
+        "WorkCard",
+        "WorkShowcase"
+      ],
+      "detailFile": "components/portfolio.kyro/index.json"
+    },
+    "product": {
+      "description": "",
+      "location": "design-system/components/ui2/components/product",
+      "componentCount": 5,
+      "components": [
+        "CertificationGrid",
+        "DiagramWithNodes",
+        "index",
+        "ProductFeatureTabs",
+        "SpecList"
+      ],
+      "detailFile": "components/product/index.json"
+    },
+    "restaurant": {
+      "description": "",
+      "location": "design-system/components/ui2/components/restaurant",
+      "componentCount": 12,
+      "components": [
+        "ChefCard",
+        "ChefTeamSection",
+        "DishCard",
+        "FeatureCard",
+        "FeatureGrid",
+        "index",
+        "MenuShowcase",
+        "ReservationForm",
+        "RestaurantBadge",
+        "RestaurantFooter",
+        "RestaurantHero",
+        "types"
+      ],
+      "detailFile": "components/restaurant/index.json"
+    },
+    "scheduling": {
+      "description": "",
+      "location": "design-system/components/ui2/components/scheduling",
+      "componentCount": 5,
+      "components": [
+        "CalendarCard",
+        "GuestList",
+        "index",
+        "MeetingCard",
+        "SchedulingDashboard"
+      ],
+      "detailFile": "components/scheduling/index.json"
+    },
+    "skincare": {
+      "description": "",
+      "location": "design-system/components/ui2/components/skincare",
+      "componentCount": 16,
+      "components": [
+        "index",
+        "SkincareAnnouncement",
+        "SkincareCart",
+        "SkincareCollectionsDropdown",
+        "SkincareCollectionsGrid",
+        "SkincareFooter",
+        "SkincareHeader",
+        "SkincareHero",
+        "SkincareLayout",
+        "SkincareMobileMenu",
+        "SkincarePhilosophy",
+        "SkincareProductCard",
+        "SkincareProductGrid",
+        "SkincareToast",
+        "SkincareTrustBar",
+        "types"
+      ],
+      "detailFile": "components/skincare/index.json"
+    },
+    "storytelling": {
+      "description": "",
+      "location": "design-system/components/ui2/components/storytelling",
+      "componentCount": 8,
+      "components": [
+        "Chapter",
+        "ChapterContent",
+        "ChapterNavigation",
+        "CustomCursor",
+        "index",
+        "ScrollStory",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/storytelling/index.json"
+    },
+    "storytelling.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/storytelling/hooks",
+      "componentCount": 1,
+      "components": [
+        "useScrollNavigation"
+      ],
+      "detailFile": "components/storytelling.hooks/index.json"
+    },
+    "testimonials": {
+      "description": "",
+      "location": "design-system/components/ui2/components/testimonials",
+      "componentCount": 7,
+      "components": [
+        "index",
+        "MeteorBackground",
+        "QuoteIcon",
+        "TestimonialCard",
+        "TestimonialsGrid",
+        "TestimonialsMasonry",
+        "types"
+      ],
+      "detailFile": "components/testimonials/index.json"
+    },
+    "types": {
+      "description": "",
+      "location": "design-system/components/ui2/components/types",
+      "componentCount": 41,
+      "components": [
+        "admin.types",
+        "analytics.types",
+        "auth.types",
+        "automotive.types",
+        "background.types",
+        "booking.types",
+        "business-dashboard.types",
+        "business-listing.types",
+        "business.types",
+        "chat.types",
+        "childcare.types",
+        "creative-studio.types",
+        "dashboard-sidebar.types",
+        "dashboard.types",
+        "defi-earn.types",
+        "digital-health.types",
+        "ecommerce.types",
+        "email.types",
+        "faq.types",
+        "fashion.types",
+        "feature-grid.types",
+        "footer.types",
+        "hero.types",
+        "interactive-studio.types",
+        "interactive.types",
+        "interior-design.types",
+        "kyro-portfolio.types",
+        "medical.types",
+        "nova.types",
+        "payment.types",
+        "portfolio.types",
+        "product.types",
+        "restaurant.types",
+        "scheduling.types",
+        "skincare.types",
+        "storytelling.types",
+        "testimonials.types",
+        "unboxing.types",
+        "web3.types",
+        "webgl.types",
+        "wellness.types"
+      ],
+      "detailFile": "components/types/index.json"
+    },
+    "unboxing": {
+      "description": "",
+      "location": "design-system/components/ui2/components/unboxing",
+      "componentCount": 7,
+      "components": [
+        "index",
+        "types",
+        "UnboxingFeatureColumn",
+        "UnboxingFooter",
+        "UnboxingHeader",
+        "UnboxingLayout",
+        "UnboxingProductCard"
+      ],
+      "detailFile": "components/unboxing/index.json"
+    },
+    "web3": {
+      "description": "",
+      "location": "design-system/components/ui2/components/web3",
+      "componentCount": 14,
+      "components": [
+        "AuraFooter",
+        "AuraHeader",
+        "AuraHero",
+        "AuraLanding",
+        "FAQSection",
+        "GridHero",
+        "index",
+        "InfoCard",
+        "LAYOUT_EXAMPLES",
+        "NetworksSection",
+        "PricingSection",
+        "TestimonialsSection",
+        "types",
+        "USAGE_EXAMPLE"
+      ],
+      "detailFile": "components/web3/index.json"
+    },
+    "webgl": {
+      "description": "",
+      "location": "design-system/components/ui2/components/webgl",
+      "componentCount": 8,
+      "components": [
+        "FeatureCard",
+        "GlassCard",
+        "index",
+        "Navigation",
+        "ShaderBackground",
+        "StatCard",
+        "types",
+        "WebGLShaderDemo"
+      ],
+      "detailFile": "components/webgl/index.json"
+    },
+    "webgl.hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/components/webgl/hooks",
+      "componentCount": 1,
+      "components": [
+        "useWebGLShader"
+      ],
+      "detailFile": "components/webgl.hooks/index.json"
+    },
+    "wellness": {
+      "description": "",
+      "location": "design-system/components/ui2/components/wellness",
+      "componentCount": 6,
+      "components": [
+        "CommunityCard",
+        "index",
+        "MeditationCard",
+        "MeditationGrid",
+        "ProgressAnalyticsCard",
+        "SessionLibraryCard"
+      ],
+      "detailFile": "components/wellness/index.json"
+    },
+    "hooks": {
+      "description": "",
+      "location": "design-system/components/ui2/hooks",
+      "componentCount": 15,
+      "components": [
+        "index",
+        "useCalendar",
+        "useCardFormatter",
+        "useCardValidation",
+        "useCart",
+        "useChartSetup",
+        "useCounterAnimation",
+        "useMousePosition",
+        "useParallax",
+        "useRevealAnimation",
+        "useScrollAnimation",
+        "useScrollProgress",
+        "useScrollToTop",
+        "useTheme",
+        "useWebGLShader"
+      ],
+      "detailFile": "components/hooks/index.json"
+    }
+  },
+  "aiAgentGuidance": {
+    "howToUse": [
+      "1. Read this slim index to discover available namespaces and components",
+      "2. Find component by name or browse by namespace",
+      "3. Read the detailFile for full component list with file paths",
+      "4. Example: Need admin components? Read components/admin/index.json"
+    ]
+  }
+}

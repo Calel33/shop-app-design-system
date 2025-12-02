@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/directory.layout/index.json",
+  "meta": {
+    "namespace": "directory.layout",
+    "description": "",
+    "location": "design-system/components/ui2/components/directory/layout",
+    "componentCount": 3
+  },
+  "components": {
+    "DirectoryHeader": {
+      "file": "components/directory/layout/DirectoryHeader.tsx"
+    },
+    "ListingHomepageLayout": {
+      "file": "components/directory/layout/ListingHomepageLayout.tsx"
+    },
+    "QuickFiltersBar": {
+      "file": "components/directory/layout/QuickFiltersBar.tsx"
+    }
+  }
+}

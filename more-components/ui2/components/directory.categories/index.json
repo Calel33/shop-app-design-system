@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/directory.categories/index.json",
+  "meta": {
+    "namespace": "directory.categories",
+    "description": "",
+    "location": "design-system/components/ui2/components/directory/categories",
+    "componentCount": 2
+  },
+  "components": {
+    "CategoryGrid": {
+      "file": "components/directory/categories/CategoryGrid.tsx"
+    },
+    "CategoryTile": {
+      "file": "components/directory/categories/CategoryTile.tsx"
+    }
+  }
+}

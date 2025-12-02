@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/portfolio.kyro/index.json",
+  "meta": {
+    "namespace": "portfolio.kyro",
+    "description": "",
+    "location": "design-system/components/ui2/components/portfolio/kyro",
+    "componentCount": 12
+  },
+  "components": {
+    "AboutSection": {
+      "file": "components/portfolio/kyro/AboutSection.tsx"
+    },
+    "ContactFooter": {
+      "file": "components/portfolio/kyro/ContactFooter.tsx"
+    },
+    "Header": {
+      "file": "components/portfolio/kyro/Header.tsx"
+    },
+    "HeroSection": {
+      "file": "components/portfolio/kyro/HeroSection.tsx"
+    },
+    "index": {
+      "file": "components/portfolio/kyro/index.ts"
+    },
+    "InfoCard": {
+      "file": "components/portfolio/kyro/InfoCard.tsx"
+    },
+    "InfoGrid": {
+      "file": "components/portfolio/kyro/InfoGrid.tsx"
+    },
+    "KyroPortfolioLanding": {
+      "file": "components/portfolio/kyro/KyroPortfolioLanding.tsx"
+    },
+    "ServiceCard": {
+      "file": "components/portfolio/kyro/ServiceCard.tsx"
+    },
+    "ServicesSection": {
+      "file": "components/portfolio/kyro/ServicesSection.tsx"
+    },
+    "WorkCard": {
+      "file": "components/portfolio/kyro/WorkCard.tsx"
+    },
+    "WorkShowcase": {
+      "file": "components/portfolio/kyro/WorkShowcase.tsx"
+    }
+  }
+}

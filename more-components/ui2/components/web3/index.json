@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/web3/index.json",
+  "meta": {
+    "namespace": "web3",
+    "description": "",
+    "location": "design-system/components/ui2/components/web3",
+    "componentCount": 14
+  },
+  "components": {
+    "AuraFooter": {
+      "file": "components/web3/AuraFooter.tsx"
+    },
+    "AuraHeader": {
+      "file": "components/web3/AuraHeader.tsx"
+    },
+    "AuraHero": {
+      "file": "components/web3/AuraHero.tsx"
+    },
+    "AuraLanding": {
+      "file": "components/web3/AuraLanding.tsx"
+    },
+    "FAQSection": {
+      "file": "components/web3/FAQSection.tsx"
+    },
+    "GridHero": {
+      "file": "components/web3/GridHero.tsx"
+    },
+    "index": {
+      "file": "components/web3/index.ts"
+    },
+    "InfoCard": {
+      "file": "components/web3/InfoCard.tsx"
+    },
+    "LAYOUT_EXAMPLES": {
+      "file": "components/web3/LAYOUT_EXAMPLES.tsx"
+    },
+    "NetworksSection": {
+      "file": "components/web3/NetworksSection.tsx"
+    },
+    "PricingSection": {
+      "file": "components/web3/PricingSection.tsx"
+    },
+    "TestimonialsSection": {
+      "file": "components/web3/TestimonialsSection.tsx"
+    },
+    "types": {
+      "file": "components/web3/types.ts"
+    },
+    "USAGE_EXAMPLE": {
+      "file": "components/web3/USAGE_EXAMPLE.tsx"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/interior-design/index.json",
+  "meta": {
+    "namespace": "interior-design",
+    "description": "",
+    "location": "design-system/components/ui2/components/interior-design",
+    "componentCount": 13
+  },
+  "components": {
+    "AboutSection": {
+      "file": "components/interior-design/AboutSection.tsx"
+    },
+    "AnimatedGradientButton": {
+      "file": "components/interior-design/AnimatedGradientButton.tsx"
+    },
+    "DesignPortfolioLanding": {
+      "file": "components/interior-design/DesignPortfolioLanding.tsx"
+    },
+    "ExpandableProcessGrid": {
+      "file": "components/interior-design/ExpandableProcessGrid.tsx"
+    },
+    "FormaHero": {
+      "file": "components/interior-design/FormaHero.tsx"
+    },
+    "FormaNav": {
+      "file": "components/interior-design/FormaNav.tsx"
+    },
+    "index": {
+      "file": "components/interior-design/index.ts"
+    },
+    "LogoTicker": {
+      "file": "components/interior-design/LogoTicker.tsx"
+    },
+    "PortfolioGrid": {
+      "file": "components/interior-design/PortfolioGrid.tsx"
+    },
+    "ProcessTimeline": {
+      "file": "components/interior-design/ProcessTimeline.tsx"
+    },
+    "ServicesGrid": {
+      "file": "components/interior-design/ServicesGrid.tsx"
+    },
+    "StickyPortfolioCards": {
+      "file": "components/interior-design/StickyPortfolioCards.tsx"
+    },
+    "TestimonialsGrid": {
+      "file": "components/interior-design/TestimonialsGrid.tsx"
+    }
+  }
+}

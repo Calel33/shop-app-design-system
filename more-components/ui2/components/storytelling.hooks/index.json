@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://testdesign.local/ui2/components/storytelling.hooks/index.json",
+  "meta": {
+    "namespace": "storytelling.hooks",
+    "description": "",
+    "location": "design-system/components/ui2/components/storytelling/hooks",
+    "componentCount": 1
+  },
+  "components": {
+    "useScrollNavigation": {
+      "file": "components/storytelling/hooks/useScrollNavigation.ts"
+    }
+  }
+}
