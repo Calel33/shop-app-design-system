@@ -14,7 +14,7 @@ import {
   buildThemes,
   generateDesignSystem,
   loadConfig,
-} from '../src/index';
+} from '../src/index.js';
 
 const program = new Command();
 

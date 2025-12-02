@@ -1,5 +1,5 @@
 import { SourceFile } from 'ts-morph';
-import type { RawComponentMeta } from '../types/ComponentMeta';
+import type { RawComponentMeta } from '../types/ComponentMeta.js';
 
 /**
  * Extract JSDoc metadata from a component export

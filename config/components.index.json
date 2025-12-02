@@ -1,1 +1,7009 @@
-[]
+[
+  {
+    "name": "Alert",
+    "exportName": "Alert",
+    "filePath": "src/components/ui/Alert.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "alert"
+    ],
+    "status": "stable",
+    "id": "alert"
+  },
+  {
+    "name": "AlertTitle",
+    "exportName": "AlertTitle",
+    "filePath": "src/components/ui/Alert.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "alerttitle"
+    ],
+    "status": "stable",
+    "id": "alert-title"
+  },
+  {
+    "name": "AlertDescription",
+    "exportName": "AlertDescription",
+    "filePath": "src/components/ui/Alert.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "alertdescription"
+    ],
+    "status": "stable",
+    "id": "alert-description"
+  },
+  {
+    "name": "Avatar",
+    "exportName": "Avatar",
+    "filePath": "src/components/ui/Avatar.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "avatar"
+    ],
+    "status": "stable",
+    "id": "avatar"
+  },
+  {
+    "name": "AvatarGroup",
+    "exportName": "AvatarGroup",
+    "filePath": "src/components/ui/Avatar.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "avatargroup"
+    ],
+    "status": "stable",
+    "id": "avatar-group"
+  },
+  {
+    "name": "Badge",
+    "exportName": "Badge",
+    "filePath": "src/components/ui/Badge.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "badge"
+    ],
+    "status": "stable",
+    "id": "badge"
+  },
+  {
+    "name": "Button",
+    "exportName": "Button",
+    "filePath": "src/components/ui/Button.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "button"
+    ],
+    "status": "stable",
+    "id": "button"
+  },
+  {
+    "name": "Card",
+    "exportName": "Card",
+    "filePath": "src/components/ui/Card.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "card"
+    ],
+    "status": "stable",
+    "id": "card"
+  },
+  {
+    "name": "CardHeader",
+    "exportName": "CardHeader",
+    "filePath": "src/components/ui/Card.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "cardheader"
+    ],
+    "status": "stable",
+    "id": "card-header"
+  },
+  {
+    "name": "CardTitle",
+    "exportName": "CardTitle",
+    "filePath": "src/components/ui/Card.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "cardtitle"
+    ],
+    "status": "stable",
+    "id": "card-title"
+  },
+  {
+    "name": "CardDescription",
+    "exportName": "CardDescription",
+    "filePath": "src/components/ui/Card.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "carddescription"
+    ],
+    "status": "stable",
+    "id": "card-description"
+  },
+  {
+    "name": "CardContent",
+    "exportName": "CardContent",
+    "filePath": "src/components/ui/Card.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "cardcontent"
+    ],
+    "status": "stable",
+    "id": "card-content"
+  },
+  {
+    "name": "CardFooter",
+    "exportName": "CardFooter",
+    "filePath": "src/components/ui/Card.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "cardfooter"
+    ],
+    "status": "stable",
+    "id": "card-footer"
+  },
+  {
+    "name": "Checkbox",
+    "exportName": "Checkbox",
+    "filePath": "src/components/ui/Checkbox.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "checkbox"
+    ],
+    "status": "stable",
+    "id": "checkbox"
+  },
+  {
+    "name": "FilterChip",
+    "exportName": "FilterChip",
+    "filePath": "src/components/ui/FilterChip.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "filterchip"
+    ],
+    "status": "stable",
+    "id": "filter-chip"
+  },
+  {
+    "name": "FilterChipGroup",
+    "exportName": "FilterChipGroup",
+    "filePath": "src/components/ui/FilterChip.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "filterchipgroup"
+    ],
+    "status": "stable",
+    "id": "filter-chip-group"
+  },
+  {
+    "name": "InfoStat",
+    "exportName": "InfoStat",
+    "filePath": "src/components/ui/InfoStat.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "infostat"
+    ],
+    "status": "stable",
+    "id": "info-stat"
+  },
+  {
+    "name": "Input",
+    "exportName": "Input",
+    "filePath": "src/components/ui/Input.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "input"
+    ],
+    "status": "stable",
+    "id": "input"
+  },
+  {
+    "name": "MetaItem",
+    "exportName": "MetaItem",
+    "filePath": "src/components/ui/MetaItem.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "metaitem"
+    ],
+    "status": "stable",
+    "id": "meta-item"
+  },
+  {
+    "name": "Pagination",
+    "exportName": "Pagination",
+    "filePath": "src/components/ui/Pagination.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "pagination"
+    ],
+    "status": "stable",
+    "id": "pagination"
+  },
+  {
+    "name": "PhotoUpload",
+    "exportName": "PhotoUpload",
+    "filePath": "src/components/ui/PhotoUpload.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "photoupload"
+    ],
+    "status": "stable",
+    "id": "photo-upload"
+  },
+  {
+    "name": "Select",
+    "exportName": "Select",
+    "filePath": "src/components/ui/Select.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "select"
+    ],
+    "status": "stable",
+    "id": "select"
+  },
+  {
+    "name": "SidePanel",
+    "exportName": "SidePanel",
+    "filePath": "src/components/ui/SidePanel.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "sidepanel"
+    ],
+    "status": "stable",
+    "id": "side-panel"
+  },
+  {
+    "name": "Skeleton",
+    "exportName": "Skeleton",
+    "filePath": "src/components/ui/Skeleton.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "skeleton"
+    ],
+    "status": "stable",
+    "id": "skeleton"
+  },
+  {
+    "name": "StatusCard",
+    "exportName": "StatusCard",
+    "filePath": "src/components/ui/StatusCard.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "statuscard"
+    ],
+    "status": "stable",
+    "id": "status-card"
+  },
+  {
+    "name": "Tabs",
+    "exportName": "Tabs",
+    "filePath": "src/components/ui/Tabs.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "tabs"
+    ],
+    "status": "stable",
+    "id": "tabs"
+  },
+  {
+    "name": "TabList",
+    "exportName": "TabList",
+    "filePath": "src/components/ui/Tabs.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "tablist"
+    ],
+    "status": "stable",
+    "id": "tab-list"
+  },
+  {
+    "name": "Tab",
+    "exportName": "Tab",
+    "filePath": "src/components/ui/Tabs.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "tab"
+    ],
+    "status": "stable",
+    "id": "tab"
+  },
+  {
+    "name": "ThemePreview",
+    "exportName": "ThemePreview",
+    "filePath": "src/components/ui/ThemePreview.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "themepreview"
+    ],
+    "status": "stable",
+    "id": "theme-preview"
+  },
+  {
+    "name": "ThemeComparisonCard",
+    "exportName": "ThemeComparisonCard",
+    "filePath": "src/components/ui/ThemePreview.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "themecomparisoncard"
+    ],
+    "status": "stable",
+    "id": "theme-comparison-card"
+  },
+  {
+    "name": "ThemeToggle",
+    "exportName": "ThemeToggle",
+    "filePath": "src/components/ui/ThemeToggle.tsx",
+    "rootId": "core-ui",
+    "category": "primitive",
+    "tags": [
+      "primitive",
+      "themetoggle"
+    ],
+    "status": "stable",
+    "id": "theme-toggle"
+  },
+  {
+    "name": "BizListingForm",
+    "exportName": "BizListingForm",
+    "filePath": "src/components/business/BizListingForm.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "bizlistingform"
+    ],
+    "status": "stable",
+    "id": "biz-listing-form"
+  },
+  {
+    "name": "BizListingLayout",
+    "exportName": "BizListingLayout",
+    "filePath": "src/components/business/BizListingLayout.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "bizlistinglayout"
+    ],
+    "status": "stable",
+    "id": "biz-listing-layout"
+  },
+  {
+    "name": "BizListingPreviewCard",
+    "exportName": "BizListingPreviewCard",
+    "filePath": "src/components/business/BizListingPreviewCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "bizlistingpreviewcard"
+    ],
+    "status": "stable",
+    "id": "biz-listing-preview-card"
+  },
+  {
+    "name": "BusinessHoursCard",
+    "exportName": "BusinessHoursCard",
+    "filePath": "src/components/business/BusinessHoursCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "businesshourscard"
+    ],
+    "status": "stable",
+    "id": "business-hours-card"
+  },
+  {
+    "name": "BusinessInfoCard",
+    "exportName": "BusinessInfoCard",
+    "filePath": "src/components/business/BusinessInfoCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "businessinfocard"
+    ],
+    "status": "stable",
+    "id": "business-info-card"
+  },
+  {
+    "name": "BusinessMeta",
+    "exportName": "BusinessMeta",
+    "filePath": "src/components/business/BusinessMeta.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "businessmeta"
+    ],
+    "status": "stable",
+    "id": "business-meta"
+  },
+  {
+    "name": "EquipmentFeaturesCard",
+    "exportName": "EquipmentFeaturesCard",
+    "filePath": "src/components/business/EquipmentFeaturesCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "equipmentfeaturescard"
+    ],
+    "status": "stable",
+    "id": "equipment-features-card"
+  },
+  {
+    "name": "FitnessHighlightCard",
+    "exportName": "FitnessHighlightCard",
+    "filePath": "src/components/business/FitnessHighlightCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "fitnesshighlightcard"
+    ],
+    "status": "stable",
+    "id": "fitness-highlight-card"
+  },
+  {
+    "name": "LastUpdatedStamp",
+    "exportName": "LastUpdatedStamp",
+    "filePath": "src/components/business/LastUpdatedStamp.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "lastupdatedstamp"
+    ],
+    "status": "stable",
+    "id": "last-updated-stamp"
+  },
+  {
+    "name": "LevelBadges",
+    "exportName": "LevelBadges",
+    "filePath": "src/components/business/LevelBadges.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "levelbadges"
+    ],
+    "status": "stable",
+    "id": "level-badges"
+  },
+  {
+    "name": "ListingCard",
+    "exportName": "ListingCard",
+    "filePath": "src/components/business/ListingCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "listingcard"
+    ],
+    "status": "stable",
+    "id": "listing-card"
+  },
+  {
+    "name": "PricingPlanCard",
+    "exportName": "PricingPlanCard",
+    "filePath": "src/components/business/PricingPlanCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "pricingplancard"
+    ],
+    "status": "stable",
+    "id": "pricing-plan-card"
+  },
+  {
+    "name": "PricingPlanGrid",
+    "exportName": "PricingPlanGrid",
+    "filePath": "src/components/business/PricingPlanGrid.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "pricingplangrid"
+    ],
+    "status": "stable",
+    "id": "pricing-plan-grid"
+  },
+  {
+    "name": "TodayClassesCard",
+    "exportName": "TodayClassesCard",
+    "filePath": "src/components/business/TodayClassesCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "todayclassescard"
+    ],
+    "status": "stable",
+    "id": "today-classes-card"
+  },
+  {
+    "name": "TrainerCard",
+    "exportName": "TrainerCard",
+    "filePath": "src/components/business/TrainerCard.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "trainercard"
+    ],
+    "status": "stable",
+    "id": "trainer-card"
+  },
+  {
+    "name": "TrainerGrid",
+    "exportName": "TrainerGrid",
+    "filePath": "src/components/business/TrainerGrid.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "trainergrid"
+    ],
+    "status": "stable",
+    "id": "trainer-grid"
+  },
+  {
+    "name": "VerificationBadge",
+    "exportName": "VerificationBadge",
+    "filePath": "src/components/business/VerificationBadge.tsx",
+    "rootId": "biz-ui",
+    "category": "domain-business",
+    "tags": [
+      "domain-business",
+      "verificationbadge"
+    ],
+    "status": "stable",
+    "id": "verification-badge"
+  },
+  {
+    "name": "Header",
+    "exportName": "Header",
+    "filePath": "src/components/layout/Header.tsx",
+    "rootId": "layout",
+    "category": "layout",
+    "tags": [
+      "layout",
+      "header"
+    ],
+    "status": "stable",
+    "id": "header"
+  },
+  {
+    "name": "NavMenu",
+    "exportName": "NavMenu",
+    "filePath": "src/components/layout/NavMenu.tsx",
+    "rootId": "layout",
+    "category": "layout",
+    "tags": [
+      "layout",
+      "navmenu"
+    ],
+    "status": "stable",
+    "id": "nav-menu"
+  },
+  {
+    "name": "Sidebar",
+    "exportName": "Sidebar",
+    "filePath": "src/components/layout/Sidebar.tsx",
+    "rootId": "layout",
+    "category": "layout",
+    "tags": [
+      "layout",
+      "sidebar"
+    ],
+    "status": "stable",
+    "id": "sidebar"
+  },
+  {
+    "name": "BulkToolbar",
+    "exportName": "BulkToolbar",
+    "filePath": "more-components/ui2/components/admin/BulkToolbar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bulktoolbar",
+      "more-components",
+      "admin"
+    ],
+    "status": "stable",
+    "id": "bulk-toolbar"
+  },
+  {
+    "name": "BusinessDirectory",
+    "exportName": "BusinessDirectory",
+    "filePath": "more-components/ui2/components/admin/BusinessDirectory.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "businessdirectory",
+      "more-components",
+      "admin"
+    ],
+    "status": "stable",
+    "id": "business-directory"
+  },
+  {
+    "name": "BusinessFilters",
+    "exportName": "BusinessFilters",
+    "filePath": "more-components/ui2/components/admin/BusinessFilters.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "businessfilters",
+      "more-components",
+      "admin"
+    ],
+    "status": "stable",
+    "id": "business-filters"
+  },
+  {
+    "name": "BusinessListItem",
+    "exportName": "BusinessListItem",
+    "filePath": "more-components/ui2/components/admin/BusinessListItem.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "businesslistitem",
+      "more-components",
+      "admin"
+    ],
+    "status": "stable",
+    "id": "business-list-item"
+  },
+  {
+    "name": "QuickStats",
+    "exportName": "QuickStats",
+    "filePath": "more-components/ui2/components/admin/QuickStats.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "quickstats",
+      "more-components",
+      "admin"
+    ],
+    "status": "stable",
+    "id": "quick-stats"
+  },
+  {
+    "name": "Sidebar",
+    "exportName": "Sidebar",
+    "filePath": "more-components/ui2/components/admin/Sidebar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "sidebar",
+      "more-components",
+      "admin"
+    ],
+    "status": "stable",
+    "id": "sidebar-1"
+  },
+  {
+    "name": "TopBar",
+    "exportName": "TopBar",
+    "filePath": "more-components/ui2/components/admin/TopBar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "topbar",
+      "more-components",
+      "admin"
+    ],
+    "status": "stable",
+    "id": "top-bar"
+  },
+  {
+    "name": "AlimonyHero",
+    "exportName": "AlimonyHero",
+    "filePath": "more-components/ui2/components/alimony/AlimonyLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "alimonyhero",
+      "more-components",
+      "alimony"
+    ],
+    "status": "stable",
+    "id": "alimony-hero"
+  },
+  {
+    "name": "AlimonyFeatures",
+    "exportName": "AlimonyFeatures",
+    "filePath": "more-components/ui2/components/alimony/AlimonyLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "alimonyfeatures",
+      "more-components",
+      "alimony"
+    ],
+    "status": "stable",
+    "id": "alimony-features"
+  },
+  {
+    "name": "AlimonyTestimonials",
+    "exportName": "AlimonyTestimonials",
+    "filePath": "more-components/ui2/components/alimony/AlimonyLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "alimonytestimonials",
+      "more-components",
+      "alimony"
+    ],
+    "status": "stable",
+    "id": "alimony-testimonials"
+  },
+  {
+    "name": "AlimonyTeaser",
+    "exportName": "AlimonyTeaser",
+    "filePath": "more-components/ui2/components/alimony/AlimonyLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "alimonyteaser",
+      "more-components",
+      "alimony"
+    ],
+    "status": "stable",
+    "id": "alimony-teaser"
+  },
+  {
+    "name": "AlimonyCTA",
+    "exportName": "AlimonyCTA",
+    "filePath": "more-components/ui2/components/alimony/AlimonyLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "alimonycta",
+      "more-components",
+      "alimony"
+    ],
+    "status": "stable",
+    "id": "alimony-cta"
+  },
+  {
+    "name": "AlimonyLanding",
+    "exportName": "AlimonyLanding",
+    "filePath": "more-components/ui2/components/alimony/AlimonyLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "alimonylanding",
+      "more-components",
+      "alimony"
+    ],
+    "status": "stable",
+    "id": "alimony-landing"
+  },
+  {
+    "name": "AnalyticsDashboard",
+    "exportName": "AnalyticsDashboard",
+    "filePath": "more-components/ui2/components/analytics/AnalyticsDashboard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "analyticsdashboard",
+      "more-components",
+      "analytics"
+    ],
+    "status": "stable",
+    "id": "analytics-dashboard"
+  },
+  {
+    "name": "AnalyticsHero",
+    "exportName": "AnalyticsHero",
+    "filePath": "more-components/ui2/components/analytics/AnalyticsHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "analyticshero",
+      "more-components",
+      "analytics"
+    ],
+    "status": "stable",
+    "id": "analytics-hero"
+  },
+  {
+    "name": "ChurnMetricCard",
+    "exportName": "ChurnMetricCard",
+    "filePath": "more-components/ui2/components/analytics/ChurnMetricCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "churnmetriccard",
+      "more-components",
+      "analytics"
+    ],
+    "status": "stable",
+    "id": "churn-metric-card"
+  },
+  {
+    "name": "DashboardNav",
+    "exportName": "DashboardNav",
+    "filePath": "more-components/ui2/components/analytics/DashboardNav.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dashboardnav",
+      "more-components",
+      "analytics"
+    ],
+    "status": "stable",
+    "id": "dashboard-nav"
+  },
+  {
+    "name": "KPISnapshotCard",
+    "exportName": "KPISnapshotCard",
+    "filePath": "more-components/ui2/components/analytics/KPISnapshotCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "kpisnapshotcard",
+      "more-components",
+      "analytics"
+    ],
+    "status": "stable",
+    "id": "kpi-snapshot-card"
+  },
+  {
+    "name": "MetricCard",
+    "exportName": "MetricCard",
+    "filePath": "more-components/ui2/components/analytics/MetricCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "metriccard",
+      "more-components",
+      "analytics"
+    ],
+    "status": "stable",
+    "id": "metric-card"
+  },
+  {
+    "name": "ObjectivesCard",
+    "exportName": "ObjectivesCard",
+    "filePath": "more-components/ui2/components/analytics/ObjectivesCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "objectivescard",
+      "more-components",
+      "analytics"
+    ],
+    "status": "stable",
+    "id": "objectives-card"
+  },
+  {
+    "name": "AnimatedBackground",
+    "exportName": "AnimatedBackground",
+    "filePath": "more-components/ui2/components/auth/AnimatedBackground.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "animatedbackground",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "animated-background"
+  },
+  {
+    "name": "AnimatedGradientButton",
+    "exportName": "AnimatedGradientButton",
+    "filePath": "more-components/ui2/components/auth/AnimatedGradientButton.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "animatedgradientbutton",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "animated-gradient-button"
+  },
+  {
+    "name": "CustomCheckbox",
+    "exportName": "CustomCheckbox",
+    "filePath": "more-components/ui2/components/auth/CustomCheckbox.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customcheckbox",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "custom-checkbox"
+  },
+  {
+    "name": "DividerWithText",
+    "exportName": "DividerWithText",
+    "filePath": "more-components/ui2/components/auth/DividerWithText.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dividerwithtext",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "divider-with-text"
+  },
+  {
+    "name": "FormField",
+    "exportName": "FormField",
+    "filePath": "more-components/ui2/components/auth/FormField.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "formfield",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "form-field"
+  },
+  {
+    "name": "GlasmorphicSignIn",
+    "exportName": "GlasmorphicSignIn",
+    "filePath": "more-components/ui2/components/auth/GlasmorphicSignIn.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glasmorphicsignin",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "glasmorphic-sign-in"
+  },
+  {
+    "name": "GlassmorphicCard",
+    "exportName": "GlassmorphicCard",
+    "filePath": "more-components/ui2/components/auth/GlassmorphicCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glassmorphiccard",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "glassmorphic-card"
+  },
+  {
+    "name": "SimpleSignInExample",
+    "exportName": "SimpleSignInExample",
+    "filePath": "more-components/ui2/components/auth/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "simplesigninexample",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "simple-sign-in-example"
+  },
+  {
+    "name": "MultipleOAuthExample",
+    "exportName": "MultipleOAuthExample",
+    "filePath": "more-components/ui2/components/auth/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "multipleoauthexample",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "multiple-o-auth-example"
+  },
+  {
+    "name": "CustomTextExample",
+    "exportName": "CustomTextExample",
+    "filePath": "more-components/ui2/components/auth/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customtextexample",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "custom-text-example"
+  },
+  {
+    "name": "WithErrorExample",
+    "exportName": "WithErrorExample",
+    "filePath": "more-components/ui2/components/auth/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "witherrorexample",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "with-error-example"
+  },
+  {
+    "name": "MinimalExample",
+    "exportName": "MinimalExample",
+    "filePath": "more-components/ui2/components/auth/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "minimalexample",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "minimal-example"
+  },
+  {
+    "name": "NebulaLoginForm",
+    "exportName": "NebulaLoginForm",
+    "filePath": "more-components/ui2/components/auth/NebulaLoginForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "nebulaloginform",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "nebula-login-form"
+  },
+  {
+    "name": "QuantumLoginForm",
+    "exportName": "QuantumLoginForm",
+    "filePath": "more-components/ui2/components/auth/QuantumLoginForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "quantumloginform",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "quantum-login-form"
+  },
+  {
+    "name": "SocialLoginButton",
+    "exportName": "SocialLoginButton",
+    "filePath": "more-components/ui2/components/auth/SocialLoginButton.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "socialloginbutton",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "social-login-button"
+  },
+  {
+    "name": "GlasmorphicSignInExample",
+    "exportName": "GlasmorphicSignInExample",
+    "filePath": "more-components/ui2/components/auth/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glasmorphicsigninexample",
+      "more-components",
+      "auth"
+    ],
+    "status": "stable",
+    "id": "glasmorphic-sign-in-example"
+  },
+  {
+    "name": "CarDetailGallery",
+    "exportName": "CarDetailGallery",
+    "filePath": "more-components/ui2/components/automotive/CarDetailGallery.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cardetailgallery",
+      "more-components",
+      "automotive"
+    ],
+    "status": "stable",
+    "id": "car-detail-gallery"
+  },
+  {
+    "name": "ContactDealer",
+    "exportName": "ContactDealer",
+    "filePath": "more-components/ui2/components/automotive/ContactDealer.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "contactdealer",
+      "more-components",
+      "automotive"
+    ],
+    "status": "stable",
+    "id": "contact-dealer"
+  },
+  {
+    "name": "PriceBreakdown",
+    "exportName": "PriceBreakdown",
+    "filePath": "more-components/ui2/components/automotive/PriceBreakdown.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "pricebreakdown",
+      "more-components",
+      "automotive"
+    ],
+    "status": "stable",
+    "id": "price-breakdown"
+  },
+  {
+    "name": "VehicleGallery",
+    "exportName": "VehicleGallery",
+    "filePath": "more-components/ui2/components/automotive/VehicleGallery.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "vehiclegallery",
+      "more-components",
+      "automotive"
+    ],
+    "status": "stable",
+    "id": "vehicle-gallery"
+  },
+  {
+    "name": "VehicleSpecs",
+    "exportName": "VehicleSpecs",
+    "filePath": "more-components/ui2/components/automotive/VehicleSpecs.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "vehiclespecs",
+      "more-components",
+      "automotive"
+    ],
+    "status": "stable",
+    "id": "vehicle-specs"
+  },
+  {
+    "name": "AnimatedButton",
+    "exportName": "AnimatedButton",
+    "filePath": "more-components/ui2/components/background/AnimatedButton.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "animatedbutton",
+      "more-components",
+      "background"
+    ],
+    "status": "stable",
+    "id": "animated-button"
+  },
+  {
+    "name": "AnimatedGridBackground",
+    "exportName": "AnimatedGridBackground",
+    "filePath": "more-components/ui2/components/background/AnimatedGridBackground.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "animatedgridbackground",
+      "more-components",
+      "background"
+    ],
+    "status": "stable",
+    "id": "animated-grid-background"
+  },
+  {
+    "name": "CursorGlow",
+    "exportName": "CursorGlow",
+    "filePath": "more-components/ui2/components/background/CursorGlow.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cursorglow",
+      "more-components",
+      "background"
+    ],
+    "status": "stable",
+    "id": "cursor-glow"
+  },
+  {
+    "name": "BusinessCardPreview",
+    "exportName": "BusinessCardPreview",
+    "filePath": "more-components/ui2/components/business-dashboard/BusinessCardPreview.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "businesscardpreview",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "business-card-preview"
+  },
+  {
+    "name": "BusinessDashboardLayout",
+    "exportName": "BusinessDashboardLayout",
+    "filePath": "more-components/ui2/components/business-dashboard/BusinessDashboardLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "businessdashboardlayout",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "business-dashboard-layout"
+  },
+  {
+    "name": "DashboardHeader",
+    "exportName": "DashboardHeader",
+    "filePath": "more-components/ui2/components/business-dashboard/DashboardHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dashboardheader",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "dashboard-header"
+  },
+  {
+    "name": "DashboardSidebar",
+    "exportName": "DashboardSidebar",
+    "filePath": "more-components/ui2/components/business-dashboard/DashboardSidebar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dashboardsidebar",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "dashboard-sidebar"
+  },
+  {
+    "name": "DragDropUpload",
+    "exportName": "DragDropUpload",
+    "filePath": "more-components/ui2/components/business-dashboard/DragDropUpload.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dragdropupload",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "drag-drop-upload"
+  },
+  {
+    "name": "EditPanel",
+    "exportName": "EditPanel",
+    "filePath": "more-components/ui2/components/business-dashboard/EditPanel.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "editpanel",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "edit-panel"
+  },
+  {
+    "name": "FormTabs",
+    "exportName": "FormTabs",
+    "filePath": "more-components/ui2/components/business-dashboard/FormTabs.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "formtabs",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "form-tabs"
+  },
+  {
+    "name": "PreviewPanel",
+    "exportName": "PreviewPanel",
+    "filePath": "more-components/ui2/components/business-dashboard/PreviewPanel.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "previewpanel",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "preview-panel"
+  },
+  {
+    "name": "SplitViewContainer",
+    "exportName": "SplitViewContainer",
+    "filePath": "more-components/ui2/components/business-dashboard/SplitViewContainer.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "splitviewcontainer",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "split-view-container"
+  },
+  {
+    "name": "StatusCard",
+    "exportName": "StatusCard",
+    "filePath": "more-components/ui2/components/business-dashboard/StatusCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "statuscard",
+      "more-components",
+      "business-dashboard"
+    ],
+    "status": "stable",
+    "id": "status-card-1"
+  },
+  {
+    "name": "CandleLandingClean",
+    "exportName": "CandleLandingClean",
+    "filePath": "more-components/ui2/components/candle/CandleLandingClean.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "candlelandingclean",
+      "more-components",
+      "candle"
+    ],
+    "status": "stable",
+    "id": "candle-landing-clean"
+  },
+  {
+    "name": "UpbeatCandleLanding",
+    "exportName": "UpbeatCandleLanding",
+    "filePath": "more-components/ui2/components/candle/UpbeatCandleLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "upbeatcandlelanding",
+      "more-components",
+      "candle"
+    ],
+    "status": "stable",
+    "id": "upbeat-candle-landing"
+  },
+  {
+    "name": "ChatHeader",
+    "exportName": "ChatHeader",
+    "filePath": "more-components/ui2/components/chat/ChatHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chatheader",
+      "more-components",
+      "chat"
+    ],
+    "status": "stable",
+    "id": "chat-header"
+  },
+  {
+    "name": "ChatInput",
+    "exportName": "ChatInput",
+    "filePath": "more-components/ui2/components/chat/ChatInput.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chatinput",
+      "more-components",
+      "chat"
+    ],
+    "status": "stable",
+    "id": "chat-input"
+  },
+  {
+    "name": "ChatMessage",
+    "exportName": "ChatMessage",
+    "filePath": "more-components/ui2/components/chat/ChatMessage.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chatmessage",
+      "more-components",
+      "chat"
+    ],
+    "status": "stable",
+    "id": "chat-message"
+  },
+  {
+    "name": "ChatMessages",
+    "exportName": "ChatMessages",
+    "filePath": "more-components/ui2/components/chat/ChatMessages.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chatmessages",
+      "more-components",
+      "chat"
+    ],
+    "status": "stable",
+    "id": "chat-messages"
+  },
+  {
+    "name": "GlassChatCard",
+    "exportName": "GlassChatCard",
+    "filePath": "more-components/ui2/components/chat/GlassChatCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glasschatcard",
+      "more-components",
+      "chat"
+    ],
+    "status": "stable",
+    "id": "glass-chat-card"
+  },
+  {
+    "name": "BubbleFooter",
+    "exportName": "BubbleFooter",
+    "filePath": "more-components/ui2/components/childcare/BubbleFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bubblefooter",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "bubble-footer"
+  },
+  {
+    "name": "BubbleHeader",
+    "exportName": "BubbleHeader",
+    "filePath": "more-components/ui2/components/childcare/BubbleHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bubbleheader",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "bubble-header"
+  },
+  {
+    "name": "BubbleHero",
+    "exportName": "BubbleHero",
+    "filePath": "more-components/ui2/components/childcare/BubbleHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bubblehero",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "bubble-hero"
+  },
+  {
+    "name": "BubbleLanding",
+    "exportName": "BubbleLanding",
+    "filePath": "more-components/ui2/components/childcare/BubbleLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bubblelanding",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "bubble-landing"
+  },
+  {
+    "name": "FeatureHighlights",
+    "exportName": "FeatureHighlights",
+    "filePath": "more-components/ui2/components/childcare/FeatureHighlights.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featurehighlights",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "feature-highlights"
+  },
+  {
+    "name": "HeaderHeroOnly",
+    "exportName": "HeaderHeroOnly",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "headerheroonly",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "header-hero-only"
+  },
+  {
+    "name": "FeaturesAndPrograms",
+    "exportName": "FeaturesAndPrograms",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featuresandprograms",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "features-and-programs"
+  },
+  {
+    "name": "TestimonialsAndCTA",
+    "exportName": "TestimonialsAndCTA",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialsandcta",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "testimonials-and-cta"
+  },
+  {
+    "name": "PromiseSectionStandalone",
+    "exportName": "PromiseSectionStandalone",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "promisesectionstandalone",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "promise-section-standalone"
+  },
+  {
+    "name": "CustomOrderLayout",
+    "exportName": "CustomOrderLayout",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customorderlayout",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "custom-order-layout"
+  },
+  {
+    "name": "TwoColumnLayout",
+    "exportName": "TwoColumnLayout",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "twocolumnlayout",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "two-column-layout"
+  },
+  {
+    "name": "MinimalSinglePage",
+    "exportName": "MinimalSinglePage",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "minimalsinglepage",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "minimal-single-page"
+  },
+  {
+    "name": "FullPageLayout",
+    "exportName": "FullPageLayout",
+    "filePath": "more-components/ui2/components/childcare/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "fullpagelayout",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "full-page-layout"
+  },
+  {
+    "name": "ProgramsSection",
+    "exportName": "ProgramsSection",
+    "filePath": "more-components/ui2/components/childcare/ProgramsSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "programssection",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "programs-section"
+  },
+  {
+    "name": "PromiseSection",
+    "exportName": "PromiseSection",
+    "filePath": "more-components/ui2/components/childcare/PromiseSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "promisesection",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "promise-section"
+  },
+  {
+    "name": "TestimonialsSection",
+    "exportName": "TestimonialsSection",
+    "filePath": "more-components/ui2/components/childcare/TestimonialsSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialssection",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "testimonials-section"
+  },
+  {
+    "name": "BubbleChildcareExample",
+    "exportName": "BubbleChildcareExample",
+    "filePath": "more-components/ui2/components/childcare/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bubblechildcareexample",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "bubble-childcare-example"
+  },
+  {
+    "name": "MinimalBubbleExample",
+    "exportName": "MinimalBubbleExample",
+    "filePath": "more-components/ui2/components/childcare/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "minimalbubbleexample",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "minimal-bubble-example"
+  },
+  {
+    "name": "CustomFormExample",
+    "exportName": "CustomFormExample",
+    "filePath": "more-components/ui2/components/childcare/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customformexample",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "custom-form-example"
+  },
+  {
+    "name": "VisitCTA",
+    "exportName": "VisitCTA",
+    "filePath": "more-components/ui2/components/childcare/VisitCTA.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "visitcta",
+      "more-components",
+      "childcare"
+    ],
+    "status": "stable",
+    "id": "visit-cta"
+  },
+  {
+    "name": "CreativeStudioFooter",
+    "exportName": "CreativeStudioFooter",
+    "filePath": "more-components/ui2/components/creative-studio/CreativeStudioFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "creativestudiofooter",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "creative-studio-footer"
+  },
+  {
+    "name": "CreativeStudioHero",
+    "exportName": "CreativeStudioHero",
+    "filePath": "more-components/ui2/components/creative-studio/CreativeStudioHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "creativestudiohero",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "creative-studio-hero"
+  },
+  {
+    "name": "CreativeStudioLanding",
+    "exportName": "CreativeStudioLanding",
+    "filePath": "more-components/ui2/components/creative-studio/CreativeStudioLanding.backup.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "creativestudiolanding",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "creative-studio-landing"
+  },
+  {
+    "name": "CreativeStudioLanding",
+    "exportName": "CreativeStudioLanding",
+    "filePath": "more-components/ui2/components/creative-studio/CreativeStudioLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "creativestudiolanding",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "creative-studio-landing-1"
+  },
+  {
+    "name": "PricingTiers",
+    "exportName": "PricingTiers",
+    "filePath": "more-components/ui2/components/creative-studio/PricingTiers.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "pricingtiers",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "pricing-tiers"
+  },
+  {
+    "name": "ProcessSteps",
+    "exportName": "ProcessSteps",
+    "filePath": "more-components/ui2/components/creative-studio/ProcessSteps.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "processsteps",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "process-steps"
+  },
+  {
+    "name": "ProjectCard",
+    "exportName": "ProjectCard",
+    "filePath": "more-components/ui2/components/creative-studio/ProjectCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "projectcard",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "project-card"
+  },
+  {
+    "name": "SplineBackground",
+    "exportName": "SplineBackground",
+    "filePath": "more-components/ui2/components/creative-studio/SplineBackground.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "splinebackground",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "spline-background"
+  },
+  {
+    "name": "TeamCollage",
+    "exportName": "TeamCollage",
+    "filePath": "more-components/ui2/components/creative-studio/TeamCollage.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "teamcollage",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "team-collage"
+  },
+  {
+    "name": "TestimonialsCarousel",
+    "exportName": "TestimonialsCarousel",
+    "filePath": "more-components/ui2/components/creative-studio/TestimonialsCarousel.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialscarousel",
+      "more-components",
+      "creative-studio"
+    ],
+    "status": "stable",
+    "id": "testimonials-carousel"
+  },
+  {
+    "name": "ActiveJobs",
+    "exportName": "ActiveJobs",
+    "filePath": "more-components/ui2/components/dashboard/ActiveJobs.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "activejobs",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "active-jobs"
+  },
+  {
+    "name": "ActivityTable",
+    "exportName": "ActivityTable",
+    "filePath": "more-components/ui2/components/dashboard/ActivityTable.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "activitytable",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "activity-table"
+  },
+  {
+    "name": "BIDashboard",
+    "exportName": "BIDashboard",
+    "filePath": "more-components/ui2/components/dashboard/BIDashboard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bidashboard",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "bi-dashboard"
+  },
+  {
+    "name": "BIHeader",
+    "exportName": "BIHeader",
+    "filePath": "more-components/ui2/components/dashboard/BIHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "biheader",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "bi-header"
+  },
+  {
+    "name": "BISidebar",
+    "exportName": "BISidebar",
+    "filePath": "more-components/ui2/components/dashboard/BISidebar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bisidebar",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "bi-sidebar"
+  },
+  {
+    "name": "GPUDashboard",
+    "exportName": "GPUDashboard",
+    "filePath": "more-components/ui2/components/dashboard/GPUDashboard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "gpudashboard",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "gpu-dashboard"
+  },
+  {
+    "name": "KPICard",
+    "exportName": "KPICard",
+    "filePath": "more-components/ui2/components/dashboard/KPICard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "kpicard",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "kpi-card"
+  },
+  {
+    "name": "PerformanceMetrics",
+    "exportName": "PerformanceMetrics",
+    "filePath": "more-components/ui2/components/dashboard/PerformanceMetrics.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "performancemetrics",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "performance-metrics"
+  },
+  {
+    "name": "ResourceAllocation",
+    "exportName": "ResourceAllocation",
+    "filePath": "more-components/ui2/components/dashboard/ResourceAllocation.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "resourceallocation",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "resource-allocation"
+  },
+  {
+    "name": "ResourceOverviewCard",
+    "exportName": "ResourceOverviewCard",
+    "filePath": "more-components/ui2/components/dashboard/ResourceOverviewCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "resourceoverviewcard",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "resource-overview-card"
+  },
+  {
+    "name": "RevenueChart",
+    "exportName": "RevenueChart",
+    "filePath": "more-components/ui2/components/dashboard/RevenueChart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "revenuechart",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "revenue-chart"
+  },
+  {
+    "name": "SystemStatus",
+    "exportName": "SystemStatus",
+    "filePath": "more-components/ui2/components/dashboard/SystemStatus.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "systemstatus",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "system-status"
+  },
+  {
+    "name": "UsageChart",
+    "exportName": "UsageChart",
+    "filePath": "more-components/ui2/components/dashboard/UsageChart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "usagechart",
+      "more-components",
+      "dashboard"
+    ],
+    "status": "stable",
+    "id": "usage-chart"
+  },
+  {
+    "name": "ArtistsTable",
+    "exportName": "ArtistsTable",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/ArtistsTable.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "artiststable",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "artists-table"
+  },
+  {
+    "name": "DashboardHeader",
+    "exportName": "DashboardHeader",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/DashboardHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dashboardheader",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "dashboard-header-1"
+  },
+  {
+    "name": "DashboardLayout",
+    "exportName": "DashboardLayout",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/DashboardLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dashboardlayout",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "dashboard-layout"
+  },
+  {
+    "name": "GenreChart",
+    "exportName": "GenreChart",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/GenreChart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "genrechart",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "genre-chart"
+  },
+  {
+    "name": "RevenueChart",
+    "exportName": "RevenueChart",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/RevenueChart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "revenuechart",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "revenue-chart-1"
+  },
+  {
+    "name": "Sidebar",
+    "exportName": "Sidebar",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/Sidebar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "sidebar",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "sidebar-2"
+  },
+  {
+    "name": "SpectrumChart",
+    "exportName": "SpectrumChart",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/SpectrumChart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "spectrumchart",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "spectrum-chart"
+  },
+  {
+    "name": "StatsCard",
+    "exportName": "StatsCard",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/StatsCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "statscard",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "stats-card"
+  },
+  {
+    "name": "UsageChart",
+    "exportName": "UsageChart",
+    "filePath": "more-components/ui2/components/dashboard-sidebar/UsageChart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "usagechart",
+      "more-components",
+      "dashboard-sidebar"
+    ],
+    "status": "stable",
+    "id": "usage-chart-1"
+  },
+  {
+    "name": "DeFiFooter",
+    "exportName": "DeFiFooter",
+    "filePath": "more-components/ui2/components/defi-earn/DeFiFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "defifooter",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "de-fi-footer"
+  },
+  {
+    "name": "DeFiHeader",
+    "exportName": "DeFiHeader",
+    "filePath": "more-components/ui2/components/defi-earn/DeFiHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "defiheader",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "de-fi-header"
+  },
+  {
+    "name": "DeFiLayout",
+    "exportName": "DeFiLayout",
+    "filePath": "more-components/ui2/components/defi-earn/DeFiLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "defilayout",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "de-fi-layout"
+  },
+  {
+    "name": "DepositsSidebar",
+    "exportName": "DepositsSidebar",
+    "filePath": "more-components/ui2/components/defi-earn/DepositsSidebar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "depositssidebar",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "deposits-sidebar"
+  },
+  {
+    "name": "HeroBanner",
+    "exportName": "HeroBanner",
+    "filePath": "more-components/ui2/components/defi-earn/HeroBanner.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "herobanner",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "hero-banner"
+  },
+  {
+    "name": "PortfolioCard",
+    "exportName": "PortfolioCard",
+    "filePath": "more-components/ui2/components/defi-earn/PortfolioCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "portfoliocard",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "portfolio-card"
+  },
+  {
+    "name": "StrategyBadge",
+    "exportName": "StrategyBadge",
+    "filePath": "more-components/ui2/components/defi-earn/StrategyBadge.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "strategybadge",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "strategy-badge"
+  },
+  {
+    "name": "TokenIcon",
+    "exportName": "TokenIcon",
+    "filePath": "more-components/ui2/components/defi-earn/TokenIcon.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "tokenicon",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "token-icon"
+  },
+  {
+    "name": "UtilizationBar",
+    "exportName": "UtilizationBar",
+    "filePath": "more-components/ui2/components/defi-earn/UtilizationBar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "utilizationbar",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "utilization-bar"
+  },
+  {
+    "name": "VaultRow",
+    "exportName": "VaultRow",
+    "filePath": "more-components/ui2/components/defi-earn/VaultRow.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "vaultrow",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "vault-row"
+  },
+  {
+    "name": "VaultsTable",
+    "exportName": "VaultsTable",
+    "filePath": "more-components/ui2/components/defi-earn/VaultsTable.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "vaultstable",
+      "more-components",
+      "defi-earn"
+    ],
+    "status": "stable",
+    "id": "vaults-table"
+  },
+  {
+    "name": "AppPreviewCard",
+    "exportName": "AppPreviewCard",
+    "filePath": "more-components/ui2/components/digital-health/AppPreviewCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "apppreviewcard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "app-preview-card"
+  },
+  {
+    "name": "BrandCard",
+    "exportName": "BrandCard",
+    "filePath": "more-components/ui2/components/digital-health/BrandCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "brandcard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "brand-card"
+  },
+  {
+    "name": "ChatTeaserCard",
+    "exportName": "ChatTeaserCard",
+    "filePath": "more-components/ui2/components/digital-health/ChatTeaserCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chatteasercard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "chat-teaser-card"
+  },
+  {
+    "name": "ConsultationCard",
+    "exportName": "ConsultationCard",
+    "filePath": "more-components/ui2/components/digital-health/ConsultationCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "consultationcard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "consultation-card"
+  },
+  {
+    "name": "CountdownBadge",
+    "exportName": "CountdownBadge",
+    "filePath": "more-components/ui2/components/digital-health/CountdownBadge.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "countdownbadge",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "countdown-badge"
+  },
+  {
+    "name": "DoctorCard",
+    "exportName": "DoctorCard",
+    "filePath": "more-components/ui2/components/digital-health/DoctorCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "doctorcard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "doctor-card"
+  },
+  {
+    "name": "GlucoseChartCard",
+    "exportName": "GlucoseChartCard",
+    "filePath": "more-components/ui2/components/digital-health/GlucoseChartCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glucosechartcard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "glucose-chart-card"
+  },
+  {
+    "name": "HealthDashboardGrid",
+    "exportName": "HealthDashboardGrid",
+    "filePath": "more-components/ui2/components/digital-health/HealthDashboardGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "healthdashboardgrid",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "health-dashboard-grid"
+  },
+  {
+    "name": "MessageBubble",
+    "exportName": "MessageBubble",
+    "filePath": "more-components/ui2/components/digital-health/MessageBubble.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "messagebubble",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "message-bubble"
+  },
+  {
+    "name": "MobileAppCard",
+    "exportName": "MobileAppCard",
+    "filePath": "more-components/ui2/components/digital-health/MobileAppCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "mobileappcard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "mobile-app-card"
+  },
+  {
+    "name": "StyleGuideCard",
+    "exportName": "StyleGuideCard",
+    "filePath": "more-components/ui2/components/digital-health/StyleGuideCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "styleguidecard",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "style-guide-card"
+  },
+  {
+    "name": "DigitalHealthDashboardExample",
+    "exportName": "DigitalHealthDashboardExample",
+    "filePath": "more-components/ui2/components/digital-health/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "digitalhealthdashboardexample",
+      "more-components",
+      "digital-health"
+    ],
+    "status": "stable",
+    "id": "digital-health-dashboard-example"
+  },
+  {
+    "name": "ApparelHeader",
+    "exportName": "ApparelHeader",
+    "filePath": "more-components/ui2/components/ecommerce/ApparelHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "apparelheader",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "apparel-header"
+  },
+  {
+    "name": "ApparelLanding",
+    "exportName": "ApparelLanding",
+    "filePath": "more-components/ui2/components/ecommerce/ApparelLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "apparellanding",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "apparel-landing"
+  },
+  {
+    "name": "BrandCard",
+    "exportName": "BrandCard",
+    "filePath": "more-components/ui2/components/ecommerce/BrandCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "brandcard",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "brand-card-1"
+  },
+  {
+    "name": "ColorSelector",
+    "exportName": "ColorSelector",
+    "filePath": "more-components/ui2/components/ecommerce/ColorSelector.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "colorselector",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "color-selector"
+  },
+  {
+    "name": "DeliveryOptions",
+    "exportName": "DeliveryOptions",
+    "filePath": "more-components/ui2/components/ecommerce/DeliveryOptions.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "deliveryoptions",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "delivery-options"
+  },
+  {
+    "name": "DenimFitSelector",
+    "exportName": "DenimFitSelector",
+    "filePath": "more-components/ui2/components/ecommerce/DenimFitSelector.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "denimfitselector",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "denim-fit-selector"
+  },
+  {
+    "name": "ProductDetailPage",
+    "exportName": "ProductDetailPage",
+    "filePath": "more-components/ui2/components/ecommerce/ProductDetailPage.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "productdetailpage",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "product-detail-page"
+  },
+  {
+    "name": "ProductGallery",
+    "exportName": "ProductGallery",
+    "filePath": "more-components/ui2/components/ecommerce/ProductGallery.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "productgallery",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "product-gallery"
+  },
+  {
+    "name": "ProductGrid",
+    "exportName": "ProductGrid",
+    "filePath": "more-components/ui2/components/ecommerce/ProductGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "productgrid",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "product-grid"
+  },
+  {
+    "name": "ProductInfo",
+    "exportName": "ProductInfo",
+    "filePath": "more-components/ui2/components/ecommerce/ProductInfo.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "productinfo",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "product-info"
+  },
+  {
+    "name": "ProductTabs",
+    "exportName": "ProductTabs",
+    "filePath": "more-components/ui2/components/ecommerce/ProductTabs.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "producttabs",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "product-tabs"
+  },
+  {
+    "name": "QuantitySelector",
+    "exportName": "QuantitySelector",
+    "filePath": "more-components/ui2/components/ecommerce/QuantitySelector.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "quantityselector",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "quantity-selector"
+  },
+  {
+    "name": "ReviewCard",
+    "exportName": "ReviewCard",
+    "filePath": "more-components/ui2/components/ecommerce/ReviewCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "reviewcard",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "review-card"
+  },
+  {
+    "name": "SearchOverlay",
+    "exportName": "SearchOverlay",
+    "filePath": "more-components/ui2/components/ecommerce/SearchOverlay.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "searchoverlay",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "search-overlay"
+  },
+  {
+    "name": "SplitHero",
+    "exportName": "SplitHero",
+    "filePath": "more-components/ui2/components/ecommerce/SplitHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "splithero",
+      "more-components",
+      "ecommerce"
+    ],
+    "status": "stable",
+    "id": "split-hero"
+  },
+  {
+    "name": "AttachmentZone",
+    "exportName": "AttachmentZone",
+    "filePath": "more-components/ui2/components/email/AttachmentZone.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "attachmentzone",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "attachment-zone"
+  },
+  {
+    "name": "AutoSaveIndicator",
+    "exportName": "AutoSaveIndicator",
+    "filePath": "more-components/ui2/components/email/AutoSaveIndicator.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "autosaveindicator",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "auto-save-indicator"
+  },
+  {
+    "name": "ComposeForm",
+    "exportName": "ComposeForm",
+    "filePath": "more-components/ui2/components/email/ComposeForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "composeform",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "compose-form"
+  },
+  {
+    "name": "ComposeHeader",
+    "exportName": "ComposeHeader",
+    "filePath": "more-components/ui2/components/email/ComposeHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "composeheader",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "compose-header"
+  },
+  {
+    "name": "ComposeSidebar",
+    "exportName": "ComposeSidebar",
+    "filePath": "more-components/ui2/components/email/ComposeSidebar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "composesidebar",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "compose-sidebar"
+  },
+  {
+    "name": "ContactQuickAdd",
+    "exportName": "ContactQuickAdd",
+    "filePath": "more-components/ui2/components/email/ContactQuickAdd.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "contactquickadd",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "contact-quick-add"
+  },
+  {
+    "name": "EmailCompose",
+    "exportName": "EmailCompose",
+    "filePath": "more-components/ui2/components/email/EmailCompose.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "emailcompose",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "email-compose"
+  },
+  {
+    "name": "FormatToolbar",
+    "exportName": "FormatToolbar",
+    "filePath": "more-components/ui2/components/email/FormatToolbar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "formattoolbar",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "format-toolbar"
+  },
+  {
+    "name": "RecipientInput",
+    "exportName": "RecipientInput",
+    "filePath": "more-components/ui2/components/email/RecipientInput.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "recipientinput",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "recipient-input"
+  },
+  {
+    "name": "TemplateSelector",
+    "exportName": "TemplateSelector",
+    "filePath": "more-components/ui2/components/email/TemplateSelector.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "templateselector",
+      "more-components",
+      "email"
+    ],
+    "status": "stable",
+    "id": "template-selector"
+  },
+  {
+    "name": "FAQCard",
+    "exportName": "FAQCard",
+    "filePath": "more-components/ui2/components/faq/FAQCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqcard",
+      "more-components",
+      "faq"
+    ],
+    "status": "stable",
+    "id": "faq-card"
+  },
+  {
+    "name": "FAQCategoryBadge",
+    "exportName": "FAQCategoryBadge",
+    "filePath": "more-components/ui2/components/faq/FAQCategoryBadge.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqcategorybadge",
+      "more-components",
+      "faq"
+    ],
+    "status": "stable",
+    "id": "faq-category-badge"
+  },
+  {
+    "name": "FAQCornerIcons",
+    "exportName": "FAQCornerIcons",
+    "filePath": "more-components/ui2/components/faq/FAQCornerIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqcornericons",
+      "more-components",
+      "faq"
+    ],
+    "status": "stable",
+    "id": "faq-corner-icons"
+  },
+  {
+    "name": "FAQCTASection",
+    "exportName": "FAQCTASection",
+    "filePath": "more-components/ui2/components/faq/FAQCTASection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqctasection",
+      "more-components",
+      "faq"
+    ],
+    "status": "stable",
+    "id": "faqcta-section"
+  },
+  {
+    "name": "FAQGrid",
+    "exportName": "FAQGrid",
+    "filePath": "more-components/ui2/components/faq/FAQGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqgrid",
+      "more-components",
+      "faq"
+    ],
+    "status": "stable",
+    "id": "faq-grid"
+  },
+  {
+    "name": "FAQHero",
+    "exportName": "FAQHero",
+    "filePath": "more-components/ui2/components/faq/FAQHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqhero",
+      "more-components",
+      "faq"
+    ],
+    "status": "stable",
+    "id": "faq-hero"
+  },
+  {
+    "name": "FAQSection",
+    "exportName": "FAQSection",
+    "filePath": "more-components/ui2/components/faq/FAQSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqsection",
+      "more-components",
+      "faq"
+    ],
+    "status": "stable",
+    "id": "faq-section"
+  },
+  {
+    "name": "AboutStudio",
+    "exportName": "AboutStudio",
+    "filePath": "more-components/ui2/components/fashion/AboutStudio.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "aboutstudio",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "about-studio"
+  },
+  {
+    "name": "CollectionCard",
+    "exportName": "CollectionCard",
+    "filePath": "more-components/ui2/components/fashion/CollectionCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "collectioncard",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "collection-card"
+  },
+  {
+    "name": "CollectionGrid",
+    "exportName": "CollectionGrid",
+    "filePath": "more-components/ui2/components/fashion/CollectionGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "collectiongrid",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "collection-grid"
+  },
+  {
+    "name": "CTASection",
+    "exportName": "CTASection",
+    "filePath": "more-components/ui2/components/fashion/CTASection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "ctasection",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "cta-section"
+  },
+  {
+    "name": "FashionHero",
+    "exportName": "FashionHero",
+    "filePath": "more-components/ui2/components/fashion/FashionHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "fashionhero",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "fashion-hero"
+  },
+  {
+    "name": "FashionLanding",
+    "exportName": "FashionLanding",
+    "filePath": "more-components/ui2/components/fashion/FashionLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "fashionlanding",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "fashion-landing"
+  },
+  {
+    "name": "FloatingNav",
+    "exportName": "FloatingNav",
+    "filePath": "more-components/ui2/components/fashion/FloatingNav.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "floatingnav",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "floating-nav"
+  },
+  {
+    "name": "ServiceCards",
+    "exportName": "ServiceCards",
+    "filePath": "more-components/ui2/components/fashion/ServiceCards.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "servicecards",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "service-cards"
+  },
+  {
+    "name": "StatsSection",
+    "exportName": "StatsSection",
+    "filePath": "more-components/ui2/components/fashion/StatsSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "statssection",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "stats-section"
+  },
+  {
+    "name": "TeamCard",
+    "exportName": "TeamCard",
+    "filePath": "more-components/ui2/components/fashion/TeamCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "teamcard",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "team-card"
+  },
+  {
+    "name": "TeamSection",
+    "exportName": "TeamSection",
+    "filePath": "more-components/ui2/components/fashion/TeamSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "teamsection",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "team-section"
+  },
+  {
+    "name": "TestimonialGrid",
+    "exportName": "TestimonialGrid",
+    "filePath": "more-components/ui2/components/fashion/TestimonialGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialgrid",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "testimonial-grid"
+  },
+  {
+    "name": "TimelineSection",
+    "exportName": "TimelineSection",
+    "filePath": "more-components/ui2/components/fashion/TimelineSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "timelinesection",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "timeline-section"
+  },
+  {
+    "name": "TimelineStep",
+    "exportName": "TimelineStep",
+    "filePath": "more-components/ui2/components/fashion/TimelineStep.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "timelinestep",
+      "more-components",
+      "fashion"
+    ],
+    "status": "stable",
+    "id": "timeline-step"
+  },
+  {
+    "name": "FeatureCard",
+    "exportName": "FeatureCard",
+    "filePath": "more-components/ui2/components/feature-grid/FeatureCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featurecard",
+      "more-components",
+      "feature-grid"
+    ],
+    "status": "stable",
+    "id": "feature-card"
+  },
+  {
+    "name": "FeatureGrid",
+    "exportName": "FeatureGrid",
+    "filePath": "more-components/ui2/components/feature-grid/FeatureGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featuregrid",
+      "more-components",
+      "feature-grid"
+    ],
+    "status": "stable",
+    "id": "feature-grid"
+  },
+  {
+    "name": "FeaturesGridLayout",
+    "exportName": "FeaturesGridLayout",
+    "filePath": "more-components/ui2/components/feature-grid/FeaturesGridLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featuresgridlayout",
+      "more-components",
+      "feature-grid"
+    ],
+    "status": "stable",
+    "id": "features-grid-layout"
+  },
+  {
+    "name": "FeatureGridExample",
+    "exportName": "FeatureGridExample",
+    "filePath": "more-components/ui2/components/feature-grid/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featuregridexample",
+      "more-components",
+      "feature-grid"
+    ],
+    "status": "stable",
+    "id": "feature-grid-example"
+  },
+  {
+    "name": "ContactForm",
+    "exportName": "ContactForm",
+    "filePath": "more-components/ui2/components/footer/ContactForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "contactform",
+      "more-components",
+      "footer"
+    ],
+    "status": "stable",
+    "id": "contact-form"
+  },
+  {
+    "name": "Footer",
+    "exportName": "Footer",
+    "filePath": "more-components/ui2/components/footer/Footer.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "footer",
+      "more-components"
+    ],
+    "status": "stable",
+    "id": "footer"
+  },
+  {
+    "name": "NewsletterForm",
+    "exportName": "NewsletterForm",
+    "filePath": "more-components/ui2/components/footer/NewsletterForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "newsletterform",
+      "more-components",
+      "footer"
+    ],
+    "status": "stable",
+    "id": "newsletter-form"
+  },
+  {
+    "name": "FullScreenHero",
+    "exportName": "FullScreenHero",
+    "filePath": "more-components/ui2/components/hero/FullScreenHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "fullscreenhero",
+      "more-components",
+      "hero"
+    ],
+    "status": "stable",
+    "id": "full-screen-hero"
+  },
+  {
+    "name": "HeroContent",
+    "exportName": "HeroContent",
+    "filePath": "more-components/ui2/components/hero/HeroContent.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "herocontent",
+      "more-components",
+      "hero"
+    ],
+    "status": "stable",
+    "id": "hero-content"
+  },
+  {
+    "name": "HeroNav",
+    "exportName": "HeroNav",
+    "filePath": "more-components/ui2/components/hero/HeroNav.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "heronav",
+      "more-components",
+      "hero"
+    ],
+    "status": "stable",
+    "id": "hero-nav"
+  },
+  {
+    "name": "MobileMenu",
+    "exportName": "MobileMenu",
+    "filePath": "more-components/ui2/components/hero/MobileMenu.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "mobilemenu",
+      "more-components",
+      "hero"
+    ],
+    "status": "stable",
+    "id": "mobile-menu"
+  },
+  {
+    "name": "BookingForm",
+    "exportName": "BookingForm",
+    "filePath": "more-components/ui2/components/hotel/BookingForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bookingform",
+      "more-components",
+      "hotel"
+    ],
+    "status": "stable",
+    "id": "booking-form"
+  },
+  {
+    "name": "HotelHero",
+    "exportName": "HotelHero",
+    "filePath": "more-components/ui2/components/hotel/HotelHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "hotelhero",
+      "more-components",
+      "hotel"
+    ],
+    "status": "stable",
+    "id": "hotel-hero"
+  },
+  {
+    "name": "HotelNav",
+    "exportName": "HotelNav",
+    "filePath": "more-components/ui2/components/hotel/HotelNav.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "hotelnav",
+      "more-components",
+      "hotel"
+    ],
+    "status": "stable",
+    "id": "hotel-nav"
+  },
+  {
+    "name": "RoomCard",
+    "exportName": "RoomCard",
+    "filePath": "more-components/ui2/components/hotel/RoomCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "roomcard",
+      "more-components",
+      "hotel"
+    ],
+    "status": "stable",
+    "id": "room-card"
+  },
+  {
+    "name": "RoomsGrid",
+    "exportName": "RoomsGrid",
+    "filePath": "more-components/ui2/components/hotel/RoomsGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "roomsgrid",
+      "more-components",
+      "hotel"
+    ],
+    "status": "stable",
+    "id": "rooms-grid"
+  },
+  {
+    "name": "ExperienceCard",
+    "exportName": "ExperienceCard",
+    "filePath": "more-components/ui2/components/interactive/ExperienceCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "experiencecard",
+      "more-components",
+      "interactive"
+    ],
+    "status": "stable",
+    "id": "experience-card"
+  },
+  {
+    "name": "ExperienceSelector",
+    "exportName": "ExperienceSelector",
+    "filePath": "more-components/ui2/components/interactive/ExperienceSelector.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "experienceselector",
+      "more-components",
+      "interactive"
+    ],
+    "status": "stable",
+    "id": "experience-selector"
+  },
+  {
+    "name": "FloatingNavbar",
+    "exportName": "FloatingNavbar",
+    "filePath": "more-components/ui2/components/interactive-studio/FloatingNavbar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "floatingnavbar",
+      "more-components",
+      "interactive-studio"
+    ],
+    "status": "stable",
+    "id": "floating-navbar"
+  },
+  {
+    "name": "GlassBadge",
+    "exportName": "GlassBadge",
+    "filePath": "more-components/ui2/components/interactive-studio/GlassBadge.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glassbadge",
+      "more-components",
+      "interactive-studio"
+    ],
+    "status": "stable",
+    "id": "glass-badge"
+  },
+  {
+    "name": "GlassButton",
+    "exportName": "GlassButton",
+    "filePath": "more-components/ui2/components/interactive-studio/GlassButton.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glassbutton",
+      "more-components",
+      "interactive-studio"
+    ],
+    "status": "stable",
+    "id": "glass-button"
+  },
+  {
+    "name": "GlassCard",
+    "exportName": "GlassCard",
+    "filePath": "more-components/ui2/components/interactive-studio/GlassCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glasscard",
+      "more-components",
+      "interactive-studio"
+    ],
+    "status": "stable",
+    "id": "glass-card"
+  },
+  {
+    "name": "InteractiveStudioHero",
+    "exportName": "InteractiveStudioHero",
+    "filePath": "more-components/ui2/components/interactive-studio/InteractiveStudioHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "interactivestudiohero",
+      "more-components",
+      "interactive-studio"
+    ],
+    "status": "stable",
+    "id": "interactive-studio-hero"
+  },
+  {
+    "name": "SplineBackground",
+    "exportName": "SplineBackground",
+    "filePath": "more-components/ui2/components/interactive-studio/SplineBackground.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "splinebackground",
+      "more-components",
+      "interactive-studio"
+    ],
+    "status": "stable",
+    "id": "spline-background-1"
+  },
+  {
+    "name": "AboutSection",
+    "exportName": "AboutSection",
+    "filePath": "more-components/ui2/components/interior-design/AboutSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "aboutsection",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "about-section"
+  },
+  {
+    "name": "AnimatedGradientButton",
+    "exportName": "AnimatedGradientButton",
+    "filePath": "more-components/ui2/components/interior-design/AnimatedGradientButton.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "animatedgradientbutton",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "animated-gradient-button-1"
+  },
+  {
+    "name": "DesignPortfolioLanding",
+    "exportName": "DesignPortfolioLanding",
+    "filePath": "more-components/ui2/components/interior-design/DesignPortfolioLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "designportfoliolanding",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "design-portfolio-landing"
+  },
+  {
+    "name": "ExpandableProcessGrid",
+    "exportName": "ExpandableProcessGrid",
+    "filePath": "more-components/ui2/components/interior-design/ExpandableProcessGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "expandableprocessgrid",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "expandable-process-grid"
+  },
+  {
+    "name": "FormaHero",
+    "exportName": "FormaHero",
+    "filePath": "more-components/ui2/components/interior-design/FormaHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "formahero",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "forma-hero"
+  },
+  {
+    "name": "FormaNav",
+    "exportName": "FormaNav",
+    "filePath": "more-components/ui2/components/interior-design/FormaNav.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "formanav",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "forma-nav"
+  },
+  {
+    "name": "LogoTicker",
+    "exportName": "LogoTicker",
+    "filePath": "more-components/ui2/components/interior-design/LogoTicker.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "logoticker",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "logo-ticker"
+  },
+  {
+    "name": "PortfolioGrid",
+    "exportName": "PortfolioGrid",
+    "filePath": "more-components/ui2/components/interior-design/PortfolioGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "portfoliogrid",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "portfolio-grid"
+  },
+  {
+    "name": "ProcessTimeline",
+    "exportName": "ProcessTimeline",
+    "filePath": "more-components/ui2/components/interior-design/ProcessTimeline.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "processtimeline",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "process-timeline"
+  },
+  {
+    "name": "ServicesGrid",
+    "exportName": "ServicesGrid",
+    "filePath": "more-components/ui2/components/interior-design/ServicesGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "servicesgrid",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "services-grid"
+  },
+  {
+    "name": "StickyPortfolioCards",
+    "exportName": "StickyPortfolioCards",
+    "filePath": "more-components/ui2/components/interior-design/StickyPortfolioCards.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "stickyportfoliocards",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "sticky-portfolio-cards"
+  },
+  {
+    "name": "TestimonialsGrid",
+    "exportName": "TestimonialsGrid",
+    "filePath": "more-components/ui2/components/interior-design/TestimonialsGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialsgrid",
+      "more-components",
+      "interior-design"
+    ],
+    "status": "stable",
+    "id": "testimonials-grid"
+  },
+  {
+    "name": "BentoCard",
+    "exportName": "BentoCard",
+    "filePath": "more-components/ui2/components/medical/BentoCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bentocard",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "bento-card"
+  },
+  {
+    "name": "BentoGrid",
+    "exportName": "BentoGrid",
+    "filePath": "more-components/ui2/components/medical/BentoGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "bentogrid",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "bento-grid"
+  },
+  {
+    "name": "CTASection",
+    "exportName": "CTASection",
+    "filePath": "more-components/ui2/components/medical/CTASection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "ctasection",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "cta-section-1"
+  },
+  {
+    "name": "HeroSection",
+    "exportName": "HeroSection",
+    "filePath": "more-components/ui2/components/medical/HeroSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "herosection",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "hero-section"
+  },
+  {
+    "name": "ServicesPage",
+    "exportName": "ServicesPage",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "servicespage",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "services-page"
+  },
+  {
+    "name": "ContactPage",
+    "exportName": "ContactPage",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "contactpage",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "contact-page"
+  },
+  {
+    "name": "BasicLayoutExample",
+    "exportName": "BasicLayoutExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "basiclayoutexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "basic-layout-example"
+  },
+  {
+    "name": "CustomBackgroundExample",
+    "exportName": "CustomBackgroundExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "custombackgroundexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "custom-background-example"
+  },
+  {
+    "name": "NoNavigationExample",
+    "exportName": "NoNavigationExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "nonavigationexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "no-navigation-example"
+  },
+  {
+    "name": "CustomWidthExample",
+    "exportName": "CustomWidthExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customwidthexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "custom-width-example"
+  },
+  {
+    "name": "FullLandingWithLayout",
+    "exportName": "FullLandingWithLayout",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "fulllandingwithlayout",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "full-landing-with-layout"
+  },
+  {
+    "name": "CustomContentExample",
+    "exportName": "CustomContentExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customcontentexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "custom-content-example"
+  },
+  {
+    "name": "MultipleSectionsExample",
+    "exportName": "MultipleSectionsExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "multiplesectionsexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "multiple-sections-example"
+  },
+  {
+    "name": "DarkThemeExample",
+    "exportName": "DarkThemeExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "darkthemeexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "dark-theme-example"
+  },
+  {
+    "name": "NestedLayoutExample",
+    "exportName": "NestedLayoutExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "nestedlayoutexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "nested-layout-example"
+  },
+  {
+    "name": "CustomNavigationExample",
+    "exportName": "CustomNavigationExample",
+    "filePath": "more-components/ui2/components/medical/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customnavigationexample",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "custom-navigation-example"
+  },
+  {
+    "name": "MedicalInsuranceLanding",
+    "exportName": "MedicalInsuranceLanding",
+    "filePath": "more-components/ui2/components/medical/MedicalInsuranceLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "medicalinsurancelanding",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "medical-insurance-landing"
+  },
+  {
+    "name": "MedicalLanding",
+    "exportName": "MedicalLanding",
+    "filePath": "more-components/ui2/components/medical/MedicalLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "medicallanding",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "medical-landing"
+  },
+  {
+    "name": "MedicalLayout",
+    "exportName": "MedicalLayout",
+    "filePath": "more-components/ui2/components/medical/MedicalLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "medicallayout",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "medical-layout"
+  },
+  {
+    "name": "Navigation",
+    "exportName": "Navigation",
+    "filePath": "more-components/ui2/components/medical/Navigation.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "navigation",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "navigation"
+  },
+  {
+    "name": "Example1_FullLandingPage",
+    "exportName": "Example1_FullLandingPage",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example1_fulllandingpage",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example1-full-landing-page"
+  },
+  {
+    "name": "Example2_CustomLayout",
+    "exportName": "Example2_CustomLayout",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example2_customlayout",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example2-custom-layout"
+  },
+  {
+    "name": "Example3_CustomBentoCard",
+    "exportName": "Example3_CustomBentoCard",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example3_custombentocard",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example3-custom-bento-card"
+  },
+  {
+    "name": "Example4_ScrollAnimationHook",
+    "exportName": "Example4_ScrollAnimationHook",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example4_scrollanimationhook",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example4-scroll-animation-hook"
+  },
+  {
+    "name": "Example5_StaggeredAnimations",
+    "exportName": "Example5_StaggeredAnimations",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example5_staggeredanimations",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example5-staggered-animations"
+  },
+  {
+    "name": "Example6_ResponsiveGrid",
+    "exportName": "Example6_ResponsiveGrid",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example6_responsivegrid",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example6-responsive-grid"
+  },
+  {
+    "name": "Example7_NavigationOnly",
+    "exportName": "Example7_NavigationOnly",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example7_navigationonly",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example7-navigation-only"
+  },
+  {
+    "name": "Example8_DarkModeVariant",
+    "exportName": "Example8_DarkModeVariant",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example8_darkmodevariant",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example8-dark-mode-variant"
+  },
+  {
+    "name": "Example9_NextJsAppRouter",
+    "exportName": "Example9_NextJsAppRouter",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example9_nextjsapprouter",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example9-next-js-app-router"
+  },
+  {
+    "name": "Example10_WithEventHandlers",
+    "exportName": "Example10_WithEventHandlers",
+    "filePath": "more-components/ui2/components/medical/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "example10_witheventhandlers",
+      "more-components",
+      "medical"
+    ],
+    "status": "stable",
+    "id": "example10-with-event-handlers"
+  },
+  {
+    "name": "ChatDemoCard",
+    "exportName": "ChatDemoCard",
+    "filePath": "more-components/ui2/components/nova/ChatDemoCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chatdemocard",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "chat-demo-card"
+  },
+  {
+    "name": "FAQItem",
+    "exportName": "FAQItem",
+    "filePath": "more-components/ui2/components/nova/FAQItem.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqitem",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "faq-item"
+  },
+  {
+    "name": "FeatureCard",
+    "exportName": "FeatureCard",
+    "filePath": "more-components/ui2/components/nova/FeatureCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featurecard",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "feature-card-1"
+  },
+  {
+    "name": "Footer",
+    "exportName": "Footer",
+    "filePath": "more-components/ui2/components/nova/Footer.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "footer",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "footer-1"
+  },
+  {
+    "name": "HeroSection",
+    "exportName": "HeroSection",
+    "filePath": "more-components/ui2/components/nova/HeroSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "herosection",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "hero-section-1"
+  },
+  {
+    "name": "MetricsChart",
+    "exportName": "MetricsChart",
+    "filePath": "more-components/ui2/components/nova/MetricsChart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "metricschart",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "metrics-chart"
+  },
+  {
+    "name": "NovaLandingDemo",
+    "exportName": "NovaLandingDemo",
+    "filePath": "more-components/ui2/components/nova/NovaLandingDemo.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "novalandingdemo",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "nova-landing-demo"
+  },
+  {
+    "name": "PricingCard",
+    "exportName": "PricingCard",
+    "filePath": "more-components/ui2/components/nova/PricingCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "pricingcard",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "pricing-card"
+  },
+  {
+    "name": "StickyNav",
+    "exportName": "StickyNav",
+    "filePath": "more-components/ui2/components/nova/StickyNav.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "stickynav",
+      "more-components",
+      "nova"
+    ],
+    "status": "stable",
+    "id": "sticky-nav"
+  },
+  {
+    "name": "AccountSetupModal",
+    "exportName": "AccountSetupModal",
+    "filePath": "more-components/ui2/components/onboarding/AccountSetupModal.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "accountsetupmodal",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "account-setup-modal"
+  },
+  {
+    "name": "ThreeStepExample",
+    "exportName": "ThreeStepExample",
+    "filePath": "more-components/ui2/components/onboarding/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "threestepexample",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "three-step-example"
+  },
+  {
+    "name": "ExtendedSecurityExample",
+    "exportName": "ExtendedSecurityExample",
+    "filePath": "more-components/ui2/components/onboarding/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "extendedsecurityexample",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "extended-security-example"
+  },
+  {
+    "name": "LoadingStateExample",
+    "exportName": "LoadingStateExample",
+    "filePath": "more-components/ui2/components/onboarding/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "loadingstateexample",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "loading-state-example"
+  },
+  {
+    "name": "CompletedExample",
+    "exportName": "CompletedExample",
+    "filePath": "more-components/ui2/components/onboarding/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "completedexample",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "completed-example"
+  },
+  {
+    "name": "ModalActions",
+    "exportName": "ModalActions",
+    "filePath": "more-components/ui2/components/onboarding/ModalActions.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "modalactions",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "modal-actions"
+  },
+  {
+    "name": "ModalHeader",
+    "exportName": "ModalHeader",
+    "filePath": "more-components/ui2/components/onboarding/ModalHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "modalheader",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "modal-header"
+  },
+  {
+    "name": "ProgressStepper",
+    "exportName": "ProgressStepper",
+    "filePath": "more-components/ui2/components/onboarding/ProgressStepper.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "progressstepper",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "progress-stepper"
+  },
+  {
+    "name": "SecurityOptionCard",
+    "exportName": "SecurityOptionCard",
+    "filePath": "more-components/ui2/components/onboarding/SecurityOptionCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "securityoptioncard",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "security-option-card"
+  },
+  {
+    "name": "AccountSetupModalExample",
+    "exportName": "AccountSetupModalExample",
+    "filePath": "more-components/ui2/components/onboarding/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "accountsetupmodalexample",
+      "more-components",
+      "onboarding"
+    ],
+    "status": "stable",
+    "id": "account-setup-modal-example"
+  },
+  {
+    "name": "BillPaymentConfirmation",
+    "exportName": "BillPaymentConfirmation",
+    "filePath": "more-components/ui2/components/payment/BillPaymentConfirmation.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "billpaymentconfirmation",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "bill-payment-confirmation"
+  },
+  {
+    "name": "CardBack",
+    "exportName": "CardBack",
+    "filePath": "more-components/ui2/components/payment/CardBack.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cardback",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "card-back"
+  },
+  {
+    "name": "VisaIcon",
+    "exportName": "VisaIcon",
+    "filePath": "more-components/ui2/components/payment/CardBrandIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "visaicon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "visa-icon"
+  },
+  {
+    "name": "MastercardIcon",
+    "exportName": "MastercardIcon",
+    "filePath": "more-components/ui2/components/payment/CardBrandIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "mastercardicon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "mastercard-icon"
+  },
+  {
+    "name": "AmexIcon",
+    "exportName": "AmexIcon",
+    "filePath": "more-components/ui2/components/payment/CardBrandIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "amexicon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "amex-icon"
+  },
+  {
+    "name": "PayPalIcon",
+    "exportName": "PayPalIcon",
+    "filePath": "more-components/ui2/components/payment/CardBrandIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paypalicon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "pay-pal-icon"
+  },
+  {
+    "name": "DiscoverIcon",
+    "exportName": "DiscoverIcon",
+    "filePath": "more-components/ui2/components/payment/CardBrandIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "discovericon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "discover-icon"
+  },
+  {
+    "name": "ApplePayIcon",
+    "exportName": "ApplePayIcon",
+    "filePath": "more-components/ui2/components/payment/CardBrandIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "applepayicon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "apple-pay-icon"
+  },
+  {
+    "name": "CardBrandIcon",
+    "exportName": "CardBrandIcon",
+    "filePath": "more-components/ui2/components/payment/CardBrandIcons.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cardbrandicon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "card-brand-icon"
+  },
+  {
+    "name": "CardChip",
+    "exportName": "CardChip",
+    "filePath": "more-components/ui2/components/payment/CardChip.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cardchip",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "card-chip"
+  },
+  {
+    "name": "CardFront",
+    "exportName": "CardFront",
+    "filePath": "more-components/ui2/components/payment/CardFront.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cardfront",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "card-front"
+  },
+  {
+    "name": "CardLogo",
+    "exportName": "CardLogo",
+    "filePath": "more-components/ui2/components/payment/CardLogo.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cardlogo",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "card-logo"
+  },
+  {
+    "name": "CardPreview",
+    "exportName": "CardPreview",
+    "filePath": "more-components/ui2/components/payment/CardPreview.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "cardpreview",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "card-preview"
+  },
+  {
+    "name": "ConfirmationActions",
+    "exportName": "ConfirmationActions",
+    "filePath": "more-components/ui2/components/payment/ConfirmationActions.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "confirmationactions",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "confirmation-actions"
+  },
+  {
+    "name": "BasicInlineExample",
+    "exportName": "BasicInlineExample",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "basicinlineexample",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "basic-inline-example"
+  },
+  {
+    "name": "ModalExample",
+    "exportName": "ModalExample",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "modalexample",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "modal-example"
+  },
+  {
+    "name": "ToastExample",
+    "exportName": "ToastExample",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "toastexample",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "toast-example"
+  },
+  {
+    "name": "MultiplePaymentTypesExample",
+    "exportName": "MultiplePaymentTypesExample",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "multiplepaymenttypesexample",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "multiple-payment-types-example"
+  },
+  {
+    "name": "CustomizedExample",
+    "exportName": "CustomizedExample",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customizedexample",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "customized-example"
+  },
+  {
+    "name": "WithoutDownloadExample",
+    "exportName": "WithoutDownloadExample",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "withoutdownloadexample",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "without-download-example"
+  },
+  {
+    "name": "MultipleCurrenciesExample",
+    "exportName": "MultipleCurrenciesExample",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "multiplecurrenciesexample",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "multiple-currencies-example"
+  },
+  {
+    "name": "AllExamplesDemo",
+    "exportName": "AllExamplesDemo",
+    "filePath": "more-components/ui2/components/payment/CONFIRMATION_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "allexamplesdemo",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "all-examples-demo"
+  },
+  {
+    "name": "CountrySelector",
+    "exportName": "CountrySelector",
+    "filePath": "more-components/ui2/components/payment/CountrySelector.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "countryselector",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "country-selector"
+  },
+  {
+    "name": "FlowPayHero",
+    "exportName": "FlowPayHero",
+    "filePath": "more-components/ui2/components/payment/FlowPayHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "flowpayhero",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "flow-pay-hero"
+  },
+  {
+    "name": "GlassCard",
+    "exportName": "GlassCard",
+    "filePath": "more-components/ui2/components/payment/GlassCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glasscard",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "glass-card-1"
+  },
+  {
+    "name": "GlassInput",
+    "exportName": "GlassInput",
+    "filePath": "more-components/ui2/components/payment/GlassInput.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glassinput",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "glass-input"
+  },
+  {
+    "name": "GradientButton",
+    "exportName": "GradientButton",
+    "filePath": "more-components/ui2/components/payment/GradientButton.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "gradientbutton",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "gradient-button"
+  },
+  {
+    "name": "MeshGradientBackground",
+    "exportName": "MeshGradientBackground",
+    "filePath": "more-components/ui2/components/payment/MeshGradientBackground.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "meshgradientbackground",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "mesh-gradient-background"
+  },
+  {
+    "name": "OrderSummary",
+    "exportName": "OrderSummary",
+    "filePath": "more-components/ui2/components/payment/OrderSummary.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "ordersummary",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "order-summary"
+  },
+  {
+    "name": "PaymentCompletion",
+    "exportName": "PaymentCompletion",
+    "filePath": "more-components/ui2/components/payment/PaymentCompletion.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paymentcompletion",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "payment-completion"
+  },
+  {
+    "name": "PaymentCompletionForm",
+    "exportName": "PaymentCompletionForm",
+    "filePath": "more-components/ui2/components/payment/PaymentCompletionForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paymentcompletionform",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "payment-completion-form"
+  },
+  {
+    "name": "PaymentDashboard",
+    "exportName": "PaymentDashboard",
+    "filePath": "more-components/ui2/components/payment/PaymentDashboard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paymentdashboard",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "payment-dashboard"
+  },
+  {
+    "name": "PaymentDetailsPanel",
+    "exportName": "PaymentDetailsPanel",
+    "filePath": "more-components/ui2/components/payment/PaymentDetailsPanel.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paymentdetailspanel",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "payment-details-panel"
+  },
+  {
+    "name": "PaymentFeatureGrid",
+    "exportName": "PaymentFeatureGrid",
+    "filePath": "more-components/ui2/components/payment/PaymentFeatureGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paymentfeaturegrid",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "payment-feature-grid"
+  },
+  {
+    "name": "PaymentForm",
+    "exportName": "PaymentForm",
+    "filePath": "more-components/ui2/components/payment/PaymentForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paymentform",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "payment-form"
+  },
+  {
+    "name": "PaymentTestimonials",
+    "exportName": "PaymentTestimonials",
+    "filePath": "more-components/ui2/components/payment/PaymentTestimonials.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "paymenttestimonials",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "payment-testimonials"
+  },
+  {
+    "name": "SuccessIcon",
+    "exportName": "SuccessIcon",
+    "filePath": "more-components/ui2/components/payment/SuccessIcon.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "successicon",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "success-icon"
+  },
+  {
+    "name": "VirtualPaymentCard",
+    "exportName": "VirtualPaymentCard",
+    "filePath": "more-components/ui2/components/payment/VirtualPaymentCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "virtualpaymentcard",
+      "more-components",
+      "payment"
+    ],
+    "status": "stable",
+    "id": "virtual-payment-card"
+  },
+  {
+    "name": "BasicLayoutExample",
+    "exportName": "BasicLayoutExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "basiclayoutexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "basic-layout-example-1"
+  },
+  {
+    "name": "LayoutWithHeaderExample",
+    "exportName": "LayoutWithHeaderExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "layoutwithheaderexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "layout-with-header-example"
+  },
+  {
+    "name": "CustomBackgroundExample",
+    "exportName": "CustomBackgroundExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "custombackgroundexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "custom-background-example-1"
+  },
+  {
+    "name": "CustomWidthExample",
+    "exportName": "CustomWidthExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customwidthexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "custom-width-example-1"
+  },
+  {
+    "name": "FullWidthExample",
+    "exportName": "FullWidthExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "fullwidthexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "full-width-example"
+  },
+  {
+    "name": "DarkBackgroundExample",
+    "exportName": "DarkBackgroundExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "darkbackgroundexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "dark-background-example"
+  },
+  {
+    "name": "MultiSectionExample",
+    "exportName": "MultiSectionExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "multisectionexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "multi-section-example"
+  },
+  {
+    "name": "MinimalLayoutExample",
+    "exportName": "MinimalLayoutExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "minimallayoutexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "minimal-layout-example"
+  },
+  {
+    "name": "LayoutWithFooterExample",
+    "exportName": "LayoutWithFooterExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "layoutwithfooterexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "layout-with-footer-example"
+  },
+  {
+    "name": "LayoutWithSidebarExample",
+    "exportName": "LayoutWithSidebarExample",
+    "filePath": "more-components/ui2/components/portfolio/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "layoutwithsidebarexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "layout-with-sidebar-example"
+  },
+  {
+    "name": "PortfolioCard",
+    "exportName": "PortfolioCard",
+    "filePath": "more-components/ui2/components/portfolio/PortfolioCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "portfoliocard",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "portfolio-card-1"
+  },
+  {
+    "name": "PortfolioGrid",
+    "exportName": "PortfolioGrid",
+    "filePath": "more-components/ui2/components/portfolio/PortfolioGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "portfoliogrid",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "portfolio-grid-1"
+  },
+  {
+    "name": "PortfolioHeader",
+    "exportName": "PortfolioHeader",
+    "filePath": "more-components/ui2/components/portfolio/PortfolioHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "portfolioheader",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "portfolio-header"
+  },
+  {
+    "name": "PortfolioLayout",
+    "exportName": "PortfolioLayout",
+    "filePath": "more-components/ui2/components/portfolio/PortfolioLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "portfoliolayout",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "portfolio-layout"
+  },
+  {
+    "name": "BasicPortfolioExample",
+    "exportName": "BasicPortfolioExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "basicportfolioexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "basic-portfolio-example"
+  },
+  {
+    "name": "CustomLabelsExample",
+    "exportName": "CustomLabelsExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customlabelsexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "custom-labels-example"
+  },
+  {
+    "name": "IndividualComponentsExample",
+    "exportName": "IndividualComponentsExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "individualcomponentsexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "individual-components-example"
+  },
+  {
+    "name": "DynamicDataExample",
+    "exportName": "DynamicDataExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dynamicdataexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "dynamic-data-example"
+  },
+  {
+    "name": "CustomStylingExample",
+    "exportName": "CustomStylingExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customstylingexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "custom-styling-example"
+  },
+  {
+    "name": "MinimalExample",
+    "exportName": "MinimalExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "minimalexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "minimal-example-1"
+  },
+  {
+    "name": "MasonryLayoutExample",
+    "exportName": "MasonryLayoutExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "masonrylayoutexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "masonry-layout-example"
+  },
+  {
+    "name": "ReactRouterExample",
+    "exportName": "ReactRouterExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "reactrouterexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "react-router-example"
+  },
+  {
+    "name": "CompletePageExample",
+    "exportName": "CompletePageExample",
+    "filePath": "more-components/ui2/components/portfolio/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "completepageexample",
+      "more-components",
+      "portfolio"
+    ],
+    "status": "stable",
+    "id": "complete-page-example"
+  },
+  {
+    "name": "CertificationGrid",
+    "exportName": "CertificationGrid",
+    "filePath": "more-components/ui2/components/product/CertificationGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "certificationgrid",
+      "more-components",
+      "product"
+    ],
+    "status": "stable",
+    "id": "certification-grid"
+  },
+  {
+    "name": "DiagramWithNodes",
+    "exportName": "DiagramWithNodes",
+    "filePath": "more-components/ui2/components/product/DiagramWithNodes.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "diagramwithnodes",
+      "more-components",
+      "product"
+    ],
+    "status": "stable",
+    "id": "diagram-with-nodes"
+  },
+  {
+    "name": "ProductFeatureTabs",
+    "exportName": "ProductFeatureTabs",
+    "filePath": "more-components/ui2/components/product/ProductFeatureTabs.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "productfeaturetabs",
+      "more-components",
+      "product"
+    ],
+    "status": "stable",
+    "id": "product-feature-tabs"
+  },
+  {
+    "name": "SpecList",
+    "exportName": "SpecList",
+    "filePath": "more-components/ui2/components/product/SpecList.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "speclist",
+      "more-components",
+      "product"
+    ],
+    "status": "stable",
+    "id": "spec-list"
+  },
+  {
+    "name": "ChefCard",
+    "exportName": "ChefCard",
+    "filePath": "more-components/ui2/components/restaurant/ChefCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chefcard",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "chef-card"
+  },
+  {
+    "name": "ChefTeamSection",
+    "exportName": "ChefTeamSection",
+    "filePath": "more-components/ui2/components/restaurant/ChefTeamSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chefteamsection",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "chef-team-section"
+  },
+  {
+    "name": "DishCard",
+    "exportName": "DishCard",
+    "filePath": "more-components/ui2/components/restaurant/DishCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "dishcard",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "dish-card"
+  },
+  {
+    "name": "FeatureCard",
+    "exportName": "FeatureCard",
+    "filePath": "more-components/ui2/components/restaurant/FeatureCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featurecard",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "feature-card-2"
+  },
+  {
+    "name": "FeatureGrid",
+    "exportName": "FeatureGrid",
+    "filePath": "more-components/ui2/components/restaurant/FeatureGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featuregrid",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "feature-grid-1"
+  },
+  {
+    "name": "MenuShowcase",
+    "exportName": "MenuShowcase",
+    "filePath": "more-components/ui2/components/restaurant/MenuShowcase.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "menushowcase",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "menu-showcase"
+  },
+  {
+    "name": "ReservationForm",
+    "exportName": "ReservationForm",
+    "filePath": "more-components/ui2/components/restaurant/ReservationForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "reservationform",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "reservation-form"
+  },
+  {
+    "name": "RestaurantBadge",
+    "exportName": "RestaurantBadge",
+    "filePath": "more-components/ui2/components/restaurant/RestaurantBadge.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "restaurantbadge",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "restaurant-badge"
+  },
+  {
+    "name": "RestaurantFooter",
+    "exportName": "RestaurantFooter",
+    "filePath": "more-components/ui2/components/restaurant/RestaurantFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "restaurantfooter",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "restaurant-footer"
+  },
+  {
+    "name": "RestaurantHero",
+    "exportName": "RestaurantHero",
+    "filePath": "more-components/ui2/components/restaurant/RestaurantHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "restauranthero",
+      "more-components",
+      "restaurant"
+    ],
+    "status": "stable",
+    "id": "restaurant-hero"
+  },
+  {
+    "name": "CalendarCard",
+    "exportName": "CalendarCard",
+    "filePath": "more-components/ui2/components/scheduling/CalendarCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "calendarcard",
+      "more-components",
+      "scheduling"
+    ],
+    "status": "stable",
+    "id": "calendar-card"
+  },
+  {
+    "name": "GuestList",
+    "exportName": "GuestList",
+    "filePath": "more-components/ui2/components/scheduling/GuestList.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "guestlist",
+      "more-components",
+      "scheduling"
+    ],
+    "status": "stable",
+    "id": "guest-list"
+  },
+  {
+    "name": "MeetingCard",
+    "exportName": "MeetingCard",
+    "filePath": "more-components/ui2/components/scheduling/MeetingCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "meetingcard",
+      "more-components",
+      "scheduling"
+    ],
+    "status": "stable",
+    "id": "meeting-card"
+  },
+  {
+    "name": "SchedulingDashboard",
+    "exportName": "SchedulingDashboard",
+    "filePath": "more-components/ui2/components/scheduling/SchedulingDashboard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "schedulingdashboard",
+      "more-components",
+      "scheduling"
+    ],
+    "status": "stable",
+    "id": "scheduling-dashboard"
+  },
+  {
+    "name": "SkincareAnnouncement",
+    "exportName": "SkincareAnnouncement",
+    "filePath": "more-components/ui2/components/skincare/SkincareAnnouncement.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincareannouncement",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-announcement"
+  },
+  {
+    "name": "SkincareCart",
+    "exportName": "SkincareCart",
+    "filePath": "more-components/ui2/components/skincare/SkincareCart.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincarecart",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-cart"
+  },
+  {
+    "name": "SkincareCollectionsDropdown",
+    "exportName": "SkincareCollectionsDropdown",
+    "filePath": "more-components/ui2/components/skincare/SkincareCollectionsDropdown.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincarecollectionsdropdown",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-collections-dropdown"
+  },
+  {
+    "name": "SkincareCollectionsGrid",
+    "exportName": "SkincareCollectionsGrid",
+    "filePath": "more-components/ui2/components/skincare/SkincareCollectionsGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincarecollectionsgrid",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-collections-grid"
+  },
+  {
+    "name": "SkincareFooter",
+    "exportName": "SkincareFooter",
+    "filePath": "more-components/ui2/components/skincare/SkincareFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincarefooter",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-footer"
+  },
+  {
+    "name": "SkincareHeader",
+    "exportName": "SkincareHeader",
+    "filePath": "more-components/ui2/components/skincare/SkincareHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincareheader",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-header"
+  },
+  {
+    "name": "SkincareHero",
+    "exportName": "SkincareHero",
+    "filePath": "more-components/ui2/components/skincare/SkincareHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincarehero",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-hero"
+  },
+  {
+    "name": "SkincareLayout",
+    "exportName": "SkincareLayout",
+    "filePath": "more-components/ui2/components/skincare/SkincareLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincarelayout",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-layout"
+  },
+  {
+    "name": "SkincareMobileMenu",
+    "exportName": "SkincareMobileMenu",
+    "filePath": "more-components/ui2/components/skincare/SkincareMobileMenu.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincaremobilemenu",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-mobile-menu"
+  },
+  {
+    "name": "SkincarePhilosophy",
+    "exportName": "SkincarePhilosophy",
+    "filePath": "more-components/ui2/components/skincare/SkincarePhilosophy.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincarephilosophy",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-philosophy"
+  },
+  {
+    "name": "SkincareProductCard",
+    "exportName": "SkincareProductCard",
+    "filePath": "more-components/ui2/components/skincare/SkincareProductCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincareproductcard",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-product-card"
+  },
+  {
+    "name": "SkincareProductGrid",
+    "exportName": "SkincareProductGrid",
+    "filePath": "more-components/ui2/components/skincare/SkincareProductGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincareproductgrid",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-product-grid"
+  },
+  {
+    "name": "SkincareToast",
+    "exportName": "SkincareToast",
+    "filePath": "more-components/ui2/components/skincare/SkincareToast.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincaretoast",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-toast"
+  },
+  {
+    "name": "SkincareTrustBar",
+    "exportName": "SkincareTrustBar",
+    "filePath": "more-components/ui2/components/skincare/SkincareTrustBar.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "skincaretrustbar",
+      "more-components",
+      "skincare"
+    ],
+    "status": "stable",
+    "id": "skincare-trust-bar"
+  },
+  {
+    "name": "Chapter",
+    "exportName": "Chapter",
+    "filePath": "more-components/ui2/components/storytelling/Chapter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chapter",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "chapter"
+  },
+  {
+    "name": "ChapterContent",
+    "exportName": "ChapterContent",
+    "filePath": "more-components/ui2/components/storytelling/ChapterContent.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chaptercontent",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "chapter-content"
+  },
+  {
+    "name": "ChapterNavigation",
+    "exportName": "ChapterNavigation",
+    "filePath": "more-components/ui2/components/storytelling/ChapterNavigation.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "chapternavigation",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "chapter-navigation"
+  },
+  {
+    "name": "CustomCursor",
+    "exportName": "CustomCursor",
+    "filePath": "more-components/ui2/components/storytelling/CustomCursor.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "customcursor",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "custom-cursor"
+  },
+  {
+    "name": "ScrollStory",
+    "exportName": "ScrollStory",
+    "filePath": "more-components/ui2/components/storytelling/ScrollStory.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "scrollstory",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "scroll-story"
+  },
+  {
+    "name": "DigitalOdysseyStory",
+    "exportName": "DigitalOdysseyStory",
+    "filePath": "more-components/ui2/components/storytelling/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "digitalodysseystory",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "digital-odyssey-story"
+  },
+  {
+    "name": "SimpleStory",
+    "exportName": "SimpleStory",
+    "filePath": "more-components/ui2/components/storytelling/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "simplestory",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "simple-story"
+  },
+  {
+    "name": "ProductLaunchStory",
+    "exportName": "ProductLaunchStory",
+    "filePath": "more-components/ui2/components/storytelling/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "productlaunchstory",
+      "more-components",
+      "storytelling"
+    ],
+    "status": "stable",
+    "id": "product-launch-story"
+  },
+  {
+    "name": "MeteorBackground",
+    "exportName": "MeteorBackground",
+    "filePath": "more-components/ui2/components/testimonials/MeteorBackground.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "meteorbackground",
+      "more-components",
+      "testimonials"
+    ],
+    "status": "stable",
+    "id": "meteor-background"
+  },
+  {
+    "name": "QuoteIcon",
+    "exportName": "QuoteIcon",
+    "filePath": "more-components/ui2/components/testimonials/QuoteIcon.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "quoteicon",
+      "more-components",
+      "testimonials"
+    ],
+    "status": "stable",
+    "id": "quote-icon"
+  },
+  {
+    "name": "TestimonialCard",
+    "exportName": "TestimonialCard",
+    "filePath": "more-components/ui2/components/testimonials/TestimonialCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialcard",
+      "more-components",
+      "testimonials"
+    ],
+    "status": "stable",
+    "id": "testimonial-card"
+  },
+  {
+    "name": "TestimonialsGrid",
+    "exportName": "TestimonialsGrid",
+    "filePath": "more-components/ui2/components/testimonials/TestimonialsGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialsgrid",
+      "more-components",
+      "testimonials"
+    ],
+    "status": "stable",
+    "id": "testimonials-grid-1"
+  },
+  {
+    "name": "TestimonialsMasonry",
+    "exportName": "TestimonialsMasonry",
+    "filePath": "more-components/ui2/components/testimonials/TestimonialsMasonry.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialsmasonry",
+      "more-components",
+      "testimonials"
+    ],
+    "status": "stable",
+    "id": "testimonials-masonry"
+  },
+  {
+    "name": "UnboxingFeatureColumn",
+    "exportName": "UnboxingFeatureColumn",
+    "filePath": "more-components/ui2/components/unboxing/UnboxingFeatureColumn.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "unboxingfeaturecolumn",
+      "more-components",
+      "unboxing"
+    ],
+    "status": "stable",
+    "id": "unboxing-feature-column"
+  },
+  {
+    "name": "UnboxingFooter",
+    "exportName": "UnboxingFooter",
+    "filePath": "more-components/ui2/components/unboxing/UnboxingFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "unboxingfooter",
+      "more-components",
+      "unboxing"
+    ],
+    "status": "stable",
+    "id": "unboxing-footer"
+  },
+  {
+    "name": "UnboxingHeader",
+    "exportName": "UnboxingHeader",
+    "filePath": "more-components/ui2/components/unboxing/UnboxingHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "unboxingheader",
+      "more-components",
+      "unboxing"
+    ],
+    "status": "stable",
+    "id": "unboxing-header"
+  },
+  {
+    "name": "UnboxingLayout",
+    "exportName": "UnboxingLayout",
+    "filePath": "more-components/ui2/components/unboxing/UnboxingLayout.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "unboxinglayout",
+      "more-components",
+      "unboxing"
+    ],
+    "status": "stable",
+    "id": "unboxing-layout"
+  },
+  {
+    "name": "UnboxingProductCard",
+    "exportName": "UnboxingProductCard",
+    "filePath": "more-components/ui2/components/unboxing/UnboxingProductCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "unboxingproductcard",
+      "more-components",
+      "unboxing"
+    ],
+    "status": "stable",
+    "id": "unboxing-product-card"
+  },
+  {
+    "name": "AuraFooter",
+    "exportName": "AuraFooter",
+    "filePath": "more-components/ui2/components/web3/AuraFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "aurafooter",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "aura-footer"
+  },
+  {
+    "name": "AuraHeader",
+    "exportName": "AuraHeader",
+    "filePath": "more-components/ui2/components/web3/AuraHeader.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "auraheader",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "aura-header"
+  },
+  {
+    "name": "AuraHero",
+    "exportName": "AuraHero",
+    "filePath": "more-components/ui2/components/web3/AuraHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "aurahero",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "aura-hero"
+  },
+  {
+    "name": "AuraLanding",
+    "exportName": "AuraLanding",
+    "filePath": "more-components/ui2/components/web3/AuraLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "auralanding",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "aura-landing"
+  },
+  {
+    "name": "FAQSection",
+    "exportName": "FAQSection",
+    "filePath": "more-components/ui2/components/web3/FAQSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "faqsection",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "faq-section-1"
+  },
+  {
+    "name": "GridHero",
+    "exportName": "GridHero",
+    "filePath": "more-components/ui2/components/web3/GridHero.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "gridhero",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "grid-hero"
+  },
+  {
+    "name": "InfoCard",
+    "exportName": "InfoCard",
+    "filePath": "more-components/ui2/components/web3/InfoCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "infocard",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "info-card"
+  },
+  {
+    "name": "SimpleLanding",
+    "exportName": "SimpleLanding",
+    "filePath": "more-components/ui2/components/web3/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "simplelanding",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "simple-landing"
+  },
+  {
+    "name": "NetworksShowcase",
+    "exportName": "NetworksShowcase",
+    "filePath": "more-components/ui2/components/web3/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "networksshowcase",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "networks-showcase"
+  },
+  {
+    "name": "TrustBuilder",
+    "exportName": "TrustBuilder",
+    "filePath": "more-components/ui2/components/web3/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "trustbuilder",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "trust-builder"
+  },
+  {
+    "name": "CompactLanding",
+    "exportName": "CompactLanding",
+    "filePath": "more-components/ui2/components/web3/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "compactlanding",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "compact-landing"
+  },
+  {
+    "name": "FullMarketingPage",
+    "exportName": "FullMarketingPage",
+    "filePath": "more-components/ui2/components/web3/LAYOUT_EXAMPLES.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "fullmarketingpage",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "full-marketing-page"
+  },
+  {
+    "name": "NetworksSection",
+    "exportName": "NetworksSection",
+    "filePath": "more-components/ui2/components/web3/NetworksSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "networkssection",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "networks-section"
+  },
+  {
+    "name": "PricingSection",
+    "exportName": "PricingSection",
+    "filePath": "more-components/ui2/components/web3/PricingSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "pricingsection",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "pricing-section"
+  },
+  {
+    "name": "TestimonialsSection",
+    "exportName": "TestimonialsSection",
+    "filePath": "more-components/ui2/components/web3/TestimonialsSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "testimonialssection",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "testimonials-section-1"
+  },
+  {
+    "name": "CompleteAuraExample",
+    "exportName": "CompleteAuraExample",
+    "filePath": "more-components/ui2/components/web3/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "completeauraexample",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "complete-aura-example"
+  },
+  {
+    "name": "MinimalAuraExample",
+    "exportName": "MinimalAuraExample",
+    "filePath": "more-components/ui2/components/web3/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "minimalauraexample",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "minimal-aura-example"
+  },
+  {
+    "name": "CustomBrandedExample",
+    "exportName": "CustomBrandedExample",
+    "filePath": "more-components/ui2/components/web3/USAGE_EXAMPLE.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "custombrandedexample",
+      "more-components",
+      "web3"
+    ],
+    "status": "stable",
+    "id": "custom-branded-example"
+  },
+  {
+    "name": "FeatureCard",
+    "exportName": "FeatureCard",
+    "filePath": "more-components/ui2/components/webgl/FeatureCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "featurecard",
+      "more-components",
+      "webgl"
+    ],
+    "status": "stable",
+    "id": "feature-card-3"
+  },
+  {
+    "name": "GlassCard",
+    "exportName": "GlassCard",
+    "filePath": "more-components/ui2/components/webgl/GlassCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "glasscard",
+      "more-components",
+      "webgl"
+    ],
+    "status": "stable",
+    "id": "glass-card-2"
+  },
+  {
+    "name": "Navigation",
+    "exportName": "Navigation",
+    "filePath": "more-components/ui2/components/webgl/Navigation.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "navigation",
+      "more-components",
+      "webgl"
+    ],
+    "status": "stable",
+    "id": "navigation-1"
+  },
+  {
+    "name": "ShaderBackground",
+    "exportName": "ShaderBackground",
+    "filePath": "more-components/ui2/components/webgl/ShaderBackground.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "shaderbackground",
+      "more-components",
+      "webgl"
+    ],
+    "status": "stable",
+    "id": "shader-background"
+  },
+  {
+    "name": "StatCard",
+    "exportName": "StatCard",
+    "filePath": "more-components/ui2/components/webgl/StatCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "statcard",
+      "more-components",
+      "webgl"
+    ],
+    "status": "stable",
+    "id": "stat-card"
+  },
+  {
+    "name": "WebGLShaderDemo",
+    "exportName": "WebGLShaderDemo",
+    "filePath": "more-components/ui2/components/webgl/WebGLShaderDemo.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "webglshaderdemo",
+      "more-components",
+      "webgl"
+    ],
+    "status": "stable",
+    "id": "web-gl-shader-demo"
+  },
+  {
+    "name": "CommunityCard",
+    "exportName": "CommunityCard",
+    "filePath": "more-components/ui2/components/wellness/CommunityCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "communitycard",
+      "more-components",
+      "wellness"
+    ],
+    "status": "stable",
+    "id": "community-card"
+  },
+  {
+    "name": "MeditationCard",
+    "exportName": "MeditationCard",
+    "filePath": "more-components/ui2/components/wellness/MeditationCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "meditationcard",
+      "more-components",
+      "wellness"
+    ],
+    "status": "stable",
+    "id": "meditation-card"
+  },
+  {
+    "name": "MeditationGrid",
+    "exportName": "MeditationGrid",
+    "filePath": "more-components/ui2/components/wellness/MeditationGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "meditationgrid",
+      "more-components",
+      "wellness"
+    ],
+    "status": "stable",
+    "id": "meditation-grid"
+  },
+  {
+    "name": "ProgressAnalyticsCard",
+    "exportName": "ProgressAnalyticsCard",
+    "filePath": "more-components/ui2/components/wellness/ProgressAnalyticsCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "progressanalyticscard",
+      "more-components",
+      "wellness"
+    ],
+    "status": "stable",
+    "id": "progress-analytics-card"
+  },
+  {
+    "name": "SessionLibraryCard",
+    "exportName": "SessionLibraryCard",
+    "filePath": "more-components/ui2/components/wellness/SessionLibraryCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "sessionlibrarycard",
+      "more-components",
+      "wellness"
+    ],
+    "status": "stable",
+    "id": "session-library-card"
+  },
+  {
+    "name": "BasicInfoForm",
+    "exportName": "BasicInfoForm",
+    "filePath": "more-components/ui2/components/business-dashboard/forms/BasicInfoForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "basicinfoform",
+      "more-components",
+      "business-dashboard",
+      "forms"
+    ],
+    "status": "stable",
+    "id": "basic-info-form"
+  },
+  {
+    "name": "ContactForm",
+    "exportName": "ContactForm",
+    "filePath": "more-components/ui2/components/business-dashboard/forms/ContactForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "contactform",
+      "more-components",
+      "business-dashboard",
+      "forms"
+    ],
+    "status": "stable",
+    "id": "contact-form-1"
+  },
+  {
+    "name": "HoursForm",
+    "exportName": "HoursForm",
+    "filePath": "more-components/ui2/components/business-dashboard/forms/HoursForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "hoursform",
+      "more-components",
+      "business-dashboard",
+      "forms"
+    ],
+    "status": "stable",
+    "id": "hours-form"
+  },
+  {
+    "name": "PhotosForm",
+    "exportName": "PhotosForm",
+    "filePath": "more-components/ui2/components/business-dashboard/forms/PhotosForm.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "photosform",
+      "more-components",
+      "business-dashboard",
+      "forms"
+    ],
+    "status": "stable",
+    "id": "photos-form"
+  },
+  {
+    "name": "AboutSection",
+    "exportName": "AboutSection",
+    "filePath": "more-components/ui2/components/portfolio/kyro/AboutSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "aboutsection",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "about-section-1"
+  },
+  {
+    "name": "ContactFooter",
+    "exportName": "ContactFooter",
+    "filePath": "more-components/ui2/components/portfolio/kyro/ContactFooter.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "contactfooter",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "contact-footer"
+  },
+  {
+    "name": "Header",
+    "exportName": "Header",
+    "filePath": "more-components/ui2/components/portfolio/kyro/Header.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "header",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "header-1"
+  },
+  {
+    "name": "HeroSection",
+    "exportName": "HeroSection",
+    "filePath": "more-components/ui2/components/portfolio/kyro/HeroSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "herosection",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "hero-section-2"
+  },
+  {
+    "name": "InfoCard",
+    "exportName": "InfoCard",
+    "filePath": "more-components/ui2/components/portfolio/kyro/InfoCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "infocard",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "info-card-1"
+  },
+  {
+    "name": "InfoGrid",
+    "exportName": "InfoGrid",
+    "filePath": "more-components/ui2/components/portfolio/kyro/InfoGrid.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "infogrid",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "info-grid"
+  },
+  {
+    "name": "KyroPortfolioLanding",
+    "exportName": "KyroPortfolioLanding",
+    "filePath": "more-components/ui2/components/portfolio/kyro/KyroPortfolioLanding.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "kyroportfoliolanding",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "kyro-portfolio-landing"
+  },
+  {
+    "name": "ServiceCard",
+    "exportName": "ServiceCard",
+    "filePath": "more-components/ui2/components/portfolio/kyro/ServiceCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "servicecard",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "service-card"
+  },
+  {
+    "name": "ServicesSection",
+    "exportName": "ServicesSection",
+    "filePath": "more-components/ui2/components/portfolio/kyro/ServicesSection.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "servicessection",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "services-section"
+  },
+  {
+    "name": "WorkCard",
+    "exportName": "WorkCard",
+    "filePath": "more-components/ui2/components/portfolio/kyro/WorkCard.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "workcard",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "work-card"
+  },
+  {
+    "name": "WorkShowcase",
+    "exportName": "WorkShowcase",
+    "filePath": "more-components/ui2/components/portfolio/kyro/WorkShowcase.tsx",
+    "rootId": "ui2",
+    "category": "extended",
+    "tags": [
+      "extended",
+      "workshowcase",
+      "more-components",
+      "portfolio",
+      "kyro"
+    ],
+    "status": "stable",
+    "id": "work-showcase"
+  }
+]

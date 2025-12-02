@@ -1,7 +1,7 @@
 import { readdirSync, existsSync, readFileSync } from 'fs';
 import { join, extname } from 'path';
 import { paramCase } from 'param-case';
-import type { FontMeta, FontFileMeta } from '../types/FontMeta';
+import type { FontMeta, FontFileMeta } from '../types/FontMeta.js';
 
 /**
  * Font configuration (optional font.config.json in each font directory)

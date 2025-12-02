@@ -1,9 +1,9 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
-import { ComponentMeta } from '../types/ComponentMeta';
-import { FontMeta } from '../types/FontMeta';
-import { Theme } from '../types/Theme';
-import { GenerateOptions } from '../types/GenerateOptions';
+import { ComponentMeta } from '../types/ComponentMeta.js';
+import { FontMeta } from '../types/FontMeta.js';
+import { Theme } from '../types/Theme.js';
+import { GenerateOptions } from '../types/GenerateOptions.js';
 
 /**
  * Core design system library generator
@@ -216,7 +216,7 @@ export class DesignSystemGenerator {
     const themeIds = themes.map((t) => `'${t.id}'`).join(' | ');
 
     const content = `import React, { ReactNode, useState } from 'react';
-import { themes } from '../tokens/themes';
+import { themes } from '../tokens/themes.js';
 
 type ThemeId = ${themeIds || "'light'"};
 

@@ -1,0 +1,50 @@
+[data-theme="dark"] {
+  --colors-primary: #0A84FF;
+  --colors-secondary: #00C7FF;
+  --colors-background: #1C1C1E;
+  --colors-text: #FFFFFF;
+  --colors-border: #424245;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --borderRadius-sm: 0.25rem;
+  --borderRadius-md: 0.5rem;
+  --borderRadius-lg: 1rem;
+  --borderRadius-xl: 1.5rem;
+}
+
+[data-theme="high-contrast"] {
+  --colors-primary: #000000;
+  --colors-secondary: #FFFFFF;
+  --colors-background: #FFFFFF;
+  --colors-text: #000000;
+  --colors-border: #000000;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --borderRadius-sm: 0;
+  --borderRadius-md: 0;
+  --borderRadius-lg: 0;
+  --borderRadius-xl: 0;
+}
+
+[data-theme="light"] {
+  --colors-primary: #007AFF;
+  --colors-secondary: #5AC8FA;
+  --colors-background: #FFFFFF;
+  --colors-text: #000000;
+  --colors-border: #E0E0E0;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --borderRadius-sm: 0.25rem;
+  --borderRadius-md: 0.5rem;
+  --borderRadius-lg: 1rem;
+  --borderRadius-xl: 1.5rem;
+}

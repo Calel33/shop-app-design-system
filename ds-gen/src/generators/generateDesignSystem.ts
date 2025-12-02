@@ -1,10 +1,10 @@
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
-import { ComponentMeta } from '../types/ComponentMeta';
-import { FontMeta } from '../types/FontMeta';
-import { Theme } from '../types/Theme';
-import { GenerateOptions } from '../types/GenerateOptions';
-import { DesignSystemGenerator } from './DesignSystemGenerator';
+import { ComponentMeta } from '../types/ComponentMeta.js';
+import { FontMeta } from '../types/FontMeta.js';
+import { Theme } from '../types/Theme.js';
+import { GenerateOptions } from '../types/GenerateOptions.js';
+import { DesignSystemGenerator } from './DesignSystemGenerator.js';
 
 /**
  * Load and parse design system indexes

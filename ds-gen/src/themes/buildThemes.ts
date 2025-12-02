@@ -1,8 +1,8 @@
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, resolve } from 'path';
-import { loadConfig } from '../config';
-import { ThemeManager } from './ThemeManager';
-import { generateThemeCss, generateThemeTokensTs } from './themeCssGenerator';
+import { loadConfig } from '../config.js';
+import { ThemeManager } from './ThemeManager.js';
+import { generateThemeCss, generateThemeTokensTs } from './themeCssGenerator.js';
 
 /**
  * Build themes: scan, normalize, and generate outputs
